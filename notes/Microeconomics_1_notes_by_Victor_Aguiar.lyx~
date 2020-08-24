@@ -270,53 +270,154 @@ WTS:
 \end_layout
 
 \begin_layout Example
-Assume that 
-\begin_inset Formula $a$
-\end_inset
-
- is not in relation 
-\begin_inset Formula $R$
-\end_inset
-
- with 
-\begin_inset Formula $b$
-\end_inset
-
-, we want to show that 
-\begin_inset Formula $bRa$
-\end_inset
-
-.
- If not 
-\begin_inset Formula $aRb$
-\end_inset
-
- this means that either 
-\begin_inset Formula $b_{1}>a_{1}$
+\begin_inset Formula $xRy$
 \end_inset
 
  or 
-\begin_inset Formula $a_{1}=b_{1}$
+\begin_inset Formula $yRx$
+\end_inset
+
+, take any arbitrary vectors 
+\begin_inset Formula $v,w\in X$
+\end_inset
+
+, notice that 
+\end_layout
+
+\begin_layout Example
+
+\series bold
+P: either
+\series default
+ 
+\begin_inset Formula $v_{1}\geq w_{1}$
+\end_inset
+
+ or 
+\begin_inset Formula $w_{1}\geq v_{1}$
+\end_inset
+
+, either 
+\begin_inset Formula $v_{2}\geq w_{2}$
+\end_inset
+
+ or 
+\begin_inset Formula $w_{2}\geq v_{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Example
+Q: 
+\begin_inset Formula $vRw\iff v_{1}>w_{1}$
+\end_inset
+
+ or 
+\begin_inset Formula $v_{1}=w_{1}$
 \end_inset
 
  and 
-\begin_inset Formula $b_{2}\geq a_{2}$
+\begin_inset Formula $v_{2}\geq w_{2}$
 \end_inset
 
-, but this implies that 
-\begin_inset Formula $bRa$
+, or
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $wRv\iff w_{1}>v_{1}$
+\end_inset
+
+ or 
+\begin_inset Formula $w_{1}=v_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $w_{2}\geq v_{2}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $P\implies Q$
 \end_inset
 
 .
- This means that 
-\begin_inset Formula $R$
+ 
+\end_layout
+
+\begin_layout Example
+not P and Q
+\end_layout
+
+\begin_layout Example
+not 
+\begin_inset Formula $v_{1}\geq w_{1}$
 \end_inset
 
- is complete because the previous argument holds for any 
-\begin_inset Formula $a,b\in X$
+ or 
+\begin_inset Formula $w_{1}\geq v_{1}$
 \end_inset
 
-.
+, either 
+\begin_inset Formula $v_{2}\geq w_{2}$
+\end_inset
+
+ or 
+\begin_inset Formula $w_{2}\geq v_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+and 
+\begin_inset Formula $vRw$
+\end_inset
+
+ or 
+\begin_inset Formula $wRv$
+\end_inset
+
+, by definition of the lexicographic ordering that
+\end_layout
+
+\begin_layout Example
+either (
+\begin_inset Formula $vRw$
+\end_inset
+
+) 
+\begin_inset Formula $v_{1}\geq w_{1}$
+\end_inset
+
+or (
+\begin_inset Formula $wRv$
+\end_inset
+
+) 
+\begin_inset Formula $w_{1}\geq v_{1}$
+\end_inset
+
+, this implies that 
+\begin_inset Formula $v_{1}\geq w_{1}$
+\end_inset
+
+ or 
+\begin_inset Formula $w_{1}\geq v_{1}$
+\end_inset
+
+, but this is a contradiction of (not 
+\begin_inset Formula $P$
+\end_inset
+
+) the order in the reals 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ being complete.
  
 \end_layout
 

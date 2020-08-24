@@ -308,16 +308,7 @@ Assume that
 \end_inset
 
 .
- This means that 
-\begin_inset Formula $R$
-\end_inset
-
- is complete because the previous argument holds for any 
-\begin_inset Formula $a,b\in X$
-\end_inset
-
-.
- 
+ This mean
 \end_layout
 
 \begin_layout Standard
