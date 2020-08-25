@@ -270,154 +270,53 @@ WTS:
 \end_layout
 
 \begin_layout Example
-\begin_inset Formula $xRy$
+Assume that 
+\begin_inset Formula $a$
 \end_inset
 
- or 
-\begin_inset Formula $yRx$
+ is not in relation 
+\begin_inset Formula $R$
 \end_inset
 
-, take any arbitrary vectors 
-\begin_inset Formula $v,w\in X$
+ with 
+\begin_inset Formula $b$
 \end_inset
 
-, notice that 
-\end_layout
-
-\begin_layout Example
-
-\series bold
-P: either
-\series default
- 
-\begin_inset Formula $v_{1}\geq w_{1}$
-\end_inset
-
- or 
-\begin_inset Formula $w_{1}\geq v_{1}$
-\end_inset
-
-, either 
-\begin_inset Formula $v_{2}\geq w_{2}$
-\end_inset
-
- or 
-\begin_inset Formula $w_{2}\geq v_{2}$
+, we want to show that 
+\begin_inset Formula $bRa$
 \end_inset
 
 .
- 
-\end_layout
+ If not 
+\begin_inset Formula $aRb$
+\end_inset
 
-\begin_layout Example
-Q: 
-\begin_inset Formula $vRw\iff v_{1}>w_{1}$
+ this means that either 
+\begin_inset Formula $b_{1}>a_{1}$
 \end_inset
 
  or 
-\begin_inset Formula $v_{1}=w_{1}$
+\begin_inset Formula $a_{1}=b_{1}$
 \end_inset
 
  and 
-\begin_inset Formula $v_{2}\geq w_{2}$
+\begin_inset Formula $b_{2}\geq a_{2}$
 \end_inset
 
-, or
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $wRv\iff w_{1}>v_{1}$
-\end_inset
-
- or 
-\begin_inset Formula $w_{1}=v_{1}$
-\end_inset
-
- and 
-\begin_inset Formula $w_{2}\geq v_{2}$
-\end_inset
-
-,
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $P\implies Q$
+, but this implies that 
+\begin_inset Formula $bRa$
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Example
-not P and Q
-\end_layout
-
-\begin_layout Example
-not 
-\begin_inset Formula $v_{1}\geq w_{1}$
+ This means that 
+\begin_inset Formula $R$
 \end_inset
 
- or 
-\begin_inset Formula $w_{1}\geq v_{1}$
+ is complete because the previous argument holds for any 
+\begin_inset Formula $a,b\in X$
 \end_inset
 
-, either 
-\begin_inset Formula $v_{2}\geq w_{2}$
-\end_inset
-
- or 
-\begin_inset Formula $w_{2}\geq v_{2}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-and 
-\begin_inset Formula $vRw$
-\end_inset
-
- or 
-\begin_inset Formula $wRv$
-\end_inset
-
-, by definition of the lexicographic ordering that
-\end_layout
-
-\begin_layout Example
-either (
-\begin_inset Formula $vRw$
-\end_inset
-
-) 
-\begin_inset Formula $v_{1}\geq w_{1}$
-\end_inset
-
-or (
-\begin_inset Formula $wRv$
-\end_inset
-
-) 
-\begin_inset Formula $w_{1}\geq v_{1}$
-\end_inset
-
-, this implies that 
-\begin_inset Formula $v_{1}\geq w_{1}$
-\end_inset
-
- or 
-\begin_inset Formula $w_{1}\geq v_{1}$
-\end_inset
-
-, but this is a contradiction of (not 
-\begin_inset Formula $P$
-\end_inset
-
-) the order in the reals 
-\begin_inset Formula $\mathbb{R}$
-\end_inset
-
- being complete.
+.
  
 \end_layout
 
@@ -2080,7 +1979,7 @@ is given by the vector
 \end_layout
 
 \begin_layout Standard
-Because the commodity space may be to 'generic' for some modelling purposes
+Because the commodity space may be to 'generic' for some modeling purposes
  (e.g., the situation at hand may rule out extremely large quantities of some
  commodities, or negative quantities are impossible) we use from now on
  the 
@@ -2093,7 +1992,7 @@ consumption set
  
 \series default
 Remember that the consumption set is an abstract concept that can be defined
- according to each modelling situation, but for now on we will let 
+ according to each modeling situation, but for now on we will let 
 \begin_inset Formula $X=\mathbb{R}_{+}^{L}$
 \end_inset
 
@@ -2198,18 +2097,32 @@ Observe that
  
 \end_layout
 
+\begin_layout Example
+Cobb-Douglas Demand Function.
+ 
+\begin_inset Formula $x(p,w)=(\frac{\alpha w}{p_{1}},\frac{(1-\alpha)w}{p_{2}})'$
+\end_inset
+
+ for 
+\begin_inset Formula $\alpha\in(0,1)$
+\end_inset
+
+.
+ 
+\end_layout
+
 \begin_layout Section
 Consistency in Consumption
 \end_layout
 
 \begin_layout Standard
 Now that we have established the ingredients, so to speak, (i.e., the environment
- and the primitive of our study), we are going to proceed to the modelling
+ and the primitive of our study), we are going to proceed to the modeling
  part of our study of consumption.
  The first approach to 'model' consumption is to talk about consistency
  in consumption choices.
- This is a somewhat different approach to modelling consumption to what
- you may have studied at the undergraduate level.
+ This is a somewhat different approach to modeling consumption to what you
+ may have studied at the undergraduate level.
  
 \end_layout
 

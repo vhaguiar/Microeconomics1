@@ -1,0 +1,260 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{babel}
+\usepackage{babel}
+\usepackage{babel}
+
+
+
+
+
+  \providecommand{\assumptionname}{Assumption}
+  \providecommand{\axiomname}{Axiom}
+  \providecommand{\claimname}{Claim}
+  \providecommand{\definitionname}{Definition}
+  \providecommand{\lemmaname}{Lemma}
+  \providecommand{\propositionname}{Proposition}
+  \providecommand{\remarkname}{Remark}
+\providecommand{\corollaryname}{Corollary}
+\providecommand{\theoremname}{Theorem}
+
+
+
+  \providecommand{\axiomname}{Axiom}
+  \providecommand{\claimname}{Claim}
+  \providecommand{\definitionname}{Definition}
+  \providecommand{\remarkname}{Remark}
+\providecommand{\corollaryname}{Corollary}
+\providecommand{\theoremname}{Theorem}
+\end_preamble
+\use_default_options false
+\begin_modules
+theorems-ams-bytype
+theorems-ams-extended-bytype
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding iso8859-15
+\fontencoding default
+\font_roman "cmr" "default"
+\font_sans "cmss" "default"
+\font_typewriter "cmtt" "default"
+\font_math "auto" "auto"
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 2
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.25in
+\topmargin 1.25in
+\rightmargin 1.25in
+\bottommargin 1.25in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Advanced Micro Winter 2018: Problem Set 2.
+\end_layout
+
+\begin_layout Author
+Victor H.
+ Aguiar 
+\end_layout
+
+\begin_layout Date
+This version: January 2018
+\end_layout
+
+\begin_layout Standard
+Every answer is 25 points.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Solve the Utility Maximization Problem for the following utility functions,
+ for 
+\begin_inset Formula $x\in B(p,w)=\{x\in X|p'x=w\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Exercise
+(a) Cobb-Douglas: 
+\begin_inset Formula $u(x_{1},x_{2})=x_{1}^{\alpha}x_{2}^{1-\alpha}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Exercise
+(b) Constant Elasticity of Substitution (CES): 
+\begin_inset Formula $u(x_{1},x_{2})=\left(x_{1}^{\frac{\sigma-1}{\sigma}}+x_{2}^{\frac{\sigma-1}{\sigma}}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+For the CES demand function derived in Exercise 1.c compute its Slutsky matrix
+ 
+\begin_inset Formula $S(p,w)=D_{p}x^{CES}(p,w)+D_{w}x^{CES}(p,w)x^{CES}(p,w)'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+a) Check that 
+\begin_inset Formula $S(p,w)$
+\end_inset
+
+ is symmetric, negative semi-definite, and 
+\begin_inset Formula $S(p,w)p=0$
+\end_inset
+
+ (singular in prices).
+ 
+\end_layout
+
+\begin_layout Exercise
+b) Verify the Homogeneity of degree zero 
+\begin_inset Formula $x^{CES}(p,w)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Read the following chapter from Predictabily Irrational from Dan Ariely:
+ 
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset href
+LatexCommand href
+target "http://christophe.heintz.free.fr/bgt/Ariely-Predicably-Irrational-Ch3.pdf "
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+from pages 55-60.
+ Then answer: What is the zero price effect, and why it is not compatible
+ with the Utility Maximization Problem.
+ 
+\end_layout
+
+\begin_layout Exercise
+Grading: The answer was required to be short, about 2 paragraphs long.
+ The first one should contain a clear answer to the question of what is
+ the zero price effect.
+ The second paragraph should contain a clear revealed preference reasoning
+ to justify the answer.
+ The first paragraph is worth 10 points the second paragraph is worth 15
+ points.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
