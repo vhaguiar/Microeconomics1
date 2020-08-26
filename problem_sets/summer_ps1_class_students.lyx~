@@ -181,7 +181,7 @@ Solve the Utility Maximization Problem for the following utility functions,
 \end_layout
 
 \begin_layout Exercise
-For the CES demand function derived in Exercise 1.c compute its Slutsky matrix
+For the CES demand function derived in Exercise 1 compute its Slutsky matrix
  
 \begin_inset Formula $S(p,w)=D_{p}x^{CES}(p,w)+D_{w}x^{CES}(p,w)x^{CES}(p,w)'$
 \end_inset
