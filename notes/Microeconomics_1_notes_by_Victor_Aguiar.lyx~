@@ -2129,17 +2129,17 @@ Now that we have established the ingredients, so to speak, (i.e., the environmen
 \begin_layout Standard
 We will impose a set of restrictions or axioms over the Marshallian demand
  function that we expect to hold in all situations irrespective of the details.
- Here we understand modelling consumption as restricting the set of allowable
+ Here we understand modeling consumption as restricting the set of allowable
  behaviors.
  
 \end_layout
 
 \begin_layout Standard
-You may not want to call this 'modelling', but in any case, economists like
- to think of this axioms a the minimal requirements that a demand function
+You may not want to call this 'modeling', but in any case, economists like
+ to think of these axioms as the minimal requirements that a demand function
  has.
- Sadly, we must underline that this restrictions are the product of the
- instrospection of theorist and not the result of careful empirical work
+ Sadly, we must underline that these restrictions are the product of the
+ introspection of theorist and not the result of careful empirical work
  that has established them as stylized facts.
  However, the theoretical principle of requiring minimal conditions or imposing
  minimal restrictions on the set of allowable behaviors is very important
@@ -2385,7 +2385,7 @@ Slutsky Matrix
 \end_inset
 
 , is 
-\begin_inset Formula $S(p,w)=D_{p}x(p,w)+D_{w}x(p,w)x'$
+\begin_inset Formula $S(p,w)=D_{p}x(p,w)+D_{w}x(p,w)x(p,w)'$
 \end_inset
 
  or the total change of demand with respect to a 
