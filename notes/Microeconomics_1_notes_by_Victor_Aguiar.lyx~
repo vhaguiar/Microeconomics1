@@ -1406,7 +1406,7 @@ Where
 \begin_inset Formula $P$
 \end_inset
 
- are the antisymmetric parts of 
+ are the asymmetric parts of 
 \begin_inset Formula $\succeq$
 \end_inset
 
@@ -4833,6 +4833,10 @@ Case 1:
 \end_layout
 
 \begin_layout Example
+Case 2:
+\end_layout
+
+\begin_layout Example
 \begin_inset Formula $p_{1}=p_{2}$
 \end_inset
 
@@ -4841,6 +4845,22 @@ Case 1:
 \end_inset
 
 , this is a violation of my theorem because of lack of strict convexity.
+ 
+\end_layout
+
+\begin_layout Example
+Case 3: 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $x_{1}=\frac{w}{p_{1}},x_{2}=0$
+\end_inset
+
+ when 
+\begin_inset Formula $p_{1}\leq p_{2}$
+\end_inset
+
+.
  
 \end_layout
 
@@ -4985,7 +5005,8 @@ The Slutsky Matrix
 \end_layout
 
 \begin_layout Enumerate
-If there is a unique solution to the UMP it follows that if 
+(Strong Axiom of Revealed Preference, SARP) If there is a unique solution
+ to the UMP it follows that if 
 \begin_inset Formula $x^{1}R^{D}x^{2}R^{D}x^{3}\cdots R^{D}x^{n}$
 \end_inset
 
@@ -4994,6 +5015,41 @@ If there is a unique solution to the UMP it follows that if
 \end_inset
 
  (acyclicity).
+ Equivalently, if 
+\begin_inset Formula $x^{1}R^{D}x^{2}R^{D}x^{3}\cdots R^{D}x^{n}$
+\end_inset
+
+ then it cannot be that 
+\begin_inset Formula $x^{n}P^{D}x^{1}$
+\end_inset
+
+.
+ Suposse that 
+\begin_inset Formula $x_{1}=x_{n}$
+\end_inset
+
+, if 
+\begin_inset Formula $x^{1}R^{D}x^{2}R^{D}x^{3}\cdots R^{D}x^{n}$
+\end_inset
+
+ by utility maximization it has to be that 
+\begin_inset Formula $u(x^{1})\geq u(x^{2})\geq u(x^{3})\geq\cdots\geq u(x^{n})$
+\end_inset
+
+, by transitivity it has to be that 
+\begin_inset Formula $u(x^{1})\geq u(x^{n})$
+\end_inset
+
+, by the uniqueness of the solution assumption we strengthen the weak inequaliti
+es to strong inequalities and conclude that 
+\begin_inset Formula $u(x^{1})>u(x^{n})$
+\end_inset
+
+, this contradicts the assumption that 
+\begin_inset Formula $x^{1}=x^{n}$
+\end_inset
+
+.
  
 \end_layout
 
@@ -5587,7 +5643,7 @@ Additional Properties
 \begin_layout Standard
 1.
  
-\begin_inset Formula $D_{p}h(p,u)=\mathcal{H}e(p,u)$
+\begin_inset Formula $D_{p}h(p,u)=\mathcal{H}e(p,u)=(\partial_{p_{k}}\partial_{p_{l}}e(p,u))$
 \end_inset
 
  the derivative with respect to prices of the Hicksian demand is the Hessian
@@ -5622,7 +5678,11 @@ Additional Properties
 \begin_inset Formula $e$
 \end_inset
 
-)
+), i.e., 
+\begin_inset Formula $\partial_{p_{k}}\partial_{p_{l}}e(p,u)=\partial_{p_{l}}\partial_{p_{k}}e(p,u)$
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
@@ -5688,6 +5748,11 @@ By Sheppard's lemma and by the identities that relate the expenditure and
 \end_layout
 
 \begin_layout Standard
+Slutsky 
+\series bold
+Equation
+\series default
+:
 \begin_inset Formula 
 \[
 D_{p}h(p,v(p,w))=D_{p}x(p,w)+D_{w}x(p,w)x(p,w)'.
@@ -5712,7 +5777,11 @@ A demand function
 \begin_inset Formula $S(p,w)$
 \end_inset
 
- is symmetric and NSD.
+ is symmetric and NSD (and 
+\begin_inset Formula $S(p,w)p=0$
+\end_inset
+
+).
  
 \end_layout
 

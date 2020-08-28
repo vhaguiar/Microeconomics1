@@ -1406,7 +1406,7 @@ Where
 \begin_inset Formula $P$
 \end_inset
 
- are the antisymmetric parts of 
+ are the asymmetric parts of 
 \begin_inset Formula $\succeq$
 \end_inset
 
@@ -4833,6 +4833,10 @@ Case 1:
 \end_layout
 
 \begin_layout Example
+Case 2:
+\end_layout
+
+\begin_layout Example
 \begin_inset Formula $p_{1}=p_{2}$
 \end_inset
 
@@ -4841,6 +4845,22 @@ Case 1:
 \end_inset
 
 , this is a violation of my theorem because of lack of strict convexity.
+ 
+\end_layout
+
+\begin_layout Example
+Case 3: 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $x_{1}=\frac{w}{p_{1}},x_{2}=0$
+\end_inset
+
+ when 
+\begin_inset Formula $p_{1}\leq p_{2}$
+\end_inset
+
+.
  
 \end_layout
 
@@ -4918,10 +4938,62 @@ WARP.
 \end_inset
 
  I conclude that 
-\begin_inset Formula $x^{1}$
+\begin_inset Formula $x^{1}R^{D}x^{2}$
 \end_inset
 
+.
+ WARP requires that if 
+\begin_inset Formula $x^{1}R^{D}x^{2}$
+\end_inset
 
+ then it cannot happen that 
+\begin_inset Formula $x^{2}P^{D}x^{1}$
+\end_inset
+
+ (i.e., it cannot be that 
+\begin_inset Formula $p^{2}x^{2}>p^{2}x^{1}$
+\end_inset
+
+).
+ If 
+\begin_inset Formula $x^{i}\in argmax_{x}u(x)$
+\end_inset
+
+ subject to 
+\begin_inset Formula $p^{i\prime}x\leq p^{i\prime}x^{i}=w^{i}$
+\end_inset
+
+ for 
+\begin_inset Formula $i=\{1,2\}$
+\end_inset
+
+, then (
+\begin_inset Formula $p^{1},x^{1}),(p^{2},x^{2})$
+\end_inset
+
+ satisfies WARP.
+ Proof: If I observe that 
+\begin_inset Formula $p^{1}x^{1}\geq p^{1}x^{2}$
+\end_inset
+
+, this means that 
+\begin_inset Formula $u(x^{1})\geq u(x^{2})$
+\end_inset
+
+, assume towards contradiction that 
+\begin_inset Formula $p^{2}x^{2}>p^{2}x^{1}$
+\end_inset
+
+ this means that 
+\begin_inset Formula $u(x^{2})>u(x^{1})$
+\end_inset
+
+, but this is a contradiction of the fact that 
+\begin_inset Formula $u(x^{1})\geq u(x^{2})$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Enumerate
@@ -4930,6 +5002,32 @@ The Slutsky Matrix
 \end_inset
 
  is NSD, singular in prices and symmetric.
+\end_layout
+
+\begin_layout Enumerate
+If there is a unique solution to the UMP it follows that if 
+\begin_inset Formula $x^{1}R^{D}x^{2}R^{D}x^{3}\cdots R^{D}x^{n}$
+\end_inset
+
+ then it has to be that 
+\begin_inset Formula $x^{1}\neq x^{n}$
+\end_inset
+
+ (acyclicity).
+ Equivalently, if 
+\begin_inset Formula $x^{1}R^{D}x^{2}R^{D}x^{3}\cdots R^{D}x^{n}$
+\end_inset
+
+ then it cannot be that 
+\begin_inset Formula $x^{n}P^{D}x^{1}$
+\end_inset
+
+.
+ Suposse that 
+\begin_inset Formula $x_{1}=x_{n}$
+\end_inset
+
+, 
 \end_layout
 
 \begin_layout Section
