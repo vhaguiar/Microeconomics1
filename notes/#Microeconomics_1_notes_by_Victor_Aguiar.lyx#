@@ -127,7 +127,7 @@ Microeconomics I.
 \end_layout
 
 \begin_layout Author
-VictLor H.
+Victor H.
  Aguiar 
 \end_layout
 
@@ -6174,6 +6174,26 @@ Let
 
 \end_layout
 
+\begin_layout Example
+\begin_inset Formula $X=\{l1,l2,l3\}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathcal{B}=\{l1,l2\},\{l1,l2,l3\}$
+\end_inset
+
+, 
+\begin_inset Formula $c(\{l1,l2\})=\{l1\}$
+\end_inset
+
+, 
+\begin_inset Formula $c(\{l1,l2,l3\}=\{l2,l3\}$
+\end_inset
+
+.
+ 
+\end_layout
+
 \begin_layout Definition
 Rationalizable choice correspondence.
  
@@ -6625,6 +6645,17 @@ We conclude that the household preference relation is given by:
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\{O,R,I\}$
+\end_inset
+
+, 
+\begin_inset Formula $c_{F}(\{O,R,I\})=\emptyset.$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 - Utility function is 
 \begin_inset Formula $u:X\mapsto\mathbb{R}$
@@ -6772,7 +6803,7 @@ Weak Axiom of Revealed Preference (WARP).
 \begin_inset Formula $a$
 \end_inset
 
- is revealed preferred to 
+ is (indirect) revealed preferred to 
 \begin_inset Formula $b$
 \end_inset
 
@@ -6958,7 +6989,7 @@ We say that
 \end_inset
 
  when 
-\begin_inset Formula $c(B)=C^{*}(B,\succeq)$
+\begin_inset Formula $c(B)=c^{*}(B,\succeq)$
 \end_inset
 
 .
@@ -7550,7 +7581,28 @@ Assume towards contradiction that GARP fails and the dataset is rationalized
 \begin_inset Formula $y\succ x$
 \end_inset
 
-, but this is a contradiction of transi
+.
+ Indeed, this implies there is a sequence 
+\begin_inset Formula $x^{1},x^{2},\cdots,x^{n}$
+\end_inset
+
+ such that 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x\succeq x^{1}\succeq x^{2}\succeq\cdots\succeq x^{n}\succeq y\succ x,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+this is a violation of transitivity.
+ 
 \end_layout
 
 \begin_layout Standard

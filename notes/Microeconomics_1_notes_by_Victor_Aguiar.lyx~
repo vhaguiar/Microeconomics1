@@ -6174,6 +6174,26 @@ Let
 
 \end_layout
 
+\begin_layout Example
+\begin_inset Formula $X=\{l1,l2,l3\}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathcal{B}=\{l1,l2\},\{l1,l2,l3\}$
+\end_inset
+
+, 
+\begin_inset Formula $c(\{l1,l2\})=\{l1\}$
+\end_inset
+
+, 
+\begin_inset Formula $c(\{l1,l2,l3\}=\{l2,l3\}$
+\end_inset
+
+.
+ 
+\end_layout
+
 \begin_layout Definition
 Rationalizable choice correspondence.
  
