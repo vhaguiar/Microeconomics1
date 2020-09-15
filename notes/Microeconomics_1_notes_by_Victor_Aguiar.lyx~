@@ -5951,8 +5951,11 @@ since
 \end_layout
 
 \begin_layout Standard
-The Equivalent variation is the amount of money the consumer is willing
- to pay to avoid a price change.
+The Equivalent variation is the amount of money the consumer is 
+\series bold
+willing to pay
+\series default
+ to avoid a price change.
  
 \end_layout
 
@@ -5995,8 +5998,11 @@ CV(p^{0},p^{1},w)=e(p^{1},v(p^{1},w))-e(p^{1},v(p^{0},w))=w-e(p^{1},v(p^{0},w)).
 \end_layout
 
 \begin_layout Standard
-How much must I compensate you to make you as well off as you were before
- the price change?
+How much must
+\series bold
+ I compensate you
+\series default
+ to make you as well-off as you were before the price change?
 \end_layout
 
 \begin_layout Standard

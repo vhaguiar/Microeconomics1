@@ -3088,7 +3088,7 @@ The demand functions for this model are:
 \begin_layout Standard
 \begin_inset Formula 
 \[
-x_{1}=\gamma_{1}-\frac{\beta_{1}}{p_{1}}(w-p_{1}\gamma_{1}-p_{2}\gamma_{x2})
+x_{1}=\gamma_{1}-\frac{\beta_{1}}{p_{1}}(w-p_{1}\gamma_{1}-p_{2}\gamma_{2})
 \]
 
 \end_inset
@@ -3099,7 +3099,7 @@ x_{1}=\gamma_{1}-\frac{\beta_{1}}{p_{1}}(w-p_{1}\gamma_{1}-p_{2}\gamma_{x2})
 \begin_layout Standard
 \begin_inset Formula 
 \[
-x_{2}=\gamma_{2}+\frac{\beta_{2}}{p_{2}}(w-p_{1}\gamma_{1}-p_{2}\gamma_{x2})
+x_{2}=\gamma_{2}+\frac{\beta_{2}}{p_{2}}(w-p_{1}\gamma_{1}-p_{2}\gamma_{2})
 \]
 
 \end_inset

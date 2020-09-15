@@ -132,7 +132,7 @@ Victor H.
 \end_layout
 
 \begin_layout Date
-This version: August 2019
+This version: August 2020
 \end_layout
 
 \begin_layout Exercise
@@ -216,8 +216,43 @@ Consider the following problem, the consumer has a continuous utility function
  in this part).
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
+(i) First define the budget constraint 
+\begin_inset Formula $B(p,w)=\{x\in X:b(x,p)\leq w\}$
+\end_inset
 
+, the UMP is the following: 
+\begin_inset Formula $max_{x\geq0}u(x)$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $b(x,p)\leq w\iff x\in B(p,w)$
+\end_inset
+
+.
+ For this problem to have a solution you need that 
+\begin_inset Formula $u$
+\end_inset
+
+ is continuous, and 
+\begin_inset Formula $B(p,w)$
+\end_inset
+
+ is compact, it has to be that 
+\begin_inset Formula $b(x,p)-w\leq0$
+\end_inset
+
+, 
+\begin_inset Formula $b(\cdot,p)$
+\end_inset
+
+ bounded function that is also continuous.
+ (ii) 
+\begin_inset Formula $b(\cdot,p)$
+\end_inset
+
+ is a
 \end_layout
 
 \begin_layout Standard
