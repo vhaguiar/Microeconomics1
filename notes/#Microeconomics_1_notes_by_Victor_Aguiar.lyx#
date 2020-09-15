@@ -7550,28 +7550,7 @@ Assume towards contradiction that GARP fails and the dataset is rationalized
 \begin_inset Formula $y\succ x$
 \end_inset
 
-.
- Indeed, this implies there is a sequence 
-\begin_inset Formula $x^{1},x^{2},\cdots,x^{n}$
-\end_inset
-
- such that 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-x\succeq x^{1}\succeq x^{2}\succeq\cdots\succeq x^{n}\succeq y\succ x,
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-this is a violation of transitivity.
- 
+, but this is a contradiction of transi
 \end_layout
 
 \begin_layout Standard

@@ -3088,7 +3088,7 @@ The demand functions for this model are:
 \begin_layout Standard
 \begin_inset Formula 
 \[
-x_{1}=\gamma_{1}-\frac{\beta_{1}}{p_{1}}(w-p_{1}\gamma_{1}-p_{2}\gamma_{x2})
+x_{1}=\gamma_{1}-\frac{\beta_{1}}{p_{1}}(w-p_{1}\gamma_{1}-p_{2}\gamma_{2})
 \]
 
 \end_inset
@@ -3099,7 +3099,7 @@ x_{1}=\gamma_{1}-\frac{\beta_{1}}{p_{1}}(w-p_{1}\gamma_{1}-p_{2}\gamma_{x2})
 \begin_layout Standard
 \begin_inset Formula 
 \[
-x_{2}=\gamma_{2}+\frac{\beta_{2}}{p_{2}}(w-p_{1}\gamma_{1}-p_{2}\gamma_{x2})
+x_{2}=\gamma_{2}+\frac{\beta_{2}}{p_{2}}(w-p_{1}\gamma_{1}-p_{2}\gamma_{2})
 \]
 
 \end_inset
@@ -6660,130 +6660,6 @@ A preference relation
  
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-if 
-\begin_inset Formula $\succeq$
-\end_inset
-
- binary relation is represented by 
-\begin_inset Formula $u$
-\end_inset
-
-, it means that 
-\begin_inset Formula $u(a)\geq u(b)$
-\end_inset
-
- iff 
-\begin_inset Formula $a\succeq b$
-\end_inset
-
- (by the definition of representability).
- 
-\end_layout
-
-\begin_layout Standard
-(i) 
-\begin_inset Formula $\succeq$
-\end_inset
-
- is complete.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $a\succeq b$
-\end_inset
-
- or 
-\begin_inset Formula $b\succeq a$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $u(a)\geq u(b)$
-\end_inset
-
- or 
-\begin_inset Formula $u(b)\geq u(a)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-(ii) 
-\begin_inset Formula $\succeq$
-\end_inset
-
- is transitive.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $a\succeq b$
-\end_inset
-
- and 
-\begin_inset Formula $b\succeq c$
-\end_inset
-
- this means 
-\begin_inset Formula $u(a)\geq u(b)$
-\end_inset
-
- and 
-\begin_inset Formula $u(b)\geq u(c)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $u(a)\geq u(c)$
-\end_inset
-
- then 
-\begin_inset Formula $a\succeq c$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Choice Rules
 \end_layout
@@ -6831,35 +6707,30 @@ Weak Axiom of Revealed Preference (WARP).
 \end_layout
 
 \begin_layout Standard
-If 
-\begin_inset Formula $x$
+\begin_inset Separator plain
 \end_inset
 
- is revealed at least preferred to 
-\begin_inset Formula $y$
-\end_inset
 
- then 
-\begin_inset Formula $y$
-\end_inset
-
- cannot be revealed strictly preferred to 
-\begin_inset Formula $x$
-\end_inset
-
-.
- 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula $\succeq^{*}:$
+\begin_layout Definition
+(Revealed Preferences) 
+\begin_inset Formula $\succeq^{D}:$
 \end_inset
 
- 
-\begin_inset Formula $a\succeq^{*}b\iff$
+ We say 
+\begin_inset Formula $a$
 \end_inset
 
- 
+ is directly revealed preferred to 
+\begin_inset Formula $b$
+\end_inset
+
+ (
+\begin_inset Formula $a\succeq^{D}b$
+\end_inset
+
+) whenever 
 \begin_inset Formula $a\in c(B)$
 \end_inset
 
@@ -6872,17 +6743,92 @@ If
 \end_inset
 
 .
+ We say 
+\begin_inset Formula $a$
+\end_inset
+
+ is directly and strictly revealed preferred to 
+\begin_inset Formula $b$
+\end_inset
+
+ (
+\begin_inset Formula $a\succ^{D}b)$
+\end_inset
+
+ whenever 
+\begin_inset Formula $a,b\in B$
+\end_inset
+
+ and 
+\begin_inset Formula $a\in c(B),$
+\end_inset
+
+ 
+\begin_inset Formula $b\notin c(B)$
+\end_inset
+
+.
+ We say 
+\begin_inset Formula $a$
+\end_inset
+
+ is revealed preferred to 
+\begin_inset Formula $b$
+\end_inset
+
+ (
+\begin_inset Formula $a\succeq^{*}b$
+\end_inset
+
+) if there is some sequence of items 
+\begin_inset Formula $a^{1},a^{2},\cdots,a^{n}\in X$
+\end_inset
+
+ such that 
+\begin_inset Formula $a\succeq^{D}a^{1}\succeq^{D}a^{2}\succeq\cdots\succeq a^{n}\succeq b$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+WARP.
+ If 
+\begin_inset Formula $x$
+\end_inset
+
+ is directly revealed preferred to 
+\begin_inset Formula $y$
+\end_inset
+
+ then 
+\begin_inset Formula $y$
+\end_inset
+
+ cannot be strictly revealed preferred to 
+\begin_inset Formula $x$
+\end_inset
+
+.
  
 \end_layout
 
 \begin_layout Standard
 WARP.
  If 
-\begin_inset Formula $x\succeq^{*}y$
+\begin_inset Formula $x\succeq^{D}y$
 \end_inset
 
  then 
-\begin_inset Formula $\lnot y\succ^{*}x$
+\begin_inset Formula $\lnot y\succ^{D}x$
 \end_inset
 
 .
@@ -7076,15 +7022,15 @@ My objective is to build a model:
 
 \begin_layout Standard
 First we propose 
-\begin_inset Formula $\succeq\equiv\succeq^{*}$
+\begin_inset Formula $\succeq\equiv\succeq^{D}$
 \end_inset
 
  where 
-\begin_inset Formula $\succeq^{*}$
+\begin_inset Formula $\succeq^{D}$
 \end_inset
 
  is the revealed preference relation defined as 
-\begin_inset Formula $x\succeq^{*}y\iff x\in C(B)$
+\begin_inset Formula $x\succeq^{D}y\iff x\in C(B)$
 \end_inset
 
  and 
@@ -7246,7 +7192,7 @@ If
 \end_inset
 
  this means that 
-\begin_inset Formula $x\succeq^{*}y$
+\begin_inset Formula $x\succeq^{D}y$
 \end_inset
 
  for all 
@@ -7314,6 +7260,317 @@ Finally, for uniqueness, note that
 
  being rich includes all pairs thus we determine completely the preferences
  over pairs.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+What about general datasets (e.g., datasets that may not contain all triples
+ and tuples).
+ It turns out that WARP is not sufficient to guarantee that such a dataset
+ can be rationalized by a rational preference function.
+ We need a stronger version of WARP.
+ 
+\end_layout
+
+\begin_layout Definition
+Generalized Axiom of Revealed Preference (GARP).
+ We say that a dataset satisfies GARP if for any 
+\begin_inset Formula $x,y\in X$
+\end_inset
+
+ such that 
+\begin_inset Formula $x\succeq^{*}y$
+\end_inset
+
+ (x is revealed preferred–indirectly– to 
+\begin_inset Formula $y$
+\end_inset
+
+) it is not the case that 
+\begin_inset Formula $y\succ^{D}x$
+\end_inset
+
+ (
+\begin_inset Formula $y$
+\end_inset
+
+ is directly and strictly revealed preferred to 
+\begin_inset Formula $x$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Now we will prove the main result of this chapter.
+ 
+\end_layout
+
+\begin_layout Theorem
+The following are equivalent:
+\end_layout
+
+\begin_layout Theorem
+(i) The choice structure/dataset 
+\begin_inset Formula $(\mathcal{B},c)$
+\end_inset
+
+ satisfies GARP.
+ 
+\end_layout
+
+\begin_layout Theorem
+(ii) The choice structure/dataset 
+\begin_inset Formula $(\mathcal{B},c)$
+\end_inset
+
+ can be rationalized by a rational preference relation 
+\begin_inset Formula $\succeq$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sufficiency.
+\end_layout
+
+\begin_layout Standard
+First define 
+\begin_inset Formula $\succ^{*}$
+\end_inset
+
+ as the asymmetric part of the revealed preference relation 
+\begin_inset Formula $\succeq^{*}$
+\end_inset
+
+, such that 
+\begin_inset Formula $a\succ^{*}b$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $a\succeq^{*}b$
+\end_inset
+
+ and not 
+\begin_inset Formula $b\succeq^{*}a$
+\end_inset
+
+.
+ GARP implies that 
+\begin_inset Formula $\succ^{D}$
+\end_inset
+
+ is in 
+\begin_inset Formula $\succ^{*}$
+\end_inset
+
+.
+ Notice as well that 
+\begin_inset Formula $\succeq^{*}$
+\end_inset
+
+ is in the transitive closure of 
+\begin_inset Formula $\succeq^{D}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Then we can use Proposition 1 in Chapter 1 (order theory) to claim that
+ there exists a complete and transitive preference relation 
+\begin_inset Formula $\succeq$
+\end_inset
+
+ such that 
+\begin_inset Formula $x\succeq^{*}y$
+\end_inset
+
+ implies 
+\begin_inset Formula $x\succeq y$
+\end_inset
+
+ and 
+\begin_inset Formula $x\succ^{D}y$
+\end_inset
+
+ implies 
+\begin_inset Formula $x\succ y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Thus,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x\in c(A)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+implies that 
+\begin_inset Formula $x\succeq^{D}y$
+\end_inset
+
+ for all 
+\begin_inset Formula $y\in A$
+\end_inset
+
+, this implies that 
+\begin_inset Formula $x\succeq y$
+\end_inset
+
+ for all 
+\begin_inset Formula $y\in A$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Also, 
+\begin_inset Formula $x\notin c(A)$
+\end_inset
+
+ implies that there exists 
+\begin_inset Formula $y\in A$
+\end_inset
+
+ such that 
+\begin_inset Formula $y\succ^{D}x$
+\end_inset
+
+, this implies that 
+\begin_inset Formula $y\succ x$
+\end_inset
+
+ and not 
+\begin_inset Formula $x\succ y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Together this implies that 
+\begin_inset Formula $c(A)=\{x\in A|x\succeq y\quad\forall y\in A\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Necessity.
+ 
+\end_layout
+
+\begin_layout Standard
+Assume towards contradiction that GARP fails and the dataset is rationalized
+ by a rational preference 
+\begin_inset Formula $\succeq$
+\end_inset
+
+.
+ In other words, 
+\begin_inset Formula $x\succeq^{*}y$
+\end_inset
+
+ and 
+\begin_inset Formula $y\succ^{D}x$
+\end_inset
+
+ for some 
+\begin_inset Formula $x,y\in X$
+\end_inset
+
+, but because this is the result of maximizing a rational preference 
+\begin_inset Formula $\succeq$
+\end_inset
+
+, it follows that 
+\begin_inset Formula $x\succeq y$
+\end_inset
+
+ and 
+\begin_inset Formula $y\succ x$
+\end_inset
+
+.
+ Indeed, this implies there is a sequence 
+\begin_inset Formula $x^{1},x^{2},\cdots,x^{n}$
+\end_inset
+
+ such that 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x\succeq x^{1}\succeq x^{2}\succeq\cdots\succeq x^{n}\succeq y\succ x,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+this is a violation of transitivity.
  
 \end_layout
 
