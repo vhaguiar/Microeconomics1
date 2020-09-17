@@ -1020,7 +1020,7 @@ First let's note that any binary relation can be separated into its symmetric
 \begin_inset Formula $P$
 \end_inset
 
- is a partial order (strict preferences).
+ is a transitive, asymmetric and irreflexive order (strict preferences).
  
 \end_layout
 
@@ -7622,491 +7622,6 @@ end{proof}
 \end_layout
 
 \begin_layout Chapter
-Consumer Choice (MGW Ch.
- 2)
-\end_layout
-
-\begin_layout Section
-Introduction.
- 
-\end_layout
-
-\begin_layout Standard
-We define a Walrasian demand function 
-\begin_inset Formula $x:P\times W\mapsto X$
-\end_inset
-
-, where 
-\begin_inset Formula $P$
-\end_inset
-
- is the price domain and 
-\begin_inset Formula $W$
-\end_inset
-
- is the wealth domain and 
-\begin_inset Formula $X$
-\end_inset
-
- is the choice set.
- We recall, 
-\begin_inset Formula $X\subseteq\mathbb{R}^{L}$
-\end_inset
-
-, 
-\begin_inset Formula $L$
-\end_inset
-
- was the number of commodities.
-\end_layout
-
-\begin_layout Standard
-- Walras' Law 
-\begin_inset Formula $p'x(p,w)=w$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-- HD0 (No money illusion) 
-\begin_inset Formula $x(\alpha p,\alpha w)=x(p,w)$
-\end_inset
-
- 
-\begin_inset Formula $\alpha>0$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Proposition
-If the Walrasian demand function 
-\begin_inset Formula $x(p,w)$
-\end_inset
-
- satisfies HD0 then for all 
-\begin_inset Formula $p,w$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-D_{p}x(p,w)p+D_{w}x(p,w)w=0.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In elasticity form.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\epsilon_{lk}(p,w)=\partial_{p_{k}}x_{l}(p,w)\frac{p_{k}}{x_{l}(p,w)}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\epsilon_{lw}(p,w)=\partial_{w}x_{l}(p,w)\frac{w}{x_{l}(p,w)}.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-We can express the previous condition as:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\sum_{k=1}^{L}\epsilon_{lk}(p,w)+\epsilon_{lw}(p,w)=0,
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-for all 
-\begin_inset Formula $l=1,\cdots,L$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-An equal percentage change in all prices and wealth implies no change in
- demand.
- 
-\end_layout
-
-\begin_layout Proposition
-If the Walrasian demand 
-\begin_inset Formula $x(p,w)$
-\end_inset
-
- satisfies Walras' law then.
-\end_layout
-
-\begin_layout Itemize
-The total expenditure cannot change in response to a change in prices: 
-\begin_inset Formula $p'D_{p}x(p,w)+x(p,w)'=0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Total expenditure must change by an amount equal to any wealth change: 
-\begin_inset Formula $p'D_{w}x(p,w)=1$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-In budget share form:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-b_{l}(p,w)=p_{l}x_{l}(p,w)/w.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-We have:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\sum_{l=1}^{L}b_{l}(p,w)\epsilon_{lk}(p,w)+b_{k}(p,w)=0.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\sum_{l=1}^{L}b_{l}(p,w)\epsilon_{lw}(p,w)=1.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-The Weak Axiom of Revealed Preference and the Law of Demand.
- 
-\end_layout
-
-\begin_layout Definition
-The Walrasian demand function 
-\begin_inset Formula $x(p,w)$
-\end_inset
-
- satisfies the weak axiom of revealed preference if the following property
- holds for any two price wealth situations 
-\begin_inset Formula $(p,w)$
-\end_inset
-
- and 
-\begin_inset Formula $(p^{*},w^{*})$
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Definition
-If 
-\begin_inset Formula $p'x(p^{*},w^{*})\leq w$
-\end_inset
-
- and 
-\begin_inset Formula $x(p,w)\neq x(p^{*},w^{*})$
-\end_inset
-
- then 
-\begin_inset Formula $p^{*\prime}x(p,w)>w^{*}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The implications of the WARP are:
-\end_layout
-
-\begin_layout Definition
-(CLD) We say that 
-\begin_inset Formula $x$
-\end_inset
-
- satisfies the Compensated Law of Demand if and only if 
-\begin_inset Formula $(p*-p)'(x(p^{*},w^{*})-x(p,w))<0$
-\end_inset
-
- when 
-\begin_inset Formula $x(p^{*},w^{*})\neq x(p,w)$
-\end_inset
-
- and 
-\begin_inset Formula $w^{*}=(p^{*})'x(p,w)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-We are going to establish that WARP implies the Law of Demand.
- 
-\end_layout
-
-\begin_layout Proposition
-Let 
-\begin_inset Formula $x$
-\end_inset
-
- satisfy the Walras' law and WARP then 
-\begin_inset Formula $x$
-\end_inset
-
- satisfies the CLD.
- 
-\end_layout
-
-\begin_layout Standard
-Also in differential terms.
- We say that the 
-\series bold
-Slutsky Matrix
-\series default
- of a demand function 
-\begin_inset Formula $x$
-\end_inset
-
-, is 
-\begin_inset Formula $S(p,w)=D_{p}x(p,w)+D_{w}x(p,w)x'$
-\end_inset
-
- or the total change of demand with respect to a 
-\begin_inset Quotes eld
-\end_inset
-
-Slutsky compensated variation of prices
-\begin_inset Quotes erd
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Corollary
-Let 
-\begin_inset Formula $x$
-\end_inset
-
- satisfy the Walras' law and WARP then 
-\begin_inset Formula $x$
-\end_inset
-
- is such that 
-\begin_inset Formula $S(p,w)$
-\end_inset
-
- is negative semi-definite (
-\begin_inset Formula $S(p,w)\leq0$
-\end_inset
-
-) for all price-wealth pairs.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{proof}
-\end_layout
-
-\end_inset
-
- We have by Slutsky compensation that 
-\begin_inset Formula $dw=x(p,w)'dp$
-\end_inset
-
-, also we have the CLD 
-\begin_inset Formula $dp'dx\leq0$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $dx=D_{p}x(p,w)dp+D_{w}x(p,w)dw$
-\end_inset
-
- by the total differential of 
-\begin_inset Formula $x$
-\end_inset
-
-, now because the wealth compensation in the Slutsky sense 
-\begin_inset Formula $dw=x(p,w)'dp$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $dx=D_{p}x(p,w)dp+D_{w}x(p,w)x(p,w)'dp$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-By the CLD, we have
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $dp'dx=dp'D_{p}x(p,w)dp+dp'D_{w}x(p,w)x(p,w)'dp$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-This means 
-\begin_inset Formula $dp'dx=dp'S(p,w)dp$
-\end_inset
-
-, recall that any 
-\begin_inset Formula $v\in\mathbb{R}^{L}$
-\end_inset
-
- can be written as 
-\begin_inset Formula $\alpha dp$
-\end_inset
-
- for some scalar 
-\begin_inset Formula $\alpha$
-\end_inset
-
- thus, 
-\begin_inset Formula $S(p,w)\leq0$
-\end_inset
-
- is NSD.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Other results include 
-\begin_inset Formula $S(p,w)p=0$
-\end_inset
-
- and 
-\begin_inset Formula $p'S(p,w)=0$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Definition
-Rationalizable Demand.
- We say 
-\begin_inset Formula $x$
-\end_inset
-
- (Walrasian Demand) is rationalizable if and only if there exists a preference
- relation 
-\begin_inset Formula $\succeq$
-\end_inset
-
- on 
-\begin_inset Formula $X$
-\end_inset
-
- such that if 
-\begin_inset Formula $p^{t\prime}x^{t}=w^{t}\geq p^{t'}y$
-\end_inset
-
- this implies that 
-\begin_inset Formula $u(x^{t})\geq u(y)$
-\end_inset
-
-, where 
-\begin_inset Formula $x^{t}=x(p^{t},w^{t})$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Chapter
 Consumer Theory: Utility Maximization.
  (Ch.
  3).
@@ -9728,7 +9243,7 @@ Imagine I want to model a data set
 \begin_inset Formula $((p_{l}^{t})_{l=1}^{L},(x_{l}^{t})_{l=1}^{L})_{t\in T}$
 \end_inset
 
-
+ with no income effects (quasilinear).
 \end_layout
 
 \begin_layout Example
@@ -11204,7 +10719,7 @@ This is a a Cobb Douglas Utility function.
 \end_layout
 
 \begin_layout Section
-Revealed Preference Theory / Strong Axiom of Revealed Preference
+Generalized Axiom of Revealed Preference
 \end_layout
 
 \begin_layout Standard
@@ -11277,6 +10792,641 @@ Using some ideas from order theory we can as well that
 
 .
  
+\end_layout
+
+\begin_layout Standard
+In the previous treatment of rationality we did not allowed for correspondences,
+ we only allowed for functions.
+ But what happens for cases when we observe for the same prices 
+\begin_inset Formula $p^{t}=p^{s}$
+\end_inset
+
+ different demand choices 
+\begin_inset Formula $x^{t}\neq x^{s}$
+\end_inset
+
+ such that 
+\begin_inset Formula $p^{t\prime}x^{t}=p^{s\prime}x^{s}$
+\end_inset
+
+, recall that this is a case where from the same budget set two different
+ choice bundles are chosen (this can be seen as the case of a correspondence
+ generating the data).
+ 
+\end_layout
+
+\begin_layout Definition
+A dataset 
+\begin_inset Formula $O=\{p^{k},x^{k}\}_{k=0}^{K}$
+\end_inset
+
+ is said to satisfies GARP if an only if 
+\begin_inset Formula $R$
+\end_inset
+
+ admits Only Weak Cycles (OWC), i.e., if 
+\begin_inset Formula $x^{1}Rx^{2}\cdots Rx^{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $x^{n}R^{D}x^{1}$
+\end_inset
+
+ then it must be the case that 
+\begin_inset Formula $x^{1}Ix^{n}$
+\end_inset
+
+, where 
+\begin_inset Formula $I$
+\end_inset
+
+ is the symmetric part of 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proposition
+(Afriat's Theorem) Given 
+\begin_inset Formula $\mathcal{O}=\{p^{k},x^{k}\}_{k=1}^{K}$
+\end_inset
+
+, the following are equivalent:
+\end_layout
+
+\begin_layout Proposition
+1.
+ There exists a locally nonsatiated utility function 
+\begin_inset Formula $u$
+\end_inset
+
+ that rationalizes the data in the sense that for all 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $u(x^{k})\geq u(x)$
+\end_inset
+
+ for all 
+\begin_inset Formula $x$
+\end_inset
+
+ such that 
+\begin_inset Formula $p^{k\prime}x^{t}\geq p^{k\prime}x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proposition
+2.
+ The dataset 
+\begin_inset Formula $\mathcal{O}=\{p^{k},x^{k}\}_{k=1}^{K}$
+\end_inset
+
+ satisfies GARP.
+ 
+\end_layout
+
+\begin_layout Proposition
+3.
+ There exist a positive solution 
+\begin_inset Formula $(u^{t},\lambda^{t})$
+\end_inset
+
+ to the set of linear inequalites
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula 
+\[
+u^{t}\leq u^{s}+\lambda^{s}p^{s\prime}(x^{t}-x^{s})\forall s,t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+4.
+ There exists a continuous, concave, and strictly monotonic, utility function
+ 
+\begin_inset Formula $u$
+\end_inset
+
+ that rationalizes the data in the sense that for all 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $u(x^{k})\geq u(x)$
+\end_inset
+
+ for all 
+\begin_inset Formula $x$
+\end_inset
+
+ such that 
+\begin_inset Formula $p^{k\prime}x^{t}\geq p^{k\prime}x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Before we present the proof, notice that (4) implies (3) because of first-order-
+conditions arguments.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $u$
+\end_inset
+
+ is concave then 
+\begin_inset Formula $u(x^{t})\leq u(x^{s})+\nabla u(x^{s})'(x^{t}-x^{s})$
+\end_inset
+
+.
+ Given that 
+\begin_inset Formula $u$
+\end_inset
+
+ is assumed smooth 
+\begin_inset Formula $\nabla u$
+\end_inset
+
+ exists (super-gradient for concave functions).
+ Now, by the FOC of the UMP we know that 
+\begin_inset Formula $\nabla u(x^{s})\leq\lambda^{s}p^{s}$
+\end_inset
+
+.
+ This implies that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u(x^{t})\leq u(x^{s})+\lambda^{s}p^{s\prime}(x^{t}-x^{s})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u(x^{t})=u^{t}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(1)\implies(2),(2)\implies(3),(3)\implies(4),(4)\implies(1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(
+\begin_inset Formula $1$
+\end_inset
+
+) implies (2), 
+\end_layout
+
+\begin_layout Standard
+Assume that 
+\begin_inset Formula $\mathcal{O}$
+\end_inset
+
+ is rationalized by a nonsatiated utility function and that GARP fails,
+ then 
+\begin_inset Formula $x^{1}Rx^{2}\cdots Rx^{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $x^{n}P^{D}x^{1}$
+\end_inset
+
+ with strict preference for the last one, this means that 
+\begin_inset Formula $u(x^{1})\geq u(x^{2})\geq\cdots\geq u(x^{n})$
+\end_inset
+
+ and also that 
+\begin_inset Formula $p^{n\prime}x^{n}>p^{n\prime}x^{1}$
+\end_inset
+
+ but this means that there is a 
+\begin_inset Formula $||y-x^{1}||<\epsilon$
+\end_inset
+
+ for some 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $p^{n\prime}x^{n}>p^{n\prime}y$
+\end_inset
+
+ and such that 
+\begin_inset Formula $u(y)>u(x^{1})$
+\end_inset
+
+ by local nonsatiation.
+ This implies that 
+\begin_inset Formula $u(y)>u(x^{n})$
+\end_inset
+
+ which means that 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+ cannot be a maximizer for budget 
+\begin_inset Formula $B(p^{n},p^{n\prime}x^{n})$
+\end_inset
+
+, this is a contradiction.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(2)$
+\end_inset
+
+ implies 
+\begin_inset Formula $(3)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algorithm: Input: A set of price-quantity observations 
+\begin_inset Formula $O^{T}$
+\end_inset
+
+ satisfying GARP.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Output: Numbers 
+\begin_inset Formula $U^{t}$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda^{t}>0$
+\end_inset
+
+ for all 
+\begin_inset Formula $t\in\mathbb{T}$
+\end_inset
+
+ satisfying the inequalities in statement (i).
+ 
+\begin_inset Formula $n=K$
+\end_inset
+
+ number of observations.
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $I=\{1,...,n\}$
+\end_inset
+
+ and 
+\begin_inset Formula $B\neq\emptyset$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $m=\max(I)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Set 
+\begin_inset Formula $E=\{i\in I:x^{i}\succeq^{R}x^{m}\}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $B=\emptyset$
+\end_inset
+
+, then set 
+\begin_inset Formula $U^{m}=\lambda^{m}=1$
+\end_inset
+
+ and go to step 6; else go to step 
+\begin_inset Formula $4$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Set 
+\begin_inset Formula $U^{m}=\min_{i\in E}\min_{j\in B}\min\{U^{j}+\lambda^{j}p^{j}(x^{i}-x^{j}),U^{j}\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Set 
+\begin_inset Formula $\lambda^{m}=\max_{i\in E}\max_{j\in B}\max\{(U^{j}-U^{m}/(p^{i}(x^{j}-x^{i})),1\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Set 
+\begin_inset Formula $I=I\setminus E$
+\end_inset
+
+ and 
+\begin_inset Formula $B=B\cup E$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $I\neq\emptyset$
+\end_inset
+
+, then stop; otherwise, go to step 2.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+We now prove that this algorithm generates numbers 
+\begin_inset Formula $U^{t}$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda^{t}>0$
+\end_inset
+
+ for all 
+\begin_inset Formula $t\in K$
+\end_inset
+
+ that satisfies the inequalities in statement (i).
+ From step 4, we have: 
+\begin_inset Formula 
+\begin{align*}
+U^{m}\le U^{j}+\lambda^{j}p^{j}(x^{m}-x^{j}),
+\end{align*}
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\begin{align*}
+\lambda^{m}\geq(U^{j}-U^{m})/p^{m}(x^{j}-x^{m}),
+\end{align*}
+
+\end_inset
+
+for all 
+\begin_inset Formula $m,j\in K$
+\end_inset
+
+.
+ This implies: 
+\begin_inset Formula 
+\begin{align*}
+U^{j}-U^{m}\leq\lambda^{m}p^{m}(x^{j}-x^{m}),
+\end{align*}
+
+\end_inset
+
+for all 
+\begin_inset Formula $m,j\in$
+\end_inset
+
+
+\begin_inset Formula $K$
+\end_inset
+
+.
+ Hence, this shows that the algorithm guarantees that there exist numbers
+ 
+\begin_inset Formula $U^{t}$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda^{t}>0$
+\end_inset
+
+ for all 
+\begin_inset Formula $t\in K$
+\end_inset
+
+ satisfying the inequalities in statement (3).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(3)$
+\end_inset
+
+ implies 
+\begin_inset Formula $(4)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $u(x)=min_{t\in\{1,\cdots,K\}}\{u^{t}+\lambda^{t}p^{t\prime}(x-x^{t})\}$
+\end_inset
+
+, this function is continuous in 
+\begin_inset Formula $u$
+\end_inset
+
+ and concave, it is also strictly increasing in 
+\begin_inset Formula $x$
+\end_inset
+
+ (given that 
+\begin_inset Formula $\lambda^{t}>0$
+\end_inset
+
+, and 
+\begin_inset Formula $p^{t}>>0$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+I want to show that 
+\begin_inset Formula $u$
+\end_inset
+
+ rationalizes the dataset 
+\begin_inset Formula $\mathcal{O}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First check that if 
+\begin_inset Formula $u(x^{t})=u^{t}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Assume that 
+\begin_inset Formula $u(x^{t})=u^{m}+\lambda^{m}p^{m\prime}(x^{t}-x^{m})\leq u^{t}$
+\end_inset
+
+, but this means that the Afriat's inequality for 
+\begin_inset Formula $m,t$
+\end_inset
+
+ fails.
+ Then 
+\begin_inset Formula $u(x^{t})=u^{t}$
+\end_inset
+
+.
+ In fact, 
+\begin_inset Formula $u^{m}-u^{t}\leq\lambda^{m}p^{m\prime}(x^{m}-x^{t})$
+\end_inset
+
+ this violates (3).
+ 
+\end_layout
+
+\begin_layout Standard
+I want to show that 
+\begin_inset Formula $u(x)\leq u(x^{s})$
+\end_inset
+
+, if 
+\begin_inset Formula $p^{s\prime}x^{s}\geq p^{s\prime}x\cdot$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $p^{s\prime}x^{s}\geq p^{s\prime}x$
+\end_inset
+
+, or 
+\begin_inset Formula $p^{s\prime}(x^{s}-x)\geq0$
+\end_inset
+
+, then 
+\begin_inset Formula $u(x)=min_{t}\{u^{t}+\lambda^{t}p^{t\prime}(x-x^{t})\}\leq u^{s}+\lambda^{s}p^{s}(x-x^{s})\leq u^{s}=u(x^{s})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula $u(x^{s})\geq u(x)$
+\end_inset
+
+ when 
+\begin_inset Formula $p^{s\prime}x^{s}\geq p^{s\prime}x\cdot$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(4)$
+\end_inset
+
+ implies 
+\begin_inset Formula $(1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $u$
+\end_inset
+
+ is stricty monotononic then it is locally nonsatiated.
+\end_layout
+
+\begin_layout Standard
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Revealed Preference Theory / Strong Axiom of Revealed Preference
 \end_layout
 
 \begin_layout Definition
@@ -11385,449 +11535,6 @@ u^{t}<u^{s}+\lambda^{s}p^{s\prime}(x^{t}-x^{s})\forall s,t\in\{1,\cdots,K\},s\ne
 
 ).
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-We prove that 1.
- implies 3.
- 
-\end_layout
-
-\begin_layout Standard
-If 
-\begin_inset Formula $u$
-\end_inset
-
- is strictly concave then 
-\begin_inset Formula $u(x^{t})<u(x^{s})+\nabla u(x^{s})'(x^{t}-x^{s})$
-\end_inset
-
-.
- Given that 
-\begin_inset Formula $u$
-\end_inset
-
- is assumed smooth 
-\begin_inset Formula $\nabla u$
-\end_inset
-
- exists (super-gradient for concave functions).
- Now, by the FOC of the UMP we know that 
-\begin_inset Formula $\nabla u(x^{s})\leq\lambda^{s}p^{s}$
-\end_inset
-
-.
- This implies that
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $u(x^{t})<u(x^{s})+\lambda^{s}p^{s\prime}(x^{t}-x^{s})$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $u(x^{t})=u^{t}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-We prove that 3.
- implies 1.
- 
-\end_layout
-
-\begin_layout Standard
-Let 
-\begin_inset Formula $u(x)=min_{t\in\{1,\cdots,K\}}\{u^{t}+\lambda^{t}p^{t\prime}(x-x^{t})\}$
-\end_inset
-
-, this function is continuous in 
-\begin_inset Formula $u$
-\end_inset
-
- and concave, it is also strictly increasing in 
-\begin_inset Formula $x$
-\end_inset
-
- (given that 
-\begin_inset Formula $\lambda^{t}>0$
-\end_inset
-
-, and 
-\begin_inset Formula $p^{t}>>0$
-\end_inset
-
-).
- 
-\end_layout
-
-\begin_layout Standard
-I want to show that 
-\begin_inset Formula $u$
-\end_inset
-
- generates the dataset 
-\begin_inset Formula $\mathcal{O}.$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-First check that if 
-\begin_inset Formula $u(x^{t})=u^{t}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Assume that 
-\begin_inset Formula $u(x^{t})=u^{m}+\lambda^{m}p^{m\prime}(x^{t}-x^{m})<u^{t}$
-\end_inset
-
-, but this means that the Afriat's inequality for 
-\begin_inset Formula $m,t$
-\end_inset
-
- failes.
- Then 
-\begin_inset Formula $u(x^{t})=u^{t}$
-\end_inset
-
-.
- In fact, 
-\begin_inset Formula $u^{m}-u^{t}<\lambda^{m}p^{m\prime}(x^{m}-x^{t})$
-\end_inset
-
- this violates (3).
- 
-\end_layout
-
-\begin_layout Standard
-If 
-\begin_inset Formula $x^{s}Rx$
-\end_inset
-
- I want to show that 
-\begin_inset Formula $u(x)<u(x^{s})$
-\end_inset
-
-, for 
-\begin_inset Formula $p^{s\prime}x^{s}>p^{s\prime}x\cdot$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Now assume that 
-\begin_inset Formula $p^{s\prime}x^{s}>p^{s\prime}x$
-\end_inset
-
-, or 
-\begin_inset Formula $p^{s\prime}(x^{s}-x)>0$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-This means that 
-\begin_inset Formula $u(x)=min_{t}\{u^{t}+\lambda^{t}p^{t\prime}(x-x^{t})\}\leq u^{s}+\lambda^{s}p^{s}(x-x^{s})<u^{s}=u(x^{s})$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-If 
-\begin_inset Formula $p^{s\prime}x^{s}=p^{s\prime}x$
-\end_inset
-
- then 
-\begin_inset Formula $x=x^{s}$
-\end_inset
-
- then this holds trivially, and when 
-\begin_inset Formula $x\neq x^{s}$
-\end_inset
-
- again by Afriat's inequalities:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $u^{s}+\lambda^{s}p^{s}(x^{t}-x^{s})<u^{t}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Thus 
-\begin_inset Formula $u(x^{s})>u(x)$
-\end_inset
-
- when 
-\begin_inset Formula $x^{s}Rx$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Itemize
-Now we prove that 1.
- implies 2.
- 
-\end_layout
-
-\begin_layout Standard
-If 
-\begin_inset Formula $x^{t}Rx^{s}$
-\end_inset
-
- it means that 
-\begin_inset Formula $u(x^{t})>u(x^{s})$
-\end_inset
-
- then this implies that 
-\begin_inset Formula $p^{s\prime}x^{s}<p^{s\prime}x^{t}$
-\end_inset
-
-, because if 
-\begin_inset Formula $p^{s\prime}x^{s}\geq p^{s\prime}x^{t}$
-\end_inset
-
- this means that 
-\begin_inset Formula $u(x^{s})\geq u(x^{t})$
-\end_inset
-
-, if that is the case, then the only solution is that 
-\begin_inset Formula $u(x^{s})=u(x^{t})$
-\end_inset
-
- and 
-\begin_inset Formula $p^{s\prime}x^{s}=p^{s\prime}x^{t}$
-\end_inset
-
- which means that the solution of the UMP is non unique which contradicts
- the assumption that 
-\begin_inset Formula $u$
-\end_inset
-
- is strictly concave.
- 
-\end_layout
-
-\begin_layout Standard
-If 
-\begin_inset Formula $x^{1}Rx^{2}\cdots x^{n}$
-\end_inset
-
- and 
-\begin_inset Formula $x^{n}Rx^{1}$
-\end_inset
-
- (this is a violation of SARP) then there is a contradiction of (1) because
- this implies that 
-\begin_inset Formula $u(x^{1})>u(x^{2})>\cdots u(x^{n})$
-\end_inset
-
- and 
-\begin_inset Formula $u(x^{n})>u(x^{1})$
-\end_inset
-
- which is impossible.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Generalized Axiom of Revealed Preference
-\end_layout
-
-\begin_layout Standard
-In the previous treatment of rationality we did not allowed for correspondences,
- we only allowed for functions.
- But what happens for cases when we observe for the same prices 
-\begin_inset Formula $p^{t}=p^{s}$
-\end_inset
-
- different demand choices 
-\begin_inset Formula $x^{t}\neq x^{s}$
-\end_inset
-
- such that 
-\begin_inset Formula $p^{t\prime}x^{t}=p^{s\prime}x^{s}$
-\end_inset
-
-, recall that this is a case where from the same budget set two different
- choice bundles are chosen (this can be seen as the case of a correspondence
- generating the data).
- 
-\end_layout
-
-\begin_layout Definition
-A dataset 
-\begin_inset Formula $O=\{p^{k},x^{k}\}_{k=0}^{K}$
-\end_inset
-
- is said to satisfies GARP if an only if 
-\begin_inset Formula $R$
-\end_inset
-
- admits Only Weak Cycles (OWC), i.e., if 
-\begin_inset Formula $x^{1}Rx^{2}\cdots Rx^{n}$
-\end_inset
-
- and 
-\begin_inset Formula $x^{n}R^{D}x^{1}$
-\end_inset
-
- then it must be the case that 
-\begin_inset Formula $x^{1}Ix^{n}$
-\end_inset
-
-, where 
-\begin_inset Formula $I$
-\end_inset
-
- is the symmetric part of 
-\begin_inset Formula $R$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Proposition
-(Varian/Afriat's Theorem) Given 
-\begin_inset Formula $\mathcal{O}=\{p^{k},x^{k}\}_{k=1}^{K}$
-\end_inset
-
-, the following are equivalent:
-\end_layout
-
-\begin_layout Proposition
-1.
- There exists a continuous, nonsatiated, concave utility function 
-\begin_inset Formula $u$
-\end_inset
-
- that rationalizes the data in the sense that for all 
-\begin_inset Formula $k$
-\end_inset
-
-, 
-\begin_inset Formula $u(x^{k})\geq u(x)$
-\end_inset
-
- for all 
-\begin_inset Formula $x$
-\end_inset
-
- such that 
-\begin_inset Formula $p^{k\prime}x^{t}\geq p^{k\prime}x$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Proposition
-1.' There is exists a continuous, increasing (monotone) utility function
- 
-\begin_inset Formula $u$
-\end_inset
-
- that rationalizes the data in the sense that all 
-\begin_inset Formula $k$
-\end_inset
-
-, 
-\begin_inset Formula $u(x^{k})\geq u(x)$
-\end_inset
-
- for all 
-\begin_inset Formula $x$
-\end_inset
-
- such that 
-\begin_inset Formula $p^{k\prime}x^{t}\geq p^{k\prime}x$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proposition
-2.
- The dataset 
-\begin_inset Formula $\mathcal{O}=\{p^{k},x^{k}\}_{k=1}^{K}$
-\end_inset
-
- satisfies GARP.
- 
-\end_layout
-
-\begin_layout Proposition
-3.
- There exist a positive solution 
-\begin_inset Formula $(u^{t},\lambda^{t})$
-\end_inset
-
- to the set of linear inequalites
-\end_layout
-
-\begin_layout Proposition
-\begin_inset Formula 
-\[
-u^{t}\leq u^{s}+\lambda^{s}p^{s\prime}(x^{t}-x^{s})\forall s,t
-\]
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
