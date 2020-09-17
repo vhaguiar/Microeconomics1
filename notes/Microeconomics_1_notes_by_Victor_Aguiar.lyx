@@ -7013,7 +7013,7 @@ If
 \begin_inset Formula $X$
 \end_inset
 
- is finite.
+ is finite (rich dataset).
  Then there is a rational 
 \begin_inset Formula $\succeq$
 \end_inset
@@ -7061,7 +7061,7 @@ First we propose
 \end_inset
 
  is the revealed preference relation defined as 
-\begin_inset Formula $x\succeq^{D}y\iff x\in C(B)$
+\begin_inset Formula $x\succeq^{D}y\iff x\in c(B)$
 \end_inset
 
  and 
@@ -7144,7 +7144,7 @@ Because the data is rich
 
 .
  We have the following cases, 
-\begin_inset Formula $z\in C(B'')$
+\begin_inset Formula $z\in c(B'')$
 \end_inset
 
  in this case by WARP we have 
@@ -7333,6 +7333,14 @@ Generalized Axiom of Revealed Preference (GARP).
 \begin_inset Formula $y$
 \end_inset
 
+, there exists a chain of items 
+\begin_inset Formula $\{x^{i}\}_{i=1}^{n}$
+\end_inset
+
+ such that 
+\begin_inset Formula $x\succeq^{D}x^{1}\succeq^{D}\cdots\succeq^{D}x^{n}\succeq^{D}y$
+\end_inset
+
 ) it is not the case that 
 \begin_inset Formula $y\succ^{D}x$
 \end_inset
@@ -7403,7 +7411,14 @@ begin{proof}
 \end_layout
 
 \begin_layout Standard
+
+\series bold
 Sufficiency.
+ (i) 
+\begin_inset Formula $\implies$
+\end_inset
+
+ (ii)
 \end_layout
 
 \begin_layout Standard
@@ -7546,8 +7561,14 @@ Together this implies that
 \end_layout
 
 \begin_layout Standard
+
+\series bold
 Necessity.
- 
+ (ii) 
+\begin_inset Formula $\implies$
+\end_inset
+
+(i)
 \end_layout
 
 \begin_layout Standard
@@ -7621,10 +7642,94 @@ end{proof}
 
 \end_layout
 
+\begin_layout Example
+\begin_inset Formula $X=\{a,b,d,e\}$
+\end_inset
+
+, 
+\begin_inset Formula $\{a,b\}$
+\end_inset
+
+, 
+\begin_inset Formula $\{b,d\}$
+\end_inset
+
+, 
+\begin_inset Formula $\{a,d\}$
+\end_inset
+
+ and 
+\begin_inset Formula $c(\{a,b\})=\{a\}$
+\end_inset
+
+, 
+\begin_inset Formula $c(\{b,d\})=\{b\}$
+\end_inset
+
+, 
+\begin_inset Formula $c(\{a,d\})=\{a\}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $a\succ^{D}b$
+\end_inset
+
+, 
+\begin_inset Formula $b\succ^{D}d$
+\end_inset
+
+ and not 
+\begin_inset Formula $d\succ^{D}a$
+\end_inset
+
+ (GARP holds).
+ My preference relation is 
+\begin_inset Formula $a\succ^{*}b\succ^{*}d$
+\end_inset
+
+.
+ The previous theorem implies the existence of a 
+\begin_inset Formula $\succeq$
+\end_inset
+
+ (complete and transitive on 
+\begin_inset Formula $X$
+\end_inset
+
+), in fact, we verify this by construction 
+\begin_inset Formula $e\succ a\succ b\succ d$
+\end_inset
+
+.
+ 
+\end_layout
+
 \begin_layout Chapter
 Consumer Theory: Utility Maximization.
  (Ch.
  3).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X=\mathbb{R}_{+}^{L}$
+\end_inset
+
+, 
+\begin_inset Formula $L\geq1$
+\end_inset
+
+ is the number of goods and it fixed.
+ 
+\begin_inset Formula $P=\mathbb{R}_{++}^{L}$
+\end_inset
+
+, 
+\begin_inset Formula $W=\mathbb{R}_{++}$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Section
@@ -7634,10 +7739,23 @@ Demand Correspondences.
 
 \begin_layout Standard
 A Walrasian demand correspondence is a mapping 
-\begin_inset Formula $x:P\times W\mapsto2^{X}\backslash\emptyset.$
+\begin_inset Formula $x:P\times W\mapsto2^{X}\backslash\emptyset$
 \end_inset
 
+ (
+\begin_inset Formula $x\in x(p,w),x\in X)$
+\end_inset
 
+ they must be such that 
+\begin_inset Formula $p^{\prime}x\leq w$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in x(p,w)$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Example
@@ -7660,7 +7778,7 @@ Observe that using Ch 4.
 \end_inset
 
 , (
-\begin_inset Formula $P\times W\to^{B}\to\mathcal{B}\to^{c}2^{X}\setminus\emptyset$
+\begin_inset Formula $P\times W\to^{B}\mathcal{B}\to^{c}2^{X}\setminus\emptyset$
 \end_inset
 
 ).
@@ -7818,15 +7936,6 @@ The correspondence
 Utility Representation
 \end_layout
 
-\begin_layout Standard
-Choice set 
-\begin_inset Formula $X=\mathbb{R}_{+}^{L}$
-\end_inset
-
-.
- 
-\end_layout
-
 \begin_layout Definition
 Continuity 
 \begin_inset Formula $\succeq$
@@ -7876,6 +7985,18 @@ If
 
 \begin_layout Standard
 First we provide the following intermediate result.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x,y\in X$
+\end_inset
+
+, 
+\begin_inset Formula $x\succeq y\iff u(x)\geq u(y)$
+\end_inset
+
+.
  
 \end_layout
 
@@ -7948,7 +8069,6 @@ Now, notice that
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
@@ -7957,7 +8077,7 @@ Now we define a candidate utility function
 \end_inset
 
 , 
-\begin_inset Formula $u(x)=0+\sum_{i\in N^{\succeq}(x)}\frac{1}{2^{i}}$
+\begin_inset Formula $u(x)=0+\sum_{i\in N^{\succeq}(x)}\frac{1}{2^{i}}=\frac{1}{2^{1}}+\frac{1}{2^{2}}+\cdots$
 \end_inset
 
 .
