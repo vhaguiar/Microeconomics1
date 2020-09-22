@@ -8069,7 +8069,6 @@ Now, notice that
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
@@ -8078,7 +8077,7 @@ Now we define a candidate utility function
 \end_inset
 
 , 
-\begin_inset Formula $u(x)=0+\sum_{i\in N^{\succeq}(x)}\frac{1}{2^{i}}$
+\begin_inset Formula $u(x)=0+\sum_{i\in N^{\succeq}(x)}\frac{1}{2^{i}}=\frac{1}{2^{1}}+\frac{1}{2^{2}}+\cdots$
 \end_inset
 
 .
@@ -8970,7 +8969,11 @@ Now we are going to see how to find the solution under the differentiability
 \end_layout
 
 \begin_layout Standard
-We write the KKT FOC necessary conditions.
+We write the KKT
+\series bold
+ FOC
+\series default
+ necessary conditions.
 \end_layout
 
 \begin_layout Standard
@@ -8981,7 +8984,7 @@ We write the KKT FOC necessary conditions.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\partial_{x_{l}}u(x_{l}^{*})-\lambda^{*}p_{l}\leq0$
+\begin_inset Formula $\partial_{x_{l}}u(x_{l}^{*})\leq\lambda^{*}p_{l}$
 \end_inset
 
  and 
@@ -10500,6 +10503,19 @@ v(p,w)=\mu(p^{*};p,w).
 \end_layout
 
 \begin_layout Standard
+(Recall duality said that 
+\begin_inset Formula $w=e(p,v(p,w))$
+\end_inset
+
+, 
+\begin_inset Formula $v(p,e(p,u))=u$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
 I use the NSD restriction to show that 
 \begin_inset Formula $v(p,w)$
 \end_inset
@@ -10840,7 +10856,7 @@ This is a a Cobb Douglas Utility function.
 \end_layout
 
 \begin_layout Section
-Generalized Axiom of Revealed Preference
+Generalized Axiom of Revealed Preference (GARP)
 \end_layout
 
 \begin_layout Standard
@@ -10849,6 +10865,10 @@ Up to this point this chapter has had very little concern about the dataset
  It is time to solve this.
  We assume that we observe a dataset 
 \begin_inset Formula $\mathcal{O}=\{p^{k},x^{k}\}_{k=1}^{K}$
+\end_inset
+
+, 
+\begin_inset Formula $K\geq2$
 \end_inset
 
 .
@@ -10938,7 +10958,7 @@ In the previous treatment of rationality we did not allowed for correspondences,
 
 \begin_layout Definition
 A dataset 
-\begin_inset Formula $O=\{p^{k},x^{k}\}_{k=0}^{K}$
+\begin_inset Formula $O=\{p^{k},x^{k}\}_{k=1}^{K}$
 \end_inset
 
  is said to satisfies GARP if an only if 
@@ -10946,7 +10966,7 @@ A dataset
 \end_inset
 
  admits Only Weak Cycles (OWC), i.e., if 
-\begin_inset Formula $x^{1}Rx^{2}\cdots Rx^{n}$
+\begin_inset Formula $x^{1}R^{D}x^{2}R\cdots R^{D}x^{n}$
 \end_inset
 
  and 
@@ -10965,7 +10985,23 @@ A dataset
 \begin_inset Formula $R$
 \end_inset
 
-.
+ (i.e., 
+\begin_inset Formula $x^{t}Rx^{s}$
+\end_inset
+
+ then it cannot be that 
+\begin_inset Formula $x^{s}$
+\end_inset
+
+ is strictly revealed preferred to 
+\begin_inset Formula $x^{s}$
+\end_inset
+
+–namely it cannot be that 
+\begin_inset Formula $p^{s'}x^{s}>p^{s'}x^{t}$
+\end_inset
+
+).
  
 \end_layout
 
@@ -11025,7 +11061,7 @@ A dataset
 \begin_layout Proposition
 \begin_inset Formula 
 \[
-u^{t}\leq u^{s}+\lambda^{s}p^{s\prime}(x^{t}-x^{s})\forall s,t
+u^{t}\leq u^{s}+\lambda^{s}p^{s\prime}(x^{t}-x^{s})\forall s,t\in\{1,\cdots,K\}
 \]
 
 \end_inset
@@ -12021,6 +12057,128 @@ CCEI Source: Quah
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Measurement Error
+\end_layout
+
+\begin_layout Standard
+A similar experiment of budget allocation but using 3 goods instead of 2,
+ is in Ahn, D., Choi, S., Gale, D., & Kariv, S.
+ (2014) (Estimating ambiguity aversion in a portfolio choice experiment.
+ Quantitative Economics, 5(2), 195–223).
+ This experiment has 
+\begin_inset Formula $n=154$
+\end_inset
+
+ individuals, and 
+\begin_inset Formula $T=50$
+\end_inset
+
+ trials.
+ 
+\end_layout
+
+\begin_layout Itemize
+The GARP test is successful 
+\begin_inset Formula $12.99\%$
+\end_inset
+
+ of cases (individuals).
+ 
+\end_layout
+
+\begin_layout Itemize
+Aguiar and Kashaev (2020, Restud) extend GARP to allow for measurement error.
+\end_layout
+
+\begin_layout Itemize
+Measurement error can be either present in consumption 
+\begin_inset Formula $x_{t}=x_{t}^{*}+w_{t}^{c}$
+\end_inset
+
+ or in prices 
+\begin_inset Formula $p_{t}=p_{t}^{*}+w_{t}^{p}$
+\end_inset
+
+ for 
+\begin_inset Formula $x_{t}^{*},p_{t}^{*}$
+\end_inset
+
+ being the correctly measured prices and consumption.
+ 
+\end_layout
+
+\begin_layout Itemize
+GARP should hold for the (ideal), well-measured data set 
+\begin_inset Formula $(p_{t}^{*},x_{t}^{*})_{t=1}^{T}$
+\end_inset
+
+ but not necessarily for the mismeasured data set 
+\begin_inset Formula $(p_{t},x_{t})_{t=1}^{T}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Without any knowledge about measurement error then rationality becomes untestabl
+e.
+ 
+\end_layout
+
+\begin_layout Itemize
+We assume that measurement error is random across individuals and that the
+ expectation is equal to zero: 
+\begin_inset Formula $E[\boldsymbol{w}_{t}^{c}]=0$
+\end_inset
+
+, 
+\begin_inset Formula $E[\boldsymbol{w}_{t}^{p}]=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+These assumptions are backed up by validation experimental data that shows
+ that consumers may incur in trembling hand errors, or perception errors
+ that are not systematic (see our paper).
+ 
+\end_layout
+
+\begin_layout Itemize
+The key is that we do not know the distribution of measurement error, we
+ only know it's average behavior.
+ 
+\end_layout
+
+\begin_layout Itemize
+Aguiar and Kashaev (2020) provide a methodology to test GARP in the ideal
+ (correctly measured data) with knowledge about average behavior of measurement
+ error.
+ 
+\end_layout
+
+\begin_layout Itemize
+They conclude that the null hypothesis that every individual in this experiment
+ is consistent with GARP cannot be rejected at the 95 confidence level.
+ They also find that misperception of prices seems to be the culprit of
+ spurious violations of rationality.
+ 
+\end_layout
+
+\begin_layout Itemize
+Does this confirm rationality? NO!
+\end_layout
+
+\begin_layout Itemize
+A theory cannot be confirmed by this exercise alone, but we say that current
+ evidence is insufficient to reject rationality (at least in the context
+ of this simple experiments).
 \end_layout
 
 \begin_layout Section
