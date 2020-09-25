@@ -11024,7 +11024,7 @@ A dataset
 \end_inset
 
  such that 
-\begin_inset Formula $p^{k\prime}x^{t}\geq p^{k\prime}x$
+\begin_inset Formula $p^{k\prime}x^{k}\geq p^{k\prime}x$
 \end_inset
 
 .
@@ -11235,7 +11235,7 @@ Assume that
 
 \begin_layout Standard
 Algorithm: Input: A set of price-quantity observations 
-\begin_inset Formula $O^{T}$
+\begin_inset Formula $\mathcal{O}$
 \end_inset
 
  satisfying GARP.
@@ -11693,7 +11693,7 @@ Forecasting: Varian Support Set
 \begin_layout Definition
 Varian's Support Set.
  
-\begin_inset Formula $S(p^{K+1},w^{K+1})=\{x\in X:O\cup\{p^{K+1},x\},\quad satisfy\quad GARP;\quad p^{K+1}x=w^{K+1}\}.$
+\begin_inset Formula $S(p^{K+1},w^{K+1})=\{x\in X:\mathcal{O}\cup\{p^{K+1},x\},\quad satisfy\quad GARP;\quad p^{K+1}x=w^{K+1}\}.$
 \end_inset
 
 

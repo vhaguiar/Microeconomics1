@@ -10990,15 +10990,7 @@ A dataset
 \end_inset
 
  then it cannot be that 
-\begin_inset Formula $x^{s}$
-\end_inset
-
- is strictly revealed preferred to 
-\begin_inset Formula $x^{s}$
-\end_inset
-
-–namely it cannot be that 
-\begin_inset Formula $p^{s'}x^{s}>p^{s'}x^{t}$
+\begin_inset Formula $p^{s\prime}x^{s}>p^{s\prime}x^{t}$
 \end_inset
 
 ).
@@ -11032,7 +11024,7 @@ A dataset
 \end_inset
 
  such that 
-\begin_inset Formula $p^{k\prime}x^{t}\geq p^{k\prime}x$
+\begin_inset Formula $p^{k\prime}x^{k}\geq p^{k\prime}x$
 \end_inset
 
 .
@@ -11243,7 +11235,7 @@ Assume that
 
 \begin_layout Standard
 Algorithm: Input: A set of price-quantity observations 
-\begin_inset Formula $O^{T}$
+\begin_inset Formula $\mathcal{O}$
 \end_inset
 
  satisfying GARP.
