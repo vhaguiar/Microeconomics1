@@ -426,7 +426,7 @@ Note that
 \begin_layout Exercise
 (Note that these same conditions are sufficient to conclude that the function
  
-\begin_inset Formula $e(p,u)=u+p'g(u)+\frac{1}{2}p'Ap,$
+\begin_inset Formula $e(p,u)=u+p'g(u)+p'Ap,$
 \end_inset
 
  is the logarithm of a concave expenditure function).
