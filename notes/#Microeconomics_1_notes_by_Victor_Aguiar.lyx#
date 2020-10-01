@@ -12928,6 +12928,29 @@ x(p,w)=x_{l}^{s}(p,p^{s},w)=\frac{\alpha_{l}w}{p_{l}^{s}}\frac{1}{(\sum_{l}(\alp
 
 \end_layout
 
+\begin_layout Standard
+I can also use the proposition above and compute the sparse max CD:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+w'=\frac{w}{p_{1}\frac{\alpha_{1}}{p_{1}^{s}}+p_{2}\frac{\alpha_{2}}{p_{2}^{s}}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then 
+\begin_inset Formula $x_{1}^{s}(p^{s},w')=\frac{\alpha w'}{p_{1}^{s}}=\frac{\alpha_{l}w}{p_{l}^{s}}\frac{1}{(\sum_{l}(\alpha_{l}p_{l})/p_{l}^{s})}.$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 The Perceived Price and Limited Attention
 \end_layout
@@ -13053,8 +13076,11 @@ The Slutsky matrix of the sparse max is such that
 \begin_inset Formula $S^{s}(p,w;p^{d})|_{p=p^{d}}=S^{r}(p,w)M$
 \end_inset
 
-.
- 
+ (e.g., 
+\begin_inset Formula $s_{ij}^{s}=s_{ij}^{r}m_{j}$
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -13075,7 +13101,7 @@ begin{proof}
 
 \begin_layout Standard
 We have 
-\begin_inset Formula $x^{s}(p,w)=x^{r}(\{p_{l}^{d},+m_{i}(p_{l}-p_{l}^{d})\}_{l=1}^{L},w'(p,p^{d}))$
+\begin_inset Formula $x^{s}(p,w)=x^{r}(\{p_{l}^{d},+m_{l}(p_{l}-p_{l}^{d})\}_{l=1}^{L},w'(p,p^{d}))$
 \end_inset
 
 
@@ -13113,7 +13139,7 @@ Now,
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $0=x_{l}^{r}+p\cdot\partial_{p_{l}}x^{r}m_{l}+p\cdot\partial_{w}x^{r}\partial_{p_{l}}w'$
+\begin_inset Formula $0=x_{l}^{r}+p\cdot\partial_{p_{l}}x^{r}m_{l}+p\cdot\partial_{w}c^{r}\partial_{p_{l}}w'$
 \end_inset
 
 .
@@ -13137,7 +13163,7 @@ Now,
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\partial_{p_{l}}x'=(m_{l}-1)x_{l}^{r}$
+\begin_inset Formula $\partial_{p_{l}}w'=(m_{l}-1)x_{l}^{r}$
 \end_inset
 
 .
@@ -13226,7 +13252,14 @@ end{proof}
 \end_layout
 
 \begin_layout Standard
-It turns out that 
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It turns out that: 
 \end_layout
 
 \begin_layout Standard
@@ -13256,6 +13289,59 @@ It turns out that
 
  fails WARP.
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S^{CB}(p,w)=\left[\begin{array}{cc}
+s_{11} & s_{12}\\
+s_{21} & s_{22}
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S^{G,CB}(p,w,p^{s})|_{p=p^{d}}=\left[\begin{array}{cc}
+s_{11} & s_{12}\\
+s_{21} & s_{22}
+\end{array}\right]\left[\begin{array}{cc}
+m_{1} & 0\\
+0 & m_{2}
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Imagine that the consumer is fully inattentive to 
+\begin_inset Formula $m_{2}=0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S^{G,CB}(p,w,p^{s})|_{p=p^{d}}=\left[\begin{array}{cc}
+s_{11} & 0\\
+s_{21} & 0
+\end{array}\right].
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -13465,7 +13551,7 @@ so that the agent's problem is:
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\max_{\tau}-\frac{1}{2}(1-m)\sigma_{x}^{2}-C(\tau)
+\max_{\tau}-\frac{1}{2}(1-m)\sigma_{x}^{2}-C(m)
 \]
 
 \end_inset
@@ -13475,7 +13561,7 @@ so that the agent's problem is:
 
 \begin_layout Standard
 subject to 
-\begin_inset Formula $m=\frac{\tau}{1+\tau}$
+\begin_inset Formula $m=\frac{\sigma_{x}^{2}}{\sigma_{x}^{2}+\sigma_{\epsilon}^{2}}$
 \end_inset
 
  and we can redefine the problem to solve for 
@@ -13509,11 +13595,44 @@ Example of cost
 \begin_layout Standard
 \begin_inset Formula 
 \[
+-\frac{1}{2}+(\sigma_{x}-\frac{1}{2})m=0
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m=\frac{1}{2\sigma_{x}-1},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+now let 
+\begin_inset Formula $\sigma_{x}=2$
+\end_inset
+
+, we have 
+\begin_inset Formula $m=\frac{1}{3}$
+\end_inset
+
+, and 
+\begin_inset Formula $\sigma_{x}=1$
+\end_inset
+
+ 
+\begin_inset Formula $m=1$
+\end_inset
+
+, the higher the uncertainty the lower the attention you pay.
+ 
 \end_layout
 
 \begin_layout Section
@@ -13620,7 +13739,7 @@ If
 \begin_layout Standard
 \begin_inset Formula 
 \[
-q\sim N(q_{A},\sigma^{2})
+q\sim N(q_{B},\sigma^{2})
 \]
 
 \end_inset
@@ -13744,7 +13863,11 @@ Hire if
 \end_layout
 
 \begin_layout Standard
-The expected value over the distribution of signals is:
+The expected value over the distribution of signals is 
+\begin_inset Formula $max\{\alpha y+(1-\alpha)q_{G},0\}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
