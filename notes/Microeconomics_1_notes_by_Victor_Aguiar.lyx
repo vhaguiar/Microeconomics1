@@ -11930,7 +11930,7 @@ Suppose a dataset
 \begin_inset Formula $u$
 \end_inset
 
-.
+ (GARP/SARP fails).
  
 \end_layout
 
@@ -11940,10 +11940,67 @@ Now consider the case where we shrink budget sets implied by
 \end_inset
 
  by an efficiency index 
-\begin_inset Formula $\alpha\in[0,1):$
+\begin_inset Formula $\alpha\in[0,1]:$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Let me define 
+\begin_inset Formula $\alpha\in[0,1]$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha p^{t\prime}x^{t}\geq p^{t\prime}x^{s}\iff x^{t}R_{\alpha}^{D}x^{s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I have a 
+\begin_inset Formula $\mathcal{O}$
+\end_inset
+
+ that fails rationality and in particular I observe that 
+\begin_inset Formula $x^{1}R^{D}x^{2}P^{D}x^{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathcal{O}/\{p^{1},x^{1}\}$
+\end_inset
+
+ this satisfies GARP.
+ 
+\end_layout
+
+\begin_layout Standard
+Notice that every dataset 
+\begin_inset Formula $\mathcal{O}$
+\end_inset
+
+will satisfy GARP(
+\begin_inset Formula $R_{\alpha}$
+\end_inset
+
+) for some 
+\begin_inset Formula $\alpha\in[0,1]$
+\end_inset
+
+, find the 
+\begin_inset Formula $\alpha^{*}=\max\{\alpha:\mathcal{O}$
+\end_inset
+
+ satisfies GARP on 
+\begin_inset Formula $R_{\alpha}$
+\end_inset
+
+}.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -12451,7 +12508,1437 @@ The utility function for quasilinear cases are
 \begin_inset Formula $u(x)=V(x_{1},\cdots,x_{L-1})+x_{L}$
 \end_inset
 
-, 
+.
+\end_layout
+
+\begin_layout Chapter
+Behavioral Economics: The Sparse-Max Consumer (Xavier Gabaix, QJE 2014)
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+We consider a generalization of the rational consumer model and most of
+ the theory we have developed so far.
+ Why we need this? There is evidence that the rationality assumption is
+ not the best assumption to make.
+ Thus it is an important question how relaxing this property affects our
+ main results.
+ 
+\end_layout
+
+\begin_layout Standard
+The main ingredient is a perceived price 
+\begin_inset Formula $p^{s}$
+\end_inset
+
+ that may be different from actual prices 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Definition
+Sparse max consumer.
+ 
+\begin_inset Formula $smax_{x|p^{s}}u(x)$
+\end_inset
+
+ subject to 
+\begin_inset Formula $p'x\leq w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The sparse max operator is the given by the following process:
+\end_layout
+
+\begin_layout Standard
+1.
+ 
+\begin_inset Formula $max_{x}\mathcal{L}(x,p^{s},w,\lambda^{s})$
+\end_inset
+
+ where 
+\begin_inset Formula $\mathcal{L}(x,p^{s},w,\lambda^{s})=u(x)+\lambda^{s}(w-p^{s\prime}x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Obtain 
+\begin_inset Formula $x(p^{s},\lambda^{s})=argmax_{x}\mathcal{L}(x,p^{s},w,\lambda^{s})$
+\end_inset
+
+ for unknown 
+\begin_inset Formula $\lambda^{s}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+2.
+ Find 
+\begin_inset Formula $\lambda^{s}$
+\end_inset
+
+, such that 
+\begin_inset Formula $p^{\prime}x(p^{s},\lambda^{s})=w$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Formally, this implies the following:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\nabla_{x}u(x)=\lambda^{s}p^{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial_{x_{i}}u(x)}{\partial_{x_{j}}u(x)}=\frac{p_{j}^{s}}{p_{i}^{s}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Output: Solve the FOC above for 
+\begin_inset Formula $x$
+\end_inset
+
+ and obtain:
+\begin_inset Formula 
+\[
+x(p^{s},\lambda^{s})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p^{\prime}x(p^{s},\lambda^{s})=w.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This implies that there exists a 
+\begin_inset Formula $w'>0$
+\end_inset
+
+ such that the solution to the smax 
+\begin_inset Formula $x^{s}(p,p^{s},w)=arg(smax)_{x|p^{s}}u(x)$
+\end_inset
+
+ subject to 
+\begin_inset Formula $p'x\leq w$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x^{s}(p,p^{s},w)=x^{r}(p^{s},w'),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $p'x^{r}(p^{s},w')=w$
+\end_inset
+
+ and 
+\begin_inset Formula $x^{r}(\cdot)=argmax_{x}u(x)$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $p'x\leq w$
+\end_inset
+
+, this is the solution to the UMP.
+ 
+\end_layout
+
+\begin_layout Proposition
+If 
+\begin_inset Formula $x^{r}$
+\end_inset
+
+ is linear in wealth then 
+\begin_inset Formula $x^{s}(p,p^{s},w)=\frac{x^{r}(p^{s},w)}{p'x^{r}(p^{s},1)}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x^{r}(p,w)$
+\end_inset
+
+ is linear in wealth means that 
+\begin_inset Formula $x^{r}(p,w)=x^{r}(p,1)w$
+\end_inset
+
+, then we have 
+\begin_inset Formula $p\cdot x^{r}(p^{s},w')=p\cdot x^{r}(p^{s},1)w'=w$
+\end_inset
+
+, this implies that 
+\begin_inset Formula $w'=\frac{w}{p\cdot x^{r}(p^{s},1)}$
+\end_inset
+
+.
+ Now, by our previous result we have that 
+\begin_inset Formula $x(p,p^{s},w)=x^{r}(p^{s},w')$
+\end_inset
+
+, by linearity in wealth 
+\begin_inset Formula $x(p,p^{s},w)=x^{r}(p^{s},1)w'=\frac{x^{r}(p^{s},1)w}{p\cdot x^{r}(p^{s},1)}$
+\end_inset
+
+, this implies that 
+\begin_inset Formula $x(p,p^{s},w)=\frac{x^{r}(p^{s},w)}{p\cdot x^{r}(p^{s},1)}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We have an important example:
+\end_layout
+
+\begin_layout Standard
+The rational Cobb-Douglas demand: 
+\begin_inset Formula $x_{1}(p,w)=\frac{\alpha w}{p_{1}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Cobb-Douglas Sparse Max.
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $x_{l}^{s}(p,p^{s},w)=\frac{\alpha_{l}w}{p_{l}^{s}}\frac{1}{(\sum_{l}(\alpha_{l}p_{l})/p_{l}^{s})}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Verify Walras' law: 
+\begin_inset Formula $\sum_{l=1}^{L}p_{l}x_{l}^{s}(p,p^{s},w)=\sum_{l=1}^{L}\frac{\alpha_{l}w}{p_{l}^{s}}\frac{p_{l}}{(\sum_{l}(\alpha_{l}p_{l})/p_{l}^{s})}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\[
+=w\sum_{l=1}^{L}\frac{\alpha_{l}p_{l}}{p_{l}^{s}}\frac{1}{(\sum_{l}(\alpha_{l}p_{l})/p_{l}^{s})}=w.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $p^{s}=p$
+\end_inset
+
+ then we are back to the rational case.
+ 
+\end_layout
+
+\begin_layout Standard
+Sparse max:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathcal{L}^{s}=\alpha_{1}Lnx_{1}+\alpha_{2}Lnx_{2}+\lambda^{s}(w-p_{1}^{s}x_{1}-p_{2}^{s}x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+FOC with respect to 
+\begin_inset Formula $x$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\alpha_{1}}{x_{1}}=\lambda^{s}p_{1}^{s}\implies x_{1}=\frac{1}{\lambda^{s}}\frac{\alpha_{1}}{p_{1}^{s}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\alpha_{2}}{x_{2}}=\lambda^{s}p_{2}^{s}\implies x_{2}=\frac{1}{\lambda^{s}}\frac{\alpha_{2}}{p_{2}^{s}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Look for 
+\begin_inset Formula $\lambda^{s}$
+\end_inset
+
+: 
+\begin_inset Formula $p_{1}x_{1}(p^{s},\lambda^{s})+p_{2}x_{1}(p^{s},\lambda^{s})=w$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{\lambda^{s}}\frac{\alpha_{1}}{p_{1}^{s}}p_{1}+\frac{1}{\lambda^{s}}\frac{\alpha_{2}}{p_{2}^{s}}p_{2}=w
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda^{s}=\frac{1}{w}(\sum_{l}(\alpha_{l}p_{l})/p_{l}^{s})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Plug back 
+\begin_inset Formula $\lambda^{s}$
+\end_inset
+
+on the demand 
+\begin_inset Formula $x(p^{s},\lambda^{s})$
+\end_inset
+
+ to obtain the sparse maximizer demand function 
+\begin_inset Formula $x(p,w)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x(p,w)=x_{l}^{s}(p,p^{s},w)=\frac{\alpha_{l}w}{p_{l}^{s}}\frac{1}{(\sum_{l}(\alpha_{l}p_{l})/p_{l}^{s})}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The Perceived Price and Limited Attention
+\end_layout
+
+\begin_layout Standard
+The perceived price is going to be modeled as an average of actual prices
+ 
+\begin_inset Formula $p$
+\end_inset
+
+ and default prices 
+\begin_inset Formula $p^{d}$
+\end_inset
+
+.
+ Default prices, are what the consumer has in mind, maybe a forecast about
+ prices 
+\begin_inset Formula $p^{d}=E[\mathbf{p}]$
+\end_inset
+
+ if 
+\begin_inset Formula $\mathbf{p}$
+\end_inset
+
+ is the distribution of prices in the market.
+ More formally 
+\begin_inset Formula $\mathbf{p}$
+\end_inset
+
+ can be the history of prices or the memory of the consumer about prices.
+ 
+\end_layout
+
+\begin_layout Standard
+The linear model of perceived prices is as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{l}^{s}(m,p,p^{d})=m_{l}p_{l}+(1-m_{l})p_{l}^{d},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for 
+\begin_inset Formula $m_{l}\in[0,1]$
+\end_inset
+
+ an attention parameter.
+ 
+\end_layout
+
+\begin_layout Standard
+The consumer is rational when 
+\begin_inset Formula $m_{l}=1$
+\end_inset
+
+ for all 
+\begin_inset Formula $l$
+\end_inset
+
+ and he becomes more behavioral when 
+\begin_inset Formula $m<1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+We let 
+\begin_inset Formula $M=diag(\{m_{l}\}_{l=1}^{L})$
+\end_inset
+
+, the diagonal matrix of all attention parameters.
+ 
+\end_layout
+
+\begin_layout Standard
+We have the following result.
+ If we have any demand 
+\begin_inset Formula $x(p,w)$
+\end_inset
+
+ then we can find a 
+\begin_inset Formula $p^{s}$
+\end_inset
+
+ and a 
+\begin_inset Formula $w'$
+\end_inset
+
+ such that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x^{r}(p^{s},w')=x(p,w).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This means that 
+\begin_inset Formula $p^{s}$
+\end_inset
+
+ without restrictions is too general.
+ 
+\end_layout
+
+\begin_layout Proposition
+The Slutsky matrix of the sparse max is such that 
+\begin_inset Formula $S^{s}(p,w;p^{d})|_{p=p^{d}}=S^{r}(p,w)M$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We have 
+\begin_inset Formula $x^{s}(p,w)=x^{r}(\{p_{l}^{d},+m_{i}(p_{l}-p_{l}^{d})\}_{l=1}^{L},w'(p,p^{d}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then we derive with respect to 
+\begin_inset Formula $p_{l}$
+\end_inset
+
+ and evaluate everything to 
+\begin_inset Formula $p=p^{d}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\partial_{p_{l}}x^{s}(p,w)=\partial_{p_{l}}x^{r}(p,w)m_{l}+\partial_{w}x^{r}(p,w)\frac{\partial w'(p,p^{d})}{\partial p_{l}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, 
+\begin_inset Formula $p\cdot x^{r}(p^{s},w'(p))=w$
+\end_inset
+
+, we differentiate with respect to 
+\begin_inset Formula $p_{l}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0=x_{l}^{r}+p\cdot\partial_{p_{l}}x^{r}m_{l}+p\cdot\partial_{w}x^{r}\partial_{p_{l}}w'$
+\end_inset
+
+.
+ As, 
+\begin_inset Formula $p\cdot x^{r}(p,w)=w$
+\end_inset
+
+, we have 
+\begin_inset Formula $x_{l}^{r}+p\cdot\partial_{p_{l}}x^{r}=0$
+\end_inset
+
+, and 
+\begin_inset Formula $p\cdot\partial_{w}x^{r}=1$
+\end_inset
+
+, so 
+\begin_inset Formula $0=x_{l}^{r}-x_{l}^{r}m_{l}+\partial_{p_{l}}w'$
+\end_inset
+
+ thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\partial_{p_{l}}x'=(m_{l}-1)x_{l}^{r}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Finally, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\partial_{p_{l}}x^{s}(p,w)=\partial_{p_{l}}x^{r}m_{l}+\partial_{w}x^{r}(m_{l}-1)x_{l}^{r}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notice that 
+\begin_inset Formula $\partial_{w}x^{s}(p,w')=\partial_{w}x^{r}(p,w)$
+\end_inset
+
+ when 
+\begin_inset Formula $p=p^{d}$
+\end_inset
+
+ and also we have 
+\begin_inset Formula $x^{s}(p^{d},w'(p^{d},p^{d}))=x^{r}(p^{d},w)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+This implies that at 
+\begin_inset Formula $p=p^{d}$
+\end_inset
+
+ and thus 
+\begin_inset Formula $w'(p^{d},p^{d})=w$
+\end_inset
+
+ we have:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\partial_{p_{l}}x_{k}^{s}(p,w)+\partial_{w}x_{l}^{s}(p,w)x_{k}^{s}(p,w)=[\partial_{p_{l}}x_{k}^{r}(p,w)+\partial_{w}x_{l}^{r}(p,w)x_{k}^{r}(p,w)]m_{l}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S^{s}(p,w)|_{p=p^{d}}=S^{r}(p,w)|_{p=p^{d}}M.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It turns out that 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S^{s}(p,w)$
+\end_inset
+
+ is not singular in prices that is 
+\begin_inset Formula $S^{s}(p,w)p\neq0$
+\end_inset
+
+ for some 
+\begin_inset Formula $(p,w)$
+\end_inset
+
+.
+ This is a consequence of failures of homogeneity of degree zero.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S^{s}(p,w)$
+\end_inset
+
+ is also not necessarily NSD, in fact the model 
+\begin_inset Formula $x^{s}(p,w)$
+\end_inset
+
+ fails WARP.
+ 
+\end_layout
+
+\begin_layout Section
+Endogenizing Attention
+\end_layout
+
+\begin_layout Standard
+Suppose that there is a true value 
+\begin_inset Formula $x$
+\end_inset
+
+ distributed with normal 
+\begin_inset Formula $\mathcal{N}(x^{d},\sigma_{x}^{2})$
+\end_inset
+
+, where 
+\begin_inset Formula $x^{d}$
+\end_inset
+
+ is the default value and variance 
+\begin_inset Formula $\sigma_{x}^{2}$
+\end_inset
+
+.
+ The agent does not know the true value and observes the signal 
+\begin_inset Formula $s=x+\epsilon$
+\end_inset
+
+, where 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ is drawn from an independent distribution 
+\begin_inset Formula $\mathcal{N}(0,\sigma_{\epsilon}^{2})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The agent takes the action 
+\begin_inset Formula $a$
+\end_inset
+
+, the objective function is 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u(a,x)=-\frac{1}{2}(a-x)^{2},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+if 
+\begin_inset Quotes eld
+\end_inset
+
+rational
+\begin_inset Quotes erd
+\end_inset
+
+, then:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+max_{a}\mathbb{E}[-\frac{1}{2}(a-x)^{2}|s].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The FOC are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0=\mathbb{E}[-(a-x)|s]=E[x|s]-a,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so the rational action is 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a^{*}=E[x|s]=ms+(1-m)x^{d},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m=\frac{\sigma_{x}^{2}}{\sigma_{x}^{2}+\sigma_{\epsilon}^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This follows from the Bayesian updating.
+\end_layout
+
+\begin_layout Standard
+Endogenizing attention means that I will pick the precision of the signal
+ 
+\begin_inset Formula $\sigma_{\epsilon}$
+\end_inset
+
+, what is the value of the precision of the signal?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V(\sigma_{\epsilon})=\mathbb{E}_{N(0,\sigma_{\epsilon}^{2})}[\mathbb{E}[-\frac{1}{2}(a^{*}-x)^{2}|s]].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The cost is 
+\begin_inset Formula $C(\sigma_{\epsilon})$
+\end_inset
+
+ is such that 
+\begin_inset Formula $C'(\cdot)<0$
+\end_inset
+
+ more precision more cost (i.e., more variance less cost).
+ 
+\end_layout
+
+\begin_layout Standard
+Then the consumer chooses 
+\begin_inset Formula $m$
+\end_inset
+
+ by solving
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+max_{\sigma_{\epsilon}}V(\sigma_{\epsilon})-C(\sigma_{\epsilon}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let's simplify 
+\begin_inset Formula $x^{d}=0$
+\end_inset
+
+, so we get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbb{E}[\max_{a}\mathbb{E}[-\frac{1}{2}(a-x)^{2}|s]]=-\frac{1}{2}(1-m)\sigma_{x}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so that the agent's problem is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\max_{\tau}-\frac{1}{2}(1-m)\sigma_{x}^{2}-C(\tau)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+subject to 
+\begin_inset Formula $m=\frac{\tau}{1+\tau}$
+\end_inset
+
+ and we can redefine the problem to solve for 
+\begin_inset Formula $\text{m}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Example of cost 
+\begin_inset Formula $C(m)=\frac{1}{2}\log\frac{1}{1-m}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-(1-m)\sigma_{x}+\frac{1}{2}(1-m)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-\frac{1}{2}+(\sigma_{x}-\frac{1}{2})m=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m=\frac{1}{2\sigma_{x}-1},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+now let 
+\begin_inset Formula $\sigma_{x}=2$
+\end_inset
+
+, we have 
+\begin_inset Formula $m=\frac{1}{3}$
+\end_inset
+
+, and 
+\begin_inset Formula $\sigma_{x}=1$
+\end_inset
+
+ 
+\begin_inset Formula $m=1$
+\end_inset
+
+, the higher the uncertainty the higher the attention you pay.
+ 
+\end_layout
+
+\begin_layout Section
+Discrimination with rational inattention
+\end_layout
+
+\begin_layout Standard
+Imagine a firm looking to recruit someone for a job.
+ You see the name of the applicant at the top of the CV and this tells you
+ a 
+\begin_inset Quotes eld
+\end_inset
+
+clue
+\begin_inset Quotes erd
+\end_inset
+
+ to which 
+\begin_inset Quotes eld
+\end_inset
+
+group
+\begin_inset Quotes erd
+\end_inset
+
+ the applicant belongs to:
+\end_layout
+
+\begin_layout Standard
+Red vs.
+ Blue.
+\end_layout
+
+\begin_layout Standard
+You have some prior belief about the abilities of each of these groups.
+ 
+\end_layout
+
+\begin_layout Standard
+Red people are better than Blue people.
+ 
+\end_layout
+
+\begin_layout Standard
+Do you spend more time looking at the CVs of Red or Blue people?
+\end_layout
+
+\begin_layout Standard
+Formally, you will end up hiring an applicant.
+ 
+\end_layout
+
+\begin_layout Standard
+An applicant is of quality 
+\begin_inset Formula $q$
+\end_inset
+
+, that the firms do not observe.
+ 
+\end_layout
+
+\begin_layout Standard
+If you hire the applicant the firm gets payoff 
+\begin_inset Formula $q$
+\end_inset
+
+ otherwise you get 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Initially you see a signal telling you to which group the participant belongs
+ to R vs.
+ B.
+ 
+\end_layout
+
+\begin_layout Standard
+If R (red applicant) 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+q\sim N(q_{R},\sigma^{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $B$
+\end_inset
+
+ (blue applicant)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+q\sim N(q_{A},\sigma^{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\begin_inset Formula $q_{R}<q_{B}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+This is your bias:
+\end_layout
+
+\begin_layout Standard
+Before deciding who to hire, you receive a signal 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=q+\epsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\epsilon\sim N(0,\sigma_{\epsilon}^{2})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Importantly, 
+\series default
+the firm gets to choose the precision of the signal, and this precision
+ is costly:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C(\sigma_{\epsilon}^{2}):C'(\sigma_{\epsilon}^{2})<0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The firms posterior beliefs after seeing the signal are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+q'=\alpha y+(1-\alpha)q_{G},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $G\in\{R,B\}$
+\end_inset
+
+, and 
+\begin_inset Formula $\alpha=\frac{\sigma^{2}}{\sigma^{2}+\sigma_{\epsilon}^{2}}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The more precise the signal, more weight is put on the signal 
+\begin_inset Formula $y$
+\end_inset
+
+, else you put more weight on the average of the group (bias).
+ 
+\end_layout
+
+\begin_layout Standard
+If attention was costless then the bias would not matter.
+ 
+\end_layout
+
+\begin_layout Standard
+Decision:
+\end_layout
+
+\begin_layout Standard
+Hire if 
+\begin_inset Formula $q'=\alpha y+(1-\alpha)q_{G}>0$
+\end_inset
+
+, otherwise not hire and earn 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The expected value over the distribution of signals is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V(\sigma_{\epsilon}^{2}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then the firm solves the following System 1 problem:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\max_{\sigma_{\epsilon}^{2}}V(\sigma_{\epsilon}^{2})-C(\sigma_{\epsilon}^{2}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Given 
+\begin_inset Formula $\sigma_{\epsilon}$
+\end_inset
+
+ the solution is hire the worker if
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha y+(1-\alpha)q_{G}>0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cherry picking: 
+\begin_inset Formula $q_{R}<q_{B}<0$
+\end_inset
+
+, only candidates with good signals are hired (job application).
+\end_layout
+
+\begin_layout Standard
+Lemon dropping: would hire the average candidate from either group.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0<q_{R}<q_{B}$
+\end_inset
+
+, only candidates with bad signals are not hired (renting an apartment).
+ 
+\end_layout
+
+\begin_layout Theorem
+In Cherry Picking markets, the 
+\begin_inset Quotes eld
+\end_inset
+
+worse
+\begin_inset Quotes erd
+\end_inset
+
+ group 
+\begin_inset Formula $R$
+\end_inset
+
+ gets less attention.
+ Rational inattention hurts the worst group.
+ 
+\end_layout
+
+\begin_layout Standard
+In Cherry Picking 
+\begin_inset Formula $\sigma_{\epsilon}$
+\end_inset
+
+ is smaller the smaller the group mean because 
+\begin_inset Formula $q_{G}<0$
+\end_inset
+
+, so information is collected more precisely for 
+\begin_inset Formula $R$
+\end_inset
+
+ than for 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+If so, it's more likely that 
+\begin_inset Formula $B$
+\end_inset
+
+ is hired.
+ 
+\end_layout
+
+\begin_layout Theorem
+In Lemon dropping markets, the 
+\begin_inset Quotes eld
+\end_inset
+
+worse
+\begin_inset Quotes erd
+\end_inset
+
+ group 
+\begin_inset Formula $B$
+\end_inset
+
+ gets more attention.
+ Rational inattention hurts the worst group.
+ 
+\end_layout
+
+\begin_layout Standard
+In Lemon dropping 
+\begin_inset Formula $\sigma_{\epsilon}$
+\end_inset
+
+ is higher the higher the group mean because 
+\begin_inset Formula $q_{G}>0$
+\end_inset
+
+, so information is collected less precisely for 
+\begin_inset Formula $R$
+\end_inset
+
+ than for 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+If so, it's more likely that 
+\begin_inset Formula $B$
+\end_inset
+
+ is hired.
+ 
 \end_layout
 
 \begin_layout Chapter
@@ -20742,6 +22229,170 @@ end{proof}
 
 \end_layout
 
+\begin_layout Section
+General Equilibrium (Pure Exchange) with inattention: back to the Sparse
+ max.
+ 
+\end_layout
+
+\begin_layout Standard
+We have as before an endowment 
+\begin_inset Formula $\omega$
+\end_inset
+
+ and 
+\begin_inset Formula $z^{i,s}(p,M^{i})=x_{M^{i}}^{i,s}(p,p\cdot\omega^{i})-\omega^{i}$
+\end_inset
+
+.
+ The aggregate excess demand is 
+\begin_inset Formula $z^{s}(p)=\sum_{i}z^{i,s}(p,M^{i})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The equilibrium prices are such that 
+\begin_inset Formula $z^{s}(p)=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proposition
+Assume Pareto Efficient Interior Allocations.
+ Consumers are such that 
+\begin_inset Formula $M^{i}=M^{j}$
+\end_inset
+
+ for all 
+\begin_inset Formula $i,j\in\{1,\cdots,I\}$
+\end_inset
+
+ if and only if the allocation 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ and 
+\begin_inset Formula $p$
+\end_inset
+
+ such that 
+\begin_inset Formula $z(p)=\sum_{i}(x^{i,*}(p,p\cdot\omega)-\omega^{i})=0$
+\end_inset
+
+ is Pareto Efficient.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nabla_{x}u^{i}(x)=\lambda^{i}p^{s}(m_{i})$
+\end_inset
+
+, in a PE interior equilibrium we have for any two goods 
+\begin_inset Formula $\frac{u_{l}^{i}(x)}{u_{k}^{i}(x)}=\frac{u_{l}^{j}(x)}{u_{k}^{j}(x)}$
+\end_inset
+
+, and we have also 
+\begin_inset Formula $\frac{u_{l}^{i}(x)}{u_{k}^{i}(x)}=\frac{p_{l}}{p_{k}}$
+\end_inset
+
+ due to utility maximization, however say that for any two goods 
+\begin_inset Formula $m_{l}^{i}\neq m_{l}^{j}$
+\end_inset
+
+, for some two goods and then 
+\begin_inset Formula $\frac{p_{l}^{s}(m^{i})}{p_{k}^{s}(m^{i})}<\frac{p_{l}^{s}(m^{j})}{p_{k}^{s}(m^{j})}$
+\end_inset
+
+ which implies that 
+\begin_inset Formula $\frac{u_{l}^{i}(x)}{u_{k}^{i}(x)}<\frac{u_{l}^{j}(x)}{u_{k}^{j}(x)}$
+\end_inset
+
+.
+ Now, we have that this is not a PE (interior) allocation.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Also the Second Welfare Theorem does not hold either, because WARP does
+ not hold.
+ 
+\end_layout
+
+\begin_layout Standard
+Offer curves are not longer lines.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ../../../WesternAP/FirstYear/MicroI/notes/figures/OfferCurves.emf
+	lyxscale 40
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Recall that the offer curve is 
+\begin_inset Formula $OC^{i}(p_{1},p_{2})=\{p:x^{i}(p_{1},p_{2},p\cdot\omega^{i})\}$
+\end_inset
+
+ because HD0 fails then we cannot normalize, this means that 
+\begin_inset Formula $OC^{i}(p_{1},p_{2})$
+\end_inset
+
+ has two parameters not only one as in the rational case, this means that
+ it is a 
+\begin_inset Quotes eld
+\end_inset
+
+ribbon
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
 \begin_layout Chapter
 Positive Theory of Equilibrium
 \end_layout
@@ -26134,759 +27785,6 @@ end{proof}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Chapter
-Behavioral Economics: The Sparse-Max Consumer
-\end_layout
-
-\begin_layout Section
-Introduction
-\end_layout
-
-\begin_layout Standard
-We consider a generalization of the rational consumer model and most of
- the theory we have developed so far.
- Why we need this? There is evidence that the rationality assumption is
- not the best assumption to make.
- Thus it is an important question how relaxing this property affects our
- main results.
- 
-\end_layout
-
-\begin_layout Standard
-The main ingredient is a perceived price 
-\begin_inset Formula $p^{s}$
-\end_inset
-
- that may be different from actual prices 
-\begin_inset Formula $p$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Definition
-Sparse max consumer.
- 
-\begin_inset Formula $smax_{x|p^{s}}u(x)$
-\end_inset
-
- subject to 
-\begin_inset Formula $p'x\leq w$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-The sparse max operator is the given by the following process:
-\end_layout
-
-\begin_layout Standard
-1.
- 
-\begin_inset Formula $max_{x}\mathcal{L}(x,p^{s},w,\lambda^{s})$
-\end_inset
-
- where 
-\begin_inset Formula $\mathcal{L}(x,p^{s},w,\lambda^{s})=u(x)+\lambda^{s}(w-p^{s\prime}x)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Obtain 
-\begin_inset Formula $x(p^{s},\lambda^{s})=argmax_{x}\mathcal{L}(x,p^{s},w,\lambda^{s})$
-\end_inset
-
- for unknown 
-\begin_inset Formula $\lambda^{s}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-2.
- Find 
-\begin_inset Formula $\lambda^{s}$
-\end_inset
-
-, such that 
-\begin_inset Formula $p^{\prime}x(p^{s},\lambda^{s})=w$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Formally, this implies the following:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\nabla_{x}u(x)=\lambda^{s}p^{s}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-p^{\prime}x(p^{s},\lambda^{s})=w.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-This implies that there exists a 
-\begin_inset Formula $w'>0$
-\end_inset
-
- such that the solution to the smax 
-\begin_inset Formula $x^{s}(p,p^{s},w)=arg(smax)_{x|p^{s}}u(x)$
-\end_inset
-
- subject to 
-\begin_inset Formula $p'x\leq w$
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-x^{s}(p,p^{s},w)=x^{r}(p^{s},w'),
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-where 
-\begin_inset Formula $p'x^{r}(p^{s},w')=w$
-\end_inset
-
- and 
-\begin_inset Formula $x^{r}(\cdot)=argmax_{x}u(x)$
-\end_inset
-
- s.t.
- 
-\begin_inset Formula $p'x\leq w$
-\end_inset
-
-, this is the solution to the UMP.
- 
-\end_layout
-
-\begin_layout Proposition
-If 
-\begin_inset Formula $x^{r}$
-\end_inset
-
- is linear in wealth then 
-\begin_inset Formula $x^{s}(p,p^{s},w)=\frac{x^{r}(p^{s},w)}{p'x^{r}(p^{s},1)}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{proof}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $x^{r}(p,w)$
-\end_inset
-
- is linear in wealth means that 
-\begin_inset Formula $x^{r}(p,w)=x^{r}(p,1)w$
-\end_inset
-
-, then we have 
-\begin_inset Formula $p\cdot x^{r}(p^{s},w')=p\cdot x^{r}(p^{s},1)w'=w$
-\end_inset
-
-, this implies that 
-\begin_inset Formula $w'=\frac{w}{p\cdot x^{r}(p^{s},1)}$
-\end_inset
-
-.
- Now, by our previous result we have that 
-\begin_inset Formula $x(p,p^{s},w)=x^{r}(p^{s},w')$
-\end_inset
-
-, by linearity in wealth 
-\begin_inset Formula $x(p,p^{s},w)=x^{r}(p^{s},1)w'=\frac{x^{r}(p^{s},1)w}{p\cdot x^{r}(p^{s},1)}$
-\end_inset
-
-, this implies that 
-\begin_inset Formula $x(p,p^{s},w)=\frac{x^{r}(p^{s},w)}{p\cdot x^{r}(p^{s},1)}.$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-We have an important example:
-\end_layout
-
-\begin_layout Example
-Cobb-Douglas Sparse Max.
- 
-\end_layout
-
-\begin_layout Example
-\begin_inset Formula $x_{l}^{s}(p,p^{s},w)=\frac{\alpha_{l}w}{p_{l}^{s}}\frac{1}{(\sum_{l}(\alpha_{l}p_{l})/p_{l}^{s})}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-If 
-\begin_inset Formula $p^{s}=p$
-\end_inset
-
- then we are back to the rational case.
- 
-\end_layout
-
-\begin_layout Section
-The Perceived Price and Limited Attention
-\end_layout
-
-\begin_layout Standard
-The perceived price is going to be modelled as an average of actual prices
- 
-\begin_inset Formula $p$
-\end_inset
-
- and default prices 
-\begin_inset Formula $p^{d}$
-\end_inset
-
-.
- Default prices, are what the consumer has in mind, maybe a forecast about
- prices 
-\begin_inset Formula $p^{d}=E[\mathbf{p}]$
-\end_inset
-
- if 
-\begin_inset Formula $\mathbf{p}$
-\end_inset
-
- is the distribution of prices in the market.
- More formally 
-\begin_inset Formula $\mathbf{p}$
-\end_inset
-
- can be the history of prices or the memory of the consumer about prices.
- 
-\end_layout
-
-\begin_layout Standard
-The linear model of perceived prices is as follows:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-p_{l}^{s}(m,p,p^{d})=m_{l}p_{l}+(1-m_{l})p_{l}^{d},
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-for 
-\begin_inset Formula $m_{l}\in[0,1]$
-\end_inset
-
- an attention parameter.
- 
-\end_layout
-
-\begin_layout Standard
-The consumer is rational when 
-\begin_inset Formula $m_{l}=1$
-\end_inset
-
- for all 
-\begin_inset Formula $l$
-\end_inset
-
- and he becomes more behavioral when 
-\begin_inset Formula $m<1$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-We let 
-\begin_inset Formula $M=diag(\{m_{l}\}_{l=1}^{L})$
-\end_inset
-
-, the diagonal matrix of all attention parameters.
- 
-\end_layout
-
-\begin_layout Standard
-We have the following result.
- If we have any demand 
-\begin_inset Formula $x(p,w)$
-\end_inset
-
- then we can find a 
-\begin_inset Formula $p^{s}$
-\end_inset
-
- and a 
-\begin_inset Formula $w'$
-\end_inset
-
- such that:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-x^{r}(p^{s},w')=x(p,w).
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-This means that 
-\begin_inset Formula $p^{s}$
-\end_inset
-
- without restrictions is too general.
- 
-\end_layout
-
-\begin_layout Proposition
-The Slutsky matrix of the sparse max is such that 
-\begin_inset Formula $S^{s}(p,w;p^{d})|_{p=p^{d}}=S^{r}(p,w)M$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-We have 
-\begin_inset Formula $x^{s}(p,w)=x^{r}(\{p_{l}^{d},+m_{i}(p_{l}-p_{l}^{d})\}_{l=1}^{L},w'(p,p^{d}))$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Then we derive with respect to 
-\begin_inset Formula $p_{l}$
-\end_inset
-
- and evaluate everything to 
-\begin_inset Formula $p=p^{d}$
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\partial_{p_{l}}x^{s}(p,w)=\partial_{p_{l}}x^{r}(p,w)m_{l}+\partial_{w}x^{r}(p,w)\frac{\partial w'(p,p^{d})}{\partial p_{l}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Now, 
-\begin_inset Formula $p\cdot x^{r}(p^{s},w'(p))=w$
-\end_inset
-
-, we differentiate with respect to 
-\begin_inset Formula $p_{l}$
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $0=x_{l}^{r}+p\cdot\partial_{p_{l}}x^{r}m_{l}+p\cdot\partial_{w}x^{r}\partial_{p_{l}}w'$
-\end_inset
-
-.
- As, 
-\begin_inset Formula $p\cdot x^{r}(p,w)=w$
-\end_inset
-
-, we have 
-\begin_inset Formula $x_{l}^{r}+p\cdot\partial_{p_{l}}x^{r}=0$
-\end_inset
-
-, and 
-\begin_inset Formula $p\cdot\partial_{w}x^{r}=1$
-\end_inset
-
-, so 
-\begin_inset Formula $0=x_{l}^{r}-x_{l}^{r}m_{l}+\partial_{p_{l}}w'$
-\end_inset
-
- thus
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\partial_{p_{l}}x'=(m_{l}-1)x_{l}^{r}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Finally, 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\partial_{p_{l}}x^{s}(p,w)=\partial_{p_{l}}x^{r}m_{l}+\partial_{w}x^{r}(m_{l}-1)x_{l}^{r}.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Notice that 
-\begin_inset Formula $\partial_{w}x^{s}(p,w')=\partial_{w}x^{r}(p,w)$
-\end_inset
-
- when 
-\begin_inset Formula $p=p^{d}$
-\end_inset
-
- and also we have 
-\begin_inset Formula $x^{s}(p^{d},w'(p^{d},p^{d}))=x^{r}(p^{d},w)$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-This implies that at 
-\begin_inset Formula $p=p^{d}$
-\end_inset
-
- and thus 
-\begin_inset Formula $w'(p^{d},p^{d})=w$
-\end_inset
-
- we have:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\partial_{p_{l}}x_{k}^{s}(p,w)+\partial_{w}x_{l}^{s}(p,w)x_{k}^{s}(p,w)=[\partial_{p_{l}}x_{k}^{r}(p,w)+\partial_{w}x_{l}^{r}(p,w)x_{k}^{r}(p,w)]m_{l}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $S^{s}(p,w)|_{p=p^{d}}=S^{r}(p,w)|_{p=p^{d}}M.$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-It turns out that 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $S^{s}(p,w)$
-\end_inset
-
- is not singular in prices that is 
-\begin_inset Formula $S^{s}(p,w)p\neq0$
-\end_inset
-
- for some 
-\begin_inset Formula $(p,w)$
-\end_inset
-
-.
- This is a consequence of failures of homogeneity of degree zero.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $S^{s}(p,w)$
-\end_inset
-
- is also not necessarily NSD, in fact the model 
-\begin_inset Formula $x^{s}(p,w)$
-\end_inset
-
- fails WARP.
- 
-\end_layout
-
-\begin_layout Section
-General Equilibrium (Pure Exchange)
-\end_layout
-
-\begin_layout Standard
-We have as before an endowment 
-\begin_inset Formula $\omega$
-\end_inset
-
- and 
-\begin_inset Formula $z^{i,s}(p,M^{i})=x_{M^{i}}^{i,s}(p,p\cdot\omega^{i})-\omega^{i}$
-\end_inset
-
-.
- The aggregate excess demand is 
-\begin_inset Formula $z^{s}(p)=\sum_{i}z^{i,s}(p,M^{i})$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-The equilibrium prices are such that 
-\begin_inset Formula $z^{s}(p)=0$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Proposition
-Assume Pareto Efficient Interior Allocations.
- Consumers are such that 
-\begin_inset Formula $M^{i}=M^{j}$
-\end_inset
-
- for all 
-\begin_inset Formula $i,j\in\{1,\cdots,I\}$
-\end_inset
-
- if and only if the allocation 
-\begin_inset Formula $x^{*}$
-\end_inset
-
- and 
-\begin_inset Formula $p$
-\end_inset
-
- such that 
-\begin_inset Formula $z(p)=\sum_{i}(x^{i,*}(p,p\cdot\omega)-\omega^{i})=0$
-\end_inset
-
- is Pareto Efficient.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\nabla_{x}u^{i}(x)=\lambda^{i}p^{s}(m_{i})$
-\end_inset
-
-, in a PE interior equilibrium we have for any two goods 
-\begin_inset Formula $\frac{u_{l}^{i}(x)}{u_{k}^{i}(x)}=\frac{u_{l}^{j}(x)}{u_{k}^{j}(x)}$
-\end_inset
-
-, and we have also 
-\begin_inset Formula $\frac{u_{l}^{i}(x)}{u_{k}^{i}(x)}=\frac{p_{l}}{p_{k}}$
-\end_inset
-
- due to utility maximization, however say that for any two goods 
-\begin_inset Formula $m_{l}^{i}\neq m_{l}^{j}$
-\end_inset
-
-, for some two goods and then 
-\begin_inset Formula $\frac{p_{l}^{s}(m^{i})}{p_{k}^{s}(m^{i})}<\frac{p_{l}^{s}(m^{j})}{p_{k}^{s}(m^{j})}$
-\end_inset
-
- which implies that 
-\begin_inset Formula $\frac{u_{l}^{i}(x)}{u_{k}^{i}(x)}<\frac{u_{l}^{j}(x)}{u_{k}^{j}(x)}$
-\end_inset
-
-.
- Now, we have that this is not a PE (interior) allocation.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Also the Second Welfare Theorem does not hold either, because WARP does
- not hold.
- 
-\end_layout
-
-\begin_layout Standard
-Offer curves are not longer lines.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Graphics
-	filename ../../../WesternAP/FirstYear/MicroI/notes/figures/OfferCurves.emf
-	lyxscale 40
-	scale 20
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Recall that the offer curve is 
-\begin_inset Formula $OC^{i}(p_{1},p_{2})=\{p:x^{i}(p_{1},p_{2},p\cdot\omega^{i})\}$
-\end_inset
-
- because HD0 fails then we cannot normalize, this means that 
-\begin_inset Formula $OC^{i}(p_{1},p_{2})$
-\end_inset
-
- has two parameters not only one as in the rational case, this means that
- it is a 
-\begin_inset Quotes eld
-\end_inset
-
-ribbon
-\begin_inset Quotes erd
-\end_inset
-
-.
- 
 \end_layout
 
 \begin_layout Chapter

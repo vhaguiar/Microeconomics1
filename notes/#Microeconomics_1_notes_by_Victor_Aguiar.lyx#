@@ -13486,6 +13486,36 @@ subject to
  
 \end_layout
 
+\begin_layout Standard
+Example of cost 
+\begin_inset Formula $C(m)=\frac{1}{2}\log\frac{1}{1-m}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-(1-m)\sigma_{x}+\frac{1}{2}(1-m)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Discrimination with rational inattention
 \end_layout
