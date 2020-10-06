@@ -13551,7 +13551,7 @@ so that the agent's problem is:
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\max_{\tau}-\frac{1}{2}(1-m)\sigma_{x}^{2}-C(m)
+\max_{m}-\frac{1}{2}(1-m)\sigma_{x}^{2}-C(m)
 \]
 
 \end_inset
@@ -13584,7 +13584,7 @@ Example of cost
 \begin_layout Standard
 \begin_inset Formula 
 \[
--(1-m)\sigma_{x}+\frac{1}{2}(1-m)=0
+\frac{1}{2(1-m)}=\frac{\sigma^{2}}{2}
 \]
 
 \end_inset
@@ -13595,18 +13595,56 @@ Example of cost
 \begin_layout Standard
 \begin_inset Formula 
 \[
--\frac{1}{2}+(\sigma_{x}-\frac{1}{2})m=0
+m=\frac{-1+\sigma_{X}^{2}}{\sigma_{X}^{2}},
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+this means that
+\begin_inset Formula 
+\[
+\sigma_{\epsilon}^{2}=\frac{\sigma_{x}^{2}}{\sigma_{x}^{2}-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+when 
+\begin_inset Formula $\sigma_{x}\geq1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+As 
+\begin_inset Formula $\sigma_{x}^{2}\rightarrow\infty$
+\end_inset
+
+ then 
+\begin_inset Formula $\sigma_{\epsilon}^{2}$
+\end_inset
+
+=1 (De L'Hopitals rule).
+ 
+\end_layout
+
+\begin_layout Standard
+Another different model with a constrained attention capacity is
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-m=\frac{1}{2\sigma_{x}-1},
+max_{m}-\frac{1}{2}(1-m)\sigma_{x}^{2}
 \]
 
 \end_inset
@@ -13615,24 +13653,39 @@ m=\frac{1}{2\sigma_{x}-1},
 \end_layout
 
 \begin_layout Standard
-now let 
-\begin_inset Formula $\sigma_{x}=2$
+subject to 
+\begin_inset Formula $\frac{1}{2}log(\frac{1}{1-m})\leq K.$
 \end_inset
 
-, we have 
-\begin_inset Formula $m=\frac{1}{3}$
+
+\end_layout
+
+\begin_layout Standard
+The solution to this problem is very different:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m=1-e^{-2K},
+\]
+
 \end_inset
 
-, and 
-\begin_inset Formula $\sigma_{x}=1$
+
+\end_layout
+
+\begin_layout Standard
+as the capacity becomes infinity then attention converges to 
+\begin_inset Formula $1$
 \end_inset
 
+.
  
-\begin_inset Formula $m=1$
-\end_inset
+\end_layout
 
-, the higher the uncertainty the lower the attention you pay.
- 
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Section
@@ -14028,1077 +14081,6 @@ If so, it's more likely that
 \end_inset
 
  is hired.
- 
-\end_layout
-
-\begin_layout Chapter
-Aggregate Demand (Ch.
- 4)
-\end_layout
-
-\begin_layout Section
-Introduction
-\end_layout
-
-\begin_layout Itemize
-When can aggregate demand be expressed as a function of prices and aggregate
- wealth? (Macro-Econometrician).
-\end_layout
-
-\begin_layout Itemize
-When does aggregate demand satisfy the weak axiom? (Positive theorist)
-\end_layout
-
-\begin_layout Itemize
-When does aggregate demand have welfare significance? (Welfarist Theorist)
-\end_layout
-
-\begin_layout Definition
-(Aggregate Demand) Aggregate demand is a mapping from prices (common to
- all consumers) and the wealth distribution 
-\begin_inset Formula $x(p,\{w_{i}\}_{i=1}^{I})=\sum_{i=1}^{I}x_{i}(p,w_{i})$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Now we tackle the first question.
-\end_layout
-
-\begin_layout Claim
-We can write aggregate demand as a function of aggregate wealth 
-\begin_inset Formula $x(p,\{w_{i}\}_{i=1}^{I})=x(p,\sum_{i=1}^{I}w_{i})$
-\end_inset
-
- when 
-\begin_inset Formula $\sum_{i=1}^{I}\partial_{w_{i}}x_{l,i}(p,w_{i})dw_{i}=0$
-\end_inset
-
- for every 
-\begin_inset Formula $l$
-\end_inset
-
- when 
-\begin_inset Formula $\sum_{i=1}^{I}dw_{i}=0$
-\end_inset
-
-, this in turn can happen if 
-\end_layout
-
-\begin_layout Claim
-\begin_inset Formula 
-\[
-\partial_{w_{i}}x_{l,i}(p,w_{i})=\partial_{w_{j}}x_{l,j}(p,w_{j})
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Claim
-for all 
-\begin_inset Formula $i,j\in\{1,\cdots,I\}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Now we need to define a class of preferences that admit this possibility.
- 
-\end_layout
-
-\begin_layout Definition
-(Gorman Form) A preference relation 
-\begin_inset Formula $\succeq_{i}$
-\end_inset
-
- satisfies the Gorman Form property if they allow an indirect utility of
- the form:
-\end_layout
-
-\begin_layout Definition
-\begin_inset Formula 
-\[
-v_{i}(p,w_{i})=a_{i}(p)+b(p)w_{i}.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proposition
-A necessary and sufficient condition for the set of consumers to exhibit
- parallel, straight wealth expansion paths is 
-\begin_inset Formula $\partial_{w_{i}}x_{l,i}(p,w_{i})=\partial_{w_{j}}x_{l,j}(p,w_{j})$
-\end_inset
-
- 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-for all 
-\begin_inset Formula $i,j\in\{1,\cdots,I\}$
-\end_inset
-
-, at any price vector 
-\begin_inset Formula $p$
-\end_inset
-
- is that preferences admit indirect utility functions of the Gorman form.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Using Roy's identity we notice that:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $x_{i}(p,w_{i})=-\frac{\nabla_{p}a_{i}(p)+\nabla_{p}b(p)w_{i}}{b(p)}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Now 
-\begin_inset Formula $\partial_{w_{i}}x_{i}(p,w_{i})=-\frac{\nabla_{p}b(p)}{b(p)}$
-\end_inset
-
- that does not depend on 
-\begin_inset Formula $i\in\{1,\cdots,I\}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Examples of Gorman form are identical homothetic preferences or quasi-linear
- preferences with respect to the same good.
- 
-\end_layout
-
-\begin_layout Theorem
-We can write the aggregate demand as a function of aggregate wealth 
-\begin_inset Formula $x(p,\{w_{i}\}_{i=1}^{I})=x(p,\sum_{i=1}^{I}w_{i})$
-\end_inset
-
- if 
-\begin_inset Formula $x_{i}(p,w_{i})$
-\end_inset
-
- for all 
-\begin_inset Formula $i$
-\end_inset
-
- are generated by a Gorman form utility.
- 
-\end_layout
-
-\begin_layout Standard
-The proof follows from the previous results.
- 
-\end_layout
-
-\begin_layout Corollary
-We can write aggregate demand as a function of aggregate wealth 
-\begin_inset Formula $x(p,\{w_{i}\}_{i=1}^{I})=x(p,\sum_{i=1}^{I}w_{i})$
-\end_inset
-
- when 
-\begin_inset Formula $w_{i}$
-\end_inset
-
- is a wealth distribution rule based on prices or 
-\begin_inset Formula $w_{i}=\omega_{i}(p,w)$
-\end_inset
-
- where 
-\begin_inset Formula $w$
-\end_inset
-
- is aggregate wealth.
- 
-\end_layout
-
-\begin_layout Section
-Aggregate Demand and the Weak Axiom
-\end_layout
-
-\begin_layout Standard
-For illustration purposes, we can suppose that the wealth rule is simple
- and that there is a distribution rule vector 
-\begin_inset Formula $\{\alpha_{i}\}_{i=1}^{I}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Such that 
-\begin_inset Formula $\alpha_{i}\geq0$
-\end_inset
-
- and 
-\begin_inset Formula $\sum_{i=1}^{L}\alpha_{i}=1$
-\end_inset
-
-.
- So that 
-\begin_inset Formula $w_{i}=\omega_{i}(p,w)=\alpha_{i}w$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-We have then: 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-x(p,w)=\sum_{i=1}^{I}x_{i}(p,\alpha_{i}w).
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Definition
-(WARP) The aggregate demand 
-\begin_inset Formula $x(p,w)$
-\end_inset
-
- satisfies the Weak Axiom (WA) if 
-\begin_inset Formula $p'x(p^{*},w^{*})\leq w$
-\end_inset
-
- and 
-\begin_inset Formula $x(p,w)\neq x(p^{*},w^{*})$
-\end_inset
-
- imply that 
-\begin_inset Formula $p^{*\prime}x(p,w)>w^{*}$
-\end_inset
-
- for any 
-\begin_inset Formula $(p,w)$
-\end_inset
-
- and 
-\begin_inset Formula $(p^{*},w^{*})$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Definition
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename ../../../WesternAP/FirstYear/MicroI/notes/figures/MGWfig4c1_violationsofWA.pdf
-	scale 50
-	scaleBeforeRotation
-	rotateAngle -90
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Violations of Weak Axiom by the Aggregate Demand
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Claim
-Aggregate demand 
-\begin_inset Formula $x(p,w)$
-\end_inset
-
- may not satisfy the WA even when 
-\begin_inset Formula $x_{i}(p,\alpha_{i}w)$
-\end_inset
-
- satisfy the WARP.
- 
-\end_layout
-
-\begin_layout Standard
-The main reason is that the WA requires that the wealth compensation is
- done at the aggregate level, this may not imply that individuals are compensate
-d.
- 
-\end_layout
-
-\begin_layout Section
-Restrictions on Behavior to Guarantee WA on the Aggregate Demand
-\end_layout
-
-\begin_layout Definition
-(Uncompensated Law of Demand ULD) The individual demand function 
-\begin_inset Formula $x_{i}(p,w_{i})$
-\end_inset
-
- satisfies the ULD property if
-\end_layout
-
-\begin_layout Definition
-\begin_inset Formula 
-\[
-(p^{*}-p)'[x_{i}(p^{*},w_{i})-x_{i}(p,w_{i})]\leq0
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Definition
-for any 
-\begin_inset Formula $p,p^{*}$
-\end_inset
-
- and 
-\begin_inset Formula $w_{i}$
-\end_inset
-
-, with strict inequality if 
-\begin_inset Formula $x_{i}(p^{*},w_{i})\neq x_{i}(p,w_{i})$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Claim
-The 
-\begin_inset Formula $x_{i}$
-\end_inset
-
- satisfies the ULD if and only if 
-\begin_inset Formula $D_{p}x_{i}(p,w_{i})$
-\end_inset
-
- is negative definite for all 
-\begin_inset Formula $p$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In differential terms the ULD means that 
-\begin_inset Formula $dpdx_{i}<0$
-\end_inset
-
-, for 
-\begin_inset Formula $dp$
-\end_inset
-
- big enough to make 
-\begin_inset Formula $x_{i}(p+dp,w_{i})\neq x_{i}(p,w_{i})$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Because it is uncompensated then 
-\begin_inset Formula $dw_{i}=0$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-It follows that: 
-\begin_inset Formula $dpD_{p}x_{i}(p,w_{i})dp<0$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proposition
-If for all 
-\begin_inset Formula $i\in\{1,\cdots,I\}$
-\end_inset
-
- 
-\begin_inset Formula $x_{i}(p,w_{i})$
-\end_inset
-
- satisfies the ULD, so does the aggregate demand 
-\begin_inset Formula $x(p,w)=\sum_{i=1}^{I}x_{i}(p,w_{i})$
-\end_inset
-
-.
- As a consequence the aggregate demand 
-\begin_inset Formula $x(p,w)$
-\end_inset
-
- satisfies the Weak Axiom.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-We have that for all 
-\begin_inset Formula $i$
-\end_inset
-
-,
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $(p^{*}-p)'[x_{i}(p^{*},w_{i})-x_{i}(p,w_{i})]\leq0$
-\end_inset
-
- (by ULD).
-\end_layout
-
-\begin_layout Standard
-Then we sum over 
-\begin_inset Formula $i$
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $(p^{*}-p)'[\sum_{i=1}^{I}x_{i}(p^{*},w_{i})-\sum_{i=1}^{I}x_{i}(p,w_{i})]\leq0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-to obtain 
-\begin_inset Formula $(p^{*}-p)'[x(p^{*},w)-x(p,w)]\leq0$
-\end_inset
-
- (this is ULD for 
-\begin_inset Formula $x(p,w)$
-\end_inset
-
-).
- 
-\end_layout
-
-\begin_layout Standard
-Because this works for any 
-\begin_inset Formula $w$
-\end_inset
-
- and 
-\begin_inset Formula $p,p^{*}$
-\end_inset
-
- it also works for compensated wealth levels.
- 
-\end_layout
-
-\begin_layout Standard
-Thus the WA also holds.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proposition
-If 
-\begin_inset Formula $\succeq_{i}$
-\end_inset
-
- is homothetic, then 
-\begin_inset Formula $x_{i}(p,w_{i})$
-\end_inset
-
- satisfies the ULD property.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-By 
-\begin_inset Formula $\succeq_{i}$
-\end_inset
-
- homothetic preferences the elasticity of quantity of wealth is 1 
-\begin_inset Formula $D_{w_{i}}x_{i}(p,w_{i})w_{i}=x_{i}(p,w_{i})$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Or 
-\begin_inset Formula $\partial_{w^{i}}x_{i}(p,w_{i})\frac{w_{i}}{x_{i}(p,w_{i})}=1$
-\end_inset
-
- , this implies that
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $D_{p}x_{i}(p,w_{i})=S_{i}(p,w_{i})-\frac{1}{w_{i}}x_{i}(p,w_{i})x_{i}(p,w_{i})'$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-The definition of 
-\begin_inset Formula $S_{i}(p,w_{i})=D_{p}x_{i}(p,w_{i})+D_{w_{i}}x_{i}(p,w_{i})x_{i}(p,w_{i})'$
-\end_inset
-
-, we replace,
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $D_{w_{i}}x_{i}(p,w_{i})w_{i}=x_{i}(p,w_{i})$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-We notice that 
-\begin_inset Formula $-\frac{1}{w_{i}}x_{i}(p,w_{i})x_{i}(p,w_{i})'$
-\end_inset
-
- is ND and 
-\begin_inset Formula $S_{i}(p,w_{i})$
-\end_inset
-
- is NSD.
-\end_layout
-
-\begin_layout Standard
-This means that 
-\begin_inset Formula $dpD_{p}x_{i}(p,w_{i})dp\leq0$
-\end_inset
-
-, because 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $dpS_{i}(p,w_{i})dp\leq0$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Conditions for UDL to Arise from Aggregation.
- 
-\end_layout
-
-\begin_layout Proposition
-Suppose we have a continuum of consumers 
-\begin_inset Formula $i\in[0,1]$
-\end_inset
-
-, and preferences are identical and defined on 
-\begin_inset Formula $\mathbb{R}_{+}^{L}$
-\end_inset
-
- with individual demands 
-\begin_inset Formula $x(p,w)$
-\end_inset
-
- where individual wealth is uniformly distributed on 
-\begin_inset Formula $[0,\overline{w}]$
-\end_inset
-
-.
- Then the average demand 
-\begin_inset Formula $\overline{x}(p,\overline{w})=\int_{0}^{\overline{w}}x(p,w)dw$
-\end_inset
-
- satisfies ULD.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Consider 
-\begin_inset Formula $v\in\mathbb{R}^{L}$
-\end_inset
-
- such that 
-\begin_inset Formula $v\neq0$
-\end_inset
-
-, under regularity conditions on 
-\begin_inset Formula $x(\cdot)$
-\end_inset
-
- we can interchange derivatives and integrals and we obtain: 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $v'D_{p}\overline{x}(p,\overline{w})v=\int_{0}^{\overline{w}}v'D_{p}x(p,w)vdw$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Note that:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $D_{p}x(p,w)=S(p,w)-D_{w}x(p,w)x(p,w)'$
-\end_inset
-
-, where 
-\begin_inset Formula $S(p,w)$
-\end_inset
-
- is the individual Slutsky matrix then,
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $v'D_{p}\overline{x}(p,\overline{w})v=\int_{0}^{\overline{w}}v'S(p,w)vdw-\int_{0}^{\overline{w}}(v'D_{w}x(p,w))(v'x(p,w))dw$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Note that, 
-\begin_inset Formula $\frac{d(v'x(p,w))^{2}}{dw}=2\frac{(v'x(p,w))(v'D_{w}x(p,w))dw}{dw}$
-\end_inset
-
-, then 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $-\int_{0}^{\overline{w}}(v'D_{w}x(p,w))(v'x(p,w))dw=-\frac{1}{2}\int_{0}^{\overline{w}}\frac{d(v'x(p,w))^{2}}{dw}dw=-\frac{1}{2}(v'x(p,w))^{2}\leq0$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-This means that, 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $v'D_{p}\overline{x}(p,\overline{w})v\leq0$
-\end_inset
-
-, or the ULD property.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The previous result depends on the fact that the distribution of wealth
- is uniform and that preferences are identical.
- 
-\end_layout
-
-\begin_layout Claim
-The Slutsky matrix of the aggregate demand is 
-\begin_inset Formula $S(p,w)=\sum_{i=1}^{I}S_{i}(p,w)-C(p,w)$
-\end_inset
-
-, where 
-\begin_inset Formula $C(p,w)=\sum_{i=1}^{I}\alpha_{i}[D_{w_{i}}x_{i}(p,\alpha_{i}w)-D_{w}x(p,w)][\frac{1}{\alpha_{i}}x_{i}(p,\alpha_{i}w)-x(p,w)]'$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Finally, we can write a sufficient conditions for 
-\begin_inset Formula $S(p,w)$
-\end_inset
-
- to be NSD as 
-\begin_inset Formula $C(p,w)$
-\end_inset
-
- being positive semidefinite, roughly, on average we require there is a
- positive correlation across consumers between consumption in one commodity
- and the wealth effect for that commodity.
- 
-\end_layout
-
-\begin_layout Theorem
-The aggregate demand 
-\begin_inset Formula $x(p,w)$
-\end_inset
-
- satisfies the WA if 
-\begin_inset Formula $C(p,w)$
-\end_inset
-
- is positive semidefinite.
- 
-\end_layout
-
-\begin_layout Section
-Welfare Content of Aggregate Demand
-\end_layout
-
-\begin_layout Definition
-A positive representative consumer exists if there is a rational preference
- relation 
-\begin_inset Formula $\succeq$
-\end_inset
-
- on 
-\begin_inset Formula $X$
-\end_inset
-
- such that the aggregate demand function 
-\begin_inset Formula $x(p,w)$
-\end_inset
-
- is precisely the Walrasian demand function generated by the preference
- relation.
- That is 
-\begin_inset Formula $x(p,w)\succ x$
-\end_inset
-
- when 
-\begin_inset Formula $x\neq x(p,w)$
-\end_inset
-
- and 
-\begin_inset Formula $p'x\leq w$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-The existence of a positive representative consumer is not enough to assign
- welfare significance at the aggregate demand.
- 
-\end_layout
-
-\begin_layout Standard
-We first need to define a Social Welfare Function.
- 
-\end_layout
-
-\begin_layout Definition
-A (Bergson-Samuelson) social welfare function is a function 
-\begin_inset Formula $W=\mathbb{R}^{I}\mapsto\mathbb{R}$
-\end_inset
-
- that assigns a utility value of each possible vector 
-\begin_inset Formula $(u_{1},\cdots,u_{I})\in\mathbb{R}^{I}$
-\end_inset
-
- of utility levels for the I consumers in the economy.
- 
-\end_layout
-
-\begin_layout Standard
-We are now going to pose a problem, from the point of view of fictional
- central planner.
- The central planner can redistribute wealth for any given price to maximize
- social welfare.
- 
-\end_layout
-
-\begin_layout Problem
-The fictional central planner solves:
-\end_layout
-
-\begin_layout Problem
-\begin_inset Formula 
-\[
-Max_{\{w_{i}\}_{i=1}^{I}}W(\{v_{i}(p,w_{i})\}_{i=1}^{I})
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Problem
-\begin_inset Formula 
-\[
-s.t.\quad\sum_{i=1}^{I}w_{i}\leq w.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-As usual the 
-\begin_inset Formula $v_{i}$
-\end_inset
-
- functions represent the individual indirect utilities.
- 
-\end_layout
-
-\begin_layout Proposition
-The function 
-\begin_inset Formula $v(p,w)=Max_{\{w_{i}\}_{i=1}^{I},\sum_{i=1}^{I}w_{i}\leq w}W(\{v_{i}(p,w_{i})\}_{i=1}^{I})$
-\end_inset
-
- is an indirect utility function for a positive representative consumer
- for the aggregate demand 
-\begin_inset Formula $x(p,w)=\sum_{i=1}^{I}x_{i}(p,w_{i})$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-The proof is left for the reader.
- 
-\end_layout
-
-\begin_layout Definition
-The positive representative consumer 
-\begin_inset Formula $\succeq$
-\end_inset
-
- for the aggregate demand 
-\begin_inset Formula $x(p,w)$
-\end_inset
-
- is a normative representative consumer relative to the social welfare function
- 
-\begin_inset Formula $W(\cdot)$
-\end_inset
-
- if for every 
-\begin_inset Formula $(p,w)$
-\end_inset
-
- the distribution of wealth 
-\begin_inset Formula $\{w_{i}(p,w)\}_{i=1}^{I}$
-\end_inset
-
- solves the fictional central planner problem.
- 
-\end_layout
-
-\begin_layout Standard
-If all 
-\begin_inset Formula $\succeq_{i}$
-\end_inset
-
- admit a Gorman form then the aggregate demand resulting of this admits
- a normative representative consumer.
  
 \end_layout
 
@@ -17157,6 +16139,1077 @@ The expected outcome of
 \begin_layout Standard
 At random you pay one of the rows.
  To incentivize decision making.
+ 
+\end_layout
+
+\begin_layout Chapter
+Aggregate Demand (Ch.
+ 4)
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Itemize
+When can aggregate demand be expressed as a function of prices and aggregate
+ wealth? (Macro-Econometrician).
+\end_layout
+
+\begin_layout Itemize
+When does aggregate demand satisfy the weak axiom? (Positive theorist)
+\end_layout
+
+\begin_layout Itemize
+When does aggregate demand have welfare significance? (Welfarist Theorist)
+\end_layout
+
+\begin_layout Definition
+(Aggregate Demand) Aggregate demand is a mapping from prices (common to
+ all consumers) and the wealth distribution 
+\begin_inset Formula $x(p,\{w_{i}\}_{i=1}^{I})=\sum_{i=1}^{I}x_{i}(p,w_{i})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Now we tackle the first question.
+\end_layout
+
+\begin_layout Claim
+We can write aggregate demand as a function of aggregate wealth 
+\begin_inset Formula $x(p,\{w_{i}\}_{i=1}^{I})=x(p,\sum_{i=1}^{I}w_{i})$
+\end_inset
+
+ when 
+\begin_inset Formula $\sum_{i=1}^{I}\partial_{w_{i}}x_{l,i}(p,w_{i})dw_{i}=0$
+\end_inset
+
+ for every 
+\begin_inset Formula $l$
+\end_inset
+
+ when 
+\begin_inset Formula $\sum_{i=1}^{I}dw_{i}=0$
+\end_inset
+
+, this in turn can happen if 
+\end_layout
+
+\begin_layout Claim
+\begin_inset Formula 
+\[
+\partial_{w_{i}}x_{l,i}(p,w_{i})=\partial_{w_{j}}x_{l,j}(p,w_{j})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim
+for all 
+\begin_inset Formula $i,j\in\{1,\cdots,I\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Now we need to define a class of preferences that admit this possibility.
+ 
+\end_layout
+
+\begin_layout Definition
+(Gorman Form) A preference relation 
+\begin_inset Formula $\succeq_{i}$
+\end_inset
+
+ satisfies the Gorman Form property if they allow an indirect utility of
+ the form:
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+v_{i}(p,w_{i})=a_{i}(p)+b(p)w_{i}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+A necessary and sufficient condition for the set of consumers to exhibit
+ parallel, straight wealth expansion paths is 
+\begin_inset Formula $\partial_{w_{i}}x_{l,i}(p,w_{i})=\partial_{w_{j}}x_{l,j}(p,w_{j})$
+\end_inset
+
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+for all 
+\begin_inset Formula $i,j\in\{1,\cdots,I\}$
+\end_inset
+
+, at any price vector 
+\begin_inset Formula $p$
+\end_inset
+
+ is that preferences admit indirect utility functions of the Gorman form.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using Roy's identity we notice that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{i}(p,w_{i})=-\frac{\nabla_{p}a_{i}(p)+\nabla_{p}b(p)w_{i}}{b(p)}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Now 
+\begin_inset Formula $\partial_{w_{i}}x_{i}(p,w_{i})=-\frac{\nabla_{p}b(p)}{b(p)}$
+\end_inset
+
+ that does not depend on 
+\begin_inset Formula $i\in\{1,\cdots,I\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Examples of Gorman form are identical homothetic preferences or quasi-linear
+ preferences with respect to the same good.
+ 
+\end_layout
+
+\begin_layout Theorem
+We can write the aggregate demand as a function of aggregate wealth 
+\begin_inset Formula $x(p,\{w_{i}\}_{i=1}^{I})=x(p,\sum_{i=1}^{I}w_{i})$
+\end_inset
+
+ if 
+\begin_inset Formula $x_{i}(p,w_{i})$
+\end_inset
+
+ for all 
+\begin_inset Formula $i$
+\end_inset
+
+ are generated by a Gorman form utility.
+ 
+\end_layout
+
+\begin_layout Standard
+The proof follows from the previous results.
+ 
+\end_layout
+
+\begin_layout Corollary
+We can write aggregate demand as a function of aggregate wealth 
+\begin_inset Formula $x(p,\{w_{i}\}_{i=1}^{I})=x(p,\sum_{i=1}^{I}w_{i})$
+\end_inset
+
+ when 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+ is a wealth distribution rule based on prices or 
+\begin_inset Formula $w_{i}=\omega_{i}(p,w)$
+\end_inset
+
+ where 
+\begin_inset Formula $w$
+\end_inset
+
+ is aggregate wealth.
+ 
+\end_layout
+
+\begin_layout Section
+Aggregate Demand and the Weak Axiom
+\end_layout
+
+\begin_layout Standard
+For illustration purposes, we can suppose that the wealth rule is simple
+ and that there is a distribution rule vector 
+\begin_inset Formula $\{\alpha_{i}\}_{i=1}^{I}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Such that 
+\begin_inset Formula $\alpha_{i}\geq0$
+\end_inset
+
+ and 
+\begin_inset Formula $\sum_{i=1}^{L}\alpha_{i}=1$
+\end_inset
+
+.
+ So that 
+\begin_inset Formula $w_{i}=\omega_{i}(p,w)=\alpha_{i}w$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+We have then: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x(p,w)=\sum_{i=1}^{I}x_{i}(p,\alpha_{i}w).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+(WARP) The aggregate demand 
+\begin_inset Formula $x(p,w)$
+\end_inset
+
+ satisfies the Weak Axiom (WA) if 
+\begin_inset Formula $p'x(p^{*},w^{*})\leq w$
+\end_inset
+
+ and 
+\begin_inset Formula $x(p,w)\neq x(p^{*},w^{*})$
+\end_inset
+
+ imply that 
+\begin_inset Formula $p^{*\prime}x(p,w)>w^{*}$
+\end_inset
+
+ for any 
+\begin_inset Formula $(p,w)$
+\end_inset
+
+ and 
+\begin_inset Formula $(p^{*},w^{*})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Definition
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../WesternAP/FirstYear/MicroI/notes/figures/MGWfig4c1_violationsofWA.pdf
+	scale 50
+	scaleBeforeRotation
+	rotateAngle -90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Violations of Weak Axiom by the Aggregate Demand
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim
+Aggregate demand 
+\begin_inset Formula $x(p,w)$
+\end_inset
+
+ may not satisfy the WA even when 
+\begin_inset Formula $x_{i}(p,\alpha_{i}w)$
+\end_inset
+
+ satisfy the WARP.
+ 
+\end_layout
+
+\begin_layout Standard
+The main reason is that the WA requires that the wealth compensation is
+ done at the aggregate level, this may not imply that individuals are compensate
+d.
+ 
+\end_layout
+
+\begin_layout Section
+Restrictions on Behavior to Guarantee WA on the Aggregate Demand
+\end_layout
+
+\begin_layout Definition
+(Uncompensated Law of Demand ULD) The individual demand function 
+\begin_inset Formula $x_{i}(p,w_{i})$
+\end_inset
+
+ satisfies the ULD property if
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+(p^{*}-p)'[x_{i}(p^{*},w_{i})-x_{i}(p,w_{i})]\leq0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+for any 
+\begin_inset Formula $p,p^{*}$
+\end_inset
+
+ and 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+, with strict inequality if 
+\begin_inset Formula $x_{i}(p^{*},w_{i})\neq x_{i}(p,w_{i})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Claim
+The 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ satisfies the ULD if and only if 
+\begin_inset Formula $D_{p}x_{i}(p,w_{i})$
+\end_inset
+
+ is negative definite for all 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In differential terms the ULD means that 
+\begin_inset Formula $dpdx_{i}<0$
+\end_inset
+
+, for 
+\begin_inset Formula $dp$
+\end_inset
+
+ big enough to make 
+\begin_inset Formula $x_{i}(p+dp,w_{i})\neq x_{i}(p,w_{i})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Because it is uncompensated then 
+\begin_inset Formula $dw_{i}=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+It follows that: 
+\begin_inset Formula $dpD_{p}x_{i}(p,w_{i})dp<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+If for all 
+\begin_inset Formula $i\in\{1,\cdots,I\}$
+\end_inset
+
+ 
+\begin_inset Formula $x_{i}(p,w_{i})$
+\end_inset
+
+ satisfies the ULD, so does the aggregate demand 
+\begin_inset Formula $x(p,w)=\sum_{i=1}^{I}x_{i}(p,w_{i})$
+\end_inset
+
+.
+ As a consequence the aggregate demand 
+\begin_inset Formula $x(p,w)$
+\end_inset
+
+ satisfies the Weak Axiom.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We have that for all 
+\begin_inset Formula $i$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(p^{*}-p)'[x_{i}(p^{*},w_{i})-x_{i}(p,w_{i})]\leq0$
+\end_inset
+
+ (by ULD).
+\end_layout
+
+\begin_layout Standard
+Then we sum over 
+\begin_inset Formula $i$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(p^{*}-p)'[\sum_{i=1}^{I}x_{i}(p^{*},w_{i})-\sum_{i=1}^{I}x_{i}(p,w_{i})]\leq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+to obtain 
+\begin_inset Formula $(p^{*}-p)'[x(p^{*},w)-x(p,w)]\leq0$
+\end_inset
+
+ (this is ULD for 
+\begin_inset Formula $x(p,w)$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Because this works for any 
+\begin_inset Formula $w$
+\end_inset
+
+ and 
+\begin_inset Formula $p,p^{*}$
+\end_inset
+
+ it also works for compensated wealth levels.
+ 
+\end_layout
+
+\begin_layout Standard
+Thus the WA also holds.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+If 
+\begin_inset Formula $\succeq_{i}$
+\end_inset
+
+ is homothetic, then 
+\begin_inset Formula $x_{i}(p,w_{i})$
+\end_inset
+
+ satisfies the ULD property.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+By 
+\begin_inset Formula $\succeq_{i}$
+\end_inset
+
+ homothetic preferences the elasticity of quantity of wealth is 1 
+\begin_inset Formula $D_{w_{i}}x_{i}(p,w_{i})w_{i}=x_{i}(p,w_{i})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Or 
+\begin_inset Formula $\partial_{w^{i}}x_{i}(p,w_{i})\frac{w_{i}}{x_{i}(p,w_{i})}=1$
+\end_inset
+
+ , this implies that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D_{p}x_{i}(p,w_{i})=S_{i}(p,w_{i})-\frac{1}{w_{i}}x_{i}(p,w_{i})x_{i}(p,w_{i})'$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The definition of 
+\begin_inset Formula $S_{i}(p,w_{i})=D_{p}x_{i}(p,w_{i})+D_{w_{i}}x_{i}(p,w_{i})x_{i}(p,w_{i})'$
+\end_inset
+
+, we replace,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D_{w_{i}}x_{i}(p,w_{i})w_{i}=x_{i}(p,w_{i})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We notice that 
+\begin_inset Formula $-\frac{1}{w_{i}}x_{i}(p,w_{i})x_{i}(p,w_{i})'$
+\end_inset
+
+ is ND and 
+\begin_inset Formula $S_{i}(p,w_{i})$
+\end_inset
+
+ is NSD.
+\end_layout
+
+\begin_layout Standard
+This means that 
+\begin_inset Formula $dpD_{p}x_{i}(p,w_{i})dp\leq0$
+\end_inset
+
+, because 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dpS_{i}(p,w_{i})dp\leq0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conditions for UDL to Arise from Aggregation.
+ 
+\end_layout
+
+\begin_layout Proposition
+Suppose we have a continuum of consumers 
+\begin_inset Formula $i\in[0,1]$
+\end_inset
+
+, and preferences are identical and defined on 
+\begin_inset Formula $\mathbb{R}_{+}^{L}$
+\end_inset
+
+ with individual demands 
+\begin_inset Formula $x(p,w)$
+\end_inset
+
+ where individual wealth is uniformly distributed on 
+\begin_inset Formula $[0,\overline{w}]$
+\end_inset
+
+.
+ Then the average demand 
+\begin_inset Formula $\overline{x}(p,\overline{w})=\int_{0}^{\overline{w}}x(p,w)dw$
+\end_inset
+
+ satisfies ULD.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider 
+\begin_inset Formula $v\in\mathbb{R}^{L}$
+\end_inset
+
+ such that 
+\begin_inset Formula $v\neq0$
+\end_inset
+
+, under regularity conditions on 
+\begin_inset Formula $x(\cdot)$
+\end_inset
+
+ we can interchange derivatives and integrals and we obtain: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v'D_{p}\overline{x}(p,\overline{w})v=\int_{0}^{\overline{w}}v'D_{p}x(p,w)vdw$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D_{p}x(p,w)=S(p,w)-D_{w}x(p,w)x(p,w)'$
+\end_inset
+
+, where 
+\begin_inset Formula $S(p,w)$
+\end_inset
+
+ is the individual Slutsky matrix then,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v'D_{p}\overline{x}(p,\overline{w})v=\int_{0}^{\overline{w}}v'S(p,w)vdw-\int_{0}^{\overline{w}}(v'D_{w}x(p,w))(v'x(p,w))dw$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Note that, 
+\begin_inset Formula $\frac{d(v'x(p,w))^{2}}{dw}=2\frac{(v'x(p,w))(v'D_{w}x(p,w))dw}{dw}$
+\end_inset
+
+, then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $-\int_{0}^{\overline{w}}(v'D_{w}x(p,w))(v'x(p,w))dw=-\frac{1}{2}\int_{0}^{\overline{w}}\frac{d(v'x(p,w))^{2}}{dw}dw=-\frac{1}{2}(v'x(p,w))^{2}\leq0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+This means that, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v'D_{p}\overline{x}(p,\overline{w})v\leq0$
+\end_inset
+
+, or the ULD property.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The previous result depends on the fact that the distribution of wealth
+ is uniform and that preferences are identical.
+ 
+\end_layout
+
+\begin_layout Claim
+The Slutsky matrix of the aggregate demand is 
+\begin_inset Formula $S(p,w)=\sum_{i=1}^{I}S_{i}(p,w)-C(p,w)$
+\end_inset
+
+, where 
+\begin_inset Formula $C(p,w)=\sum_{i=1}^{I}\alpha_{i}[D_{w_{i}}x_{i}(p,\alpha_{i}w)-D_{w}x(p,w)][\frac{1}{\alpha_{i}}x_{i}(p,\alpha_{i}w)-x(p,w)]'$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Finally, we can write a sufficient conditions for 
+\begin_inset Formula $S(p,w)$
+\end_inset
+
+ to be NSD as 
+\begin_inset Formula $C(p,w)$
+\end_inset
+
+ being positive semidefinite, roughly, on average we require there is a
+ positive correlation across consumers between consumption in one commodity
+ and the wealth effect for that commodity.
+ 
+\end_layout
+
+\begin_layout Theorem
+The aggregate demand 
+\begin_inset Formula $x(p,w)$
+\end_inset
+
+ satisfies the WA if 
+\begin_inset Formula $C(p,w)$
+\end_inset
+
+ is positive semidefinite.
+ 
+\end_layout
+
+\begin_layout Section
+Welfare Content of Aggregate Demand
+\end_layout
+
+\begin_layout Definition
+A positive representative consumer exists if there is a rational preference
+ relation 
+\begin_inset Formula $\succeq$
+\end_inset
+
+ on 
+\begin_inset Formula $X$
+\end_inset
+
+ such that the aggregate demand function 
+\begin_inset Formula $x(p,w)$
+\end_inset
+
+ is precisely the Walrasian demand function generated by the preference
+ relation.
+ That is 
+\begin_inset Formula $x(p,w)\succ x$
+\end_inset
+
+ when 
+\begin_inset Formula $x\neq x(p,w)$
+\end_inset
+
+ and 
+\begin_inset Formula $p'x\leq w$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The existence of a positive representative consumer is not enough to assign
+ welfare significance at the aggregate demand.
+ 
+\end_layout
+
+\begin_layout Standard
+We first need to define a Social Welfare Function.
+ 
+\end_layout
+
+\begin_layout Definition
+A (Bergson-Samuelson) social welfare function is a function 
+\begin_inset Formula $W=\mathbb{R}^{I}\mapsto\mathbb{R}$
+\end_inset
+
+ that assigns a utility value of each possible vector 
+\begin_inset Formula $(u_{1},\cdots,u_{I})\in\mathbb{R}^{I}$
+\end_inset
+
+ of utility levels for the I consumers in the economy.
+ 
+\end_layout
+
+\begin_layout Standard
+We are now going to pose a problem, from the point of view of fictional
+ central planner.
+ The central planner can redistribute wealth for any given price to maximize
+ social welfare.
+ 
+\end_layout
+
+\begin_layout Problem
+The fictional central planner solves:
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+Max_{\{w_{i}\}_{i=1}^{I}}W(\{v_{i}(p,w_{i})\}_{i=1}^{I})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+s.t.\quad\sum_{i=1}^{I}w_{i}\leq w.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As usual the 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ functions represent the individual indirect utilities.
+ 
+\end_layout
+
+\begin_layout Proposition
+The function 
+\begin_inset Formula $v(p,w)=Max_{\{w_{i}\}_{i=1}^{I},\sum_{i=1}^{I}w_{i}\leq w}W(\{v_{i}(p,w_{i})\}_{i=1}^{I})$
+\end_inset
+
+ is an indirect utility function for a positive representative consumer
+ for the aggregate demand 
+\begin_inset Formula $x(p,w)=\sum_{i=1}^{I}x_{i}(p,w_{i})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The proof is left for the reader.
+ 
+\end_layout
+
+\begin_layout Definition
+The positive representative consumer 
+\begin_inset Formula $\succeq$
+\end_inset
+
+ for the aggregate demand 
+\begin_inset Formula $x(p,w)$
+\end_inset
+
+ is a normative representative consumer relative to the social welfare function
+ 
+\begin_inset Formula $W(\cdot)$
+\end_inset
+
+ if for every 
+\begin_inset Formula $(p,w)$
+\end_inset
+
+ the distribution of wealth 
+\begin_inset Formula $\{w_{i}(p,w)\}_{i=1}^{I}$
+\end_inset
+
+ solves the fictional central planner problem.
+ 
+\end_layout
+
+\begin_layout Standard
+If all 
+\begin_inset Formula $\succeq_{i}$
+\end_inset
+
+ admit a Gorman form then the aggregate demand resulting of this admits
+ a normative representative consumer.
  
 \end_layout
 
