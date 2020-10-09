@@ -13584,7 +13584,7 @@ Example of cost
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\frac{1}{2(1-m)}=\frac{\sigma^{2}}{2}
+\frac{1}{2(1-m)}=\frac{\sigma_{X}^{2}}{2}
 \]
 
 \end_inset
@@ -13617,7 +13617,7 @@ this means that
 
 \begin_layout Standard
 when 
-\begin_inset Formula $\sigma_{x}\geq1$
+\begin_inset Formula $\sigma_{X}\geq1$
 \end_inset
 
 .
@@ -13682,10 +13682,6 @@ as the capacity becomes infinity then attention converges to
 
 .
  
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \begin_layout Section
@@ -14112,11 +14108,11 @@ We consider
 \end_inset
 
  for all 
-\begin_inset Formula $z\in X$
+\begin_inset Formula $z\in Z$
 \end_inset
 
  and 
-\begin_inset Formula $\sum_{z\in Z}p(x)=1$
+\begin_inset Formula $\sum_{z\in Z}p(z)=1$
 \end_inset
 
 .
@@ -14132,8 +14128,11 @@ Let
 \begin_inset Formula $Z$
 \end_inset
 
-.
- 
+ (e.g., 
+\begin_inset Formula $p\in\Delta(Z)$
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -14210,7 +14209,7 @@ We consider a preference relation
 \end_layout
 
 \begin_layout Definition
-we say that 
+We say that 
 \begin_inset Formula $\succeq$
 \end_inset
 
@@ -14238,6 +14237,131 @@ The Bernoulli utility is bounded and continuous and is defined over prices
 \end_inset
 
 .
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $p=(\frac{1}{2},\frac{1}{2})$
+\end_inset
+
+ 
+\begin_inset Formula $Z=\{10,0\}=\{z_{1},z_{2}\}$
+\end_inset
+
+.
+\begin_inset Formula $V^{CD}(p)=p_{1}^{\alpha}p_{2}^{(1-\alpha)}$
+\end_inset
+
+ Cobb-Douglas is non-expected utility.
+ Expected Utility: 
+\begin_inset Formula $U(p)=p_{1}u(10)+p_{2}u(0)=\frac{1}{2}u(10)+\frac{1}{2}u(0)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Preferences that are not rational.
+ 
+\end_layout
+
+\begin_layout Standard
+Stochastic dominance:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F_{Y}(y)=Pr(y\leq Y)=\sum_{z\in Z}1(z\geq y)p(z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Y$
+\end_inset
+
+ is going be distributed with 
+\begin_inset Formula $p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F_{X}(y)=\sum_{z\in Z}1(z\geq y)q(z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X$
+\end_inset
+
+ is going to be distributed with 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Z=\{10,0\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p=(1,0)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q=(0,1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p$
+\end_inset
+
+ first order stochastic dominant to 
+\begin_inset Formula $q$
+\end_inset
+
+ 
+\begin_inset Formula $\iff p\geq_{FOD}q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F_{Y}(y)\leq F_{X}(y)$
+\end_inset
+
+ for all 
+\begin_inset Formula $y\in Z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\geq_{FOD}$
+\end_inset
+
+ is a binary relation on 
+\begin_inset Formula $\Delta(Z)$
+\end_inset
+
+ that is incomplete but transitive.
  
 \end_layout
 
@@ -14307,12 +14431,12 @@ Representation Theorem
 \end_layout
 
 \begin_layout Theorem
-The preference relation 
+The rational preference relation 
 \begin_inset Formula $\succeq$
 \end_inset
 
  satisfies the Independence Axiom and Mixture continuity if and only if
- there exists a utility function 
+ there exists a (Bernoulli) utility function 
 \begin_inset Formula $u:Z\mapsto\mathbb{R}$
 \end_inset
 
@@ -14462,7 +14586,15 @@ Step 2.
 \begin_inset Formula $p^{-}$
 \end_inset
 
-.
+ (these two lotteries exists because 
+\begin_inset Formula $\succeq$
+\end_inset
+
+ is transitive and complete and 
+\begin_inset Formula $\Delta(Z)$
+\end_inset
+
+ is a compact set).
  Now 
 \begin_inset Formula $\alpha,\beta\in[0,1]$
 \end_inset
@@ -14866,7 +14998,7 @@ The expected utility consumer is risk averter if
 \begin_layout Claim
 \begin_inset Formula 
 \[
-\sum_{x\in Z}u(x)p(x)\leq u(\sum xp(x))
+\sum_{x\in Z}u(x)p(x)\leq u(\sum_{x\in Z}xp(x))
 \]
 
 \end_inset
@@ -15197,7 +15329,7 @@ We fix a topology on this pace
 \end_layout
 
 \begin_layout Theorem
-A preference relation 
+A rational preference relation 
 \begin_inset Formula $\succeq$
 \end_inset
 
