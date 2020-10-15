@@ -17448,7 +17448,7 @@ where
 
 \begin_layout Standard
 Substitute 
-\begin_inset Formula $z=y-p_{j}/p_{z}$
+\begin_inset Formula $z=(y_{i}-p_{z})/p_{j}$
 \end_inset
 
  to derive the conditional indirect utility function for each brand:
@@ -17457,7 +17457,7 @@ Substitute
 \begin_layout Standard
 \begin_inset Formula 
 \[
-U_{ij}^{*}(x_{j},p_{j},p_{z},y_{i})=U_{i}(x_{j},y_{i}-p_{j}/p_{z}).
+U_{ij}^{*}(x_{j},p_{j},p_{z},y_{i})=U_{i,j}(x_{j},y_{i}-p_{j}/p_{z}).
 \]
 
 \end_inset
@@ -17481,6 +17481,14 @@ U_{i0}^{*}(0,y_{i}/p_{z}).
 \end_layout
 
 \begin_layout Standard
+(Usually, we normalize 
+\begin_inset Formula $U_{i0}^{*}(0,y_{i}/p_{z})=0$
+\end_inset
+
+ for all individuals.)
+\end_layout
+
+\begin_layout Standard
 The consumer chooses the brand yielding the highest conditional indirect
  utility:
 \end_layout
@@ -17494,6 +17502,27 @@ max_{j}U_{ij}^{*}(x_{j},p_{j},p_{z},y_{i}).
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Result of this maximizing is discrete choice individual 
+\begin_inset Formula $i$
+\end_inset
+
+, will choose 
+\begin_inset Formula $j$
+\end_inset
+
+ whenever 
+\begin_inset Formula $U_{ij}^{*}(x_{j},p_{j},p_{z},y_{i})>U_{ij'}^{*}(x_{j},p_{j},p_{z},y_{i})$
+\end_inset
+
+ for all 
+\begin_inset Formula $j'\neq j$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -17550,8 +17579,81 @@ P_{ij}(p_{1},\cdots,p_{J},p_{z},y_{i})=Prob\{\epsilon_{i0},\cdots,\epsilon_{i,J}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula 
+\[
+=Prob\{\epsilon_{i0},\cdots,\epsilon_{i,J}:V_{j}-V_{j'}>\epsilon_{ij}-\epsilon_{ij'}\forall j'\neq j\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Usually, in order to model a population market share I assume that 
 \begin_inset Formula $\text{\ensuremath{\epsilon_{ij}\sim^{i.i.d.}F(\cdot)}.}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+s_{j}(p_{1},\cdots,p_{J},p_{z},y)=Prob\{\epsilon_{0},\cdots,\epsilon_{,J}:V_{j}-V_{j'}>\epsilon_{j}-\epsilon_{j'}\forall j'\neq j\}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Usually I observe in data from finite samples are the relative frequencies
+ of choice:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\hat{P}_{ij}=\frac{1}{K}\sum_{k=1}^{K}1(Choice_{i,k}=j|0,\cdots,j,\cdots J),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we have 
+\begin_inset Formula $K$
+\end_inset
+
+ trials from the same individual, and they converge to the true stochastic
+ choice rule in the limit as the number of experiments becomes infinite:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+lim_{K\rightarrow\infty}\hat{P}_{ij,K}=_{p}P_{ij}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Shares instead are computed as the sample average:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\hat{s}_{j}=\frac{1}{N}\sum_{i=1}^{N}1(Choice_{i}=j|0,\cdots,j,\cdots J).
+\]
+
 \end_inset
 
 
@@ -17603,9 +17705,17 @@ F_{\epsilon}(x)=exp(-exp(-\frac{x-\eta}{\mu}))=Pr(\epsilon\leq x)
 \begin_layout Standard
 \begin_inset Formula 
 \[
-P_{ij}=\frac{exp(V_{ij})}{\sum_{j'=0,\cdots,J}exp(V_{ij'})}.
+P_{ij}=\frac{exp(V_{ij})}{\sum_{j'=0,\cdots,J}exp(V_{ij'})}=\int_{\eta\in supp(\boldsymbol{\eta})}1(V_{ij}-V_{ij'}\geq\epsilon_{ij}-\epsilon_{ij'}\forall j\neq j')F_{\eta}(d\eta).
 \]
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Define 
+\begin_inset Formula $\boldsymbol{\eta}=(\epsilon_{ij}-\epsilon_{ij'})_{i\neq j}$
 \end_inset
 
 
@@ -17752,7 +17862,7 @@ Let's be more formal about Luce with choice set variation.
 \begin_inset Formula $X$
 \end_inset
 
- be finite and 
+ be a finite choice set and 
 \begin_inset Formula $\mathcal{M}=2^{X}\setminus\emptyset$
 \end_inset
 
@@ -17766,12 +17876,18 @@ Let's be more formal about Luce with choice set variation.
 \end_inset
 
 .
+ We go back to the environment of the first chapters where we allowed menu
+ variation.
  This means that 
 \begin_inset Formula $\sum_{a\in A}\rho_{A}(a)=1$
 \end_inset
 
  and 
-\begin_inset Formula $\rho_{A}(\cdot)\geq0$
+\begin_inset Formula $\rho_{A}(a)\geq0$
+\end_inset
+
+ for all 
+\begin_inset Formula $a\in A$
 \end_inset
 
 .
@@ -17845,11 +17961,11 @@ whenever the probabilities are positive.
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $(ii)$
+\begin_inset Formula $(i)$
 \end_inset
 
  implies 
-\begin_inset Formula $(i)$
+\begin_inset Formula $(ii)$
 \end_inset
 
 
@@ -17861,7 +17977,7 @@ For all
 \end_inset
 
  and define 
-\begin_inset Formula $w(x)=exp(V_{x})=\rho_{X}(x)$
+\begin_inset Formula $w(x)=exp(v(x))=\rho_{X}(x)$
 \end_inset
 
 .
@@ -17891,7 +18007,7 @@ Fix
 \begin_layout Proof
 \begin_inset Formula 
 \[
-\rho_{A}(x)=\rho_{X}(x)\frac{\rho_{A}(x^{*})}{\rho_{X}(x^{*})}=\frac{}{}.
+\rho_{A}(x)=\rho_{X}(x)\frac{\rho_{A}(x^{*})}{\rho_{X}(x^{*})}.
 \]
 
 \end_inset
@@ -17906,7 +18022,7 @@ Notice that:
 \begin_layout Proof
 \begin_inset Formula 
 \[
-\rho_{A}(x)=w(x)\frac{\rho_{A}(x^{*})}{w(x^{*})},
+\rho_{A}(x)=w(x)\frac{\rho_{A}(x^{*})}{w(x^{*})}\forall x\in A,
 \]
 
 \end_inset
@@ -17983,6 +18099,28 @@ Take a choice set
 
 \end_layout
 
+\begin_layout Example
+Random CD utility: 
+\begin_inset Formula $u(x,y)=x^{\alpha}y^{1-\alpha}$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha\sim\text{Uniform}$
+\end_inset
+
+
+\begin_inset Formula $[0,1]$
+\end_inset
+
+.
+ For this case 
+\begin_inset Formula $\Omega=[0,1]$
+\end_inset
+
+.
+ 
+\end_layout
+
 \begin_layout Standard
 Let 
 \begin_inset Formula $C(x,A)$
@@ -18022,7 +18160,8 @@ C(x,A):=\{\omega\in\Omega:\boldsymbol{U}_{\omega}(x)>\boldsymbol{U}_{\omega}(y)\
 \begin_inset Formula $\rho$
 \end_inset
 
- has a random utility (RU) representation if there exists 
+ has a random utility (RU) representation if there exists a random utility
+ 
 \begin_inset Formula $\boldsymbol{U}$
 \end_inset
 
@@ -18238,16 +18377,12 @@ Extremeness.
 Then we have the following characterization.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Theorem
 (Gul and Pesendorfer, 2006) 
 \begin_inset Formula $\rho$
 \end_inset
 
- has a REU representation if and only if it satisfies 
-\end_layout
-
-\begin_layout Theorem
--Regularity
+ has a REU representation if and only if it satisfies: -Regularity
 \end_layout
 
 \begin_layout Theorem
@@ -18306,35 +18441,7 @@ and since
 \begin_layout Proof
 \begin_inset Formula 
 \[
-\text{\ensuremath{\rho_{B}(a)=\mathbb{P}(C(a,B))}}\leq\rho_{A}(a)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-The Supply Side of the Discrete Products Economy
-\end_layout
-
-\begin_layout Standard
-We assume that we have one firm that produces all 
-\begin_inset Formula $J$
-\end_inset
-
- products.
- The size of the market is the constant 
-\begin_inset Formula $M$
-\end_inset
-
-, the profit function of the firm is given by
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\pi=\sum_{j=1,\cdots,J}(p_{j}-mc_{j})M\cdot s_{j}(p,x)
+\text{\ensuremath{\rho_{B}(a)=\mathbb{P}(C(a,B))}}\leq\rho_{A}(a).
 \]
 
 \end_inset
@@ -18343,67 +18450,44 @@ We assume that we have one firm that produces all
 \end_layout
 
 \begin_layout Standard
-Where 
-\begin_inset Formula $ln(mc_{j})=x_{j}\gamma+\omega_{j}$
+\begin_inset Separator plain
 \end_inset
 
- is the marginal cost of the production of one unit of good 
-\begin_inset Formula $j$
-\end_inset
 
- where 
-\begin_inset Formula $\gamma$
-\end_inset
-
- is a unitary cost for observable attributes 
-\begin_inset Formula $x_{j}$
-\end_inset
-
- and 
-\begin_inset Formula $\omega_{j}$
-\end_inset
-
- is a productivity shock.
- 
 \end_layout
 
 \begin_layout Standard
-The product share is the proportion of the total size of the economy 
-\begin_inset Formula $M$
+We have some notable examples:
+\end_layout
+
+\begin_layout Definition
+Random CRRA: Consider now that 
+\begin_inset Formula $\Omega=\mathbb{R}$
 \end_inset
 
-, that chooses product 
-\begin_inset Formula $j$
-\end_inset
-
-.
- 
+ and it's interpreted as the degree of risk aversion then the random Bernoulli
+ utility is:
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula $s_{j}(p,x)=\int\frac{exp(V_{j}(x_{j},p_{j},p_{z},y))}{\sum_{j'}exp(V_{j'}(x_{j},p_{j},p_{z},y))}dF(y)$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-The problem for the firm is that they can price a good according to its
- attributes but they do not observe the wealth distribution.
- 
-\end_layout
-
-\begin_layout Standard
-The problem of the firm is to maximize profits by choosing price.
- This is a monopolist, it is not a price taker.
- 
-\end_layout
-
-\begin_layout Standard
+\begin_layout Definition
 \begin_inset Formula 
 \[
-max_{p}\pi
+\boldsymbol{u}_{\omega}(z)=\frac{z^{1-\omega}}{1-\omega}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+In this case randomness comes from random relative risk aversion.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+\rho_{A}(p)=\mathbb{P}(\omega|\sum_{z\in Z}p(z)\frac{z^{1-\omega}}{1-\omega}>\sum_{z\in Z}q(z)\frac{z^{1-\omega}}{1-\omega}\quad\forall q\in A\setminus\{p\})
 \]
 
 \end_inset
@@ -18412,49 +18496,17 @@ max_{p}\pi
 \end_layout
 
 \begin_layout Standard
-The FOC are:
+Say that 
+\begin_inset Formula $\omega\sim F(\cdot)$
+\end_inset
+
+ then
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-s_{j}(p,x)+\sum_{r=1,\cdots,J}(p_{r}-mc_{r})\partial_{p_{j}}s_{r}(p,x)=0.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Partial Equilibrium
-\end_layout
-
-\begin_layout Standard
-The pair 
-\begin_inset Formula $(p,s(p,x))$
-\end_inset
-
- of observed prices for 
-\begin_inset Formula $J$
-\end_inset
-
- commodities and observed market shares 
-\begin_inset Formula $s(p,x)$
-\end_inset
-
- is a partial equilibrium if and only if:
-\end_layout
-
-\begin_layout Standard
-(i) Consumer maximize their random utility given prices and their wealth.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-s_{j}(p,x)=\int\frac{exp(V_{j}(x_{j},p_{j},p_{z},y))}{\sum_{j'}(V_{j'}(x_{j},p_{j},p_{z},y))}dF(y)
+\rho_{A}(p)=\int_{\omega\in\Omega}1(\sum_{z\in Z}p(z)\frac{z^{1-\omega}}{1-\omega}>\sum_{z\in Z}q(z)\frac{z^{1-\omega}}{1-\omega}\quad\forall q\in A\setminus\{p\})dF(\omega).
 \]
 
 \end_inset
@@ -18463,14 +18515,9 @@ s_{j}(p,x)=\int\frac{exp(V_{j}(x_{j},p_{j},p_{z},y))}{\sum_{j'}(V_{j'}(x_{j},p_{
 \end_layout
 
 \begin_layout Standard
-(ii) The firm maximizes its profit with respect to prices and observed market
- shares:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
-s_{j}(p,x)+\sum_{r=1,\cdots,J}(p_{r}-mc_{r})\partial_{p_{j}}s_{r}(p,x)=0.
+\text{\ensuremath{\omega=\overline{\omega}+\epsilon}}
 \]
 
 \end_inset
@@ -18516,7 +18563,7 @@ Consider
 \begin_layout Standard
 \begin_inset Formula 
 \[
-p(a,A)=\sum_{r\in R}\pi(r)\mathbb{I}(arb\forall b\in A\backslash\{a\}).
+\rho(a,A)=\rho_{A}(a)=\sum_{r\in R}\pi(r)\mathbb{I}(arb\forall b\in A\backslash\{a\}).
 \]
 
 \end_inset
@@ -18564,7 +18611,7 @@ Where
 \end_inset
 
  we have 
-\begin_inset Formula $\sum_{k=1}^{n}p(a_{k},D_{k})\leq max_{r\in R}\sum_{k=1}^{n}\mathbf{\mathbb{I}}(a_{k}rb\forall b\in D_{k}\backslash\{a_{k}\}).$
+\begin_inset Formula $\sum_{k=1}^{n}\rho_{D_{k}}(a_{k})\leq max_{r\in R}\sum_{k=1}^{n}\mathbf{\mathbb{I}}(a_{k}rb\forall b\in D_{k}\backslash\{a_{k}\}).$
 \end_inset
 
  
@@ -18620,7 +18667,7 @@ where,
 \end_inset
 
  and 
-\begin_inset Formula $p=(p(a_{k},D_{k}))_{k=1}^{K}$
+\begin_inset Formula $\rho=(\rho_{D_{k}}(a_{k}))_{k=1}^{K}$
 \end_inset
 
 , and the unknown is a vector 
@@ -18714,7 +18761,7 @@ Note that if (iii) holds then for any sequence
 \end_inset
 
  we have 
-\begin_inset Formula $\sum_{k=1}^{n}p(a_{k},D_{k})=\sum_{k=1}^{n}\sum_{r\in R}\pi(r)\mathbf{\mathbb{I}}(a_{k}rb\forall b\in D_{k}\backslash\{a_{k}\})$
+\begin_inset Formula $\sum_{k=1}^{n}\rho_{D_{k}}(a_{k})=\sum_{k=1}^{n}\sum_{r\in R}\pi(r)\mathbf{\mathbb{I}}(a_{k}rb\forall b\in D_{k}\backslash\{a_{k}\})$
 \end_inset
 
 for some 
@@ -18735,7 +18782,7 @@ Notice that
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\sum_{k=1}^{n}p(a_{k},D_{k})\leq max_{r\in R}\sum_{k=1}^{n}\mathbf{\mathbb{I}}(a_{k}rb\forall b\in D_{k}\backslash\{a_{k}\}).$
+\begin_inset Formula $\sum_{k=1}^{n}\rho_{D_{k}}(a_{k})\leq max_{r\in R}\sum_{k=1}^{n}\mathbf{\mathbb{I}}(a_{k}rb\forall b\in D_{k}\backslash\{a_{k}\}).$
 \end_inset
 
 
@@ -18919,6 +18966,170 @@ status open
 \backslash
 end{proof}
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The Supply Side of the Discrete Products Economy
+\end_layout
+
+\begin_layout Standard
+We assume that we have one firm that produces all 
+\begin_inset Formula $J$
+\end_inset
+
+ products.
+ The size of the market is the constant 
+\begin_inset Formula $M$
+\end_inset
+
+, the profit function of the firm is given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\pi=\sum_{j=1,\cdots,J}(p_{j}-mc_{j})M\cdot s_{j}(p,x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where 
+\begin_inset Formula $ln(mc_{j})=x_{j}\gamma+\omega_{j}$
+\end_inset
+
+ is the marginal cost of the production of one unit of good 
+\begin_inset Formula $j$
+\end_inset
+
+ where 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ is a unitary cost for observable attributes 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ and 
+\begin_inset Formula $\omega_{j}$
+\end_inset
+
+ is a productivity shock.
+ 
+\end_layout
+
+\begin_layout Standard
+The product share is the proportion of the total size of the economy 
+\begin_inset Formula $M$
+\end_inset
+
+, that chooses product 
+\begin_inset Formula $j$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $s_{j}(p,x)=\int\frac{exp(V_{j}(x_{j},p_{j},p_{z},y))}{\sum_{j'}exp(V_{j'}(x_{j},p_{j},p_{z},y))}dF(y)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The problem for the firm is that they can price a good according to its
+ attributes but they do not observe the wealth distribution.
+ 
+\end_layout
+
+\begin_layout Standard
+The problem of the firm is to maximize profits by choosing price.
+ This is a monopolist, it is not a price taker.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+max_{p}\pi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The FOC are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+s_{j}(p,x)+\sum_{r=1,\cdots,J}(p_{r}-mc_{r})\partial_{p_{j}}s_{r}(p,x)=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Partial Equilibrium
+\end_layout
+
+\begin_layout Standard
+The pair 
+\begin_inset Formula $(p,s(p,x))$
+\end_inset
+
+ of observed prices for 
+\begin_inset Formula $J$
+\end_inset
+
+ commodities and observed market shares 
+\begin_inset Formula $s(p,x)$
+\end_inset
+
+ is a partial equilibrium if and only if:
+\end_layout
+
+\begin_layout Standard
+(i) Consumer maximize their random utility given prices and their wealth.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+s_{j}(p,x)=\int\frac{exp(V_{j}(x_{j},p_{j},p_{z},y))}{\sum_{j'}(V_{j'}(x_{j},p_{j},p_{z},y))}dF(y)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(ii) The firm maximizes its profit with respect to prices and observed market
+ shares:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+s_{j}(p,x)+\sum_{r=1,\cdots,J}(p_{r}-mc_{r})\partial_{p_{j}}s_{r}(p,x)=0.
+\]
 
 \end_inset
 
