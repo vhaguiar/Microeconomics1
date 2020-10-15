@@ -15855,7 +15855,7 @@ Consider now the problem of maximizing expected utility subject to a budget.
 \begin_layout Standard
 \begin_inset Formula 
 \[
-max_{x}\sum_{s\in S}\pi_{s}u(x_{s})
+max_{x\in\mathbb{R}^{|S|}}\sum_{s\in S}\pi_{s}u(x_{s})
 \]
 
 \end_inset
@@ -16206,6 +16206,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../../WesternAP/FirstYear/MicroI/notes/figures/holt_laury.png
+	lyxscale 150
+	scale 150
 
 \end_inset
 
@@ -17375,6 +17377,1552 @@ If all
  admit a Gorman form then the aggregate demand resulting of this admits
  a normative representative consumer.
  
+\end_layout
+
+\begin_layout Chapter
+Discrete Choice and Logit 
+\end_layout
+
+\begin_layout Standard
+There are 
+\begin_inset Formula $J$
+\end_inset
+
+ alternatives in the market, indexed by 
+\begin_inset Formula $j=1,\cdots,J$
+\end_inset
+
+.
+ Each purchase occasion, each consumer 
+\begin_inset Formula $i$
+\end_inset
+
+ divides her income 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ on at most one alternative and on an outside good.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+max_{j,z}u_{i}(x_{j},z)\quad s.t.\quad p_{j}+p_{z}z=y_{i},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ are characteristics of the brand 
+\begin_inset Formula $j$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{j}$
+\end_inset
+
+ the price, 
+\begin_inset Formula $z$
+\end_inset
+
+ is the quantity of the outside good and 
+\begin_inset Formula $p_{z}$
+\end_inset
+
+ its price.
+ The outside good, denoted by 
+\begin_inset Formula $j=0$
+\end_inset
+
+ is the non-purchase of any alternative.
+ 
+\end_layout
+
+\begin_layout Standard
+Substitute 
+\begin_inset Formula $z=y-p_{j}/p_{z}$
+\end_inset
+
+ to derive the conditional indirect utility function for each brand:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{ij}^{*}(x_{j},p_{j},p_{z},y_{i})=U_{i}(x_{j},y_{i}-p_{j}/p_{z}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If the outside good is bought then:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{i0}^{*}(0,y_{i}/p_{z}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The consumer chooses the brand yielding the highest conditional indirect
+ utility:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+max_{j}U_{ij}^{*}(x_{j},p_{j},p_{z},y_{i}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Usually we let the utility to be random:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{ij}^{*}(x_{j},p_{j},p_{z},y_{i})=V_{j}(x_{j},p_{j},p_{z},y_{i})+\epsilon_{ij},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\epsilon_{ij}$
+\end_inset
+
+ is a random shock observed by 
+\begin_inset Formula $i$
+\end_inset
+
+ but not to the researcher (unobservable attributes, preference shock, preferenc
+e heterogeneity).
+ 
+\end_layout
+
+\begin_layout Standard
+Usually we let 
+\begin_inset Formula $V_{0}(\cdot)=0$
+\end_inset
+
+ as a normalization of the utility.
+ 
+\end_layout
+
+\begin_layout Standard
+We have now the probability of choice:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P_{ij}(p_{1},\cdots,p_{J},p_{z},y_{i})=Prob\{\epsilon_{i0},\cdots,\epsilon_{i,J}:U_{ij}^{*}>U_{ij'}^{*}\forall j'\neq j\}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Usually, in order to model a population market share I assume that 
+\begin_inset Formula $\text{\ensuremath{\epsilon_{ij}\sim^{i.i.d.}F(\cdot)}.}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Multinomial Logit
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $\epsilon_{ij},j=0,\cdots,J$
+\end_inset
+
+ is distributed 
+\begin_inset Formula $i.i.d.$
+\end_inset
+
+ type 
+\begin_inset Formula $I$
+\end_inset
+
+ extreme value across 
+\begin_inset Formula $i$
+\end_inset
+
+, with CDF:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F_{\epsilon}(x)=exp(-exp(-\frac{x-\eta}{\mu}))=Pr(\epsilon\leq x)
+\]
+
+\end_inset
+
+ with 
+\begin_inset Formula $\eta=0.577$
+\end_inset
+
+ (Euler's constant) and the scale parameter 
+\begin_inset Formula $\mu=1$
+\end_inset
+
+, then we have:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P_{ij}=\frac{exp(V_{ij})}{\sum_{j'=0,\cdots,J}exp(V_{ij'})}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Independence of Irrelevant Alternatives
+\end_layout
+
+\begin_layout Standard
+You may be asking what are the empirical implications of the Mutinomial
+ Utility Model.
+ The most important implication is the Independence of Irrelevant Alternatives
+ (IIA).
+ Before defining it we allow 
+\begin_inset Formula $J$
+\end_inset
+
+ to change, 
+\begin_inset Formula $P_{ij,J}=\frac{exp(V_{ij})}{\sum_{j'=0,\cdots,J}exp(V_{ij'})}$
+\end_inset
+
+ so that the probability of choice depends on the number of alternatives.
+\end_layout
+
+\begin_layout Axiom
+(IIA) 
+\begin_inset Formula $\frac{P_{ij,J}}{P_{ik,J}}=\frac{P_{ij,J'}}{P_{ik,J'}}$
+\end_inset
+
+ where 
+\begin_inset Formula $J'$
+\end_inset
+
+ possibly is different from 
+\begin_inset Formula $J$
+\end_inset
+
+, for all 
+\begin_inset Formula $j,k$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+It is very easy to check that Multinomial Logit satisfy the IIA condition.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{P_{ij,J}}{P_{ik,J}}=\frac{exp(V_{ij})}{exp(V_{ik})}$
+\end_inset
+
+ for all 
+\begin_inset Formula $J$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Example
+Red bus/blue bus problem
+\end_layout
+
+\begin_layout Example
+Say you have two options 
+\begin_inset Formula $W$
+\end_inset
+
+ for walking and 
+\begin_inset Formula $RB$
+\end_inset
+
+ for a red bus.
+ Now, assume that 
+\begin_inset Formula $p_{W,2}=0.5$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{RB,2}=0.5$
+\end_inset
+
+.
+ The odds ratio is 
+\begin_inset Formula $\frac{p_{W,2}}{p_{RB,2}}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Now the city transportation corporation introduced a Blue Bus 
+\begin_inset Formula $BB$
+\end_inset
+
+, that is identical to the red bus in all attributes, (except for color),
+ in fact, it is a (nearly) perfect substitute while not being a substitute
+ for walking.
+ Given this, we should expect that the probability under this situation
+ with 
+\begin_inset Formula $J=3$
+\end_inset
+
+, we have probabilities such as 
+\begin_inset Formula $p_{W,3}=0.5$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{RB,3}=0.25$
+\end_inset
+
+, 
+\begin_inset Formula $p_{BB,3}=0.25$
+\end_inset
+
+.
+ The odds ratio here is 
+\begin_inset Formula $\frac{p_{W,3}}{p_{RB,3}}=2$
+\end_inset
+
+, but the IIA requires that 
+\begin_inset Formula $\frac{p_{W,3}}{p_{RB,3}}=1$
+\end_inset
+
+ is the same independently of the other alternatives.
+ This limits a lot the capabilites of the multinomial logit to capture substitut
+ion patterns.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let's be more formal about Luce with choice set variation.
+ Let 
+\begin_inset Formula $X$
+\end_inset
+
+ be finite and 
+\begin_inset Formula $\mathcal{M}=2^{X}\setminus\emptyset$
+\end_inset
+
+.
+ Now, take a menu 
+\begin_inset Formula $A\in\mathcal{M}$
+\end_inset
+
+ and define 
+\begin_inset Formula $\rho_{A}\in\Delta(A)$
+\end_inset
+
+.
+ This means that 
+\begin_inset Formula $\sum_{a\in A}\rho_{A}(a)=1$
+\end_inset
+
+ and 
+\begin_inset Formula $\rho_{A}(\cdot)\geq0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Now define 
+\begin_inset Formula $\rho=(\rho_{A})_{A\in\mathcal{M}}$
+\end_inset
+
+, this is a 
+\series bold
+stochastic choice data set.
+ 
+\series default
+Since it has complete domain we can also call it 
+\series bold
+stochastic choice function.
+ 
+\end_layout
+
+\begin_layout Axiom
+(Luce's IIA) For any 
+\begin_inset Formula $A,B\in\mathcal{M}$
+\end_inset
+
+ and any 
+\begin_inset Formula $a,b\in A\cap B$
+\end_inset
+
+ it must be that:
+\end_layout
+
+\begin_layout Axiom
+\begin_inset Formula 
+\[
+\frac{\rho_{A}(a)}{\rho_{A}(b)}=\frac{\rho_{B}(a)}{\rho_{B}(b)},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Axiom
+whenever the probabilities are positive.
+ 
+\end_layout
+
+\begin_layout Theorem
+(Luce,McFadden) The following are equivalent, if the probabilities are positive:
+ 
+\end_layout
+
+\begin_layout Theorem
+(i) 
+\begin_inset Formula $\rho$
+\end_inset
+
+ satisfies Luce's IIA.
+\end_layout
+
+\begin_layout Theorem
+(ii) 
+\begin_inset Formula $\rho$
+\end_inset
+
+ admits a Logit representation.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $(ii)$
+\end_inset
+
+ implies 
+\begin_inset Formula $(i)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+For all 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ and define 
+\begin_inset Formula $w(x)=exp(V_{x})=\rho_{X}(x)$
+\end_inset
+
+.
+ And
+\end_layout
+
+\begin_layout Proof
+Then we have to verify that it generates the dataset 
+\begin_inset Formula $\rho$
+\end_inset
+
+ for all other menus.
+\end_layout
+
+\begin_layout Proof
+Fix 
+\begin_inset Formula $A\in\mathcal{M}$
+\end_inset
+
+ and 
+\begin_inset Formula $x^{*}\in A$
+\end_inset
+
+, by IIA 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\rho_{A}(x)=\rho_{X}(x)\frac{\rho_{A}(x^{*})}{\rho_{X}(x^{*})}=\frac{}{}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Notice that:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\rho_{A}(x)=w(x)\frac{\rho_{A}(x^{*})}{w(x^{*})},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\sum_{y\in A}\rho_{A}(y)=\sum_{y\in A}w(y)\frac{\rho_{A}(x^{*})}{w(x^{*})}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+1=\frac{\rho_{A}(x^{*})}{w(x^{*})}\cdot\sum_{y\in A}w(y)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+This means that
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\rho_{A}(x)=\frac{exp(v(x))}{\sum_{y\in A}exp(v(y))}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Random Utility
+\end_layout
+
+\begin_layout Standard
+Take a choice set 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Consider a probability space 
+\begin_inset Formula $(\Omega,\mathcal{F},\mathbb{P})$
+\end_inset
+
+ a 
+\begin_inset Formula $\mathcal{F}-$
+\end_inset
+
+ measurable random utility function
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boldsymbol{U}:\Omega\to\mathbb{R}^{X}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $C(x,A)$
+\end_inset
+
+ be the 
+\begin_inset Quotes eld
+\end_inset
+
+event
+\begin_inset Quotes erd
+\end_inset
+
+ in which the agent chooses 
+\begin_inset Formula $x$
+\end_inset
+
+ from 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C(x,A):=\{\omega\in\Omega:\boldsymbol{U}_{\omega}(x)>\boldsymbol{U}_{\omega}(y)\quad\text{for all\ensuremath{\quad}}b\in A/\{x\})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\rho$
+\end_inset
+
+ has a random utility (RU) representation if there exists 
+\begin_inset Formula $\boldsymbol{U}$
+\end_inset
+
+ and 
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+\rho_{A}(x)=\mathbb{P}(C(x,A)).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Alternatively let 
+\begin_inset Formula $\mu$
+\end_inset
+
+ be distribution of random utility 
+\begin_inset Formula $\boldsymbol{U}$
+\end_inset
+
+, then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\rho_{A}(x)=\mu(\boldsymbol{U}|\boldsymbol{U}(a)>\boldsymbol{U}(b)\quad\text{for all\ensuremath{\quad}}b\in A/\{x\}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Random Expected Utility (REU)
+\end_layout
+
+\begin_layout Standard
+Now let's consider consider the setup of choice under risk.
+ Let 
+\begin_inset Formula $Z$
+\end_inset
+
+ be a finite set of prizes and 
+\begin_inset Formula $X=\Delta(Z)$
+\end_inset
+
+ the choice set is the set of lotteries.
+ Tipical items are denotes 
+\begin_inset Formula $p,q,r\in X$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\rho$
+\end_inset
+
+ has a REU representation if it has a Random Utility representation where
+ the random utility 
+\begin_inset Formula $\boldsymbol{U}$
+\end_inset
+
+ is such that:
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+\boldsymbol{U}_{\omega}(p)=\sum_{z\in Z}\boldsymbol{u}_{\omega}(z)p(z),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+for some random Bernoulli utility 
+\begin_inset Formula $\boldsymbol{u}:\Omega\to\mathbb{R}^{Z}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We need some preliminaries:
+\end_layout
+
+\begin_layout Definition
+Menu expansion:
+\begin_inset Formula $\alpha A+(1-\alpha)q:=\{\alpha p'+(1-\alpha)q:p'\in A\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Now we define the main behavioral inmplication of this model.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Axiom
+Linearity.
+ For any 
+\begin_inset Formula $\alpha\in(0,1)$
+\end_inset
+
+ and 
+\begin_inset Formula $p\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $q\in X$
+\end_inset
+
+, we have 
+\end_layout
+
+\begin_layout Axiom
+\begin_inset Formula 
+\[
+\rho_{A}(p)=\rho_{\alpha A+(1-\alpha)q}(\alpha p+(1-\alpha)q).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Other axioms.
+\end_layout
+
+\begin_layout Axiom
+Regularity.
+ For 
+\begin_inset Formula $x\in A\subseteq B$
+\end_inset
+
+, then 
+\begin_inset Formula $\rho_{A}(x)\geq\rho_{B}(x)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+We also have to define extremes of a choice set 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Ext(A)$
+\end_inset
+
+ are the extremes of a choice set 
+\begin_inset Formula $A\subseteq\Delta(Z)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename figures/ExtremenessREU.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Axiom
+Extremeness.
+ 
+\begin_inset Formula $\rho_{A}(Ext(A))=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Then we have the following characterization.
+\end_layout
+
+\begin_layout Standard
+(Gul and Pesendorfer, 2006) 
+\begin_inset Formula $\rho$
+\end_inset
+
+ has a REU representation if and only if it satisfies 
+\end_layout
+
+\begin_layout Theorem
+-Regularity
+\end_layout
+
+\begin_layout Theorem
+-Extremeness
+\end_layout
+
+\begin_layout Theorem
+-Linearity
+\end_layout
+
+\begin_layout Theorem
+-Continuity* (not defined here, and technical).
+ 
+\end_layout
+
+\begin_layout Proof
+We will show just neccesity of the axioms.
+ Linearity, follows from the fact that almost surely 
+\begin_inset Formula $\boldsymbol{U}_{\omega}(p)=\sum_{z\in Z}\boldsymbol{u}_{\omega}(z)p(z),$
+\end_inset
+
+which means that 
+\begin_inset Formula $\rho_{A}(p)=\mathbb{P}(C(p,A))=\mathbb{P}(C(\alpha p+(1-\alpha)q,\alpha A+(1-\alpha)q))=\rho_{\alpha A+(1-\alpha)q}(\alpha p+(1-\alpha)q)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Regularity follows from the fact that:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\rho_{A}(a)=\mathbb{P}(C(a,A)))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+and since 
+\begin_inset Formula $C(a,A)\geq C(a,B)$
+\end_inset
+
+ almost surely when 
+\begin_inset Formula $B\supseteq A$
+\end_inset
+
+ then: 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\text{\ensuremath{\rho_{B}(a)=\mathbb{P}(C(a,B))}}\leq\rho_{A}(a)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The Supply Side of the Discrete Products Economy
+\end_layout
+
+\begin_layout Standard
+We assume that we have one firm that produces all 
+\begin_inset Formula $J$
+\end_inset
+
+ products.
+ The size of the market is the constant 
+\begin_inset Formula $M$
+\end_inset
+
+, the profit function of the firm is given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\pi=\sum_{j=1,\cdots,J}(p_{j}-mc_{j})M\cdot s_{j}(p,x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where 
+\begin_inset Formula $ln(mc_{j})=x_{j}\gamma+\omega_{j}$
+\end_inset
+
+ is the marginal cost of the production of one unit of good 
+\begin_inset Formula $j$
+\end_inset
+
+ where 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ is a unitary cost for observable attributes 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ and 
+\begin_inset Formula $\omega_{j}$
+\end_inset
+
+ is a productivity shock.
+ 
+\end_layout
+
+\begin_layout Standard
+The product share is the proportion of the total size of the economy 
+\begin_inset Formula $M$
+\end_inset
+
+, that chooses product 
+\begin_inset Formula $j$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $s_{j}(p,x)=\int\frac{exp(V_{j}(x_{j},p_{j},p_{z},y))}{\sum_{j'}exp(V_{j'}(x_{j},p_{j},p_{z},y))}dF(y)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The problem for the firm is that they can price a good according to its
+ attributes but they do not observe the wealth distribution.
+ 
+\end_layout
+
+\begin_layout Standard
+The problem of the firm is to maximize profits by choosing price.
+ This is a monopolist, it is not a price taker.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+max_{p}\pi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The FOC are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+s_{j}(p,x)+\sum_{r=1,\cdots,J}(p_{r}-mc_{r})\partial_{p_{j}}s_{r}(p,x)=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Partial Equilibrium
+\end_layout
+
+\begin_layout Standard
+The pair 
+\begin_inset Formula $(p,s(p,x))$
+\end_inset
+
+ of observed prices for 
+\begin_inset Formula $J$
+\end_inset
+
+ commodities and observed market shares 
+\begin_inset Formula $s(p,x)$
+\end_inset
+
+ is a partial equilibrium if and only if:
+\end_layout
+
+\begin_layout Standard
+(i) Consumer maximize their random utility given prices and their wealth.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+s_{j}(p,x)=\int\frac{exp(V_{j}(x_{j},p_{j},p_{z},y))}{\sum_{j'}(V_{j'}(x_{j},p_{j},p_{z},y))}dF(y)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(ii) The firm maximizes its profit with respect to prices and observed market
+ shares:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+s_{j}(p,x)+\sum_{r=1,\cdots,J}(p_{r}-mc_{r})\partial_{p_{j}}s_{r}(p,x)=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+General Random Utility 
+\end_layout
+
+\begin_layout Standard
+Consider 
+\begin_inset Formula $X$
+\end_inset
+
+ a finite choice set.
+ Consider the set of linear orders on 
+\begin_inset Formula $X$
+\end_inset
+
+ , 
+\begin_inset Formula $R\subset X\times X$
+\end_inset
+
+.
+ There is a distribuion over linear orders 
+\begin_inset Formula $\pi\in\Delta(R)$
+\end_inset
+
+ that captures preference variability, heterogeneity or preference shocks.
+ Given a menu 
+\begin_inset Formula $A\in2^{X}\setminus\emptyset$
+\end_inset
+
+, the probability of choosing 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p(a,A)=\sum_{r\in R}\pi(r)\mathbb{I}(arb\forall b\in A\backslash\{a\}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where 
+\begin_inset Formula $\mathbb{I}(arb\forall b\in A\backslash\{a\})=1$
+\end_inset
+
+ when the argument is true, else 
+\begin_inset Formula $\mathbb{I}(arb\forall b\in A\backslash\{a\})=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Definition
+(ASRP) Axiom of Stochastic Revealed Preference.
+ The choice probability 
+\begin_inset Formula $p$
+\end_inset
+
+ satisfy the ASRP if and only for every sequence of 
+\begin_inset Formula $(a_{k},D_{k})_{k=1}^{n}$
+\end_inset
+
+, such that 
+\begin_inset Formula $a_{k}$
+\end_inset
+
+ is in 
+\begin_inset Formula $D_{k}$
+\end_inset
+
+ and 
+\begin_inset Formula $D_{k}\subseteq X$
+\end_inset
+
+ and 
+\begin_inset Formula $D_{k}\neq\emptyset$
+\end_inset
+
+ we have 
+\begin_inset Formula $\sum_{k=1}^{n}p(a_{k},D_{k})\leq max_{r\in R}\sum_{k=1}^{n}\mathbf{\mathbb{I}}(a_{k}rb\forall b\in D_{k}\backslash\{a_{k}\}).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:ASRPRandomUtility"
+
+\end_inset
+
+The following are equivalent:
+\end_layout
+
+\begin_layout Lemma
+(i) 
+\begin_inset Formula $p$
+\end_inset
+
+ satisfy the ASRP 
+\end_layout
+
+\begin_layout Lemma
+(ii) The following system of linear equations has a solution:
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Formula 
+\[
+M\pi=p,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+where, 
+\begin_inset Formula $M=\mathbf{\mathbb{I}}(a_{k}r^{s}b\forall b\in D_{k}\backslash\{a_{k}\})_{k=1,s=1}^{k=n,s=S}$
+\end_inset
+
+, 
+\begin_inset Formula $\pi=(\pi(r^{s}))_{s=1}^{S}$
+\end_inset
+
+ and 
+\begin_inset Formula $p=(p(a_{k},D_{k}))_{k=1}^{K}$
+\end_inset
+
+, and the unknown is a vector 
+\begin_inset Formula $\pi\in\Delta(R)$
+\end_inset
+
+ is in the simplex of the linear orderings over 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Lemma
+(iii) There is random utility that is 
+\begin_inset Formula $\pi\in\Delta(R)$
+\end_inset
+
+ such that 
+\begin_inset Formula $p(a,A)=\sum_{r\in R}\pi(r)\mathbb{I}(arb\forall b\in A\backslash\{a\}).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+(iv) The mapping 
+\begin_inset Formula $f_{C}(a)=\sum_{D\in\mathbf{B}(C)}(-1)^{|D\backslash C|}p(a,D)$
+\end_inset
+
+ where 
+\begin_inset Formula $\mathbf{B}(C)=\{D\in2^{X}|C\subseteq D\}$
+\end_inset
+
+, is 
+\begin_inset Formula $f_{C}(a)\ge0$
+\end_inset
+
+ for all 
+\begin_inset Formula $a$
+\end_inset
+
+ and all 
+\begin_inset Formula $C\subseteq X$
+\end_inset
+
+ (this is called total monotonicity).
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We prove that (iii) implies ASRP.
+ 
+\end_layout
+
+\begin_layout Standard
+Note that if (iii) holds then for any sequence 
+\begin_inset Formula $(a_{k},D_{k})_{k=1}^{n}$
+\end_inset
+
+, such that 
+\begin_inset Formula $a_{k}$
+\end_inset
+
+ is in 
+\begin_inset Formula $D_{k}$
+\end_inset
+
+ and 
+\begin_inset Formula $D_{k}\subseteq X$
+\end_inset
+
+ and 
+\begin_inset Formula $D_{k}\neq\emptyset$
+\end_inset
+
+ we have 
+\begin_inset Formula $\sum_{k=1}^{n}p(a_{k},D_{k})=\sum_{k=1}^{n}\sum_{r\in R}\pi(r)\mathbf{\mathbb{I}}(a_{k}rb\forall b\in D_{k}\backslash\{a_{k}\})$
+\end_inset
+
+for some 
+\begin_inset Formula $\pi\in\Delta(R)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Notice that 
+\begin_inset Formula $\sum_{k=1}^{n}\sum_{r\in R}\pi(r)\mathbf{\mathbb{I}}(a_{k}rb\forall b\in D_{k}\backslash\{a_{k}\})\leq max_{\pi\in\Delta(R)}\sum_{r\in R}\pi(r)\mathbf{\mathbb{I}}(a_{k}rb\forall b\in D_{k}\backslash\{a_{k}\})=max_{r\in R}\sum_{r\in R}\mathbf{\mathbb{I}}(a_{k}rb\forall b\in D_{k}\backslash\{a_{k}\})$
+\end_inset
+
+.
+ Thus, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sum_{k=1}^{n}p(a_{k},D_{k})\leq max_{r\in R}\sum_{k=1}^{n}\mathbf{\mathbb{I}}(a_{k}rb\forall b\in D_{k}\backslash\{a_{k}\}).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There is a surprising result about random utility.
+ 
+\end_layout
+
+\begin_layout Standard
+Consider the following definition.
+\end_layout
+
+\begin_layout Definition
+The aggregate probability of choice of 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ for a population of agents with different random utilities supported in
+ 
+\begin_inset Formula $\Pi$
+\end_inset
+
+ such that 
+\begin_inset Formula $\mu\in\Delta(\Pi)$
+\end_inset
+
+, is 
+\begin_inset Formula $p^{M}(a,A)=\sum_{\pi\in\Pi}\mu(\pi)p_{\pi}(a,A)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+There exist a representative random consumer, i.e., there exist a random utility
+ 
+\begin_inset Formula $\pi^{rep}\in\Delta(R)$
+\end_inset
+
+ such that 
+\begin_inset Formula $p^{M}(a,A)=\sum_{r\in R}\pi^{rep}(r)\mathbb{I}(arb\forall b\in A\backslash\{b\}).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p^{M}(a,A)=\sum_{\pi\in\Pi}\mu(\pi)p_{\pi}(a,A)$
+\end_inset
+
+, then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{C,\pi}(a)=\sum_{D\in\mathbf{B}(C)}(-1)^{|D\backslash C|}p_{\pi}(a,D)$
+\end_inset
+
+ where 
+\begin_inset Formula $\mathbf{B}(C)=\{D\in2^{X}|C\subseteq D\}$
+\end_inset
+
+, is 
+\begin_inset Formula $f_{C,\pi}(a)\ge0$
+\end_inset
+
+ for all 
+\begin_inset Formula $a$
+\end_inset
+
+ and all 
+\begin_inset Formula $C\subseteq X$
+\end_inset
+
+ by assumption.
+ 
+\end_layout
+
+\begin_layout Standard
+Define
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{C}(a)=\sum_{D\in\mathbf{B}(C)}(-1)^{|D\backslash C|}p^{M}(a,D)$
+\end_inset
+
+ where 
+\begin_inset Formula $\mathbf{B}(C)=\{D\in2^{X}|C\subseteq D\}$
+\end_inset
+
+, I want to show that 
+\begin_inset Formula $f_{C}(a)\ge0$
+\end_inset
+
+ for all 
+\begin_inset Formula $a$
+\end_inset
+
+ and all 
+\begin_inset Formula $C\subseteq X$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+Replace:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{C}(a)=\sum_{D\in\mathbf{B}(C)}(-1)^{|D\backslash C|}\sum_{\pi\in\Pi}\mu(\pi)p_{\pi}(a,A)=\sum_{\pi\in\Pi}\mu(\pi)\sum_{D\in\mathbf{B}(C)}(-1)^{|D\backslash C|}p_{\pi}(a,A)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{C}(a)=\sum_{\pi\in\Pi}f_{C,\pi}(a)\geq0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+By the previous theorem this implies that there is a 
+\begin_inset Formula $\pi^{rep}\in\Delta(R)$
+\end_inset
+
+ that generates the aggregate probability.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p^{M}(a,A)=\sum_{r\in R}\pi^{rep}(r)\mathbb{I}(arb\forall b\in A\backslash\{b\}).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
@@ -28076,960 +29624,6 @@ Hence the consumption plan
 
  contingent commodities.
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Chapter
-Discrete Choice and Logit 
-\end_layout
-
-\begin_layout Standard
-There are 
-\begin_inset Formula $J$
-\end_inset
-
- alternatives in the market, indexed by 
-\begin_inset Formula $j=1,\cdots,J$
-\end_inset
-
-.
- Each purchase occasion, each consumer 
-\begin_inset Formula $i$
-\end_inset
-
- divides her income 
-\begin_inset Formula $y_{i}$
-\end_inset
-
- on at most one alternative and on an outside good.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-max_{j,z}u_{i}(x_{j},z)\quad s.t.\quad p_{j}+p_{z}z=y_{i},
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-where 
-\begin_inset Formula $x_{j}$
-\end_inset
-
- are characteristics of the brand 
-\begin_inset Formula $j$
-\end_inset
-
- and 
-\begin_inset Formula $p_{j}$
-\end_inset
-
- the price, 
-\begin_inset Formula $z$
-\end_inset
-
- is the quantity of the outside good and 
-\begin_inset Formula $p_{z}$
-\end_inset
-
- its price.
- The outside good, denoted by 
-\begin_inset Formula $j=0$
-\end_inset
-
- is the non-purchase of any alternative.
- 
-\end_layout
-
-\begin_layout Standard
-Substitute 
-\begin_inset Formula $z=y-p_{j}/p_{z}$
-\end_inset
-
- to derive the conditional indirect utility function for each brand:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-U_{ij}^{*}(x_{j},p_{j},p_{z},y_{i})=U_{i}(x_{j},y_{i}-p_{j}/p_{z}).
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-If the outside good is bought then:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-U_{i0}^{*}(0,y_{i}/p_{z}).
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The consumer chooses the brand yielding the highest conditional indirect
- utility:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-max_{j}U_{ij}^{*}(x_{j},p_{j},p_{z},y_{i}).
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Usually we let the utility to be random:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-U_{ij}^{*}(x_{j},p_{j},p_{z},y_{i})=V_{ij}(x_{j},p_{j},p_{z},y_{i})+\epsilon_{ij},
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-where 
-\begin_inset Formula $\epsilon_{ij}$
-\end_inset
-
- is a random shock observed by 
-\begin_inset Formula $i$
-\end_inset
-
- but not to the researcher (unobservable attributes, preference shock, preferenc
-e heterogeneity).
- 
-\end_layout
-
-\begin_layout Standard
-We have now the probability of choice:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-P_{ij}(p_{1},\cdots,p_{J},p_{z},y_{i})=Prob\{\epsilon_{i0},\cdots,\epsilon_{i,J}:U_{ij}^{*}>U_{ij'}^{*}\forall j'\neq j\}.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Multinomial Logit
-\end_layout
-
-\begin_layout Standard
-Assume 
-\begin_inset Formula $\epsilon_{ij},j=0,\cdots,J$
-\end_inset
-
- is distributed 
-\begin_inset Formula $i.i.d.$
-\end_inset
-
- type 
-\begin_inset Formula $I$
-\end_inset
-
- extreme value across 
-\begin_inset Formula $i$
-\end_inset
-
-, with CDF:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-F_{\epsilon}(x)=exp(-exp(-\frac{x-\eta}{\mu}))=Pr(\epsilon\leq x)
-\]
-
-\end_inset
-
- with 
-\begin_inset Formula $\eta=0.577$
-\end_inset
-
- (Euler's constant) and the scale parameter 
-\begin_inset Formula $\mu=1$
-\end_inset
-
-, then we have:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-P_{ij}=\frac{exp(V_{ij})}{\sum_{j'=0,\cdots,J}exp(V_{ij'})}.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Independence of Irrelevant Alternatives
-\end_layout
-
-\begin_layout Standard
-You may be asking what are the empirical implications of the Mutinomial
- Utility Model.
- The most important implication is the Independence of Irrelevant Alternatives
- (IIA).
- Before defining it we allow 
-\begin_inset Formula $J$
-\end_inset
-
- to change, 
-\begin_inset Formula $P_{ij,J}=\frac{exp(V_{ij})}{\sum_{j'=0,\cdots,J}exp(V_{ij'})}$
-\end_inset
-
- so that the probability of choice depends on the number of alternatives.
-\end_layout
-
-\begin_layout Axiom
-(IIA) 
-\begin_inset Formula $\frac{P_{ij,J}}{P_{ik,J}}=\frac{P_{ij,J'}}{P_{ik,J'}}$
-\end_inset
-
- where 
-\begin_inset Formula $J'$
-\end_inset
-
- possibly is different from 
-\begin_inset Formula $J$
-\end_inset
-
-, for all 
-\begin_inset Formula $j,k$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-It is very easy to check that Multinomial Logit satisfy the IIA condition.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\frac{P_{ij,J}}{P_{ik,J}}=\frac{exp(V_{ij})}{exp(V_{ik})}$
-\end_inset
-
- for all 
-\begin_inset Formula $J$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Example
-Red bus/blue bus problem
-\end_layout
-
-\begin_layout Example
-Say you have two options 
-\begin_inset Formula $W$
-\end_inset
-
- for walking and 
-\begin_inset Formula $RB$
-\end_inset
-
- for a red bus.
- Now, assume that 
-\begin_inset Formula $p_{W,2}=0.5$
-\end_inset
-
- and 
-\begin_inset Formula $p_{RB,2}=0.5$
-\end_inset
-
-.
- The odds ratio is 
-\begin_inset Formula $\frac{p_{W,2}}{p_{RB,2}}=1$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Example
-Now the city transportation corporation introduced a Blue Bus 
-\begin_inset Formula $BB$
-\end_inset
-
-, that is identical to the red bus in all attributes, (except for color),
- in fact, it is a (nearly) perfect substitute while not being a substitute
- for walking.
- Given this, we should expect that the probability under this situation
- with 
-\begin_inset Formula $J=3$
-\end_inset
-
-, we have probabilities such as 
-\begin_inset Formula $p_{W,3}=0.5$
-\end_inset
-
- and 
-\begin_inset Formula $p_{RB,3}=0.25$
-\end_inset
-
-, 
-\begin_inset Formula $p_{BB,3}=0.25$
-\end_inset
-
-.
- The odds ratio here is 
-\begin_inset Formula $\frac{p_{W,3}}{p_{RB,3}}=2$
-\end_inset
-
-, but the IIA requires that 
-\begin_inset Formula $\frac{p_{W,3}}{p_{RB,3}}=1$
-\end_inset
-
- is the same independently of the other alternatives.
- This limits a lot the capabilites of the multinomial logit to capture substitut
-ion patterns.
- 
-\end_layout
-
-\begin_layout Section
-The Supply Side of the Discrete Products Economy
-\end_layout
-
-\begin_layout Standard
-We assume that we have one firm that produces all 
-\begin_inset Formula $J$
-\end_inset
-
- products.
- The size of the market is the constant 
-\begin_inset Formula $M$
-\end_inset
-
-, the profit function of the firm is given by
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\pi=\sum_{j=1,\cdots,J}(p_{j}-mc_{j})M\cdot s_{j}(p,x)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Where 
-\begin_inset Formula $ln(mc_{j})=x_{j}\gamma+\omega_{j}$
-\end_inset
-
- is the marginal cost of the production of one unit of good 
-\begin_inset Formula $j$
-\end_inset
-
- where 
-\begin_inset Formula $\gamma$
-\end_inset
-
- is a unitary cost for observable attributes 
-\begin_inset Formula $x_{j}$
-\end_inset
-
- and 
-\begin_inset Formula $\omega_{j}$
-\end_inset
-
- is a productivity shock.
- 
-\end_layout
-
-\begin_layout Standard
-The product share is the proportion of the total size of the economy 
-\begin_inset Formula $M$
-\end_inset
-
-, that chooses product 
-\begin_inset Formula $j$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $s_{j}(p,x)=\int\frac{exp(V_{j}(x_{j},p_{j},p_{z},y))}{\sum_{j'}exp(V_{j'}(x_{j},p_{j},p_{z},y))}dF(y)$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-The problem for the firm is that they can price a good according to its
- attributes but they do not observe the wealth distribution.
- 
-\end_layout
-
-\begin_layout Standard
-The problem of the firm is to maximize profits by choosing price.
- This is a monopolist, it is not a price taker.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-max_{p}\pi
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The FOC are:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-s_{j}(p,x)+\sum_{r=1,\cdots,J}(p_{r}-mc_{r})\partial_{p_{j}}s_{r}(p,x)=0.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Partial Equilibrium
-\end_layout
-
-\begin_layout Standard
-The pair 
-\begin_inset Formula $(p,s(p,x))$
-\end_inset
-
- of observed prices for 
-\begin_inset Formula $J$
-\end_inset
-
- commodities and observed market shares 
-\begin_inset Formula $s(p,x)$
-\end_inset
-
- is a partial equilibrium if and only if:
-\end_layout
-
-\begin_layout Standard
-(i) Consumer maximize their random utility given prices and their wealth.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-s_{j}(p,x)=\int\frac{exp(V_{j}(x_{j},p_{j},p_{z},y))}{\sum_{j'}(V_{j'}(x_{j},p_{j},p_{z},y))}dF(y)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-(ii) The firm maximizes its profit with respect to prices and observed market
- shares:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-s_{j}(p,x)+\sum_{r=1,\cdots,J}(p_{r}-mc_{r})\partial_{p_{j}}s_{r}(p,x)=0.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-General Random Utility 
-\end_layout
-
-\begin_layout Standard
-Consider 
-\begin_inset Formula $X$
-\end_inset
-
- a finite choice set.
- Consider the set of linear orders on 
-\begin_inset Formula $X$
-\end_inset
-
- , 
-\begin_inset Formula $R\subset X\times X$
-\end_inset
-
-.
- There is a distribuion over linear orders 
-\begin_inset Formula $\pi\in\Delta(R)$
-\end_inset
-
- that captures preference variability, heterogeneity or preference shocks.
- Given a menu 
-\begin_inset Formula $A\in2^{X}\setminus\emptyset$
-\end_inset
-
-, the probability of choosing 
-\begin_inset Formula $a\in A$
-\end_inset
-
- is:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-p(a,A)=\sum_{r\in R}\pi(r)\mathbb{I}(arb\forall b\in A\backslash\{a\}).
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Where 
-\begin_inset Formula $\mathbb{I}(arb\forall b\in A\backslash\{a\})=1$
-\end_inset
-
- when the argument is true, else 
-\begin_inset Formula $\mathbb{I}(arb\forall b\in A\backslash\{a\})=0$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Definition
-(ASRP) Axiom of Stochastic Revealed Preference.
- The choice probability 
-\begin_inset Formula $p$
-\end_inset
-
- satisfy the ASRP if and only for every sequence of 
-\begin_inset Formula $(a_{k},D_{k})_{k=1}^{n}$
-\end_inset
-
-, such that 
-\begin_inset Formula $a_{k}$
-\end_inset
-
- is in 
-\begin_inset Formula $D_{k}$
-\end_inset
-
- and 
-\begin_inset Formula $D_{k}\subseteq X$
-\end_inset
-
- and 
-\begin_inset Formula $D_{k}\neq\emptyset$
-\end_inset
-
- we have 
-\begin_inset Formula $\sum_{k=1}^{n}p(a_{k},D_{k})\leq max_{r\in R}\sum_{k=1}^{n}\mathbf{\mathbb{I}}(a_{k}rb\forall b\in D_{k}\backslash\{a_{k}\}).$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Lemma
-\begin_inset CommandInset label
-LatexCommand label
-name "lem:ASRPRandomUtility"
-
-\end_inset
-
-The following are equivalent:
-\end_layout
-
-\begin_layout Lemma
-(i) 
-\begin_inset Formula $p$
-\end_inset
-
- satisfy the ASRP 
-\end_layout
-
-\begin_layout Lemma
-(ii) The following system of linear equations has a solution:
-\end_layout
-
-\begin_layout Lemma
-\begin_inset Formula 
-\[
-M\pi=p,
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Lemma
-where, 
-\begin_inset Formula $M=\mathbf{\mathbb{I}}(a_{k}r^{s}b\forall b\in D_{k}\backslash\{a_{k}\})_{k=1,s=1}^{k=n,s=S}$
-\end_inset
-
-, 
-\begin_inset Formula $\pi=(\pi(r^{s}))_{s=1}^{S}$
-\end_inset
-
- and 
-\begin_inset Formula $p=(p(a_{k},D_{k}))_{k=1}^{K}$
-\end_inset
-
-, and the unknown is a vector 
-\begin_inset Formula $\pi\in\Delta(R)$
-\end_inset
-
- is in the simplex of the linear orderings over 
-\begin_inset Formula $X$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Lemma
-(iii) There is random utility that is 
-\begin_inset Formula $\pi\in\Delta(R)$
-\end_inset
-
- such that 
-\begin_inset Formula $p(a,A)=\sum_{r\in R}\pi(r)\mathbb{I}(arb\forall b\in A\backslash\{a\}).$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Lemma
-(iv) The mapping 
-\begin_inset Formula $f_{C}(a)=\sum_{D\in\mathbf{B}(C)}(-1)^{|D\backslash C|}p(a,D)$
-\end_inset
-
- where 
-\begin_inset Formula $\mathbf{B}(C)=\{D\in2^{X}|C\subseteq D\}$
-\end_inset
-
-, is 
-\begin_inset Formula $f_{C}(a)\ge0$
-\end_inset
-
- for all 
-\begin_inset Formula $a$
-\end_inset
-
- and all 
-\begin_inset Formula $C\subseteq X$
-\end_inset
-
- (this is called total monotonicity).
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-We prove that (iii) implies ASRP.
- 
-\end_layout
-
-\begin_layout Standard
-Note that if (iii) holds then for any sequence 
-\begin_inset Formula $(a_{k},D_{k})_{k=1}^{n}$
-\end_inset
-
-, such that 
-\begin_inset Formula $a_{k}$
-\end_inset
-
- is in 
-\begin_inset Formula $D_{k}$
-\end_inset
-
- and 
-\begin_inset Formula $D_{k}\subseteq X$
-\end_inset
-
- and 
-\begin_inset Formula $D_{k}\neq\emptyset$
-\end_inset
-
- we have 
-\begin_inset Formula $\sum_{k=1}^{n}p(a_{k},D_{k})=\sum_{k=1}^{n}\sum_{r\in R}\pi(r)\mathbf{\mathbb{I}}(a_{k}rb\forall b\in D_{k}\backslash\{a_{k}\})$
-\end_inset
-
-for some 
-\begin_inset Formula $\pi\in\Delta(R)$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Notice that 
-\begin_inset Formula $\sum_{k=1}^{n}\sum_{r\in R}\pi(r)\mathbf{\mathbb{I}}(a_{k}rb\forall b\in D_{k}\backslash\{a_{k}\})\leq max_{\pi\in\Delta(R)}\sum_{r\in R}\pi(r)\mathbf{\mathbb{I}}(a_{k}rb\forall b\in D_{k}\backslash\{a_{k}\})=max_{r\in R}\sum_{r\in R}\mathbf{\mathbb{I}}(a_{k}rb\forall b\in D_{k}\backslash\{a_{k}\})$
-\end_inset
-
-.
- Thus, 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\sum_{k=1}^{n}p(a_{k},D_{k})\leq max_{r\in R}\sum_{k=1}^{n}\mathbf{\mathbb{I}}(a_{k}rb\forall b\in D_{k}\backslash\{a_{k}\}).$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-There is a surprising result about random utility.
- 
-\end_layout
-
-\begin_layout Standard
-Consider the following definition.
-\end_layout
-
-\begin_layout Definition
-The aggregate probability of choice of 
-\begin_inset Formula $a\in A$
-\end_inset
-
- for a population of agents with different random utilities supported in
- 
-\begin_inset Formula $\Pi$
-\end_inset
-
- such that 
-\begin_inset Formula $\mu\in\Delta(\Pi)$
-\end_inset
-
-, is 
-\begin_inset Formula $p^{M}(a,A)=\sum_{\pi\in\Pi}\mu(\pi)p_{\pi}(a,A)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proposition
-There exist a representative random consumer, i.e., there exist a random utility
- 
-\begin_inset Formula $\pi^{rep}\in\Delta(R)$
-\end_inset
-
- such that 
-\begin_inset Formula $p^{M}(a,A)=\sum_{r\in R}\pi^{rep}(r)\mathbb{I}(arb\forall b\in A\backslash\{b\}).$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{proof}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $p^{M}(a,A)=\sum_{\pi\in\Pi}\mu(\pi)p_{\pi}(a,A)$
-\end_inset
-
-, then 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $f_{C,\pi}(a)=\sum_{D\in\mathbf{B}(C)}(-1)^{|D\backslash C|}p_{\pi}(a,D)$
-\end_inset
-
- where 
-\begin_inset Formula $\mathbf{B}(C)=\{D\in2^{X}|C\subseteq D\}$
-\end_inset
-
-, is 
-\begin_inset Formula $f_{C,\pi}(a)\ge0$
-\end_inset
-
- for all 
-\begin_inset Formula $a$
-\end_inset
-
- and all 
-\begin_inset Formula $C\subseteq X$
-\end_inset
-
- by assumption.
- 
-\end_layout
-
-\begin_layout Standard
-Define
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $f_{C}(a)=\sum_{D\in\mathbf{B}(C)}(-1)^{|D\backslash C|}p^{M}(a,D)$
-\end_inset
-
- where 
-\begin_inset Formula $\mathbf{B}(C)=\{D\in2^{X}|C\subseteq D\}$
-\end_inset
-
-, I want to show that 
-\begin_inset Formula $f_{C}(a)\ge0$
-\end_inset
-
- for all 
-\begin_inset Formula $a$
-\end_inset
-
- and all 
-\begin_inset Formula $C\subseteq X$
-\end_inset
-
- .
-\end_layout
-
-\begin_layout Standard
-Replace:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $f_{C}(a)=\sum_{D\in\mathbf{B}(C)}(-1)^{|D\backslash C|}\sum_{\pi\in\Pi}\mu(\pi)p_{\pi}(a,A)=\sum_{\pi\in\Pi}\mu(\pi)\sum_{D\in\mathbf{B}(C)}(-1)^{|D\backslash C|}p_{\pi}(a,A)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $f_{C}(a)=\sum_{\pi\in\Pi}f_{C,\pi}(a)\geq0$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-By the previous theorem this implies that there is a 
-\begin_inset Formula $\pi^{rep}\in\Delta(R)$
-\end_inset
-
- that generates the aggregate probability.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $p^{M}(a,A)=\sum_{r\in R}\pi^{rep}(r)\mathbb{I}(arb\forall b\in A\backslash\{b\}).$
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
