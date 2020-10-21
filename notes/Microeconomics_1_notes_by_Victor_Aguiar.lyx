@@ -18552,7 +18552,7 @@ Consider
 \end_inset
 
  a finite choice set.
- Consider the set of linear orders on 
+ Consider the set of linear orders (strict preferences) on 
 \begin_inset Formula $X$
 \end_inset
 
@@ -18561,12 +18561,59 @@ Consider
 \end_inset
 
 .
- There is a distribuion over linear orders 
+ There is a distribution over linear orders 
 \begin_inset Formula $\pi\in\Delta(R)$
 \end_inset
 
  that captures preference variability, heterogeneity or preference shocks.
- Given a menu 
+ 
+\end_layout
+
+\begin_layout Example
+Let 
+\begin_inset Formula $X=\{a,b\}$
+\end_inset
+
+, 
+\begin_inset Formula $a\succ_{1}b$
+\end_inset
+
+, 
+\begin_inset Formula $b\succ_{2}a$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\pi\in\Delta(R)$
+\end_inset
+
+, 
+\begin_inset Formula $\pi(\succ_{1})+\pi(\succ_{2})=1$
+\end_inset
+
+ and 
+\begin_inset Formula $\pi(\succ_{j})\geq0$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $X=\{a,b,c\}$
+\end_inset
+
+, we have six of them 
+\begin_inset Formula $\succ_{i}$
+\end_inset
+
+ for 
+\begin_inset Formula $i\in\{1,\cdots,6\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Given a menu 
 \begin_inset Formula $A\in2^{X}\setminus\emptyset$
 \end_inset
 
@@ -18580,7 +18627,7 @@ Consider
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\rho(a,A)=\rho_{A}(a)=\sum_{r\in R}\pi(r)\mathbb{I}(arb\forall b\in A\backslash\{a\}).
+\rho(a,A)=\rho_{A}(a)=\sum_{\succ\in R}\pi(\succ)\mathbb{I}(a\succ b\forall b\in A\backslash\{a\})=\mathbb{E}[\mathbb{I}(a\boldsymbol{\tilde{\succ}}b\forall b\in A\backslash\{a\})].
 \]
 
 \end_inset
@@ -18589,12 +18636,32 @@ Consider
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula 
+\[
+=\int_{\omega\in\Omega}\mathbb{I}(a\tilde{\succ}_{\omega}b\forall b\in A\backslash\{a\})\mathbb{P}(d\omega)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Random preferences 
+\begin_inset Formula $\tilde{\succ}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
 Where 
-\begin_inset Formula $\mathbb{I}(arb\forall b\in A\backslash\{a\})=1$
+\begin_inset Formula $\mathbb{I}(a\succ b\forall b\in A\backslash\{a\})=1$
 \end_inset
 
  when the argument is true, else 
-\begin_inset Formula $\mathbb{I}(arb\forall b\in A\backslash\{a\})=0$
+\begin_inset Formula $\mathbb{I}(a\succ b\forall b\in A\backslash\{a\})=0$
 \end_inset
 
 .
@@ -18641,6 +18708,61 @@ Where
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula $A=\{a,b\}$
+\end_inset
+
+, 
+\begin_inset Formula $B=\{a,b,c\}$
+\end_inset
+
+, let's define the following sequence 
+\begin_inset Formula $((a_{1}=a,D_{1}=A),(a_{2}=a,D_{2}=B))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\rho_{D_{1}}(a_{1})+\rho_{D_{2}}(a_{1})\leq\max_{\succ\in R}(\mathbb{I}(a_{1}\succ a_{2})+\mathbb{I}(a_{1}\succ a_{j},j\in\{2,3\}))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{1}{2}=\rho_{D_{1}}(a_{1})<\rho_{D_{2}}(a_{1})=\frac{3}{4}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{5}{4}\leq2,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+this passes, but there should be another sequence for which the ASRP fails
+ because this dataset violates regularity (ASRP 
+\begin_inset Formula $\implies$
+\end_inset
+
+ regularity).
+ 
+\end_layout
+
 \begin_layout Lemma
 \begin_inset CommandInset label
 LatexCommand label
@@ -18666,7 +18788,7 @@ The following are equivalent:
 \begin_layout Lemma
 \begin_inset Formula 
 \[
-M\pi=p,
+M_{n\times S}\pi_{S\times1}=\rho_{n\times1},
 \]
 
 \end_inset
@@ -18695,7 +18817,11 @@ where,
 \begin_inset Formula $X$
 \end_inset
 
-.
+ (
+\begin_inset Formula $S=|X|!$
+\end_inset
+
+ when we assume full support).
  
 \end_layout
 
@@ -18705,7 +18831,7 @@ where,
 \end_inset
 
  such that 
-\begin_inset Formula $p(a,A)=\sum_{r\in R}\pi(r)\mathbb{I}(arb\forall b\in A\backslash\{a\}).$
+\begin_inset Formula $\rho(a,A)=\sum_{r\in R}\pi(r)\mathbb{I}(arb\forall b\in A\backslash\{a\}).$
 \end_inset
 
 
@@ -18713,7 +18839,7 @@ where,
 
 \begin_layout Lemma
 (iv) The mapping 
-\begin_inset Formula $f_{C}(a)=\sum_{D\in\mathbf{B}(C)}(-1)^{|D\backslash C|}p(a,D)$
+\begin_inset Formula $f_{C}(a)=\sum_{D\in\mathbf{B}(C)}(-1)^{|D\backslash C|}\rho(a,D)$
 \end_inset
 
  where 
@@ -18806,6 +18932,48 @@ Notice that
 \end_layout
 
 \begin_layout Standard
+If ASRP this implies that there is a solution for (ii).
+ 
+\end_layout
+
+\begin_layout Standard
+This actually is a corollary of Farkas' Lemma (Theorem of the Alternative).
+ For every linear system of equations 
+\begin_inset Formula $M\pi=\rho$
+\end_inset
+
+, there is an associated linear system of inequalities 
+\begin_inset Formula $M'y\geq0$
+\end_inset
+
+ for some 
+\begin_inset Formula $y$
+\end_inset
+
+, such that if 
+\begin_inset Formula $M'y\geq0$
+\end_inset
+
+ has a solution if and only if 
+\begin_inset Formula $M\pi=\rho$
+\end_inset
+
+ does not have a solution.
+ ASRP means that the inequality cannot have a solution, which implies that
+ 
+\begin_inset Formula $M\pi=\rho$
+\end_inset
+
+ has a solution.
+ 
+\end_layout
+
+\begin_layout Standard
+(ii) implies RU (i).
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -18857,7 +19025,7 @@ There exist a representative random consumer, i.e., there exist a random utility
 \begin_inset Formula $\pi^{rep}\in\Delta(R)$
 \end_inset
 
- such that 
+ such that (market share) 
 \begin_inset Formula $p^{M}(a,A)=\sum_{r\in R}\pi^{rep}(r)\mathbb{I}(arb\forall b\in A\backslash\{b\}).$
 \end_inset
 
@@ -18987,6 +19155,484 @@ end{proof}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Discrete Choice with Attributes
+\end_layout
+
+\begin_layout Standard
+In econometric applications, usually the choice set is unobserved.
+ Econometricians usually assume that the choice set is the grand choice
+ set 
+\begin_inset Formula $A$
+\end_inset
+
+ (assume it is finite).
+ The utility of 
+\begin_inset Formula $a\in A$
+\end_inset
+
+, depends on attributes 
+\begin_inset Formula $x_{a}\in\Xi$
+\end_inset
+
+ of observable attributes of 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $x=(x_{a})_{a\in A}$
+\end_inset
+
+ be the profile of attributes.
+ 
+\end_layout
+
+\begin_layout Standard
+The consumer random utility equals, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boldsymbol{U}(a,x)=v(a,x_{a})+\boldsymbol{\epsilon}(a,x).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In terms of the random utility interpretation using states we can update
+ the definition of states to have 
+\begin_inset Formula $(\omega,x)\in\Omega\times\Xi^{A}$
+\end_inset
+
+ (defining a joint measure over states (unobservable) and observable attributes).
+ 
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\rho:\Xi^{A}\to\Delta(A)$
+\end_inset
+
+ has a DC (discrete choice) with attributes representation if there exists
+ a deterministic utility function 
+\begin_inset Formula $v:A\times\Xi\to\mathbb{R}$
+\end_inset
+
+ and a probability space 
+\begin_inset Formula $(\Omega\times\Xi^{A},\mathcal{F},\mathbb{P})$
+\end_inset
+
+ as well as random variable 
+\begin_inset Formula $\boldsymbol{\epsilon}$
+\end_inset
+
+ with values on 
+\begin_inset Formula $\mathbb{R}^{A}$
+\end_inset
+
+ such that for any 
+\begin_inset Formula $x$
+\end_inset
+
+ the distribution of 
+\begin_inset Formula $\boldsymbol{\epsilon}$
+\end_inset
+
+ is smooth and 
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+\rho(a,x)=\mathbb{P}\left(\omega\in\Omega:v(a,x_{a})+\epsilon_{\omega}(a,x)=\max_{b\in A}v(b,x_{b})+\epsilon_{\omega}(b,x)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A common assumption is that the distribution of 
+\begin_inset Formula $\boldsymbol{\epsilon}$
+\end_inset
+
+ is independent from the observable attributes 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+However, this assumption can fail if the attributes include price and the
+ firms in a market where the consumers live adjust prices as a response
+ to shocks to preferences.
+ 
+\end_layout
+
+\begin_layout Standard
+Applications assume that the distribution of 
+\begin_inset Formula $\boldsymbol{\epsilon}$
+\end_inset
+
+ is fixed, and that we observe the mean utility 
+\begin_inset Formula $v(a,x_{a})=x_{a}'\beta$
+\end_inset
+
+, where 
+\begin_inset Formula $\beta$
+\end_inset
+
+ usually is estimated, but here for simplicity we will assume it is known.
+ In that case, 
+\begin_inset Formula $v(a,x_{a})=v(x_{a})$
+\end_inset
+
+ such that 
+\begin_inset Formula $v:\mathbb{\Xi}\to\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\rho:\mathbb{R}^{A}\rightarrow\Delta(A)$
+\end_inset
+
+ has a DC with simple attributes representation if there exists random variable
+ 
+\begin_inset Formula $\boldsymbol{\epsilon}$
+\end_inset
+
+ with values on 
+\begin_inset Formula $\mathbb{R}^{A}$
+\end_inset
+
+ distributed smoothly and independently of 
+\begin_inset Formula $v$
+\end_inset
+
+ such that 
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+\rho(a,x)=\mathbb{P}(x_{a}'\beta+\boldsymbol{\epsilon}_{a}=\max_{b\in A}x_{b}'\beta+\boldsymbol{\epsilon}_{b}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With variation in attributes, and parametric assumptions on the distribution
+ of 
+\begin_inset Formula $\boldsymbol{\epsilon}$
+\end_inset
+
+, econometricians usually estimate 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Consumer Surplus
+\end_layout
+
+\begin_layout Standard
+Under RU we can estimate the welfare of a consumer in a choice set 
+\begin_inset Formula $A$
+\end_inset
+
+ by her consumer surplus:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V(A):=\mathbb{E}\left[\max_{a\in A}\boldsymbol{U}(x)\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is the average or expected utility from the best item in the menu (due
+ to McFadden, 1973).
+ 
+\end_layout
+
+\begin_layout Standard
+In discrete choice, given attributes 
+\begin_inset Formula $x$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V(x):=\mathbb{E}\left[\max_{a\in A}(x_{a}'\beta+\boldsymbol{\epsilon}_{a})\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This formula only makes sense if 
+\begin_inset Formula $\boldsymbol{\epsilon}$
+\end_inset
+
+ is interpreted as unobservable preference shocks.
+ If they are decision errors then 
+\begin_inset Formula $V(x)$
+\end_inset
+
+ is not a surplus.
+ 
+\end_layout
+
+\begin_layout Lemma
+Roy's identity for DC.
+ (Williams-Daly-Zachary) If 
+\begin_inset Formula $\rho$
+\end_inset
+
+ is a DC with simple attributes and 
+\series bold
+
+\begin_inset Formula $\boldsymbol{\epsilon}$
+\end_inset
+
+ has finite first moments
+\series default
+, also assume that 
+\begin_inset Formula $v(x_{a})=x_{a}$
+\end_inset
+
+ for all 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ (i.e., 
+\begin_inset Formula $x$
+\end_inset
+
+ is scalar), then:
+\end_layout
+
+\begin_layout Lemma
+(i) For any 
+\begin_inset Formula $x$
+\end_inset
+
+ the associated consumer surplus 
+\begin_inset Formula $V(x)$
+\end_inset
+
+ is finite.
+ 
+\end_layout
+
+\begin_layout Lemma
+(ii) The function 
+\begin_inset Formula $V:\mathbb{R}^{A}\to\mathbb{R}$
+\end_inset
+
+(
+\begin_inset Formula $V(x))$
+\end_inset
+
+ is differentiable and convex
+\end_layout
+
+\begin_layout Lemma
+(iii) 
+\begin_inset Formula $\rho(x)=\nabla V(x)$
+\end_inset
+
+ (Roy's identity)
+\end_layout
+
+\begin_layout Standard
+Intuition of the proof for (iii), by the Envelope's theorem we have that
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\partial_{x_{a}}V(x)=\partial_{x_{a}}\mathbb{E}\left[\max_{a\in A}x_{a}+\boldsymbol{\epsilon}_{a}\right]=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbb{E}\left[1(x_{a}+\boldsymbol{\epsilon}_{a}=\max_{b\in A}x_{b}+\boldsymbol{\epsilon}_{b})\right]=\rho(a,x).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We also have comparative statics and an analogue of the Slutsky matrix result.
+ 
+\end_layout
+
+\begin_layout Theorem
+(Williams-Daly-Zachary) Suppose that a stochastic choice function with attribute
+s 
+\begin_inset Formula $\rho:\mathbb{R}^{A}\to\Delta(A)$
+\end_inset
+
+ is 
+\begin_inset Formula $|A|$
+\end_inset
+
+-times continously differentiable.
+ The function 
+\begin_inset Formula $\rho$
+\end_inset
+
+ has a simple DC with attributes representation (as in the previous lemma)
+ if and only if it satisfies:
+\end_layout
+
+\begin_layout Theorem
+(i) Translation invariance: 
+\begin_inset Formula $\rho(x)=\rho(x+\boldsymbol{1}\cdot k)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Theorem
+(ii) Zero limit demand: 
+\begin_inset Formula $\lim_{x_{a}\rightarrow-\infty}\rho(a,x)=0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x_{-a}\in(x_{b})_{b\in A\setminus\{a\}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+(iii) Symmetric partials.
+ 
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula 
+\[
+\frac{\partial\rho_{a}}{\partial x_{b}}(x)=\frac{\partial\rho_{b}}{\partial x_{a}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+for all 
+\begin_inset Formula $v\in\mathbb{R}^{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $x\neq y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Theorem
+(iv) gross substitutes:
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula 
+\[
+\frac{\partial\rho_{a}}{\partial v_{b}}(x)<0
+\]
+
+\end_inset
+
+ for all 
+\begin_inset Formula $a\neq b$
+\end_inset
+
+ and all 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+(v) Alternating signs of partials:
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula 
+\[
+(-1)\frac{\partial^{k}\rho_{a_{0}}}{\partial x_{a_{1}}\cdots\partial_{a_{k}}}(x)>0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+for all 
+\begin_inset Formula $x$
+\end_inset
+
+ and for all 
+\begin_inset Formula $k=2,\cdots,|A|-1$
+\end_inset
+
+ and each set of 
+\begin_inset Formula $k+1$
+\end_inset
+
+ distinct elements 
+\begin_inset Formula $\{a_{0},\cdots,a_{k}\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Translation invariance says that what matters are utility differences, not
+ absolute levels.
+ 
 \end_layout
 
 \begin_layout Section

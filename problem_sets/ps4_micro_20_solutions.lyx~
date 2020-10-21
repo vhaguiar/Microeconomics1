@@ -1125,13 +1125,7 @@ Notice that
 \begin_inset Formula $\phi(F(z_{0}))+[\phi(F(z_{1}))-\phi(F(z_{0}))]+[\phi(F(z_{2}))-\phi(F(z_{1}))]=F(z_{2})=1$
 \end_inset
 
-, which means that this differences work like probabilities, as opposed
- to 
-\begin_inset Formula $\sum_{z\in Z}\phi(p_{z})\neq0$
-\end_inset
 
- which is not a probability.
- 
 \end_layout
 
 \end_body
