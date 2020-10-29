@@ -20380,7 +20380,7 @@ profit maximization problem
 \begin_layout Standard
 \begin_inset Formula 
 \[
-max_{y}\quad p'y
+max_{y}\quad p'y=\max_{q,z}(p_{q}'q-p_{z}'z)
 \]
 
 \end_inset
@@ -20958,7 +20958,7 @@ The FOC,
 \begin_layout Standard
 \begin_inset Formula 
 \[
-w_{l}\geq\lambda\frac{\partial f(z^{*})}{\partial z_{l}},\quad z_{l}>0.
+w_{l}\geq\lambda\frac{\partial f(z^{*})}{\partial z_{l}},\quad\text{equality holds }z_{l}>0.
 \]
 
 \end_inset
@@ -21051,7 +21051,7 @@ The properties of the
 \end_inset
 
  then 
-\begin_inset Formula $Y=\{(-z,q):w'z\geq c(w,q)$
+\begin_inset Formula $Y(q)=\{(-z,q):w'z\geq c(w,q)$
 \end_inset
 
  for all 
@@ -21588,8 +21588,11 @@ Suppose
 \end_inset
 
 .
- We can invoke the separating hyperplane theorem to establish that there
- is some 
+ We can invoke the 
+\series bold
+separating hyperplane theorem
+\series default
+ to establish that there is some 
 \begin_inset Formula $p\neq0$
 \end_inset
 
@@ -21738,7 +21741,7 @@ We consider a market.
 \end_layout
 
 \begin_layout Standard
-Consider 
+This market has 
 \begin_inset Formula $I$
 \end_inset
 
@@ -22725,6 +22728,13 @@ This means that if the price
 
  yields precisely the utilities 
 \begin_inset Formula $(u_{1},\cdots,u_{I}).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
 \end_inset
 
 
