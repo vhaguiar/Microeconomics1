@@ -23067,7 +23067,7 @@ Solving this:
 \end_inset
 
  in the Edgeworth box with 
-\begin_inset Formula $x_{i}'\succeq x_{i}$
+\begin_inset Formula $x_{i}'\succeq_{i}x_{i}$
 \end_inset
 
  for 
@@ -23075,7 +23075,7 @@ Solving this:
 \end_inset
 
  and 
-\begin_inset Formula $x_{i}'\succ x_{i}$
+\begin_inset Formula $x_{i}'\succ_{i}x_{i}$
 \end_inset
 
  for some 
@@ -23359,7 +23359,49 @@ z(p^{*},w^{*})=\overline{L}-x_{1}(p^{*},w^{*}).
 \begin_layout Claim
 A particular consumption-leisure combination can arise in a competitive
  equilibrium if and only if it maximizes the consumer's utility subject
- to the economy's technological and endowment constraints.
+ to the economy's technological and endowment constraints (Pareto Optimal).
+\end_layout
+
+\begin_layout Claim
+Central planner:
+\end_layout
+
+\begin_layout Claim
+\begin_inset Formula 
+\[
+max_{x_{1},x_{2}}u(x_{1},x_{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim
+\begin_inset Formula 
+\[
+s.t.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim
+\begin_inset Formula 
+\[
+x_{2}=f(\overline{L}-x_{1}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim
+Claim 10 is saying is that the descentralized problem stated before has
+ the same solution as the central planner problem.
  
 \end_layout
 
