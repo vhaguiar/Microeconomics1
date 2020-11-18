@@ -23613,12 +23613,16 @@ Formally consumer
 \begin_inset Formula $\omega=\sum_{i}\omega_{i}$
 \end_inset
 
-, 
-\begin_inset Formula $\sum_{i=1}^{I}\theta_{ij}=1$
+ and 
+\begin_inset Formula $\sum_{j}\theta_{ij}=1$
 \end_inset
 
- for all 
-\begin_inset Formula $j\in\{1,\cdots,J\}$
+ for every 
+\begin_inset Formula $j$
+\end_inset
+
+, 
+\begin_inset Formula $\sum_{i}\theta_{ij}=1$
 \end_inset
 
 ).
