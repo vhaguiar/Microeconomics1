@@ -1,0 +1,995 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{babel}
+\usepackage{babel}
+\usepackage{babel}
+
+
+
+
+
+  \providecommand{\assumptionname}{Assumption}
+  \providecommand{\axiomname}{Axiom}
+  \providecommand{\claimname}{Claim}
+  \providecommand{\definitionname}{Definition}
+  \providecommand{\lemmaname}{Lemma}
+  \providecommand{\propositionname}{Proposition}
+  \providecommand{\remarkname}{Remark}
+\providecommand{\corollaryname}{Corollary}
+\providecommand{\theoremname}{Theorem}
+
+
+
+  \providecommand{\axiomname}{Axiom}
+  \providecommand{\claimname}{Claim}
+  \providecommand{\definitionname}{Definition}
+  \providecommand{\remarkname}{Remark}
+\providecommand{\corollaryname}{Corollary}
+\providecommand{\theoremname}{Theorem}
+\end_preamble
+\use_default_options false
+\begin_modules
+theorems-ams-bytype
+theorems-ams-extended-bytype
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding iso8859-15
+\fontencoding default
+\font_roman "cmr" "default"
+\font_sans "cmss" "default"
+\font_typewriter "cmtt" "default"
+\font_math "auto" "auto"
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 2
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Micro I: Problem Set 7.
+\end_layout
+
+\begin_layout Author
+Professor: Victor H.
+ Aguiar 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Consider a continuum of agents 
+\begin_inset Formula $u(x,m)=\phi(x)+m=A^{\frac{1}{\alpha}}\frac{\alpha}{(\alpha-1)}x^{1-\frac{1}{\alpha}}+m$
+\end_inset
+
+ with 
+\begin_inset Formula $A$
+\end_inset
+
+ a constant 
+\begin_inset Formula $A\in(0,1]$
+\end_inset
+
+ where the endowment of numeraire is denoted by 
+\begin_inset Formula $\omega_{m}$
+\end_inset
+
+ and is distributed with 
+\begin_inset Formula $\omega_{m}\sim F_{m}(\cdot)$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha\sim U[1,2]$
+\end_inset
+
+ is distributed uniformly.
+ As usual, 
+\begin_inset Formula $p$
+\end_inset
+
+ is the price of the consumption good denoted by 
+\begin_inset Formula $x$
+\end_inset
+
+ and the price of the numeraire is normalized to 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Exercise
+We also have a continuum of firms each of them with the cost function 
+\begin_inset Formula $c(q)=\frac{1}{1+\frac{1}{\beta}}q^{1+\frac{1}{\beta}}$
+\end_inset
+
+ with 
+\begin_inset Formula $\beta\sim U[1,2]$
+\end_inset
+
+, that denotes the amount of consumption good produced with numeraire.
+ It is a private ownership economy so each consumer indexed by 
+\begin_inset Formula $(\alpha,\omega_{m})$
+\end_inset
+
+ has a share over all firms indexed by 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+ Formally, the share for any firm are 
+\begin_inset Formula $1=\int\theta(\alpha,\omega_{m},\beta)dF(\alpha,\omega_{m})$
+\end_inset
+
+ with 
+\begin_inset Formula $F(\alpha,\omega_{m})$
+\end_inset
+
+ the joint distribution over 
+\begin_inset Formula $(\alpha,\omega_{m})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Exercise
+(Hint: Market Clearance has to hold only in expectation and you can assume
+ interior solutions and existence of the equilibrium).
+\end_layout
+
+\begin_layout Exercise
+(1) Prove that the effect of the numeraire distribution 
+\begin_inset Formula $\omega_{m}\sim F_{m}(\cdot)$
+\end_inset
+
+ on the equilibrium of the consumption good is null.
+ 
+\end_layout
+
+\begin_layout Exercise
+(2) Solve the partial equilibrium in a closed form.
+ Find the individual demands 
+\begin_inset Formula $x(\alpha,p^{*})$
+\end_inset
+
+, the individual supply 
+\begin_inset Formula $q(\beta,p^{*})$
+\end_inset
+
+ and the equilibrium price 
+\begin_inset Formula $p^{*}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Exercise
+Assume that the endowment of the numeraire is constant 
+\begin_inset Formula $\omega_{m}>0$
+\end_inset
+
+ and positive.
+\end_layout
+
+\begin_layout Exercise
+(3) What is the average numeraire demand? (You can write just the formula,
+ for general distributions, no need to integrate).
+ 
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+(i) By consumer utility maximization
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Formula $\phi'(x,\alpha)=p$
+\end_inset
+
+, solve for 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Formula $x(\alpha,p)=Ap^{-\alpha}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+(ii) By firms profit maximizing
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Formula $c'(q,\beta)=p$
+\end_inset
+
+, solve for 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Formula $q(\beta,p)=p^{\beta}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+(iii) Market cleareance means
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Formula $\int_{(\alpha,\omega_{m})}x(\alpha,p)dF(\alpha,\omega_{m})=\int_{\beta}q(\beta,p)dF_{\beta}(\beta)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Formula $\int_{1}^{2}Ap^{-t}dt=\int_{1}^{2}p^{t}dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Formula $\frac{A}{plogp}-\frac{A}{p^{2}logp}=-\frac{p}{log(p)}+\frac{p^{2}}{log(p)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Then the only real solution is 
+\begin_inset Formula $p^{*}=A^{1/3}$
+\end_inset
+
+, that for 
+\begin_inset Formula $A\in(0,1]$
+\end_inset
+
+ gives 
+\begin_inset Formula $p\in(0,1]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Formula $p^{*}=f(A)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Exercise
+Then the individual demands and supplies are:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Formula $x(\alpha,p^{*})=A^{1-\frac{\alpha}{3}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Formula $q(\beta,p^{*})=A^{\beta/3}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+(iv)
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Formula $E[m]=\frac{3(A^{1/9}-A^{1/3})}{log(A)}-E[\omega_{m}]-\int\int\theta(\alpha,\omega_{m},\beta)[\pi(\beta,p)]dF(\alpha,\omega_{m})dF(\beta)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Formula $Data=(p_{t},A_{t})_{t\in American.Countries}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+I assume that all consumers across America are iid.
+ 
+\begin_inset Formula $\alpha\sim U[1,2]$
+\end_inset
+
+, across markets the distribution of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is the same, but inside a market agents are heterogeneous and governed
+ by the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ distributions.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Estimation of Demand in a Partial Equilibrium Situation.
+ 
+\end_layout
+
+\begin_layout Exercise
+We consider a sequence of markets, in each market consumers and firms maximize
+ static utility and static profits (agents are myopic so there is no dynamics).
+ 
+\end_layout
+
+\begin_layout Exercise
+Consider the following aggregate demand of good 
+\begin_inset Formula $1$
+\end_inset
+
+, (good 
+\begin_inset Formula $2$
+\end_inset
+
+ is a numeraire) for market in time 
+\begin_inset Formula $t$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{t}^{d}=\alpha_{o}+\alpha_{1}p_{t}+u_{t},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha_{o},\alpha_{1}$
+\end_inset
+
+ are deterministic parameters but 
+\begin_inset Formula $u_{t}$
+\end_inset
+
+ is realization of a random variable 
+\begin_inset Formula $\boldsymbol{u}_{t}$
+\end_inset
+
+ representing exogenous shocks to preferences per-time period.
+ 
+\end_layout
+
+\begin_layout Standard
+Consider the following aggregate supply function of good 1,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{t}^{s}=\beta_{o}+\beta_{1}p_{t}+v_{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\beta_{o},\beta_{1}$
+\end_inset
+
+ are deterministic parameter but 
+\begin_inset Formula $v_{t}$
+\end_inset
+
+ is a realization of a random variable 
+\begin_inset Formula $\boldsymbol{v}_{t}$
+\end_inset
+
+ that are shocks to productivity.
+ 
+\end_layout
+
+\begin_layout Standard
+The market clearing conditions per realization of shocks are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{t}^{s}=x_{t}^{d}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(1) For a realization of 
+\begin_inset Formula $(u_{t},v_{t})$
+\end_inset
+
+ find the equilibrium quantity and the equilibrium price of a given economy
+ time 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p_{t}^{*}=\frac{\beta_{0}-\alpha_{0}}{\alpha_{1}-\beta_{1}}+\frac{v_{t}-u_{t}}{\alpha_{1}-\beta_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{t}^{*}=\frac{\alpha_{1}\beta_{0}-\alpha_{0}\beta_{1}}{\alpha_{1}-\beta_{1}}+\frac{\alpha_{1}v_{t}-\beta_{1}u_{t}}{\alpha_{1}-\beta_{1}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notice that, under the assumption that the random variables 
+\series bold
+
+\begin_inset Formula $\boldsymbol{u}_{t},\boldsymbol{v}_{t}$
+\end_inset
+
+ 
+\series default
+is i.i.d.
+ in time, observed prices and quantities are also random with realizations
+ of prices and quantities in equilibrium 
+\begin_inset Formula $p_{t}^{*}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{t}^{*}$
+\end_inset
+
+ for the given realizations of the 
+\begin_inset Formula $u_{t},v_{t}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(2) Assume that an statistician that does not know microeconomics wants
+ to find the demand elasticity with respect to prices using this data.
+ He writes the following model:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{t}^{*}=\gamma_{0}+\gamma_{1}p_{t}^{*}+\epsilon_{t},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then he computes the OLS estimator of the price parameter: 
+\begin_inset Formula $\gamma_{1}^{ols}=\frac{cov(\boldsymbol{p}_{t}^{*},\boldsymbol{x}_{t}^{*})}{var(\boldsymbol{p}_{t}^{*})}.$
+\end_inset
+
+ Show that this statistician will get the following quantity potentially
+ very different from the price demand elasticity 
+\begin_inset Formula $\alpha_{1}$
+\end_inset
+
+: (Hint: assume 
+\begin_inset Formula $cov(\boldsymbol{u}_{t},\boldsymbol{v}_{t})=0$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\gamma_{1}^{ols}=\frac{\alpha_{1}var(\boldsymbol{v}_{t})+\beta_{1}var(\boldsymbol{u}_{t})}{var(\boldsymbol{v}_{t})+var(\boldsymbol{u}_{t})}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the demand equation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $cov(\boldsymbol{p}_{t},\boldsymbol{x}_{t})=\alpha_{1}var(\boldsymbol{p}_{t})+cov(\boldsymbol{p_{t}},\boldsymbol{u_{t}})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the supply equation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $cov(\boldsymbol{p_{t},x_{t}})\boldsymbol{=}\beta_{1}var(\boldsymbol{p}_{t})+cov(\boldsymbol{p}_{t},\boldsymbol{v_{t})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now using the price equation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p_{t}^{*}=\frac{\beta_{0}-\alpha_{0}}{\alpha_{1}-\beta_{1}}+\frac{v_{t}-u_{t}}{\alpha_{1}-\beta_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+the covariance
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $cov(\boldsymbol{p}_{t},\boldsymbol{u_{t}})=-\frac{var(\boldsymbol{u}_{t})}{\alpha_{1}-\beta_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $cov(p_{t},v_{t})=\frac{var(v_{t})}{\alpha_{1}-\beta_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $cov(p_{t},x_{t})=\frac{1}{(\alpha_{1}-\beta_{1})^{2}}(\alpha_{1}var(\boldsymbol{v}_{t})+\beta_{1}var(\boldsymbol{u}_{t}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $var(p_{t})=\frac{1}{(\alpha_{1}-\beta_{1})^{2}}[var(v_{t})+var(u_{t})-2cov(v_{t},u_{t})]=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{1}{(\alpha_{1}-\beta_{1})^{2}}[var(v_{t})+var(u_{t})]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma^{ols}=\frac{\alpha_{1}var(\boldsymbol{v}_{t})+\beta_{1}var(\boldsymbol{u}_{t})}{var(\boldsymbol{v}_{t})+var(\boldsymbol{u}_{t})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(3) What condition over unobservables 
+\begin_inset Formula $\boldsymbol{u}_{t}$
+\end_inset
+
+ and 
+\begin_inset Formula $\boldsymbol{v}_{t}$
+\end_inset
+
+ would you have to impose for the statistician to miraculously get that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\gamma^{ols}=\alpha_{1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $\boldsymbol{u}_{t}=0$
+\end_inset
+
+ almost surely.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma^{ols}=\alpha_{1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(4) Now an econometrician that know microeconomics comes to the help of
+ the statistician and notices the following, we cannot get demand price
+ elasticities from market data because these quantities and prices are the
+ result of the intersection of supply and demand.
+ In order to estimate the demand function we need a demand shifter! Provide
+ an example of a demand shifter 
+\begin_inset Formula $z_{t}^{d}$
+\end_inset
+
+ that satisfies the following 
+\begin_inset Formula $cov(p_{t},z_{t}^{d})\neq0$
+\end_inset
+
+ and 
+\begin_inset Formula $cov(u_{t}z_{t}^{d})=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Show that the structural estimator is a consistent estimator of the elasticity
+ of interest 
+\begin_inset Formula $\alpha_{1}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{IV}=\frac{cov(x_{t},z_{t}^{d})}{cov(p_{t},z_{t}^{d})}=\alpha_{1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We have 
+\begin_inset Formula $cov(z_{t}^{d},x_{t})=\alpha_{1}cov(z_{t}^{d},p_{t})+cov(z_{t}^{d},u_{t})$
+\end_inset
+
+ from the equation of demand, under the assumptions we solve for 
+\begin_inset Formula $\alpha_{1}$
+\end_inset
+
+ and this is well-defined.
+  
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
