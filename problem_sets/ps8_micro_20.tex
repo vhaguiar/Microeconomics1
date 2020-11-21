@@ -1,0 +1,250 @@
+
+
+%2multibyte Version: 5.50.0.2953 CodePage: 1252
+%\newtheorem{remark}[theorem]{Remark}
+% \gamemathtrue
+%\usepackage{array}
+%\usepackage{tabularx}
+%\usepackage[active]{srcltx}
+%\usepackage[active]{srcltx}
+%\usepackage{ae}
+%\usepackage{aecompl}
+%\usepackage{amssymb}
+%\usepackage{xcolor}
+%\usepackage{amsmath}
+%\usepackage{amsfonts}
+%\usepackage{graphicx}
+%\usepackage{accents}
+%\usepackage{natbib}
+%\usepackage[colorlinks,linkcolor=links,citecolor=cites,urlcolor=MyDarkBlue]{hyperref}
+%\usepackage{array}
+%\usepackage{sgame}
+%\usepackage{showkeys}
+%\theoremstyle{plain}
+%\usepackage{showkeys}
+% \usepackage[pagebackref,colorlinks,urlcolor=black,citecolor=black,filecolor=black,
+% linkcolor=black, bookmarksnumbered,bookmarksopen=true,bookmarksopenlevel=0]%
+% {hyperref}%
+
+\documentclass[12pt,notitlepage]{article}%
+\usepackage[top=1.5in, bottom=1.5in, left=1.5in, right=1.5in]{geometry}
+\usepackage{amsthm}
+\usepackage{setspace}
+\usepackage{eurosym}
+\usepackage{subfigure}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{supertabular}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[colorlinks,linkcolor=links,citecolor=cites,urlcolor=MyDarkBlue]%
+{hyperref}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amstext}
+\usepackage{appendix}
+%\usepackage{mathpazo}
+\usepackage{tikz}
+\usepackage{rotating}
+\usepackage{lscape}
+\usepackage{chngpage}
+\usepackage{esint}
+\usepackage{natbib}
+\usepackage{bm}
+\setcounter{MaxMatrixCols}{30}
+%TCIDATA{OutputFilter=latex2.dll}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{Codepage=1252}
+%TCIDATA{CSTFile=article.cst}
+%TCIDATA{Created=Monday, November 05, 2001 21:57:33}
+%TCIDATA{LastRevised=Saturday, October 12, 2013 14:43:03}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Articles\SW\AMS Journal Article">}
+%TCIDATA{Language=American English}
+%BeginMSIPreambleData
+\providecommand{\U}[1]{\protect\rule{.1in}{.1in}}
+%EndMSIPreambleData
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}{Acknowledgement}
+\newtheorem{algorithm}{Algorithm}
+\newtheorem{Assumption}{Assumption}
+\newtheorem{axiom}{Axiom}
+\newtheorem{case}{Case}
+\newtheorem{claim}{Claim}
+\newtheorem{conclusion}{Conclusion}
+\newtheorem{condition}{Condition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{corollary}{Corollary}
+\newtheorem{criterion}{Criterion}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{exercise}{Exercise}
+\newtheorem{lemma}{Lemma}
+\newtheorem{notation}{Notation}
+\newtheorem{problem}{Problem}
+\newtheorem*{assumption}{Asumption}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+\newtheorem{solution}{Solution}
+\newtheorem{summary}{Summary}
+\newtheorem{observation}{Observation}
+\newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+\numberwithin{equation}{section}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\Prob}{Prob}
+\setlength{\topmargin}{0in}
+\setlength{\textheight}{8.8in}
+\setlength{\oddsidemargin}{0.1in}
+\setlength{\evensidemargin}{0.1in}
+\setlength{\textwidth}{6.5in}
+\setlength{\headheight}{0in}
+\def \definitionname{Definition}
+\def \sectionautorefname{Section}
+\def \subsectionautorefname{Section}
+\def \footnotename{footnote}
+\def \examplename{Example}
+\def \lemmaname{Lemma}
+\def \propositionname{Proposition}
+\def \appendixname{Appendix}
+\def \assumptionname{Assumption}
+\def \corollaryname{Corollary}
+\def \remarkname{Remark}
+\def \remname{Remark}
+\providecommand{\possessivecite}[1]{\citeauthor{#1}'s\nolinebreak[2]
+(\citeyear{#1})}
+\definecolor{MyDarkBlue}{rgb}{0,0.08,0.45}
+\definecolor{cites}{HTML}{324b13}
+\definecolor{links}{HTML}{1a663b}
+\definecolor{MyLightMbuyera}{cmyk}{0.1,0.8,0,0.1}
+\hypersetup{
+colorlinks,citecolor=blue,filecolor=black,linkcolor=blue,urlcolor=blue
+}
+%\doublespace
+%\baselineskip 2.2em
+\parindent= 0.6cm
+%%\setlength{\parskip}{0.8ex}
+\linespread{1.3}
+
+\usepackage{chngcntr}
+\counterwithout{equation}{section}
+\begin{document}
+\title{Problem set 8%
+		}
+
+
+\maketitle
+
+
+\section{Problem 1}
+
+Edgeworth box. Consider a pure exchange economy with two kinds of goods and two consumers. Each consumer is endowed with $\bf{one}$ unit of good 1 and $\bf{1/2}\;(a \;half)$ unit of good 2. Their consumption sets are each $\mathbb R_{+}^2$, and their utility functions $u_1$ and $u_2$ are defined by, for each consumption bundle $(x,y)\in R_{+}^2$, 
+\begin{equation}
+\begin{split}
+u_1(x,y):=&x^2+y^2,\\
+u_2(x,y):=&x+y,
+\end{split}
+\end{equation}
+
+	
+	
+	a. For each of the following items, write down the explicit solution for this economy, in
+set-theoretic notations, and label the solution in a diagram with clearly marked axes,
+origins, coordinates and indifference maps:
+\begin{itemize}
+	\item[i.] The set of all Pareto optimal allocations
+	\item[ii.] The set of all Walras equilibria allocations (be sure to specify the supporting price vectors)
+price vectors)
+\item[iii.] The core
+	\end{itemize}
+
+
+b. For each of the following theorems, point out whether the theorem is applicable to this
+economy and explain your answer concisely, in no more than 20 words (i.e., for each
+theorem, check whether all its conditions are satisfied or not and briefly explain why)
+\begin{itemize}
+	\item[i.] The first fundamental theorem of welfare economics
+	\item[ii.] The second fundamental theorem of welfare economics
+	\end{itemize}
+	
+	
+	
+	
+	
+	
+	
+
+\section{Problem 2}
+Edgeworth box. Consider a pure exchange economy with two kinds of goods and two consumers. Each consumer is endowed with $\bf two$ unit of good 1 and $\bf one$ unit of good 2. Their consumption sets are each $\mathbb R_{+}^2$, and their utility functions $u_1$ and $u_2$ are defined by, for each consumption bundle $(x,y)\in R_{+}^2$,
+\begin{equation}
+\begin{split}
+u_1(x,y):=&\lfloor  x+y\rfloor,\\
+u_2(x,y):=&x+2y,
+\end{split}
+\end{equation}
+where $\lfloor  x+y\rfloor$ stands for the integer part of $x+y$. (E.g., $\lfloor  0.2+0.3\rfloor=\lfloor  0.5\rfloor=0$, $\lfloor  0.7+0.8\rfloor=\lfloor  1.5\rfloor=1$, $\lfloor  1.1+1.9\rfloor=\lfloor  3.0\rfloor=3$. ) 
+
+	a. For each of the following items, write down the explicit solution for this economy, in
+set-theoretic notations, and label the solution in a diagram with clearly marked axes,
+origins, coordinates and indifference maps:
+\begin{itemize}
+	\item[i.] The set of all Pareto optimal allocations
+	\item[ii.] The set of all Walras equilibrium allocations (be sure to specify the supporting price vectors)
+	\item[iii.] The set of all price equilibria with transfers (be sure to specify the supporting
+	price vectors)
+	\item[iv.] The core
+\end{itemize}
+
+
+b. For each of the following theorems, point out whether the theorem is applicable to this
+economy and explain your answer concisely, in no more than 20 words (i.e., for each
+theorem, check whether all its conditions are satisfied or not and briefly explain why)
+\begin{itemize}
+	\item[i.] The first fundamental theorem of welfare economics
+	\item[ii.] The second fundamental theorem of welfare economics
+\end{itemize}
+
+
+\section{Problem 3}
+Edgeworth box. Consider a pure exchange economy with two kinds of goods and two consumers. Consumer 1 is endowed with $\bf{one}$ unit of good 1 and $\bf{zero}$ unit of good 2; Consumer 2 is endowed with $\bf{one}$ unit of good 1 and $\bf{one}$ unit of good 2. Their consumption sets are each $\mathbb R_{+}^2$, and their utility functions $u_1$ and $u_2$ are defined by, for each consumption bundle $(x,y)\in R_{+}^2$,
+\begin{equation}
+\begin{split}
+u_1(x,y):=&\max\{x,y\},\\
+u_2(x,y):=&\min\{x,y\}.
+\end{split}
+\end{equation}
+ 
+ a. On a clearly labeled Edgeworth box, first locate the coordinate of the endowment point
+and label it by E, then graph the indifference curves corresponding to the following
+equations (and be precise about the coordinate position of each graph).
+ \begin{equation}
+ \begin{split}
+ u_1(x_1,y_1):=&1/4 \;\;for\;\; consumer \;\;1,\\
+ u_2(x_2,y_2):=&1/4 \;\;for\;\; consumer \;\;2.
+ \end{split}
+ \end{equation}
+ 
+ 
+
+b. For each of the following items, write down the explicit solution for this economy, in
+set-theoretic notations, and label the solution in a diagram with clearly marked axes,
+origins, coordinates and indifference maps:
+\begin{itemize}
+	\item[i.] The set of all Pareto optimal allocations
+	\item[ii.] The set of all Walras equilibrium allocations (be sure to specify the supporting price vectors)
+	\item[iii.] The set of all price equilibria with transfers (be sure to specify the supporting
+	price vectors)
+	\item[iv.] The core
+\end{itemize}
+
+
+c. For each of the following theorems, point out whether the theorem is applicable to this
+economy and explain your answer concisely, in no more than 20 words (i.e., for each
+theorem, check whether all its conditions are satisfied or not and briefly explain why)
+\begin{itemize}
+	\item[i.] The first fundamental theorem of welfare economics
+	\item[ii.] The second fundamental theorem of welfare economics
+\end{itemize}
+
+\end{document}
