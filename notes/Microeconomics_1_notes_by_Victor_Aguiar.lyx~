@@ -23617,6 +23617,10 @@ Formally consumer
 \begin_inset Formula $\sum_{i=1}^{I}\theta_{ij}=1$
 \end_inset
 
+ for all 
+\begin_inset Formula $j\in\{1,\cdots,J\}$
+\end_inset
+
 ).
  
 \end_layout
