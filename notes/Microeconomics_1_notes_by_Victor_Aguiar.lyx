@@ -25161,6 +25161,19 @@ The Walrasian Equilibrium can be redefined here as follows:
 \end_inset
 
 .
+ 
+\begin_inset Formula $J=1$
+\end_inset
+
+ 
+\begin_inset Formula $Y_{1}=-\mathbb{R}_{+}^{L}$
+\end_inset
+
+, 
+\begin_inset Formula $y_{1}\in Y_{1}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Definition
@@ -25186,6 +25199,97 @@ The Walrasian Equilibrium can be redefined here as follows:
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Example: Say there is a a demand 
+\begin_inset Formula $x_{1}^{*}=(2\quad2)'$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{2}^{*}=(2\quad2)'$
+\end_inset
+
+ but 
+\begin_inset Formula $\omega_{apples}=5$
+\end_inset
+
+, 
+\begin_inset Formula $\omega_{oranges}=5$
+\end_inset
+
+, 
+\begin_inset Formula $\omega_{1}=(3\quad2)'$
+\end_inset
+
+ , 
+\begin_inset Formula $\omega_{2}=(2\quad3)'$
+\end_inset
+
+, 
+\begin_inset Formula $y_{1,apples}^{*}=4-5=-1,y_{1,oranges}^{*}=4-5=-1$
+\end_inset
+
+, 
+\begin_inset Formula $y_{1}^{*}=(-1\quad-1)'$
+\end_inset
+
+.
+ 
+\begin_inset Formula $p=(0\quad0)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+We verify:
+\end_layout
+
+\begin_layout Standard
+(i)', 
+\begin_inset Formula $y_{1}^{*}\leq0$
+\end_inset
+
+ (checked) 
+\begin_inset Formula $p\cdot y_{1}^{*}=0$
+\end_inset
+
+, 
+\begin_inset Formula $p=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(ii)' 
+\begin_inset Formula $u_{i}(x_{apples},x_{oranges})=-(x_{apples}-2)^{2}-(x_{oranges}-2)^{2}$
+\end_inset
+
+, they maximize utility at 
+\begin_inset Formula $(2,2)'$
+\end_inset
+
+ 
+\begin_inset Formula $i=1,2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(iii') Holds by construction.
+ 
 \end_layout
 
 \begin_layout Standard
