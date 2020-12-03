@@ -6,7 +6,9 @@ endowment <- read_csv("GitHub/Microeconomics1/finalexam/endowments.csv")
 attach(names)
 n.names=length(names$firstname)
 set.seed(80)
-firstdraw=names$firstname[sample(1:n.names,n.names,replace=FALSE)]
+draw=sample(1:n.names,n.names,replace=FALSE)
+firstdraw=names$firstname[draw]
+userdraw=names$user
 
 set.seed(73)
 seconddraw=c("treatment","control")[sample(1:2,n.names,replace=TRUE,prob=c(.5,.5))]
@@ -14,7 +16,7 @@ seconddraw=c("treatment","control")[sample(1:2,n.names,replace=TRUE,prob=c(.5,.5
 attach(endowment)
 endowment$names=firstdraw
 endowment$group=seconddraw
-
+endowment$email=userdraw
 write.csv(endowment,"GitHub/Microeconomics1/finalexam/names_endowment_group.csv")
 
 ## Verification
