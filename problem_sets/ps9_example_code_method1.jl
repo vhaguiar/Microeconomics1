@@ -10,7 +10,7 @@ import Ipopt
 
 ## define a model
 robinson=JuMP.Model(Ipopt.Optimizer)
-
+#Knitro
 # define variables
 #coconuts
 @JuMP.variable(robinson,c>=0)
