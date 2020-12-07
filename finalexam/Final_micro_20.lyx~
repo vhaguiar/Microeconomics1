@@ -628,7 +628,7 @@ z_{ij}=logx_{ij}-log(y_{i})-log(y_{j})
 \begin_layout Problem
 \begin_inset Formula 
 \[
-z_{ij}=\alpha_{i}-\alpha_{j}+\rho log(t_{ij}).
+z_{ij}=-\alpha_{i}-\alpha_{j}+\rho log(t_{ij}).
 \]
 
 \end_inset
@@ -1039,11 +1039,19 @@ In 2 rounds, the total number of trades was: Treatment had 4 trades (4 and
 \end_layout
 
 \begin_layout Itemize
-Mean expected gain from trade for the treatment group was 7 percentage points.
+Mean expected gain from trade for the 
+\series bold
+control
+\series default
+ group was 7 percentage points.
 \end_layout
 
 \begin_layout Itemize
-Mean expected gain from trade for the control group was 3 percentage points.
+Mean expected gain from trade for the 
+\series bold
+treatment
+\series default
+ group was 3 percentage points.
 \end_layout
 
 \begin_layout Itemize

@@ -628,7 +628,7 @@ z_{ij}=logx_{ij}-log(y_{i})-log(y_{j})
 \begin_layout Problem
 \begin_inset Formula 
 \[
-z_{ij}=\alpha_{i}-\alpha_{j}+\rho log(t_{ij}).
+z_{ij}=-\alpha_{i}-\alpha_{j}+\rho log(t_{ij}).
 \]
 
 \end_inset
@@ -837,7 +837,7 @@ z_{ij}=log\hat{x}_{ij}-log(y_{i})-log(y_{j})
 \begin_layout Problem
 \begin_inset Formula 
 \[
-z_{ij}=\alpha_{i}-\alpha_{j}+\rho log(t_{ij})+\epsilon_{ij}.
+z_{ij}=-\alpha_{i}-\alpha_{j}+\rho log(t_{ij})+\epsilon_{ij}.
 \]
 
 \end_inset
