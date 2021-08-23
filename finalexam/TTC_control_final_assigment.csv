@@ -1,8 +1,0 @@
-Duration (in seconds),RecipientEmail,ExternalReference,DistributionChannel,Q2,Q1_1,Q1_2,Q1_3,Q1_4,Q1_5,endowment,cycle number,cycle1,endowment_2,cycle number 2,cycle 2,endowment_3,endowment_final
-Duration (in seconds),Recipient Email,External Data Reference,Distribution Channel,Write your Firstname as in the names_endowment_group.csv file,Click to write the question text - exam1,Click to write the question text - exam2,Click to write the question text - exam6,Click to write the question text - exam7,Click to write the question text - exam9,,,,,,,,
-"{""ImportId"":""duration""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""QID2_TEXT""}","{""ImportId"":""QID1_1""}","{""ImportId"":""QID1_2""}","{""ImportId"":""QID1_3""}","{""ImportId"":""QID1_4""}","{""ImportId"":""QID1_5""}",,,,,,,,
-304,hdamavan@uwo.ca,,email,Hoorsana,3,1,4,5,2,7,no,7->2,exam7,1,1->7->1,exam1,exam1
-714,bgueyapk@uwo.ca,,email,Brice Romuald,4,3,5,2,1,9,1,9->9->9,exam9,,,,exam9
-1058,ssidd9@uwo.ca,,email,Shoumen ,3,4,5,2,1,1,no,1->9,exam1,2,1->7->1,exam7,exam7
-4669,ylei73@uwo.ca,,email,Yongqin ,3,1,4,5,2,6,2,6->2,exam2,,,,exam2
-11300,kzhan225@uwo.ca,,email,Kunyuan,3,4,1,2,5,2,2,2->6,exam6,,,,exam6
