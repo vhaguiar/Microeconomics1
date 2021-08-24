@@ -132,7 +132,7 @@ Victor H.
 \end_layout
 
 \begin_layout Date
-This version: August 2020
+This version: August 2021
 \end_layout
 
 \begin_layout Chapter
@@ -221,6 +221,37 @@ is a subset
 
 .
  
+\begin_inset Formula $(a,b)\in R$
+\end_inset
+
+.
+ 
+\begin_inset Formula $(2,1)\in R$
+\end_inset
+
+ we can write this equivalently 
+\begin_inset Formula $2\geq1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Example
+(Alternate on the Reals: I am going to define now 
+\begin_inset Formula $\succeq\subseteq X\times X$
+\end_inset
+
+, 
+\begin_inset Formula $a\succeq b\iff\frac{1}{a}\geq\frac{1}{b}$
+\end_inset
+
+ and 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+.
+ )
 \end_layout
 
 \begin_layout Standard
@@ -249,7 +280,7 @@ is a subset
 \begin_inset Formula $aRb\iff a_{1}>b_{1}$
 \end_inset
 
- or 
+ or (
 \begin_inset Formula $a_{1}=b_{1}$
 \end_inset
 
@@ -257,7 +288,7 @@ is a subset
 \begin_inset Formula $a_{2}\geq b_{2}$
 \end_inset
 
-.
+).
 \end_layout
 
 \begin_layout Example
@@ -410,7 +441,7 @@ Lemma:
 \end_layout
 
 \begin_layout Example
-Take any two vectors 
+Take any three vectors 
 \begin_inset Formula $x,y,z\in X$
 \end_inset
 
@@ -628,13 +659,43 @@ Acyclic:
 \end_layout
 
 \begin_layout Example
-Asymmetric Relation.
+Acyclicity.
  
-\begin_inset Formula $X=\mathbb{R}$
+\begin_inset Formula $aRb$
 \end_inset
 
-, and 
-\begin_inset Formula $R\equiv>$
+, 
+\begin_inset Formula $bRd$
+\end_inset
+
+, 
+\begin_inset Formula $dRe$
+\end_inset
+
+ This is acyclic but it's not transitive.
+ 
+\begin_inset Formula $aRbRe$
+\end_inset
+
+ we know that 
+\begin_inset Formula $a\neq e$
+\end_inset
+
+ hence acyclic.
+ But since 
+\begin_inset Formula $aRb$
+\end_inset
+
+ and 
+\begin_inset Formula $bRd$
+\end_inset
+
+ transivity requires that 
+\begin_inset Formula $aRd$
+\end_inset
+
+ however this is not in the relation 
+\begin_inset Formula $R$
 \end_inset
 
 .
