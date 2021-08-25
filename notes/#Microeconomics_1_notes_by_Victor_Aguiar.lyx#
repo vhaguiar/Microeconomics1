@@ -4583,20 +4583,7 @@ Counterexample.
 \end_inset
 
 .
- You need to find a counterexample where there is a pair 
-\begin_inset Formula $x,y\in X$
-\end_inset
-
- such that 
-\begin_inset Formula $min_{i\in\{1,2,3\}}(u_{i}(x)-u_{i}(y))<0$
-\end_inset
-
- and 
-\begin_inset Formula $min_{i\in\{1,2,3\}}(u_{i}(y)-u_{i}(x))<0$
-\end_inset
-
- this is equivalent to incompleteness.
-  
+ 
 \end_layout
 
 \begin_layout Definition

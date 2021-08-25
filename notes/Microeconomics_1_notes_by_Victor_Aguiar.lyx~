@@ -674,7 +674,7 @@ Acyclicity.
 
  This is acyclic but it's not transitive.
  
-\begin_inset Formula $aRbRe$
+\begin_inset Formula $aRbRdRe$
 \end_inset
 
  we know that 
@@ -4559,6 +4559,28 @@ continuity.
  
 \end_layout
 
+\begin_layout Example
+Counterexample.
+ Show that the following preferences are not complete: 
+\begin_inset Formula $a\succeq b$
+\end_inset
+
+
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $u_{i}(a)\geq u_{i}(b)$
+\end_inset
+
+ for all 
+\begin_inset Formula $i\in\{1,2,3\}$
+\end_inset
+
+.
+ 
+\end_layout
+
 \begin_layout Definition
 (
 \begin_inset Formula $\succeq$
@@ -4896,7 +4918,11 @@ Note that for
 \end_layout
 
 \begin_layout Example
-Maximize 
+\begin_inset Formula $X=\mathbb{R}_{+}^{2}$
+\end_inset
+
+.
+ Maximize 
 \begin_inset Formula $u(x)=x_{1}+x_{2}$
 \end_inset
 
@@ -5002,6 +5028,46 @@ Case 3:
 
  when 
 \begin_inset Formula $p_{1}\leq p_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $X=\mathbb{R}_{+}^{2}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $u(x)=\min\{x_{1},x_{2}\}$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $p_{1}x_{1}+p_{2}x_{2}=w$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $x_{1}=x_{2}$
+\end_inset
+
+, which implies the solution 
+\begin_inset Formula $x_{i}=\frac{w}{p_{1}+p_{2}}$
+\end_inset
+
+ for 
+\begin_inset Formula $i\in\{1,2\}$
 \end_inset
 
 .
