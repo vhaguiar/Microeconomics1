@@ -8078,6 +8078,7 @@ Now generate a choice correspondence, that fails GARP.
 \end_inset
 
 .
+ It does not violate WARP.
  
 \end_layout
 
