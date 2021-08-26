@@ -4596,7 +4596,50 @@ Counterexample.
 \end_inset
 
  this is equivalent to incompleteness.
-  
+ 
+\begin_inset Formula $X=\{a,b,c\}$
+\end_inset
+
+, with 
+\begin_inset Formula $u_{1}(a)=3,u_{1}(b)=2,u_{1}(c)=1$
+\end_inset
+
+; 
+\begin_inset Formula $u_{2}(a)=1,u_{2}(b)=2,u_{2}(c)=3$
+\end_inset
+
+; 
+\begin_inset Formula $u_{3}(a)=2,u_{3}(b)=1,u_{3}(c)=3$
+\end_inset
+
+.
+ Now, since 
+\begin_inset Formula $u_{2}(a)-u_{2}(c)=-2,$
+\end_inset
+
+ and 
+\begin_inset Formula $u_{1}(c)-u_{1}(a)=-2$
+\end_inset
+
+, it means that neither 
+\begin_inset Formula $a\succeq c$
+\end_inset
+
+ nor 
+\begin_inset Formula $c\succeq a$
+\end_inset
+
+.
+ So this consumer cannot rank 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Definition
@@ -6310,7 +6353,7 @@ Decision Theory uses three languages:
 
 \begin_layout Standard
 2.
- Preferences relations.
+ Preference relations.
  
 \end_layout
 
@@ -6431,7 +6474,11 @@ Rationalizable choice correspondence.
 \begin_inset Formula $c$
 \end_inset
 
- is rationalizable when 
+ 
+\series bold
+is rationalizable
+\series default
+ when 
 \begin_inset Formula $c(A)=c^{*}(\succeq,A)=\{b\in A|b\succeq a,\forall a\in A\}$
 \end_inset
 
@@ -7031,7 +7078,7 @@ Weak Axiom of Revealed Preference (WARP).
 \begin_inset Formula $a$
 \end_inset
 
- is (indirect) revealed preferred to 
+ is (indirectly) revealed preferred to 
 \begin_inset Formula $b$
 \end_inset
 
@@ -7044,7 +7091,7 @@ Weak Axiom of Revealed Preference (WARP).
 \end_inset
 
  such that 
-\begin_inset Formula $a\succeq^{D}a^{1}\succeq^{D}a^{2}\succeq\cdots\succeq a^{n}\succeq b$
+\begin_inset Formula $a\succeq^{D}a^{1}\succeq^{D}a^{2}\succeq\cdots\succeq a^{n}\succeq^{D}b$
 \end_inset
 
 .
@@ -7101,7 +7148,19 @@ Let
 
  be a rational preference relation.
  Then 
-\begin_inset Formula $(\mathcal{B},c^{*}(\succeq))$
+\begin_inset Formula $(\mathcal{B},c)$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ is rationalizable (with 
+\begin_inset Formula $\succeq$
+\end_inset
+
+) then 
+\begin_inset Formula $c$
 \end_inset
 
  satisfies the WARP.
@@ -7122,6 +7181,23 @@ begin{proof}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $c$
+\end_inset
+
+ is rationalizable then 
+\begin_inset Formula $c(A)=c^{*}(\succeq,A)=\{b\in A:b\succeq a\forall a\in A\}$
+\end_inset
+
+ (and 
+\begin_inset Formula $\succeq$
+\end_inset
+
+ is complete and transitive).
+ 
 \end_layout
 
 \begin_layout Standard
@@ -7203,6 +7279,48 @@ The relation between preferences and choice correspondences.
  
 \end_layout
 
+\begin_layout Example
+\begin_inset Formula $X=\{l1,l2,l3\}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathcal{B}=\{l1,l2\},\{l1,l2,l3\}$
+\end_inset
+
+, 
+\begin_inset Formula $c(\{l1,l2\})=\{l1\}$
+\end_inset
+
+, 
+\begin_inset Formula $c(\{l1,l2,l3\}=\{l2,l3\}$
+\end_inset
+
+.
+ WARP fails.
+ First, from 
+\begin_inset Formula $c(\{l1,l2\})=\{l1\}$
+\end_inset
+
+ we conclude that 
+\begin_inset Formula $l1\succ^{D}l2$
+\end_inset
+
+, and from 
+\begin_inset Formula $c(\{l1,l2,l3\})=\{l2,l3\}$
+\end_inset
+
+ we conclude that 
+\begin_inset Formula $l2\succ^{D}l1$
+\end_inset
+
+, this is a violation of WARP hence 
+\begin_inset Formula $c$
+\end_inset
+
+ is not rationalizable.
+ 
+\end_layout
+
 \begin_layout Definition
 We say that 
 \begin_inset Formula $\succeq$
@@ -7256,7 +7374,7 @@ If
 
 .
  Moreover, this is the only preference relation that does so.
- 
+ (With the implicit assumption that choice correspondence is nonempty.) 
 \end_layout
 
 \begin_layout Standard
@@ -7930,6 +8048,37 @@ end{proof}
 \end_inset
 
 .
+ 
+\end_layout
+
+\begin_layout Example
+Now generate a choice correspondence, that fails GARP.
+ Generate a choice correspondence that satisfies WARP but fails GARP.
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $c(\{a,b\})=\{a\}$
+\end_inset
+
+, 
+\begin_inset Formula $c(\{b,c\})=\{b\}$
+\end_inset
+
+ and 
+\begin_inset Formula $c(\{a,c\})=\{c\}$
+\end_inset
+
+ fails GARP because 
+\begin_inset Formula $a\succ^{D}b\succ^{D}c$
+\end_inset
+
+ and 
+\begin_inset Formula $c\succ^{D}a$
+\end_inset
+
+.
+ It does not violate WARP.
  
 \end_layout
 
