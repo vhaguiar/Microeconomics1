@@ -6426,6 +6426,7 @@ Let
 \end_inset
 
 .
+ We will also refer to this as a dataset.
  
 \end_layout
 
@@ -6450,7 +6451,7 @@ Let
 \end_inset
 
 , 
-\begin_inset Formula $\mathcal{B}=\{l1,l2\},\{l1,l2,l3\}$
+\begin_inset Formula $\mathcal{B}=\{\{l1,l2\},\{l1,l2,l3\}\}$
 \end_inset
 
 , 
@@ -6498,6 +6499,19 @@ Assume that
  
 \end_layout
 
+\begin_layout Standard
+We also have to know that 
+\begin_inset Formula $c(A)\subseteq c^{*}(\succeq,A)$
+\end_inset
+
+ we say 
+\begin_inset Formula $c$
+\end_inset
+
+ is weakly rationalizable.
+ 
+\end_layout
+
 \begin_layout Section
 Preference Relations
 \end_layout
@@ -6510,7 +6524,15 @@ Preference Relations
 \begin_inset Formula $\succeq\subseteq X\times X$
 \end_inset
 
-.
+ (
+\begin_inset Formula $a\succeq b$
+\end_inset
+
+ iff 
+\begin_inset Formula $(a,b)\in\succeq$
+\end_inset
+
+).
  
 \end_layout
 
@@ -6962,7 +6984,8 @@ A preference relation
 \begin_inset Formula $\succeq$
 \end_inset
 
- can be represented by a utility function only if it rational (X is finite).
+ can be represented by a utility function if and only if it is rational
+ (X is finite).
  
 \end_layout
 
@@ -7135,6 +7158,34 @@ WARP.
 
  then 
 \begin_inset Formula $\lnot y\succ^{D}x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Example
+Counterexample of WARP: 
+\begin_inset Formula $X=\{p3,p6,p12\}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $c(\{p6,p12\})=\{p6\}$
+\end_inset
+
+, 
+\begin_inset Formula $c(\{p3,p6,p12\})=\{p12\}$
+\end_inset
+
+.
+ This violates WARP.
+ Formally, 
+\begin_inset Formula $p6\succeq^{D}p12$
+\end_inset
+
+, 
+\begin_inset Formula $p12\succ^{D}p6$
 \end_inset
 
 .
@@ -7986,6 +8037,51 @@ end{proof}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+We need a technical lemma to be able to construct the preference relation
+ from the revealed preference relation.
+ 
+\end_layout
+
+\begin_layout Lemma
+(Extension Theorem, Chamber and Echenique) There is a complete and transitive
+ preference relation 
+\begin_inset Formula $\succeq$
+\end_inset
+
+ that is an extension of 
+\begin_inset Formula $R$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $R$
+\end_inset
+
+ satisfies GARP.
+ 
+\end_layout
+
+\begin_layout Standard
+Note that an extension requires that 
+\begin_inset Formula $P\subseteq\succ$
+\end_inset
+
+ and 
+\begin_inset Formula $R\subseteq\succeq$
+\end_inset
+
+ such that 
+\begin_inset Formula $P$
+\end_inset
+
+ is the strict part of 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Example
