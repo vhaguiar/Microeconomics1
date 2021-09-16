@@ -7235,7 +7235,7 @@ begin{proof}
 \end_layout
 
 \begin_layout Standard
-If 
+Proof 1: If 
 \begin_inset Formula $c$
 \end_inset
 
@@ -7252,7 +7252,88 @@ If
 \end_layout
 
 \begin_layout Standard
-If 
+Let 
+\begin_inset Formula $a\in c(A)$
+\end_inset
+
+ when 
+\begin_inset Formula $b\in A$
+\end_inset
+
+, this means that 
+\begin_inset Formula $a\succeq b$
+\end_inset
+
+, now assume towards contradiction that there is another menu 
+\begin_inset Formula $B$
+\end_inset
+
+ such that 
+\begin_inset Formula $a,b\in B$
+\end_inset
+
+, and that we observe that 
+\begin_inset Formula $b\in c(B)$
+\end_inset
+
+ and 
+\begin_inset Formula $a\notin c(B)$
+\end_inset
+
+.
+ If this is the case, it means that 
+\begin_inset Formula $b\succeq a$
+\end_inset
+
+, and also it is not possible that 
+\begin_inset Formula $a\succeq b$
+\end_inset
+
+, hence 
+\begin_inset Formula $b\succ a$
+\end_inset
+
+.
+ This is impossible because 
+\begin_inset Formula $\succeq$
+\end_inset
+
+ is complete and transitive and by the Prosition before we know that 
+\begin_inset Formula $\succ$
+\end_inset
+
+ is irreflexive.
+ 
+\begin_inset Formula $b\succ a$
+\end_inset
+
+ and 
+\begin_inset Formula $a\succeq b$
+\end_inset
+
+ is a contradiction.
+ We conclude that if 
+\begin_inset Formula $a\in c(A)$
+\end_inset
+
+ when 
+\begin_inset Formula $b\in A$
+\end_inset
+
+ (
+\begin_inset Formula $a\succeq^{D}b)$
+\end_inset
+
+, then for any other menu 
+\begin_inset Formula $\lnot b\succ^{D}a$
+\end_inset
+
+ (WARP).
+ 
+\end_layout
+
+\begin_layout Standard
+Proof 2: If 
 \begin_inset Formula $B,B'\in\mathcal{B}$
 \end_inset
 
@@ -7776,7 +7857,7 @@ The following are equivalent:
 \begin_inset Formula $(\mathcal{B},c)$
 \end_inset
 
- can be rationalized by a rational preference relation 
+ can be weakly rationalized by a rational preference relation 
 \begin_inset Formula $\succeq$
 \end_inset
 
@@ -7857,12 +7938,12 @@ First define
 \begin_inset Formula $\succeq^{D}$
 \end_inset
 
-.
+ (by the Lemma below of Echenique and Chambers).
  
 \end_layout
 
 \begin_layout Standard
-Then we can use Proposition 1 in Chapter 1 (order theory) to claim that
+Then we can use the Lemma below of Echenique and Chambers to claim that
  there exists a complete and transitive preference relation 
 \begin_inset Formula $\succeq$
 \end_inset
@@ -8052,11 +8133,11 @@ We need a technical lemma to be able to construct the preference relation
 \end_inset
 
  that is an extension of 
-\begin_inset Formula $R$
+\begin_inset Formula $\succeq^{*}$
 \end_inset
 
  if and only if 
-\begin_inset Formula $R$
+\begin_inset Formula $\succeq^{*}$
 \end_inset
 
  satisfies GARP.
@@ -8065,19 +8146,36 @@ We need a technical lemma to be able to construct the preference relation
 
 \begin_layout Standard
 Note that an extension requires that 
-\begin_inset Formula $P\subseteq\succ$
+\begin_inset Formula $\succ^{*}\subseteq\succ$
 \end_inset
 
  and 
-\begin_inset Formula $R\subseteq\succeq$
+\begin_inset Formula $\succeq^{*}\subseteq\succeq$
 \end_inset
 
  such that 
-\begin_inset Formula $P$
+\begin_inset Formula $\succ^{*}$
 \end_inset
 
  is the strict part of 
-\begin_inset Formula $R$
+\begin_inset Formula $\succeq^{*}$
+\end_inset
+
+.
+ This is equivalent to saying that if 
+\begin_inset Formula $x\succ^{*}y$
+\end_inset
+
+ then 
+\begin_inset Formula $x\succ y$
+\end_inset
+
+, and 
+\begin_inset Formula $x\succeq^{*}y$
+\end_inset
+
+ then 
+\begin_inset Formula $x\succeq y$
 \end_inset
 
 .
@@ -8364,7 +8462,7 @@ The correspondence
 \begin_inset Formula $(p,w)$
 \end_inset
 
- i.e., 
+ i.e., closed 
 \begin_inset Formula $x^{n}\in x(p,w)$
 \end_inset
 
@@ -8372,7 +8470,7 @@ The correspondence
 \begin_inset Formula $x^{n}\rightarrow x$
 \end_inset
 
-.
+ and also bounded.
  
 \end_layout
 

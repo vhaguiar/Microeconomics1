@@ -7857,7 +7857,7 @@ The following are equivalent:
 \begin_inset Formula $(\mathcal{B},c)$
 \end_inset
 
- can be rationalized by a rational preference relation 
+ can be weakly rationalized by a rational preference relation 
 \begin_inset Formula $\succeq$
 \end_inset
 
@@ -7938,12 +7938,12 @@ First define
 \begin_inset Formula $\succeq^{D}$
 \end_inset
 
-.
+ (by the Lemma below of Echenique and Chambers).
  
 \end_layout
 
 \begin_layout Standard
-Then we can use Proposition 1 in Chapter 1 (order theory) to claim that
+Then we can use the Lemma below of Echenique and Chambers to claim that
  there exists a complete and transitive preference relation 
 \begin_inset Formula $\succeq$
 \end_inset
@@ -8133,11 +8133,11 @@ We need a technical lemma to be able to construct the preference relation
 \end_inset
 
  that is an extension of 
-\begin_inset Formula $R$
+\begin_inset Formula $\succeq^{*}$
 \end_inset
 
  if and only if 
-\begin_inset Formula $R$
+\begin_inset Formula $\succeq^{*}$
 \end_inset
 
  satisfies GARP.
@@ -8146,19 +8146,36 @@ We need a technical lemma to be able to construct the preference relation
 
 \begin_layout Standard
 Note that an extension requires that 
-\begin_inset Formula $P\subseteq\succ$
+\begin_inset Formula $\succ^{*}\subseteq\succ$
 \end_inset
 
  and 
-\begin_inset Formula $R\subseteq\succeq$
+\begin_inset Formula $\succeq^{*}\subseteq\succeq$
 \end_inset
 
  such that 
-\begin_inset Formula $P$
+\begin_inset Formula $\succ^{*}$
 \end_inset
 
  is the strict part of 
-\begin_inset Formula $R$
+\begin_inset Formula $\succeq^{*}$
+\end_inset
+
+.
+ This is equivalent to saying that if 
+\begin_inset Formula $x\succ^{*}y$
+\end_inset
+
+ then 
+\begin_inset Formula $x\succ y$
+\end_inset
+
+, and 
+\begin_inset Formula $x\succeq^{*}y$
+\end_inset
+
+ then 
+\begin_inset Formula $x\succeq y$
 \end_inset
 
 .
@@ -8445,7 +8462,7 @@ The correspondence
 \begin_inset Formula $(p,w)$
 \end_inset
 
- i.e., 
+ i.e., closed 
 \begin_inset Formula $x^{n}\in x(p,w)$
 \end_inset
 
@@ -8453,7 +8470,7 @@ The correspondence
 \begin_inset Formula $x^{n}\rightarrow x$
 \end_inset
 
-.
+ and also bounded.
  
 \end_layout
 
