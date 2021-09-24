@@ -1,0 +1,676 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{babel}
+\usepackage{babel}
+\usepackage{babel}
+
+
+
+
+
+  \providecommand{\assumptionname}{Assumption}
+  \providecommand{\axiomname}{Axiom}
+  \providecommand{\claimname}{Claim}
+  \providecommand{\definitionname}{Definition}
+  \providecommand{\lemmaname}{Lemma}
+  \providecommand{\propositionname}{Proposition}
+  \providecommand{\remarkname}{Remark}
+\providecommand{\corollaryname}{Corollary}
+\providecommand{\theoremname}{Theorem}
+
+
+
+  \providecommand{\axiomname}{Axiom}
+  \providecommand{\claimname}{Claim}
+  \providecommand{\definitionname}{Definition}
+  \providecommand{\remarkname}{Remark}
+\providecommand{\corollaryname}{Corollary}
+\providecommand{\theoremname}{Theorem}
+\end_preamble
+\use_default_options false
+\begin_modules
+theorems-ams-bytype
+theorems-ams-extended-bytype
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding iso8859-15
+\fontencoding default
+\font_roman "cmr" "default"
+\font_sans "cmss" "default"
+\font_typewriter "cmtt" "default"
+\font_math "auto" "auto"
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 2
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.25in
+\topmargin 1.25in
+\rightmargin 1.25in
+\bottommargin 1.25in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Micro I: Problem Set 2.
+\end_layout
+
+\begin_layout Author
+Victor H.
+ Aguiar 
+\end_layout
+
+\begin_layout Date
+This version: September 2020
+\end_layout
+
+\begin_layout Exercise
+(Integrability) Consider a demand system with 
+\begin_inset Formula $L=2$
+\end_inset
+
+, such that 
+\begin_inset Formula $p_{2}=1$
+\end_inset
+
+, 
+\begin_inset Formula $x_{1}(p_{1},w)=\beta-\alpha p_{1}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Exercise
+(i) Obtain the demand of 
+\begin_inset Formula $x_{2}(p_{1},w)$
+\end_inset
+
+ under Walras' law.
+\end_layout
+
+\begin_layout Exercise
+Hint.
+ Use 
+\begin_inset Formula $p^{*}=0$
+\end_inset
+
+, for obtaining 
+\begin_inset Formula $v(p,w)=\mu(p^{*},p,w)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Exercise
+(ii) Compute the Slutsky matrix and check that the Hurwicz-Uzawa theorem
+ of integrability of demand conditions are satisfied.
+ 
+\end_layout
+
+\begin_layout Exercise
+(iii) If (ii) is integrable in the sense that satisfies the conditions of
+ the Hurwicz-Uzawa theorem, find the utility that generates the demand system,
+ i.e., find the expression for 
+\begin_inset Formula $u(x_{1},x_{2})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Towards demand estimation (the implicit Marshallian demand systems):
+\end_layout
+
+\begin_layout Exercise
+Part (I)
+\end_layout
+
+\begin_layout Exercise
+(i) Let 
+\begin_inset Formula $p,w$
+\end_inset
+
+ be the logarithm of prices and the logarithm of wealth.
+ 
+\end_layout
+
+\begin_layout Exercise
+First, let 
+\begin_inset Formula $log$
+\end_inset
+
+ denote the natural logarithm.
+ 
+\end_layout
+
+\begin_layout Exercise
+Now define 
+\begin_inset Formula $e(p,u)=log(exp(p)'h(p,u))$
+\end_inset
+
+, the log expenditure function where 
+\begin_inset Formula $exp(p)=(exp(p_{l}))_{l\in\{1,\cdots,L\}}$
+\end_inset
+
+ is the vector of prices (in levels) and 
+\begin_inset Formula $h(p,u)$
+\end_inset
+
+ is the Hicksian demand function (
+\begin_inset Formula $h(p,u)=argmin_{x\geq0}exp(p)'x\quad s.t.u(x)\geq u$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Exercise
+Prove that 
+\begin_inset Formula $(\nabla_{p}e(p,u))|_{u=v(p,w)}=b(p,w)$
+\end_inset
+
+, where 
+\begin_inset Formula $v(p,w)$
+\end_inset
+
+ is the indirect utility associated with 
+\begin_inset Formula $e$
+\end_inset
+
+, such that 
+\begin_inset Formula $v(p,e(p,u))=u$
+\end_inset
+
+ and 
+\begin_inset Formula $e(p,v(p,w))=w$
+\end_inset
+
+ and 
+\begin_inset Formula $b(p,w)=(b_{l}(p,w))_{l\in\{1,\cdots,L\}}$
+\end_inset
+
+ with 
+\begin_inset Formula $b_{l}(p,w)=exp(p_{l})x_{l}(p,w)/exp(w)$
+\end_inset
+
+ the budget share of good 
+\begin_inset Formula $l$
+\end_inset
+
+, and 
+\begin_inset Formula $x(p,w)=argmax_{x\geq0}u(x)\quad exp(p)'x=exp(w)$
+\end_inset
+
+ is the Marshallian demand expressed in log prices and log wealth.
+\end_layout
+
+\begin_layout Exercise
+Part (II)
+\end_layout
+
+\begin_layout Exercise
+In an ideal world, estimating Hicksian demands would be much easier than
+ estimating the Marshallian demands.
+ The reason is that Hicksian demands are compensated and depend directly
+ on the utility level which makes it very easy to adapt to model preference
+ heterogeneity when dealing with Survey data.
+ 
+\end_layout
+
+\begin_layout Exercise
+We are going to see, that with some tricks we can actually estimate Hicksian
+ demands, even when the utility is unobservable.
+\end_layout
+
+\begin_layout Exercise
+(i) Let's postulate/propose the following candidate for log expenditure
+ function, for a population of consumers:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Formula $e(p,u)=u+p'g(u)+\frac{1}{2}p'Ap,$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Formula $A\in\mathbb{R}^{L\times L}$
+\end_inset
+
+ is a matrix of coefficients (a parameter) (and 
+\begin_inset Formula $p$
+\end_inset
+
+ is log prices, and 
+\begin_inset Formula $u$
+\end_inset
+
+ is a utility level that every consumers wants to achieve), the function
+ 
+\begin_inset Formula $g:\mathbb{R}\mapsto\mathbb{R}^{L}$
+\end_inset
+
+ is any continuous vector valued function that relates the common utility
+ level 
+\begin_inset Formula $u$
+\end_inset
+
+ with the log expenditure level (i.e., 
+\begin_inset Formula $g(u)\in\mathbb{R}^{L}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Exercise
+Use Part (I) result, 
+\begin_inset Formula $(\nabla_{p}e(p,u))|_{u=v(p,w)}=b(p,w)$
+\end_inset
+
+ together with the identity of duality theory 
+\begin_inset Formula $e(p,v(p,w))=w$
+\end_inset
+
+, to prove that we can find the utility index in terms of the observables:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Formula $u=w-p'b,$
+\end_inset
+
+ where 
+\begin_inset Formula $b$
+\end_inset
+
+ is the observed budget share vector.
+ 
+\end_layout
+
+\begin_layout Exercise
+(ii) Using Part II (i) prove that, we can write the budget share as:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Formula 
+\[
+b(p,w)=g(w-p'b)+Ap.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+This model, as you saw, is much easier to deal with that the AIDS, one way
+ to see its advantages is that we can impose very easily the restriction
+ of rationality.
+ 
+\end_layout
+
+\begin_layout Exercise
+Note that 
+\begin_inset Formula $b(\cdot)$
+\end_inset
+
+ is a function of prices and wealth, while 
+\begin_inset Formula $b\in[0,1]^{L}$
+\end_inset
+
+ is a numerical vector of budget shares, and 
+\begin_inset Formula $b(p,w)=b$
+\end_inset
+
+.
+ Take this into account when deriving.
+\end_layout
+
+\begin_layout Exercise
+(iii) Compute the normalized Slutsky matrix 
+\begin_inset Formula $\overline{S}(p,w)=D_{p}b(p,w)+D_{w}b(p,w)b(p,w)'-Diag(b(p,w))+b(p,w)b(p,w)'$
+\end_inset
+
+ and show that a sufficient condition for 
+\begin_inset Formula $b(p,w)$
+\end_inset
+
+ to be integrable (rationalizable) is that 
+\begin_inset Formula $A$
+\end_inset
+
+ is symmetric and NSD.
+ 
+\end_layout
+
+\begin_layout Exercise
+(Note that these same conditions are sufficient to conclude that the function
+ 
+\begin_inset Formula $e(p,u)=u+p'g(u)+\frac{1}{2}p'Ap,$
+\end_inset
+
+ is the logarithm of a concave expenditure function).
+\end_layout
+
+\begin_layout Exercise
+(iv) Note that for a fixed level of utility 
+\begin_inset Formula $u$
+\end_inset
+
+, we can write the budget share above as 
+\begin_inset Formula $b(p,u)=g(u)+Ap$
+\end_inset
+
+, show that the semi-elasticity with respect to prices 
+\begin_inset Formula $D_{p}b(p,u)=D_{p}b(p,w)+D_{w}b(p,w)b(p,w)'$
+\end_inset
+
+.
+ What is the meaning of this quantity (explain).
+ 
+\end_layout
+
+\begin_layout Exercise
+(v) What sufficient restrictions can you imposed in 
+\begin_inset Formula $g$
+\end_inset
+
+ and in 
+\begin_inset Formula $A$
+\end_inset
+
+ for the budget constraints to add up: 
+\begin_inset Formula $\sum_{l}b_{l}(p,w)=1$
+\end_inset
+
+ or 
+\begin_inset Formula $1_{L}'b(p,u)=0$
+\end_inset
+
+ in matrix notation.
+ 
+\end_layout
+
+\begin_layout Exercise
+Now, we conclude with a very easy question that will show you the benefits
+ of this model.
+\end_layout
+
+\begin_layout Exercise
+(vi)(Welfare Analysis) Say we have a original log price situation 
+\begin_inset Formula $p^{0}$
+\end_inset
+
+ and there is a policy that changes it to 
+\begin_inset Formula $p^{1}$
+\end_inset
+
+, what is the change in log expenditure that keeps the consumer with the
+ same level of satisfaction as before? Compute 
+\begin_inset Formula $e(p^{1},u)-e(p^{0},u)$
+\end_inset
+
+ with the help of Part (II) (i).
+ 
+\end_layout
+
+\begin_layout Exercise
+(The key is that using this model, we do not need to integrate to do Welfare
+ analysis, we can do it almost directly).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+(SARP) Consider a limited data choice environment.
+ Let 
+\begin_inset Formula $X$
+\end_inset
+
+ be a finite choice set and let 
+\begin_inset Formula $(\mathcal{A},c)$
+\end_inset
+
+ be a choice structure where 
+\begin_inset Formula $\mathcal{A}\subset2^{X}\setminus\emptyset$
+\end_inset
+
+ is a strict subset of the power set and 
+\begin_inset Formula $c$
+\end_inset
+
+ is a choice function (singled valued).
+\end_layout
+
+\begin_layout Exercise
+-Define 
+\begin_inset Formula $xR^{D}y$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $x\in C(A)$
+\end_inset
+
+ for some 
+\begin_inset Formula $A\in\mathcal{A}$
+\end_inset
+
+ and 
+\begin_inset Formula $y\in A$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Exercise
+-Let 
+\begin_inset Formula $R$
+\end_inset
+
+ be the transitive closure of 
+\begin_inset Formula $R^{D}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $xRy$
+\end_inset
+
+ if there exists a sequence 
+\begin_inset Formula $xRx^{1}Rx^{2}\cdots Rx^{n}Ry$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+-(SARP) We say that the dataset satisfies SARP if and only if 
+\begin_inset Formula $R$
+\end_inset
+
+ is acyclic, i.e., there cannot be cycles, that is there cannot be a sequence
+ 
+\begin_inset Formula $x^{1}Rx^{2}\cdots Rx^{n}Rx^{1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Exercise
+(i) Show that in general if 
+\begin_inset Formula $c$
+\end_inset
+
+ satisfies the SARP then there is a rational order 
+\begin_inset Formula $\succeq$
+\end_inset
+
+ on 
+\begin_inset Formula $X$
+\end_inset
+
+ such that there is a choice function 
+\begin_inset Formula $(2^{X}\backslash\emptyset,c^{*}(\succeq))$
+\end_inset
+
+ defined over the whole power set such that 
+\begin_inset Formula $c^{*}(\succeq,A)=c(A)$
+\end_inset
+
+ for all 
+\begin_inset Formula $A\in\mathcal{A}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Exercise
+(ii) Prove that SARP implies WARP.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+(Afriat's Inequalities) (i) Verify that for 
+\begin_inset Formula $L=1$
+\end_inset
+
+, a dataset of prices and consumption 
+\begin_inset Formula $O=\{p^{k},x^{k}\}_{k=1}^{K}$
+\end_inset
+
+ will always satisfy the Afriat's inequalities with 
+\begin_inset Formula $p^{k}>0$
+\end_inset
+
+.
+ That means that there exists positive numbers 
+\begin_inset Formula $v_{i}-v_{j}\geq\lambda_{i}p_{i}[x_{i}-x_{j}]$
+\end_inset
+
+ for all 
+\begin_inset Formula $i,j=1,\cdots,K$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(ii) Prove that if a demand function 
+\begin_inset Formula $x(p,w)$
+\end_inset
+
+ satisfies the Waras' law, WARP, and the number of commodities is 
+\begin_inset Formula $L=2$
+\end_inset
+
+, then 
+\begin_inset Formula $x(p,w)$
+\end_inset
+
+ satisfies SARP (Hint.
+ you can use the fact that WARP implies Homogeneity of Degree Zero).
+ 
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
