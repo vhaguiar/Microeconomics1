@@ -9708,6 +9708,11 @@ The indirect utility is the maximal utility achieved given the budget constraint
 
 .
  
+\begin_inset Formula $v:P\times W\to\mathbb{R}$
+\end_inset
+
+ is a form of ranking prices and income (budgets).
+ 
 \end_layout
 
 \begin_layout Standard
@@ -9971,7 +9976,8 @@ We use the Envelope's theorem
 \end_layout
 
 \begin_layout Standard
-This provides the Roy's identity 
+This provides the Roy's identity (this result only works under differentiability
+ and uniqueness)
 \end_layout
 
 \begin_layout Standard
@@ -10182,7 +10188,15 @@ We omit the proof.
 \end_layout
 
 \begin_layout Standard
-Expenditure function is 
+
+\series bold
+Expenditure function
+\series default
+ (
+\begin_inset Formula $e:P\times\mathbb{R}\to\mathbb{R})$
+\end_inset
+
+ is 
 \begin_inset Formula $e(p,u)=p'x^{*}$
 \end_inset
 
@@ -10225,7 +10239,7 @@ Suppose that
 \end_layout
 
 \begin_layout Proposition
-\begin_inset Formula $min_{x\geq}\alpha p'x$
+\begin_inset Formula $min_{x\geq0}\alpha p'x$
 \end_inset
 
  s.t.
@@ -10708,6 +10722,10 @@ Let
 \begin_inset Formula $D_{p}h(p,u)$
 \end_inset
 
+ (Jacobian) 
+\begin_inset Formula $D_{p}h(p,u)_{k,l}=\partial_{p_{l}}h_{k}(p,u)$
+\end_inset
+
  be the 
 \begin_inset Formula $L\times L$
 \end_inset
@@ -10725,7 +10743,11 @@ The Hicksian demand function has the following properties:
 \begin_inset Formula $D_{p}h(p,u)=\mathcal{H}e(p,u)$
 \end_inset
 
-.
+ (
+\begin_inset Formula $\mathcal{H}e(p,u)_{k,l}=\partial_{p_{k}}\partial_{p_{l}}e(p,u)$
+\end_inset
+
+).
  
 \end_layout
 
@@ -10765,7 +10787,12 @@ Young's theorem (continuity of
 \begin_inset Formula $e$
 \end_inset
 
+, 
+\begin_inset Formula $\partial_{p_{k}}\partial_{p_{l}}e(p,u)=\partial_{p_{l}}\partial_{p_{k}}e(p,u)$
+\end_inset
+
 ).
+ 
 \end_layout
 
 \begin_layout Standard
@@ -10787,6 +10814,68 @@ This follows from HD0 of
 \end_inset
 
  and Euler's identity.
+ 
+\end_layout
+
+\begin_layout Definition
+NSD (negative semidefinite matrix) For any vector 
+\begin_inset Formula $v\in\mathbb{R}^{L}$
+\end_inset
+
+, a matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ of size 
+\begin_inset Formula $L\times L$
+\end_inset
+
+ is NSD if and only if 
+\begin_inset Formula $v'Av\leq0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+The following matrix is NSD:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\[
+A=\left[\begin{array}{cc}
+-2 & 0\\
+0 & 0
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\[
+v'Av=-2v_{1}^{2}\leq0
+\]
+
+\end_inset
+
+ for any 
+\begin_inset Formula $v\in\mathbb{R}^{L}$
+\end_inset
+
+.
  
 \end_layout
 
