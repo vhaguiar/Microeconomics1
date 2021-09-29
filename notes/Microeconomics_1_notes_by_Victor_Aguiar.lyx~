@@ -10787,7 +10787,12 @@ Young's theorem (continuity of
 \begin_inset Formula $e$
 \end_inset
 
+, 
+\begin_inset Formula $\partial_{p_{k}}\partial_{p_{l}}e(p,u)=\partial_{p_{l}}\partial_{p_{k}}e(p,u)$
+\end_inset
+
 ).
+ 
 \end_layout
 
 \begin_layout Standard
@@ -10833,7 +10838,18 @@ NSD (negative semidefinite matrix) For any vector
  
 \end_layout
 
-\begin_layout Definition
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+The following matrix is NSD:
+\end_layout
+
+\begin_layout Example
 \begin_inset Formula 
 \[
 A=\left[\begin{array}{cc}
@@ -10847,7 +10863,7 @@ A=\left[\begin{array}{cc}
 
 \end_layout
 
-\begin_layout Definition
+\begin_layout Example
 \begin_inset Formula 
 \[
 v'Av=-2v_{1}^{2}\leq0
