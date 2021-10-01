@@ -10959,6 +10959,52 @@ Slutsky Equation
 \end_layout
 
 \begin_layout Standard
+The Slutsky matrix is 
+\begin_inset Formula $S:P\times W\to\mathbb{R}^{L\times L}$
+\end_inset
+
+, 
+\begin_inset Formula $S(p,w)_{l,k}=\partial_{p_{k}}x_{l}(p,w)+\partial_{w}x_{l}(p,w)x_{k}(p,w)$
+\end_inset
+
+, 
+\begin_inset Formula $S(p,w)=D_{p}x(p,w)+D_{w}x(p,w)x(p,w)'$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Slutsky substitution that allows me to buy 
+\begin_inset Formula $q$
+\end_inset
+
+: 
+\begin_inset Formula $D_{p}x(p,p'q)=D_{p}x(p,p'q)+D_{w}x(p,p'q)q'$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $q=x(p,w)$
+\end_inset
+
+ for the original price and income and then replace to obtain the Slutsky
+ matrix (under Walras' law):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D_{p}x(p,p'q)_{|q=x(p,w)}=S(p,w).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 We establish now a very useful equation.
  
 \end_layout
@@ -11001,7 +11047,7 @@ By Sheppard's lemma and by the identities that relate the expenditure and
 \begin_layout Standard
 \begin_inset Formula 
 \[
-D_{p}h(p,v(p,w))=D_{p}x(p,w)+D_{w}x(p,w)x(p,w)'.
+D_{p}h(p,v(p,w))=D_{p}x(p,w)+D_{w}x(p,w)x(p,w)'=S(p,w).
 \]
 
 \end_inset
@@ -11325,8 +11371,8 @@ There are two commodities
 \end_inset
 
 , and you know that the demand of good two is given as a residual.
- Furthermore, we have checked that this demand satisfies WARP and therefore
- it is HD0, we normalize 
+ Furthermore, we have checked that this demand has a Slutsky matrix that
+ is symmetric, NSD and singular in prices, we normalize 
 \begin_inset Formula $p_{2}=1$
 \end_inset
 
