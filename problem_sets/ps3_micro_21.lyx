@@ -1,0 +1,251 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{babel}
+\usepackage{babel}
+\usepackage{babel}
+
+
+
+
+
+  \providecommand{\assumptionname}{Assumption}
+  \providecommand{\axiomname}{Axiom}
+  \providecommand{\claimname}{Claim}
+  \providecommand{\definitionname}{Definition}
+  \providecommand{\lemmaname}{Lemma}
+  \providecommand{\propositionname}{Proposition}
+  \providecommand{\remarkname}{Remark}
+\providecommand{\corollaryname}{Corollary}
+\providecommand{\theoremname}{Theorem}
+
+
+
+  \providecommand{\axiomname}{Axiom}
+  \providecommand{\claimname}{Claim}
+  \providecommand{\definitionname}{Definition}
+  \providecommand{\remarkname}{Remark}
+\providecommand{\corollaryname}{Corollary}
+\providecommand{\theoremname}{Theorem}
+\end_preamble
+\use_default_options false
+\begin_modules
+theorems-ams-bytype
+theorems-ams-extended-bytype
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding iso8859-15
+\fontencoding default
+\font_roman "cmr" "default"
+\font_sans "cmss" "default"
+\font_typewriter "cmtt" "default"
+\font_math "auto" "auto"
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 2
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.25in
+\topmargin 1.25in
+\rightmargin 1.25in
+\bottommargin 1.25in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Microeconomics 1: Problem Set 3
+\end_layout
+
+\begin_layout Author
+Victor H.
+ Aguiar 
+\end_layout
+
+\begin_layout Date
+This version: 2021
+\end_layout
+
+\begin_layout Exercise
+(Integrability) Consider a demand system with 
+\begin_inset Formula $L=2$
+\end_inset
+
+, such that 
+\begin_inset Formula $p_{2}=1$
+\end_inset
+
+, 
+\begin_inset Formula $x_{1}(p_{1},w)=\beta-\alpha p_{1}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Exercise
+(i) Obtain the demand of 
+\begin_inset Formula $x_{2}(p_{1},w)$
+\end_inset
+
+ under Walras' law.
+\end_layout
+
+\begin_layout Exercise
+Hint.
+ Use 
+\begin_inset Formula $p^{*}=0$
+\end_inset
+
+, for obtaining 
+\begin_inset Formula $v(p,w)=\mu(p^{*},p,w)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Exercise
+(ii) Compute the Slutsky matrix and check that the Hurwicz-Uzawa theorem
+ of integrability of demand conditions are satisfied.
+ 
+\end_layout
+
+\begin_layout Exercise
+(iii) If (ii) is integrable in the sense that satisfies the conditions of
+ the Hurwicz-Uzawa theorem, find the utility that generates the demand system,
+ i.e., find the expression for 
+\begin_inset Formula $u(x_{1},x_{2})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Download the replication package of Aguiar Kashaev (2020, Restud) from .
+\end_layout
+
+\begin_layout Exercise
+It contains the dataset from:
+\end_layout
+
+\begin_layout Exercise
+- Ahn, D., Choi, S., Gale, D., & Kariv, S.
+ (2014).
+ Estimating ambiguity aversion in a portfolio choice experiment.
+ Quantitative Economics, 5(2), 195-223.
+ [Replication files] <http://qeconomics.org/supp/243/code_and_data.zip>
+\end_layout
+
+\begin_layout Exercise
+(i) Use the file ReplicationAK/Data_all/rationalitydata3goods.csv to test
+ GARP for each individual in the experiment.
+ Provide the Julia code name_lastname_ps3.jl and the results in written form
+ in your submission.
+ Hint: you can use the file /ReplicationAK/SecondApp/Deterministic_test/2App_dt.j
+l in Julia 1.0 or 1.1, or if you use another version of Julia you can use
+ it as a basis for your code.
+ 
+\end_layout
+
+\begin_layout Exercise
+(ii) Read the notes for Afriat's efficiency index.
+ Compute the Afriat's efficiency index for the same data set.
+ Provide the Julia code name_lastname_ps3.jl and the results in written form
+ in your submission, for this part you can mimic the figure we saw in class
+ (without the randomly generated dotted curve).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
