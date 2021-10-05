@@ -11720,12 +11720,12 @@ A dataset
 \begin_inset Formula $O=\{p^{k},x^{k}\}_{k=1}^{K}$
 \end_inset
 
- is said to satisfies GARP if an only if 
+ is said to satisfy GARP if an only if 
 \begin_inset Formula $R$
 \end_inset
 
  admits Only Weak Cycles (OWC), i.e., if 
-\begin_inset Formula $x^{1}R^{D}x^{2}R\cdots R^{D}x^{n}$
+\begin_inset Formula $x^{1}R^{D}x^{2}R^{D}\cdots R^{D}x^{n}$
 \end_inset
 
  and 
@@ -12020,6 +12020,12 @@ Output: Numbers
 \end_inset
 
  number of observations.
+ 
+\begin_inset Formula $\succeq^{R}=R$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Enumerate
@@ -12274,7 +12280,7 @@ If
 \end_inset
 
 , then 
-\begin_inset Formula $u(x)=min_{t}\{u^{t}+\lambda^{t}p^{t\prime}(x-x^{t})\}\leq u^{s}+\lambda^{s}p^{s}(x-x^{s})\leq u^{s}=u(x^{s})$
+\begin_inset Formula $u(x)=min_{t}\{u^{t}+\lambda^{t}p^{t\prime}(x-x^{t})\}\leq u^{s}+\lambda^{s}p^{s\prime}(x-x^{s})\leq u^{s}=u(x^{s})$
 \end_inset
 
 .
