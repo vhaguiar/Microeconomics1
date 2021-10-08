@@ -12654,7 +12654,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../WesternAP/FirstYear/MicroI/notes/figures/rationality_experiment.png
+	filename figures/rationality_experiment.png
 	scale 80
 
 \end_inset
@@ -16964,7 +16964,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../WesternAP/FirstYear/MicroI/notes/figures/polissonquah_passingrates_table_expectedutility.png
+	filename figures/polissonquah_passingrates_table_expectedutility.png
 
 \end_inset
 
@@ -17005,7 +17005,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../WesternAP/FirstYear/MicroI/notes/figures/holt_laury.png
+	filename figures/holt_laury.png
 	lyxscale 150
 	scale 150
 

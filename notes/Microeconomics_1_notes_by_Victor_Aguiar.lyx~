@@ -15413,7 +15413,7 @@ Existence is a consequence of Mixture continuity.
 \begin_inset Formula $\alpha^{n}\in[0,1]$
 \end_inset
 
- in the intersection of this sets that converges to 
+ in the intersection of these sets that converges to 
 \begin_inset Formula $\alpha_{p}$
 \end_inset
 
@@ -15614,6 +15614,41 @@ Note that
 
  be a Bernoulli utility function.
  
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $Z=\{0,10\}$
+\end_inset
+
+ 
+\begin_inset Formula $p\in\Delta(Z)$
+\end_inset
+
+ 
+\begin_inset Formula $p(0)=\frac{1}{2}$
+\end_inset
+
+, 
+\begin_inset Formula $p(10)=\frac{1}{2}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $U(p)=\frac{1}{2}u(10)+\frac{1}{2}u(0)$
+\end_inset
+
+, I can choose the Bernoulli utility to be:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\[
+u(10)=\kappa\cdot log(10),\kappa>0.
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -16331,7 +16366,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../WesternAP/FirstYear/MicroI/notes/figures/fosd.png
+	filename figures/fosd.png
 
 \end_inset
 
@@ -16929,7 +16964,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../WesternAP/FirstYear/MicroI/notes/figures/polissonquah_passingrates_table_expectedutility.png
+	filename figures/polissonquah_passingrates_table_expectedutility.png
 
 \end_inset
 
@@ -16970,7 +17005,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../WesternAP/FirstYear/MicroI/notes/figures/holt_laury.png
+	filename figures/holt_laury.png
 	lyxscale 150
 	scale 150
 
