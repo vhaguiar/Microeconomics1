@@ -12748,7 +12748,7 @@ Notice that every dataset
 \begin_inset Formula $\mathcal{O}$
 \end_inset
 
-will satisfy GARP(
+ will satisfy GARP(
 \begin_inset Formula $R_{\alpha}$
 \end_inset
 
@@ -12844,7 +12844,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../WesternAP/FirstYear/MicroI/notes/figures/CCEI_Afriat_index.png
+	filename figures/CCEI_Afriat_index.png
 	scale 80
 
 \end_inset

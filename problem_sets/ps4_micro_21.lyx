@@ -1,0 +1,506 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{babel}
+\usepackage{babel}
+\usepackage{babel}
+
+
+
+
+
+  \providecommand{\assumptionname}{Assumption}
+  \providecommand{\axiomname}{Axiom}
+  \providecommand{\claimname}{Claim}
+  \providecommand{\definitionname}{Definition}
+  \providecommand{\lemmaname}{Lemma}
+  \providecommand{\propositionname}{Proposition}
+  \providecommand{\remarkname}{Remark}
+\providecommand{\corollaryname}{Corollary}
+\providecommand{\theoremname}{Theorem}
+
+
+
+  \providecommand{\axiomname}{Axiom}
+  \providecommand{\claimname}{Claim}
+  \providecommand{\definitionname}{Definition}
+  \providecommand{\remarkname}{Remark}
+\providecommand{\corollaryname}{Corollary}
+\providecommand{\theoremname}{Theorem}
+\end_preamble
+\use_default_options false
+\begin_modules
+theorems-ams-bytype
+theorems-ams-extended-bytype
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding iso8859-15
+\fontencoding default
+\font_roman "cmr" "default"
+\font_sans "cmss" "default"
+\font_typewriter "cmtt" "default"
+\font_math "auto" "auto"
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 2
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.25in
+\topmargin 1.25in
+\rightmargin 1.25in
+\bottommargin 1.25in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Problem Set 4 Microeconomics
+\end_layout
+
+\begin_layout Author
+Victor H.
+ Aguiar 
+\end_layout
+
+\begin_layout Date
+This version: October 2021
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+(Expected Utility) Consider the following 
+\begin_inset Quotes eld
+\end_inset
+
+portfolio choice
+\begin_inset Quotes erd
+\end_inset
+
+ problem.
+ The consumer (with preferences that admit an expected utility representation)
+ has wealth 
+\begin_inset Formula $w$
+\end_inset
+
+ and a Bernoulli utility 
+\begin_inset Formula $u(x)=ln(x)$
+\end_inset
+
+ there is a safe asset that has net real return of zero.
+ There is also a risky asset with a random net return that has only two
+ possible returns 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ with probability 
+\begin_inset Formula $q$
+\end_inset
+
+ and 
+\begin_inset Formula $R_{0}$
+\end_inset
+
+ with probability 
+\begin_inset Formula $1-q$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Problem
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ be the amount invested in the risky asset so 
+\begin_inset Formula $w-A$
+\end_inset
+
+ is the amount invested in the safe asset.
+ 
+\end_layout
+
+\begin_layout Problem
+(i) Find 
+\begin_inset Formula $A$
+\end_inset
+
+ as a function of 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ Does the consumer buys more or less of the risky asset as 
+\begin_inset Formula $w$
+\end_inset
+
+ increases?
+\end_layout
+
+\begin_layout Problem
+(ii) A second (expected utility) consumer has a Bernoulli utility function
+ 
+\begin_inset Formula $u(x)=-exp(-x)$
+\end_inset
+
+.
+ How does his consumption of the risky asset changes with wealth?
+\end_layout
+
+\begin_layout Problem
+(iii) Compute the coefficient of absolute risk aversion 
+\begin_inset Formula $r(x)=-\frac{u''(x)}{u'(x)}$
+\end_inset
+
+ for the first and second consumers.
+ How these coefficients depend on wealth? How does this coefficient explains
+ the answers in (i) and (ii).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Non-expected utility theory.
+ (Modeling) 
+\end_layout
+
+\begin_layout Problem
+From class we had the Allais paradox behavior:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Z$
+\end_inset
+
+ is finite in fact 
+\begin_inset Formula $N=3$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+First Prize
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Second Price
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Third Price
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.5 millions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5 millions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Two choice sets:
+\end_layout
+
+\begin_layout Standard
+The first,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L_{1}=(0,1,0)$
+\end_inset
+
+ and 
+\begin_inset Formula $L_{1}'=(0.10,0.89,0.01)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The second,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L_{2}=(0,0.11,0.89)$
+\end_inset
+
+ and 
+\begin_inset Formula $L_{2}'=(0.10,0,0.90)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Imagine an individual that choose 
+\begin_inset Formula $L_{1}\succ L_{1}'$
+\end_inset
+
+ and 
+\begin_inset Formula $L_{2}'\succ L_{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+This is inconsistent with expected utility.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $L_{1}\succ L_{1}'$
+\end_inset
+
+ then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u_{0.5}>(0.10)u_{2.5}+(0.89)u_{.5}+(0.01)u_{0}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Adding, 
+\begin_inset Formula $(0.89)u_{0}-(0.89)u_{0.5}$
+\end_inset
+
+ to both sides we get,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(0.11)u_{0.5}+(0.89)u_{0}>(0.1)u_{2.5}+(0.9)u_{0},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and thus 
+\begin_inset Formula $L_{2}\succ L_{2}'$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Now consider a model with weighted probabilities.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V(p)=\sum_{z\in Z}\phi(p(z))u(z),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\phi(0)=0$
+\end_inset
+
+, 
+\begin_inset Formula $\phi(1)=1$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi(t)\geq0$
+\end_inset
+
+.
+ Find a 
+\begin_inset Formula $\phi$
+\end_inset
+
+ that explains the Allais paradox and show it can explain the choices 
+\begin_inset Formula $L_{1}\succ L_{1}'$
+\end_inset
+
+ and 
+\begin_inset Formula $L_{2}'\succ L_{2}$
+\end_inset
+
+ assuming that 
+\begin_inset Formula $u(z)=z$
+\end_inset
+
+ for simplicity.
+ 
+\end_layout
+
+\begin_layout Standard
+Does your new model satisfies first order stochastic dominance monotonicity,
+ 
+\begin_inset Formula $p\geq_{FOSD}q\implies V(p)\geq V(q)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+Advanced question: How can you modify the probability weighting model to
+ satisfy FOSD.
+ (Optional for 10% to the Midterm).
+ 
+\end_layout
+
+\end_body
+\end_document
