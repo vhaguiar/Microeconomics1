@@ -12654,7 +12654,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../WesternAP/FirstYear/MicroI/notes/figures/rationality_experiment.png
+	filename figures/rationality_experiment.png
 	scale 80
 
 \end_inset
@@ -16431,7 +16431,7 @@ First Prize
 \begin_inset Text
 
 \begin_layout Plain Layout
-Second Price
+Second Prize
 \end_layout
 
 \end_inset
@@ -16440,7 +16440,7 @@ Second Price
 \begin_inset Text
 
 \begin_layout Plain Layout
-Third Price
+Third Prize
 \end_layout
 
 \end_inset
@@ -16505,22 +16505,6 @@ The first,
 \end_layout
 
 \begin_layout Standard
-(Fei: 
-\begin_inset Formula $L_{1}'$
-\end_inset
-
-) (Eduardo: 
-\begin_inset Formula $L_{1}'$
-\end_inset
-
-) (Niko: 
-\begin_inset Formula $L_{1}$
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Standard
 The second,
 \end_layout
 
@@ -16534,22 +16518,6 @@ The second,
 
 .
  
-\end_layout
-
-\begin_layout Standard
-(Fei: 
-\begin_inset Formula $L_{2}'$
-\end_inset
-
-) (Eduardo: 
-\begin_inset Formula $L_{2}'$
-\end_inset
-
-) (Niko: 
-\begin_inset Formula $L_{2}'$
-\end_inset
-
-)
 \end_layout
 
 \begin_layout Standard

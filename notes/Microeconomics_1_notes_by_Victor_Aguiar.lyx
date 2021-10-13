@@ -16431,7 +16431,7 @@ First Prize
 \begin_inset Text
 
 \begin_layout Plain Layout
-Second Price
+Second Prize
 \end_layout
 
 \end_inset
@@ -16440,7 +16440,7 @@ Second Price
 \begin_inset Text
 
 \begin_layout Plain Layout
-Third Price
+Third Prize
 \end_layout
 
 \end_inset
@@ -16505,22 +16505,6 @@ The first,
 \end_layout
 
 \begin_layout Standard
-(Fei: 
-\begin_inset Formula $L_{1}'$
-\end_inset
-
-) (Eduardo: 
-\begin_inset Formula $L_{1}'$
-\end_inset
-
-) (Niko: 
-\begin_inset Formula $L_{1}$
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Standard
 The second,
 \end_layout
 
@@ -16534,22 +16518,6 @@ The second,
 
 .
  
-\end_layout
-
-\begin_layout Standard
-(Fei: 
-\begin_inset Formula $L_{2}'$
-\end_inset
-
-) (Eduardo: 
-\begin_inset Formula $L_{2}'$
-\end_inset
-
-) (Niko: 
-\begin_inset Formula $L_{2}'$
-\end_inset
-
-)
 \end_layout
 
 \begin_layout Standard
@@ -16854,7 +16822,7 @@ By the FOC, we have that
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\pi^{s}u'(x_{s}^{t})=\lambda^{t}p_{s}^{t},\forall s\in S,\forall t.
+\pi_{s}u'(x_{s}^{t})=\lambda^{t}p_{s}^{t},\forall s\in S,\forall t.
 \]
 
 \end_inset
@@ -18180,7 +18148,7 @@ If all
 \end_layout
 
 \begin_layout Chapter
-Discrete Choice and Logit 
+Discrete Choice and Random Utility
 \end_layout
 
 \begin_layout Standard
