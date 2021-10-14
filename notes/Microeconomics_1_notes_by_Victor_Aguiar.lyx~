@@ -16822,7 +16822,7 @@ By the FOC, we have that
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\pi^{s}u'(x_{s}^{t})=\lambda^{t}p_{s}^{t},\forall s\in S,\forall t.
+\pi_{s}u'(x_{s}^{t})=\lambda^{t}p_{s}^{t},\forall s\in S,\forall t.
 \]
 
 \end_inset
@@ -18148,7 +18148,7 @@ If all
 \end_layout
 
 \begin_layout Chapter
-Discrete Choice and Logit 
+Discrete Choice and Random Utility
 \end_layout
 
 \begin_layout Standard
@@ -18473,7 +18473,7 @@ F_{\epsilon}(x)=exp(-exp(-\frac{x-\eta}{\mu}))=Pr(\epsilon\leq x)
 \begin_layout Standard
 \begin_inset Formula 
 \[
-P_{ij}=\frac{exp(V_{ij})}{\sum_{j'=0,\cdots,J}exp(V_{ij'})}=\int_{\xi\in supp(\boldsymbol{\xi})}1(V_{ij}-V_{ij'}\geq\epsilon_{ij}-\epsilon_{ij'}\forall j\neq j')F_{\xi}(d\xi).
+P_{ij}=\frac{exp(V_{j})}{\sum_{j'=0,\cdots,J}exp(V_{j'})}=\int_{\xi\in supp(\boldsymbol{\xi})}1(V_{ij}-V_{ij'}\geq\epsilon_{ij}-\epsilon_{ij'}\forall j\neq j')F_{\xi}(d\xi).
 \]
 
 \end_inset
@@ -18642,7 +18642,7 @@ ion patterns.
 \end_layout
 
 \begin_layout Standard
-Let's be more formal about Luce with choice set variation.
+Let's be more formal about Luce/Logit with choice set variation.
  Let 
 \begin_inset Formula $X$
 \end_inset

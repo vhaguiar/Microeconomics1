@@ -18944,7 +18944,7 @@ event
 \begin_layout Standard
 \begin_inset Formula 
 \[
-C(x,A):=\{\omega\in\Omega:\boldsymbol{U}_{\omega}(x)>\boldsymbol{U}_{\omega}(y)\quad\text{for all\ensuremath{\quad}}y\in A/\{x\})
+C(x,A):=\{\omega\in\Omega:\boldsymbol{U}_{\omega}(x)>\boldsymbol{U}_{\omega}(y)\quad\text{for all\ensuremath{\quad}}b\in A/\{x\})
 \]
 
 \end_inset
