@@ -19513,26 +19513,35 @@ Where
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\rho_{D_{1}}(a_{1})+\rho_{D_{2}}(a_{1})\leq\max_{\succ\in\{\succ_{1},\succ_{2},\succ_{3}\}}(\mathbb{I}(a_{1}\succ_{1}b)+\mathbb{I}(a_{1}\succ_{2}b\succ_{2}c)+\mathbb{I}(a_{1}\succ_{3}c\succ_{3}b))
+\rho_{D_{1}}(a_{1})+\rho_{D_{2}}(a_{1})\leq\max_{\succ\in\{\succ_{1},\succ_{2},\succ_{3}\}}(\mathbb{I}(a_{1}\succ_{1}b)+\mathbb{I}(a_{2}\succ_{2}b\succ_{2}c)+\mathbb{I}(a_{2}\succ_{3}c\succ_{3}b))
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+I invent this data set 
+\begin_inset Formula $\rho$
+\end_inset
+
+ that fails General Random Utility because it violates regularity, namely:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $\frac{1}{2}=\rho_{D_{1}}(a_{1})<\rho_{D_{2}}(a_{1})=\frac{3}{4}$
 \end_inset
 
-.
+, this is a violation a regularity hence incompatible with General Random
+ Utility.
  
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\frac{5}{4}\leq2,
+\rho_{D_{1}}(a_{1})+\rho_{D_{2}}(a_{1})=\frac{5}{4}
 \]
 
 \end_inset
@@ -19541,13 +19550,29 @@ Where
 \end_layout
 
 \begin_layout Standard
-this passes, but there should be another sequence for which the ASRP fails
- because this dataset violates regularity (ASRP 
-\begin_inset Formula $\implies$
+\begin_inset Formula 
+\[
+\max_{\succ\in\{\succ_{1},\succ_{2},\succ_{3}\}}(\mathbb{I}(a_{1}\succ_{1}b)+\mathbb{I}(a_{2}\succ_{2}b\succ_{2}c)+\mathbb{I}(a_{2}\succ_{3}c\succ_{3}b))=1
+\]
+
 \end_inset
 
- regularity).
- 
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{5}{4}>1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Lemma
@@ -19562,7 +19587,7 @@ The following are equivalent:
 
 \begin_layout Lemma
 (i) 
-\begin_inset Formula $p$
+\begin_inset Formula $\rho$
 \end_inset
 
  satisfy the ASRP 
@@ -19618,7 +19643,7 @@ where,
 \end_inset
 
  such that 
-\begin_inset Formula $\rho(a,A)=\sum_{r\in R}\pi(r)\mathbb{I}(arb\forall b\in A\backslash\{a\}).$
+\begin_inset Formula $\rho_{A}(a)=\rho(a,A)=\sum_{r\in R}\pi(r)\mathbb{I}(arb\forall b\in A\backslash\{a\}).$
 \end_inset
 
 
@@ -19645,7 +19670,7 @@ where,
 \begin_inset Formula $C\subseteq X$
 \end_inset
 
- (this is called total monotonicity).
+ (this is called total monotonicity/total regularity).
 \end_layout
 
 \begin_layout Standard
