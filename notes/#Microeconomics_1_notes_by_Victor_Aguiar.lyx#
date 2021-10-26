@@ -22585,7 +22585,7 @@ This market has
 endowment 
 \series default
 is given by 
-\begin_inset Formula $\omega_{i}=(\omega_{i.l})_{l=1}^{L}$
+\begin_inset Formula $\omega_{i}=(\omega_{i,l})_{l=1}^{L}$
 \end_inset
 
  with the restriction that 
@@ -22618,7 +22618,11 @@ Each firm
 \end_inset
 
 .
- The net amount of good on the economy is 
+ The net amount of good 
+\begin_inset Formula $l$
+\end_inset
+
+ on the economy is 
 \begin_inset Formula $\omega_{l}+\sum_{j=1}^{J}y_{l,j}$
 \end_inset
 
@@ -22664,7 +22668,11 @@ Now, we define the main property of any allocation.
 \begin_inset Formula $(x_{1},\cdots,x_{I};y_{1},\cdots,y_{J})$
 \end_inset
 
- is feasible if 
+ is feasible if for every good 
+\begin_inset Formula $l$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Definition
@@ -22900,7 +22908,7 @@ u_{i}(m_{i},x_{i})=m_{i}+\phi_{i}(x_{i}).
 
 \begin_layout Standard
 The consumption set is 
-\begin_inset Formula $X=\mathbb{R}\times\mathbb{R}_{+}^{L}$
+\begin_inset Formula $X=\mathbb{R}\times\mathbb{R}_{+}$
 \end_inset
 
  so that the numeraire may be negative (no boundary problems).
@@ -23081,7 +23089,7 @@ We assume that there is no initial endowment of good
 \begin_layout Definition
 \begin_inset Formula 
 \[
-p\leq c_{j}'(q_{j}),\quad\text{with equality if}\quad q_{j}>0\quad\forall j\in\{1,\cdots,J\}
+p=c_{j}'(q_{j}),\quad\text{with equality if}\quad q_{j}>0\quad\forall j\in\{1,\cdots,J\}
 \]
 
 \end_inset
@@ -23092,7 +23100,7 @@ p\leq c_{j}'(q_{j}),\quad\text{with equality if}\quad q_{j}>0\quad\forall j\in\{
 \begin_layout Definition
 \begin_inset Formula 
 \[
-\phi_{i}'(x_{i})\leq p\quad\text{with equality if}\quad x_{i}>0\quad\forall i\in\{1,\cdots,I\}
+\phi_{i}'(x_{i})=p\quad\text{with equality if}\quad x_{i}>0\quad\forall i\in\{1,\cdots,I\}
 \]
 
 \end_inset

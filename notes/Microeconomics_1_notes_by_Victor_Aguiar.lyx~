@@ -19575,10 +19575,6 @@ I invent this data set
 
 \end_layout
 
-\begin_layout Standard
-
-\end_layout
-
 \begin_layout Lemma
 \begin_inset CommandInset label
 LatexCommand label
@@ -19591,7 +19587,7 @@ The following are equivalent:
 
 \begin_layout Lemma
 (i) 
-\begin_inset Formula $p$
+\begin_inset Formula $\rho$
 \end_inset
 
  satisfy the ASRP 
@@ -19647,7 +19643,7 @@ where,
 \end_inset
 
  such that 
-\begin_inset Formula $\rho(a,A)=\sum_{r\in R}\pi(r)\mathbb{I}(arb\forall b\in A\backslash\{a\}).$
+\begin_inset Formula $\rho_{A}(a)=\rho(a,A)=\sum_{r\in R}\pi(r)\mathbb{I}(arb\forall b\in A\backslash\{a\}).$
 \end_inset
 
 
@@ -19674,7 +19670,7 @@ where,
 \begin_inset Formula $C\subseteq X$
 \end_inset
 
- (this is called total monotonicity).
+ (this is called total monotonicity/total regularity).
 \end_layout
 
 \begin_layout Standard
