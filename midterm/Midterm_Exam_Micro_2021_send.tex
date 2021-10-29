@@ -1,0 +1,255 @@
+%% LyX 2.3.6.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[10pt,english]{article}
+\renewcommand{\rmdefault}{cmr}
+\renewcommand{\sfdefault}{cmss}
+\renewcommand{\ttdefault}{cmtt}
+\renewcommand{\familydefault}{\rmdefault}
+\usepackage[latin9]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=1.25in,bmargin=1.25in,lmargin=1.25in,rmargin=1.25in}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{esint}
+\usepackage[authoryear]{natbib}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=false,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=false]
+ {hyperref}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\theoremstyle{definition}
+\newtheorem{problem}{\protect\problemname}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{babel}
+\usepackage{babel}
+\usepackage{babel}
+
+
+
+
+
+  \providecommand{\assumptionname}{Assumption}
+  \providecommand{\axiomname}{Axiom}
+  \providecommand{\claimname}{Claim}
+  \providecommand{\definitionname}{Definition}
+  \providecommand{\lemmaname}{Lemma}
+  \providecommand{\propositionname}{Proposition}
+  \providecommand{\remarkname}{Remark}
+\providecommand{\corollaryname}{Corollary}
+\providecommand{\theoremname}{Theorem}
+
+
+
+  \providecommand{\axiomname}{Axiom}
+  \providecommand{\claimname}{Claim}
+  \providecommand{\definitionname}{Definition}
+  \providecommand{\remarkname}{Remark}
+\providecommand{\corollaryname}{Corollary}
+\providecommand{\theoremname}{Theorem}
+
+\makeatother
+
+\providecommand{\problemname}{Problem}
+
+\begin{document}
+\title{Midterm Exam Microeconomics: 2021}
+\author{Victor H. Aguiar }
+\date{This version: 2021}
+
+\maketitle
+
+\begin{problem}
+(30 points) Let $X$ be a nonempty and finite set of alternatives.
+Consider the following bounded rational consumer. Given a menu $A\subseteq X$,
+the consumer searches sequentially through the menu according to a
+fixed search order on $X$. At each step in the search process, the
+consumer compares the utility of the item that she sees to a fixed
+threshold. If the utility of the item is above the threshold then
+the consumer stops the search and picks the item. Formally, let $S\subseteq X\times X$
+be a linear order on $X$, let $u:X\to\mathbb{R}$ be a utility function,
+and $u^{*}\in\mathbb{R}$ be a threshold. The choice correspondence
+of this bounded rational consumer is given by
+
+\[
+c_{S}(A)=\{b\in A|u(b)\geq u^{*};\text{there exists no\quad}aSb;u(a)\geq u^{*}\}
+\]
+ for all $A\subseteq X$, where the subscript $S$ denotes the dependence
+of the choice correspondence of the linear order that models the search
+process. 
+\end{problem}
+(a) Show that the choice correspondence $c_{S}$ defined above is
+in fact a choice function. 
+
+(b) Show that the choice correspondence $c_{S}$ satisfies WARP (define
+WARP using the notes and textbook). 
+
+(c) Assume you observe a dataset $(2^{X}\setminus\emptyset,c)$ (such
+that $c:2^{X}\setminus\emptyset\to2^{X}\setminus\emptyset$ is an
+observed choice function -possibly different from $c_{BR}$-) that
+satisfies WARP. Show that there is a bounded rational consumer characterized
+by a triple $(S,u,u^{*})$ a linear order on $X$, a utility function
+and a thresholds as in (a) such that $c(A)=c_{BR}(A)$ for all $A\in2^{X}\setminus\emptyset$. 
+
+d) Assume now that there is a distribution over search orders. Denote
+the collection of all search orders/linear orders on $X\times X$
+by $\mathcal{S}$. The distribution over search orders is $\pi\in\Delta(\mathcal{S})$.
+The probability of choice of item $a$in menu $A$ such is given by
+$\rho_{A}(a)$ where $a\in A$ and $\rho_{A}\in\Delta(A)$. Let the
+stochastic version of the bounded rational model above generate $\rho_{A}$
+such that:
+
+\[
+\rho_{A}(a)=\sum_{S\in\mathcal{S}}\pi(S)1(a=c_{S}(A)).
+\]
+
+Show that if you have two menus $A\subseteq B$ and $a\in A\cap B$,
+it has to be that $\rho_{B}(a)\leq\rho_{B}(a)$ (i.e., regularity). 
+
+\begin{problem}
+(30 points) Let $X$ be a nonempty and finite set of alternatives.
+Consider the following stochastic bounded rational consumer called
+``stochastic limited consideration (SLC)''. 
+
+Assume there is a default alternative $o\notin X$, that is always
+present in any given menu. Let $X^{*}=X\cup\{o\}$. Also let the collection
+of menus that contain $o$ be defined as $\mathcal{A}$, such that
+$A\in\mathcal{A}$ if $A\subseteq X^{*}$ and $o\in A$. Given a menu
+$A\in\mathcal{A}$, the probability of this consumer of choosing an
+alternative $a$ in menu $A$, denoted by $\rho_{A}(a)$, where $\rho_{A}\in\Delta(A)$,
+is given by the following decision algorithm: First the consumer is
+endowed with a strict preference relation $\succ$ defined over $X^{*}$
+with the restriction that for any $x\in X$, it must be that $x\succ o$
+(i.e., the default is the worst item). The consumer is also endowed
+with a distribution over mental categories. Formally, mental categories,
+$\mathcal{D},$ is the collection all subsets of $X^{*}$. At each
+decision trial, the consumer draws a mental category from $\mathcal{D}$
+with probability $m\in\Delta(\mathcal{D})$ with the restriction that
+$m(D)=0$ if $o\notin D$ (i.e., the probability of drawing a category
+that does not have the default is zero). Then the consumer forms a
+``consideration set'' by taking the intersection of menu $A$ and
+$D$ such that the consideration set is equal to $D\cap A$. Then
+the consumer maximizes her preferences $\succ$ on the consideration
+set $D\cap A$. Finally, she chooses the item that maximizes her preferences
+on $D\cap A$. The resulting probability of this decision algorithm
+is:
+
+\[
+\rho_{A}(a)=\sum_{D\in\mathcal{D}}m(D)1(a\succ b\forall b\in(D\cap A),b\neq a),
+\]
+
+where $1(\cdot)=1$ when the argument is true and zero otherwise. 
+\end{problem}
+\begin{itemize}
+\item A complete stochastic dataset, $\rho$, is a collection of $\rho_{A}$
+for all menus $A\in\mathcal{A}$.
+\item We say that $a$ is stochastically revealed preferred to $b$ (i.e.,
+$aRb$) when $p(b,A\cup\{a\})<p(b,A)$. 
+\item We say $R$ is a acyclic if there is no integer $n\geq2$ and $a_{1},\cdots,a_{n}\in X$
+such that $a_{i}\succ a_{i+1}$ for $i=1,\cdots,n-1$ and $a_{n}\succ a_{1}$. 
+\item We say that a complete stochastic dataset, $\rho$, is regular if
+for any pair of menus $A,B\in\mathcal{A}$ such that $A\subseteq B$
+it must be that $\rho_{B}(a)\leq p_{A}(a)$ for any $a\in A\cap B$. 
+\end{itemize}
+a) Show that a complete stochastic dataset $\rho$ that is generated
+by a SLC, as described above, implies that the stochastic revealed
+preference relation $R$ is acyclic. 
+
+b) Show that a complete stochastic dataset $\rho$ that is generated
+by a SLC, implies that $\rho$ is regular. 
+
+c) Let $\rho$ be generated by a SLC with the additional restriction
+that $m(X^{*})=1$ and zero otherwise. This means that this consumer
+always considers all alternatives. 
+
+Show that the choice correspondence defined by: 
+
+\[
+c(A)=\{a\in A:\rho_{A}(a)=1\},
+\]
+
+is a choice function (i.e., single-valued), and that $c(A)$ satisfies
+SARP (first define SARP as seen in class and in the problem sets). 
+
+d) Show that a complete stochastic dataset $\rho$ that is generated
+by a SLC, satisfies the ASRP (Axiom of Stochastic Revealed Preference)
+as defined in the notes. (Hint: use the equivalence theorem between
+the ASRP and random utility and define ASRP using the notes.).
+
+\begin{problem}
+(Modeling question). (30 points) Modeling the ``Endowment Effect''.
+I am going to present to you a summary of an experiment showing a
+behavioral bias called the Endowment Effect. The task is to write
+a decision model algorithm to explain the Endowment Effect. 
+\end{problem}
+
+\subsubsection*{The Endowment Effect Experiment. }
+
+Kahneman, Knetch and Thaler {[}1990{]}, did an experiment with the
+following features:
+\begin{itemize}
+\item 44 subjects 
+\item 22 subjects given mugs 
+\item The other 22 subjects given nothing 
+\item Subjects who owned mugs asked to announce the price at which they
+would be prepared to sell mug 
+\item Subjects who did not own mug announced price at which they are prepared
+to buy mug 
+\item Experimenter figured out prices at which supply of mugs equals demand.
+\end{itemize}
+If our subjects are rational consumers then the prediction in this
+market is:
+\begin{itemize}
+\item Prediction for rationality: As mugs are distributed randomly, we should
+expect half the mugs (11) to get traded.
+\item Explanation: Consider the group of mug lovers (i.e. those that have
+valuation above the median), of which there are 22. 
+\begin{itemize}
+\item Half of these should have mugs, and half should not. 
+\item The 11 mug haters that have mugs should trade with the 11 mug lovers
+that do not. 
+\end{itemize}
+\end{itemize}
+The \textbf{Experiment Outcome }however differs from the \textbf{Prediction},
+and we call this the \textbf{Endowment Effect.}
+\begin{itemize}
+\item In 4 sessions, the number of trades was 4,1,2 and 2 (respectively
+per session). 
+\item Median seller valued mug at \$5.25 
+\item Median buyer valued mug at \$2.75 
+\item Willingness to pay/willingness to accept gap 
+\item \textbf{Subject's preferences seem to be affected by whether or not
+their reference point was owning the mug.}
+\end{itemize}
+\begin{enumerate}
+\item Explain why the Endowment Effect is not consistent with a traditional
+model of rationality. Hint: The answer has less to do with the idea
+of revealed preferences, but more with the idea of stability of preferences.
+Write down the model of trade formally. You can assume a parametric
+distribution of preferences, make as simple as possible (uniform distribution). 
+\item Propose a decision algorithm that explains the endowment effect given
+the trading scheme of the experiment. 
+\item Calibrate your model parameters to reproduce the experiment outcome. 
+\end{enumerate}
+
+\subsection*{Grading Criterion}
+\begin{enumerate}
+\item Work group is not allowed, if I find out that several of you have
+essentially the same model, you will receive the total grade of this
+question divided by the number of students that share the same response.
+Same goes for the answers to the other two question. I expect that
+each person has their own individual answers. 
+\item Every question indicates how much points they are worth out of 90. 
+\item The last question will be graded on the following 5 items: Logical
+consistency of the decision algorithm. Clarity of the explanation
+of the decision algorithm. Degree of success in explaining the endowment
+effect (calibration). Clarity in the explanation of the endowment
+effect using the decision algorithm. Creativity and degree to which
+you have included topics that we covered in class.
+\end{enumerate}
+
+\end{document}
