@@ -1,0 +1,614 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{babel}
+\usepackage{babel}
+\usepackage{babel}
+
+
+
+
+
+  \providecommand{\assumptionname}{Assumption}
+  \providecommand{\axiomname}{Axiom}
+  \providecommand{\claimname}{Claim}
+  \providecommand{\definitionname}{Definition}
+  \providecommand{\lemmaname}{Lemma}
+  \providecommand{\propositionname}{Proposition}
+  \providecommand{\remarkname}{Remark}
+\providecommand{\corollaryname}{Corollary}
+\providecommand{\theoremname}{Theorem}
+
+
+
+  \providecommand{\axiomname}{Axiom}
+  \providecommand{\claimname}{Claim}
+  \providecommand{\definitionname}{Definition}
+  \providecommand{\remarkname}{Remark}
+\providecommand{\corollaryname}{Corollary}
+\providecommand{\theoremname}{Theorem}
+\end_preamble
+\use_default_options false
+\begin_modules
+theorems-ams-bytype
+theorems-ams-extended-bytype
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding iso8859-15
+\fontencoding default
+\font_roman "cmr" "default"
+\font_sans "cmss" "default"
+\font_typewriter "cmtt" "default"
+\font_math "auto" "auto"
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 10
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 2
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.25in
+\topmargin 1.25in
+\rightmargin 1.25in
+\bottommargin 1.25in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Midterm Exam Microeconomics: 2017
+\end_layout
+
+\begin_layout Author
+Victor H.
+ Aguiar 
+\end_layout
+
+\begin_layout Date
+This version: October 2017
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Let 
+\begin_inset Formula $X$
+\end_inset
+
+ be a nonempty and finite set of alternatives.
+ Consider the following bounded rational consumer.
+ Given a menu 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+, the consumer searches sequentially through the menu according to a fixed
+ search order on 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ At each step in the search process, the consumer compares the utility of
+ the item that she sees to a fixed threshold.
+ If the utility of the item is above the threshold then the consumer stops
+ the search and picks the item.
+ Formally, let 
+\begin_inset Formula $S\subseteq X\times X$
+\end_inset
+
+ be a linear order on 
+\begin_inset Formula $X$
+\end_inset
+
+, let 
+\begin_inset Formula $u:X\to\mathbb{R}$
+\end_inset
+
+ be a utility function, and 
+\begin_inset Formula $u^{*}\in\mathbb{R}$
+\end_inset
+
+ be a threshold.
+ The choice of this bounded rational consumer is given by
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+c_{BR}(A)=\{b\in A|u(b)\geq u^{*};\text{there exists no\quad}aSb;u(a)\geq u^{*}\}
+\]
+
+\end_inset
+
+ for all 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) Show that the choice correspondence 
+\begin_inset Formula $c_{BR}$
+\end_inset
+
+ defined above is in fact a choice function.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Show that the choice correspondence 
+\begin_inset Formula $c_{BR}$
+\end_inset
+
+ satisfies WARP.
+ 
+\end_layout
+
+\begin_layout Standard
+(c) Assume you observe a dataset 
+\begin_inset Formula $(2^{X}\setminus\emptyset,c)$
+\end_inset
+
+ (such that 
+\begin_inset Formula $c:2^{X}\setminus\emptyset\to2^{X}\setminus\emptyset$
+\end_inset
+
+ is an observed choice function -possibly different from 
+\begin_inset Formula $c_{BR}$
+\end_inset
+
+-) that satisfies WARP.
+ Show that there is a bounded rational consumer characterized by a triple
+ 
+\begin_inset Formula $(S,u,u^{*})$
+\end_inset
+
+ a linear order on 
+\begin_inset Formula $X$
+\end_inset
+
+, a utility function and a thresholds as in (a) such that 
+\begin_inset Formula $c(A)=c_{BR}(A)$
+\end_inset
+
+ for all 
+\begin_inset Formula $A\in2^{X}\setminus\emptyset$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+(a) Show that if the Social Welfare function is additive such that 
+\begin_inset Formula $W(\{u_{i}\}_{i\in\mathcal{I}})=\sum_{i}\lambda_{i}v_{i}(p,w_{i})$
+\end_inset
+
+ for 
+\begin_inset Formula $\lambda_{i}>0$
+\end_inset
+
+ and 
+\begin_inset Formula $\sum_{i}\lambda_{i}=1$
+\end_inset
+
+ weights, and if 
+\begin_inset Formula $v_{i}(p,w_{i})$
+\end_inset
+
+ is Gorman then 
+\begin_inset Formula $W(\cdot)$
+\end_inset
+
+ is also Gorman.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Formally, prove the following, when 
+\begin_inset Formula $\lambda=\lambda_{i}=\lambda_{j}$
+\end_inset
+
+ for all 
+\begin_inset Formula $i,j$
+\end_inset
+
+ then:
+\end_layout
+
+\begin_layout Proposition
+The function 
+\begin_inset Formula $v(p,w)=Max_{\{w_{i}\}_{i=1}^{I},\sum_{i=1}^{I}w_{i}\leq w}\sum_{i}\lambda_{i}v_{i}(p,w_{i})$
+\end_inset
+
+ is an indirect utility function for a positive representative consumer
+ for the aggregate demand 
+\begin_inset Formula $x(p,w)=\sum_{i=1}^{I}x_{i}(p,w_{i})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Problem
+(Expected Utility) Consider the following 
+\begin_inset Quotes eld
+\end_inset
+
+portfolio choice
+\begin_inset Quotes erd
+\end_inset
+
+ problem.
+ The consumer (with preferences that admit an expected utility representation)
+ has wealth 
+\begin_inset Formula $w$
+\end_inset
+
+ and a Bernoulli utility 
+\begin_inset Formula $u(x)=ln(x)$
+\end_inset
+
+ there is a safe asset that has net real return of zero.
+ There is also a risky asset with a random net return that has only two
+ possible returns 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ with probability 
+\begin_inset Formula $q$
+\end_inset
+
+ and 
+\begin_inset Formula $R_{0}$
+\end_inset
+
+ with probability 
+\begin_inset Formula $1-q$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Problem
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ be the amount invested in the risky asset so 
+\begin_inset Formula $w-A$
+\end_inset
+
+ is the amount invested in the safe asset.
+ 
+\end_layout
+
+\begin_layout Problem
+(i) Find 
+\begin_inset Formula $A$
+\end_inset
+
+ as a function of 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ Does the consumer buys more or less of the risky asset as 
+\begin_inset Formula $w$
+\end_inset
+
+ increases?
+\end_layout
+
+\begin_layout Problem
+(ii) A second (expected utility) consumer has a Bernoulli utility function
+ 
+\begin_inset Formula $u(x)=-exp(-x)$
+\end_inset
+
+.
+ How does his consumption of the risky asset changes with wealth?
+\end_layout
+
+\begin_layout Problem
+(iii) Compute the coefficient of absolute risk aversion 
+\begin_inset Formula $r(x)=-\frac{u''(x)}{u'(x)}$
+\end_inset
+
+ for the first and second consumers.
+ How these coefficients depend on wealth? How does this coefficient explains
+ the answers in (i) and (ii).
+ 
+\end_layout
+
+\begin_layout Standard
+Provide detailed answers
+\end_layout
+
+\begin_layout Problem
+(Duality) Let 
+\begin_inset Formula $u(x,y)=min\{x,y\}$
+\end_inset
+
+.
+ Find the Walrasian demand as the solution to the utility maximization problem.
+ Find the indirect utility function.
+ Find the hicksian demand as the solution to the expenditure minimization
+ problem.
+ Find the expenditure function.
+ Check the relation among these functions as seen in class.
+ 
+\end_layout
+
+\begin_layout Standard
+Check all duality relations.
+ 
+\end_layout
+
+\begin_layout Problem
+Consider the 
+\begin_inset Formula $X=\mathbb{R}^{L}$
+\end_inset
+
+, with 
+\begin_inset Formula $L=2$
+\end_inset
+
+.
+ Consider a Cobb-Douglas demand model 
+\begin_inset Formula $x^{CD}(p,w)$
+\end_inset
+
+, with 
+\begin_inset Formula $\alpha\in[0,1]$
+\end_inset
+
+, such that 
+\begin_inset Formula $x_{1}^{CD}=\frac{\alpha w}{p_{1}}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{2}^{CD}=\frac{(1-\alpha)w}{p_{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Its Slutsky matrix function is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S^{{\textstyle CD}}(p,w)=\left[\begin{array}{cc}
+-\frac{\alpha(1-\alpha)w}{p_{1}^{2}} & \frac{\alpha}{p_{1}}\frac{(1-\alpha)w}{p_{2}}\\
+\frac{\alpha}{p_{1}}\frac{(1-\alpha)w}{p_{2}} & -\frac{\alpha(1-\alpha)w}{p_{2}^{2}}
+\end{array}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, consider the limited attention consumer due to Gabaix denoted by 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Then the demand system under 
+\begin_inset Formula $G$
+\end_inset
+
+ is: 
+\begin_inset Formula 
+\[
+x_{1}^{G}=\frac{\alpha}{p_{1}^{G}}\frac{w}{\alpha\frac{p_{1}}{p_{1}^{G}}+(1-\alpha)\frac{p_{2}}{p_{2}^{G}}}
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\[
+x_{2}^{G}=\frac{1-\alpha}{p_{2}^{G}}\frac{w}{\alpha\frac{p_{1}}{p_{1}^{G}}+(1-\alpha)\frac{p_{2}}{p_{2}^{G}}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This demand system fulfills Walras' law.
+ This function has an additional parameter, when compared to 
+\begin_inset Formula $x^{CD}(p,w)$
+\end_inset
+
+, i.e., the perceived price 
+\begin_inset Formula $p_{l}^{G}(m_{l})=m_{l}p_{l}+(1-m_{l})p_{l}^{d}$
+\end_inset
+
+.
+ The vector of attention to price changes 
+\begin_inset Formula $m=(m_{1},\quad m_{2})'$
+\end_inset
+
+ weights the actual price 
+\begin_inset Formula $p_{l}$
+\end_inset
+
+ (a variable) and the default price (which is fixed e.g.
+ 
+\begin_inset Formula $p_{l}^{d}=[1\quad1]'$
+\end_inset
+
+) 
+\begin_inset Formula $p_{l}^{d}$
+\end_inset
+
+.
+ We assume that 
+\begin_inset Formula $m_{l}\in[0,1]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $m_{l}=1$
+\end_inset
+
+, then the limited attention consumer is equivalent to the Cobb-Douglas.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) Show that the demand system 
+\begin_inset Formula $x_{1}^{G},x_{2}^{G}$
+\end_inset
+
+ fails WARP.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Show that the Slutsky matrix 
+\begin_inset Formula $S^{G}$
+\end_inset
+
+ of 
+\begin_inset Formula $x_{1}^{G},x_{2}^{G}$
+\end_inset
+
+ evaluated at 
+\begin_inset Formula $p=p^{d}$
+\end_inset
+
+ is equivalent to 
+\begin_inset Formula $S^{G}(p,w)|_{p=p^{d}}=S^{CD}(p,w)|_{p=p^{d}}M$
+\end_inset
+
+ (i.e., 
+\begin_inset Formula $s_{ij}^{G}(p,w)|_{p=p^{d}}=s_{ij}^{CD}(p,w)m_{j}$
+\end_inset
+
+ where 
+\begin_inset Formula 
+\[
+M=\left[\begin{array}{cc}
+m_{1} & 0\\
+0 & m_{2}
+\end{array}\right],m_{1},m_{2}\in[0,1].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(c) Using (b) show that when 
+\begin_inset Formula $m_{1}=m_{2}\neq1$
+\end_inset
+
+ the demand system 
+\begin_inset Formula $x_{1}^{G},x_{2}^{G}$
+\end_inset
+
+ evaluated at 
+\begin_inset Formula $p=p^{d}$
+\end_inset
+
+ is rationalizable by a utility function.
+ Hint: This is an integrability problem, but you do not need to find the
+ underlying utility.
+ 
+\end_layout
+
+\end_body
+\end_document

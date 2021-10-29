@@ -1,0 +1,858 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{babel}
+\usepackage{babel}
+\usepackage{babel}
+
+
+
+
+
+  \providecommand{\assumptionname}{Assumption}
+  \providecommand{\axiomname}{Axiom}
+  \providecommand{\claimname}{Claim}
+  \providecommand{\definitionname}{Definition}
+  \providecommand{\lemmaname}{Lemma}
+  \providecommand{\propositionname}{Proposition}
+  \providecommand{\remarkname}{Remark}
+\providecommand{\corollaryname}{Corollary}
+\providecommand{\theoremname}{Theorem}
+
+
+
+  \providecommand{\axiomname}{Axiom}
+  \providecommand{\claimname}{Claim}
+  \providecommand{\definitionname}{Definition}
+  \providecommand{\remarkname}{Remark}
+\providecommand{\corollaryname}{Corollary}
+\providecommand{\theoremname}{Theorem}
+\end_preamble
+\use_default_options false
+\begin_modules
+theorems-ams-bytype
+theorems-ams-extended-bytype
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding iso8859-15
+\fontencoding default
+\font_roman "cmr" "default"
+\font_sans "cmss" "default"
+\font_typewriter "cmtt" "default"
+\font_math "auto" "auto"
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 10
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 2
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.25in
+\topmargin 1.25in
+\rightmargin 1.25in
+\bottommargin 1.25in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Midterm Exam Microeconomics: 2021
+\end_layout
+
+\begin_layout Author
+Victor H.
+ Aguiar 
+\end_layout
+
+\begin_layout Date
+This version: 2021
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+(30 points) Let 
+\begin_inset Formula $X$
+\end_inset
+
+ be a nonempty and finite set of alternatives.
+ Consider the following bounded rational consumer.
+ Given a menu 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+, the consumer searches sequentially through the menu according to a fixed
+ search order on 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ At each step in the search process, the consumer compares the utility of
+ the item that she sees to a fixed threshold.
+ If the utility of the item is above the threshold then the consumer stops
+ the search and picks the item.
+ Formally, let 
+\begin_inset Formula $S\subseteq X\times X$
+\end_inset
+
+ be a linear order on 
+\begin_inset Formula $X$
+\end_inset
+
+, let 
+\begin_inset Formula $u:X\to\mathbb{R}$
+\end_inset
+
+ be a utility function, and 
+\begin_inset Formula $u^{*}\in\mathbb{R}$
+\end_inset
+
+ be a threshold.
+ The choice correspondence of this bounded rational consumer is given by
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+c_{S}(A)=\{b\in A|u(b)\geq u^{*};\text{there exists no\quad}aSb;u(a)\geq u^{*}\}
+\]
+
+\end_inset
+
+ for all 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+, where the subscript 
+\begin_inset Formula $S$
+\end_inset
+
+ denotes the dependence of the choice correspondence of the linear order
+ that models the search process.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) Show that the choice correspondence 
+\begin_inset Formula $c_{S}$
+\end_inset
+
+ defined above is in fact a choice function.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Show that the choice correspondence 
+\begin_inset Formula $c_{S}$
+\end_inset
+
+ satisfies WARP (define WARP using the notes and textbook).
+ 
+\end_layout
+
+\begin_layout Standard
+(c) Assume you observe a dataset 
+\begin_inset Formula $(2^{X}\setminus\emptyset,c)$
+\end_inset
+
+ (such that 
+\begin_inset Formula $c:2^{X}\setminus\emptyset\to2^{X}\setminus\emptyset$
+\end_inset
+
+ is an observed choice function -possibly different from 
+\begin_inset Formula $c_{BR}$
+\end_inset
+
+-) that satisfies WARP.
+ Show that there is a bounded rational consumer characterized by a triple
+ 
+\begin_inset Formula $(S,u,u^{*})$
+\end_inset
+
+ a linear order on 
+\begin_inset Formula $X$
+\end_inset
+
+, a utility function and a thresholds as in (a) such that 
+\begin_inset Formula $c(A)=c_{BR}(A)$
+\end_inset
+
+ for all 
+\begin_inset Formula $A\in2^{X}\setminus\emptyset$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+d) Assume now that there is a distribution over search orders.
+ Denote the collection of all search orders/linear orders on 
+\begin_inset Formula $X\times X$
+\end_inset
+
+ by 
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+.
+ The distribution over search orders is 
+\begin_inset Formula $\pi\in\Delta(\mathcal{S})$
+\end_inset
+
+.
+ The probability of choice of item 
+\begin_inset Formula $a$
+\end_inset
+
+in menu 
+\begin_inset Formula $A$
+\end_inset
+
+ such is given by 
+\begin_inset Formula $\rho_{A}(a)$
+\end_inset
+
+ where 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $\rho_{A}\in\Delta(A)$
+\end_inset
+
+.
+ Let the stochastic version of the bounded rational model above generate
+ 
+\begin_inset Formula $\rho_{A}$
+\end_inset
+
+ such that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\rho_{A}(a)=\sum_{S\in\mathcal{S}}\pi(S)1(a=c_{S}(A)).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Show that if you have two menus 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ and 
+\begin_inset Formula $a\in A\cap B$
+\end_inset
+
+, it has to be that 
+\begin_inset Formula $\rho_{B}(a)\leq\rho_{B}(a)$
+\end_inset
+
+ (i.e., regularity).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+(30 points) Let 
+\begin_inset Formula $X$
+\end_inset
+
+ be a nonempty and finite set of alternatives.
+ Consider the following stochastic bounded rational consumer called 
+\begin_inset Quotes eld
+\end_inset
+
+stochastic limited consideration (SLC)
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Problem
+Assume there is a default alternative 
+\begin_inset Formula $o\notin X$
+\end_inset
+
+, that is always present in any given menu.
+ Let 
+\begin_inset Formula $X^{*}=X\cup\{o\}$
+\end_inset
+
+.
+ Also let the collection of menus that contain 
+\begin_inset Formula $o$
+\end_inset
+
+ be defined as 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+, such that 
+\begin_inset Formula $A\in\mathcal{A}$
+\end_inset
+
+ if 
+\begin_inset Formula $A\subseteq X^{*}$
+\end_inset
+
+ and 
+\begin_inset Formula $o\in A$
+\end_inset
+
+.
+ Given a menu 
+\begin_inset Formula $A\in\mathcal{A}$
+\end_inset
+
+, the probability of this consumer of choosing an alternative 
+\begin_inset Formula $a$
+\end_inset
+
+ in menu 
+\begin_inset Formula $A$
+\end_inset
+
+, denoted by 
+\begin_inset Formula $\rho_{A}(a)$
+\end_inset
+
+, where 
+\begin_inset Formula $\rho_{A}\in\Delta(A)$
+\end_inset
+
+, is given by the following decision algorithm: First the consumer is endowed
+ with a strict preference relation 
+\begin_inset Formula $\succ$
+\end_inset
+
+ defined over 
+\begin_inset Formula $X^{*}$
+\end_inset
+
+ with the restriction that for any 
+\begin_inset Formula $x\in X$
+\end_inset
+
+, it must be that 
+\begin_inset Formula $x\succ o$
+\end_inset
+
+ (i.e., the default is the worst item).
+ The consumer is also endowed with a distribution over mental categories.
+ Formally, mental categories, 
+\begin_inset Formula $\mathcal{D},$
+\end_inset
+
+ is the collection all subsets of 
+\begin_inset Formula $X^{*}$
+\end_inset
+
+.
+ At each decision trial, the consumer draws a mental category from 
+\begin_inset Formula $\mathcal{D}$
+\end_inset
+
+ with probability 
+\begin_inset Formula $m\in\Delta(\mathcal{D})$
+\end_inset
+
+ with the restriction that 
+\begin_inset Formula $m(D)=0$
+\end_inset
+
+ if 
+\begin_inset Formula $o\notin D$
+\end_inset
+
+ (i.e., the probability of drawing a category that does not have the default
+ is zero).
+ Then the consumer forms a 
+\begin_inset Quotes eld
+\end_inset
+
+consideration set
+\begin_inset Quotes erd
+\end_inset
+
+ by taking the intersection of menu 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $D$
+\end_inset
+
+ such that the consideration set is equal to 
+\begin_inset Formula $D\cap A$
+\end_inset
+
+.
+ Then the consumer maximizes her preferences 
+\begin_inset Formula $\succ$
+\end_inset
+
+ on the consideration set 
+\begin_inset Formula $D\cap A$
+\end_inset
+
+.
+ Finally, she chooses the item that maximizes her preferences on 
+\begin_inset Formula $D\cap A$
+\end_inset
+
+.
+ The resulting probability of this decision algorithm is:
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+\rho_{A}(a)=\sum_{D\in\mathcal{D}}m(D)1(a\succ b\forall b\in(D\cap A),b\neq a),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+where 
+\begin_inset Formula $1(\cdot)=1$
+\end_inset
+
+ when the argument is true and zero otherwise.
+ 
+\end_layout
+
+\begin_layout Itemize
+A complete stochastic dataset, 
+\begin_inset Formula $\rho$
+\end_inset
+
+, is a collection of 
+\begin_inset Formula $\rho_{A}$
+\end_inset
+
+ for all menus 
+\begin_inset Formula $A\in\mathcal{A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+We say that 
+\begin_inset Formula $a$
+\end_inset
+
+ is stochastically revealed preferred to 
+\begin_inset Formula $b$
+\end_inset
+
+ (i.e., 
+\begin_inset Formula $aRb$
+\end_inset
+
+) when 
+\begin_inset Formula $p(b,A\cup\{a\})<p(b,A)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+We say 
+\begin_inset Formula $R$
+\end_inset
+
+ is a acyclic if there is no integer 
+\begin_inset Formula $n\geq2$
+\end_inset
+
+ and 
+\begin_inset Formula $a_{1},\cdots,a_{n}\in X$
+\end_inset
+
+ such that 
+\begin_inset Formula $a_{i}\succ a_{i+1}$
+\end_inset
+
+ for 
+\begin_inset Formula $i=1,\cdots,n-1$
+\end_inset
+
+ and 
+\begin_inset Formula $a_{n}\succ a_{1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+We say that a complete stochastic dataset, 
+\begin_inset Formula $\rho$
+\end_inset
+
+, is regular if for any pair of menus 
+\begin_inset Formula $A,B\in\mathcal{A}$
+\end_inset
+
+ such that 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ it must be that 
+\begin_inset Formula $\rho_{B}(a)\leq p_{A}(a)$
+\end_inset
+
+ for any 
+\begin_inset Formula $a\in A\cap B$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+a) Show that a complete stochastic dataset 
+\begin_inset Formula $\rho$
+\end_inset
+
+ that is generated by a SLC, as described above, implies that the stochastic
+ revealed preference relation 
+\begin_inset Formula $R$
+\end_inset
+
+ is acyclic.
+ 
+\end_layout
+
+\begin_layout Standard
+b) Show that a complete stochastic dataset 
+\begin_inset Formula $\rho$
+\end_inset
+
+ that is generated by a SLC, implies that 
+\begin_inset Formula $\rho$
+\end_inset
+
+ is regular.
+ 
+\end_layout
+
+\begin_layout Standard
+c) Let 
+\begin_inset Formula $\rho$
+\end_inset
+
+ be generated by a SLC with the additional restriction that 
+\begin_inset Formula $m(X^{*})=1$
+\end_inset
+
+ and zero otherwise.
+ This means that this consumer always considers all alternatives.
+ 
+\end_layout
+
+\begin_layout Standard
+Show that the choice correspondence defined by: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+c(A)=\{a\in A:\rho_{A}(a)=1\},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+is a choice function (i.e., single-valued), and that 
+\begin_inset Formula $c(A)$
+\end_inset
+
+ satisfies SARP (first define SARP as seen in class and in the problem sets).
+ 
+\end_layout
+
+\begin_layout Standard
+d) Show that a complete stochastic dataset 
+\begin_inset Formula $\rho$
+\end_inset
+
+ that is generated by a SLC, satisfies the ASRP (Axiom of Stochastic Revealed
+ Preference) as defined in the notes.
+ (Hint: use the equivalence theorem between the ASRP and random utility
+ and define ASRP using the notes.).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+(Modeling question).
+ (30 points) Modeling the 
+\begin_inset Quotes eld
+\end_inset
+
+Endowment Effect
+\begin_inset Quotes erd
+\end_inset
+
+.
+ I am going to present to you a summary of an experiment showing a behavioral
+ bias called the Endowment Effect.
+ The task is to write a decision model algorithm to explain the Endowment
+ Effect.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+The Endowment Effect Experiment.
+ 
+\end_layout
+
+\begin_layout Standard
+Kahneman, Knetch and Thaler [1990], did an experiment with the following
+ features:
+\end_layout
+
+\begin_layout Itemize
+44 subjects 
+\end_layout
+
+\begin_layout Itemize
+22 subjects given mugs 
+\end_layout
+
+\begin_layout Itemize
+The other 22 subjects given nothing 
+\end_layout
+
+\begin_layout Itemize
+Subjects who owned mugs asked to announce the price at which they would
+ be prepared to sell mug 
+\end_layout
+
+\begin_layout Itemize
+Subjects who did not own mug announced price at which they are prepared
+ to buy mug 
+\end_layout
+
+\begin_layout Itemize
+Experimenter figured out prices at which supply of mugs equals demand.
+\end_layout
+
+\begin_layout Standard
+If our subjects are rational consumers then the prediction in this market
+ is:
+\end_layout
+
+\begin_layout Itemize
+Prediction for rationality: As mugs are distributed randomly, we should
+ expect half the mugs (11) to get traded.
+\end_layout
+
+\begin_layout Itemize
+Explanation: Consider the group of mug lovers (i.e.
+ those that have valuation above the median), of which there are 22.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Half of these should have mugs, and half should not.
+ 
+\end_layout
+
+\begin_layout Itemize
+The 11 mug haters that have mugs should trade with the 11 mug lovers that
+ do not.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+The 
+\series bold
+Experiment Outcome 
+\series default
+however differs from the 
+\series bold
+Prediction
+\series default
+, and we call this the 
+\series bold
+Endowment Effect.
+\end_layout
+
+\begin_layout Itemize
+In 4 sessions, the number of trades was 4,1,2 and 2 (respectively per session).
+ 
+\end_layout
+
+\begin_layout Itemize
+Median seller valued mug at $5.25 
+\end_layout
+
+\begin_layout Itemize
+Median buyer valued mug at $2.75 
+\end_layout
+
+\begin_layout Itemize
+Willingness to pay/willingness to accept gap 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Subject's preferences seem to be affected by whether or not their reference
+ point was owning the mug.
+\end_layout
+
+\begin_layout Enumerate
+Explain why the Endowment Effect is not consistent with a traditional model
+ of rationality.
+ Hint: The answer has less to do with the idea of revealed preferences,
+ but more with the idea of stability of preferences.
+ Write down the model of trade formally.
+ You can assume a parametric distribution of preferences, make as simple
+ as possible (uniform distribution).
+ 
+\end_layout
+
+\begin_layout Enumerate
+Propose a decision algorithm that explains the endowment effect given the
+ trading scheme of the experiment.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Calibrate your model parameters to reproduce the experiment outcome.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Grading Criterion
+\end_layout
+
+\begin_layout Enumerate
+Work group is not allowed, if I find out that several of you have essentially
+ the same model, you will receive the total grade of this question divided
+ by the number of students that share the same response.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Every question indicates how much points they are worth out of 90.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The last question will be graded on the following 5 items: Logical consistency
+ of the decision algorithm.
+ Clarity of the explanation of the decision algorithm.
+ Degree of success in explaining the endowment effect (calibration).
+ Clarity in the explanation of the endowment effect using the decision algorithm.
+ Creativity and degree to which you have included topics that we covered
+ in class.
+\end_layout
+
+\end_body
+\end_document
