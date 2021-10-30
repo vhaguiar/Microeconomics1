@@ -323,7 +323,7 @@ Show that if you have two menus
 \end_inset
 
 , it has to be that 
-\begin_inset Formula $\rho_{B}(a)\leq\rho_{B}(a)$
+\begin_inset Formula $\rho_{B}(a)\leq\rho_{A}(a)$
 \end_inset
 
  (i.e., regularity).
@@ -425,6 +425,11 @@ Assume there is a default alternative
 \end_inset
 
  (i.e., the default is the worst item).
+ You can assume that 
+\begin_inset Formula $\succ$
+\end_inset
+
+ is complete and transitive and there is no indifference among any two items.
  The consumer is also endowed with a distribution over mental categories.
  Formally, mental categories, 
 \begin_inset Formula $\mathcal{D},$

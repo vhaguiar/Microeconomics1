@@ -323,7 +323,7 @@ Show that if you have two menus
 \end_inset
 
 , it has to be that 
-\begin_inset Formula $\rho_{B}(a)\leq\rho_{B}(a)$
+\begin_inset Formula $\rho_{B}(a)\leq\rho_{A}(a)$
 \end_inset
 
  (i.e., regularity).
@@ -836,6 +836,8 @@ Grading Criterion
 Work group is not allowed, if I find out that several of you have essentially
  the same model, you will receive the total grade of this question divided
  by the number of students that share the same response.
+ Same goes for the answers to the other two question.
+ I expect that each person has their own individual answers.
  
 \end_layout
 
