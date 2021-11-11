@@ -23478,7 +23478,7 @@ Now notice the first order conditions, for
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\mu\leq c_{j}'(q_{j}),\quad\text{with equality if}\quad q_{j}>0\quad\forall j\in\{1,\cdots,J\}
+\mu=c_{j}'(q_{j}),\quad\text{with equality if}\quad q_{j}>0\quad\forall j\in\{1,\cdots,J\}
 \]
 
 \end_inset
@@ -23489,7 +23489,7 @@ Now notice the first order conditions, for
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\phi_{i}'(x_{i})\leq\mu\quad\text{with equality if}\quad x_{i}>0\quad\forall i\in\{1,\cdots,I\}
+\phi_{i}'(x_{i})=\mu\quad\text{with equality if}\quad x_{i}>0\quad\forall i\in\{1,\cdots,I\}
 \]
 
 \end_inset
