@@ -23923,7 +23923,7 @@ Any Walrasian Equilibrim allocation
 \begin_inset Formula $x^{*}$
 \end_inset
 
- necessarily belongs to the Pareto Set.
+ necessarily belongs to the Pareto Set (under local nonsatiation).
  
 \end_layout
 
@@ -23975,8 +23975,12 @@ x_{i}^{*}\succeq x_{i}'\quad\forall x_{i}'\in\mathbb{R}_{+}^{2}\quad s.t.\quad p
 
 \begin_layout Claim
 If the preferences of the consumers in the Edgeworth box are continuous,
- convex, and strongly monotone, then any Pareto optimal allocation is supportabl
-e as an equilibrium with transfers.
+ 
+\series bold
+convex
+\series default
+, and strongly monotone, then any Pareto optimal allocation is supportable
+ as an equilibrium with transfers.
  
 \end_layout
 
@@ -24128,7 +24132,7 @@ The budget constraint of the consumer is
 \end_layout
 
 \begin_layout Standard
-The consumer optimal demand at prices 
+The consumer optimal demand/offer curve at prices 
 \begin_inset Formula $(p,w)$
 \end_inset
 
@@ -24315,8 +24319,11 @@ The data is:
 \end_layout
 
 \begin_layout Standard
-An economy is pure exchange if the only technology disposable is free disposal,
- that is, 
+An economy is
+\series bold
+ pure exchange 
+\series default
+if the only technology disposable is free disposal, that is, 
 \end_layout
 
 \begin_layout Standard
@@ -24990,7 +24997,7 @@ Under local non-satiation we can write (ii) as:
 \end_inset
 
  then 
-\begin_inset Formula $p\cdot x_{i}\geq p\cdot x_{i}^{*}$
+\begin_inset Formula $p\cdot x_{i}>p\cdot x_{i}^{*}$
 \end_inset
 
 .
