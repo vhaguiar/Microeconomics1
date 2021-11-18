@@ -26016,8 +26016,11 @@ The Walrasian Equilibrium can be redefined here as follows:
 \begin_inset Formula $x_{i}(\cdot)$
 \end_inset
 
- is the Walrasian demand function).
- 
+ is the Walrasian demand function) (i.e., 
+\begin_inset Formula $x_{i}(p,p\cdot\omega_{i})\in argmax\quad u(x)$
+\end_inset
+
+ subject to the budget constraint.) 
 \end_layout
 
 \begin_layout Definition
