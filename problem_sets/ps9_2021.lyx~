@@ -1,0 +1,1662 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{babel}
+\usepackage{babel}
+\usepackage{babel}
+
+
+
+
+
+  \providecommand{\assumptionname}{Assumption}
+  \providecommand{\axiomname}{Axiom}
+  \providecommand{\claimname}{Claim}
+  \providecommand{\definitionname}{Definition}
+  \providecommand{\lemmaname}{Lemma}
+  \providecommand{\propositionname}{Proposition}
+  \providecommand{\remarkname}{Remark}
+\providecommand{\corollaryname}{Corollary}
+\providecommand{\theoremname}{Theorem}
+
+
+
+  \providecommand{\axiomname}{Axiom}
+  \providecommand{\claimname}{Claim}
+  \providecommand{\definitionname}{Definition}
+  \providecommand{\remarkname}{Remark}
+\providecommand{\corollaryname}{Corollary}
+\providecommand{\theoremname}{Theorem}
+\end_preamble
+\use_default_options false
+\begin_modules
+theorems-ams-bytype
+theorems-ams-extended-bytype
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding iso8859-15
+\fontencoding default
+\font_roman "cmr" "default"
+\font_sans "cmss" "default"
+\font_typewriter "cmtt" "default"
+\font_math "auto" "auto"
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 2
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.25in
+\topmargin 1.25in
+\rightmargin 1.25in
+\bottommargin 1.25in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Problem Set 9
+\end_layout
+
+\begin_layout Author
+Victor H.
+ Aguiar 
+\end_layout
+
+\begin_layout Date
+This version: Fall 2020
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+(30 points) Expected Completion time: 20 minutes) Consider an economy with
+ two goods, two consumers
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u_{1}(x_{11},x_{21})=x_{11}-\frac{1}{8}(x_{21})^{-8}$
+\end_inset
+
+ and 
+\begin_inset Formula $u_{2}(x_{12},x_{22})=-\frac{1}{8}(x_{12})^{-8}+x_{22}$
+\end_inset
+
+ with
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega_{1}=(2,r)$
+\end_inset
+
+ and 
+\begin_inset Formula $\omega_{2}=(r,2)$
+\end_inset
+
+, with 
+\begin_inset Formula $r=2^{8/9}-2^{1/9}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+(a) Compute the excess demand for any of the 2 goods.
+ (You can assume nonnegativity of the prices 
+\begin_inset Formula $p>>0$
+\end_inset
+
+).
+ And obtain all equilibria analytically.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+(b) Is the economy regular? Describe formally what is a regular economy
+ and then find out whether this economy is regular.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+(c) Can you intuitively describe what means that the economy is regular?
+ What would happen if the economy is not regular if I perturb the endowments
+ by a bit.
+ In particular, what would happen with the multiple equilibria?
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+(d) Prove the following statement:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Any regular (normalized) equilibrium price vector is locally isolated (or
+ locally unique).
+ That is, there is an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ such that if 
+\begin_inset Formula $p'\neq p$
+\end_inset
+
+, 
+\begin_inset Formula $p_{2}'=p_{L}=1$
+\end_inset
+
+ (where 
+\begin_inset Formula $p_{L}$
+\end_inset
+
+, 
+\begin_inset Formula $p_{L}^{\prime}$
+\end_inset
+
+ are the prices of the last good 
+\begin_inset Formula $L$
+\end_inset
+
+ in vector 
+\begin_inset Formula $p,p'$
+\end_inset
+
+ respectively), and 
+\begin_inset Formula $||p'-p||<\epsilon$
+\end_inset
+
+, then 
+\begin_inset Formula $z(p')\neq0$
+\end_inset
+
+.
+ Moreover, if the economy is regular, then the number of normalized equilibrium
+ price vectors is finite.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+e) Does the aggregate excess demand function satisfy the gross substitutes
+ property?
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+a) Fix 
+\begin_inset Formula $p_{2}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For consumer 1:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $max_{x_{21}}u_{1}=(p\cdot\omega_{1}-p_{2}x_{21})/p_{1}-\frac{1}{8}(x_{21})^{-8}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{21}^{-9}=\frac{p_{2}}{p_{1}}=\frac{1}{p_{1}}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{21}=p_{1}^{1/9}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{11}=(2p_{1}+r-p_{1}^{1/9})/p_{1}=2+\frac{r}{p_{1}}-p^{-8/9}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+For consumer 2:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $max_{x_{12}}-\frac{1}{8}(x_{12})^{-8}+(p\cdot\omega_{2}-p_{1}x_{12})/p_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{12}^{-9}=\frac{p_{1}}{p_{2}}=p_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{12}=p_{1}^{-1/9}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{22}=p_{1}r+2-p_{1}^{8/9}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The excess demand for good 2 is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z_{2}(p_{1})=x_{21}+x_{22}-\omega_{21}-\omega_{22}=p_{1}r+2-p_{1}^{8/9}+p_{1}^{1/9}-r-2=r(p_{1}-1)+p_{1}^{1/9}-p_{1}^{8/9}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z_{2}(p_{1})=0$
+\end_inset
+
+, for 
+\begin_inset Formula $p_{1}=2$
+\end_inset
+
+, 
+\begin_inset Formula $p_{1}=1$
+\end_inset
+
+ and for 
+\begin_inset Formula $p_{1}=1/2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+b) 
+\begin_inset Formula $Dz_{2}(p_{1})=r+\frac{1-8p_{1}^{7/9}}{9p_{1}^{8/9}}$
+\end_inset
+
+, at 
+\begin_inset Formula $p_{1}=\{1,2,\frac{1}{2}\}$
+\end_inset
+
+ is non-zero therefore the economy is regular.
+ 
+\end_layout
+
+\begin_layout Standard
+c) The economy is regular thus its multiple equilibria are robust to small
+ perturbations of the endowment.
+ 
+\end_layout
+
+\begin_layout Standard
+e) The local uniqueness of a regular solution is a direct consequence of
+ the inverse function theorem.
+ For any infinitesimal change in normalized prices, 
+\begin_inset Formula $dp\neq0$
+\end_inset
+
+ , the nonsingularity of 
+\begin_inset Formula $D\hat{z}(p)$
+\end_inset
+
+ implies that 
+\begin_inset Formula $D\hat{z}(p)dp\neq0$
+\end_inset
+
+, thus we cannot remain in equilibrium.
+ 
+\end_layout
+
+\begin_layout Standard
+Continuity of the excess demand and the properties that it blows up when
+ prices are close to zero and the incompatibility of zero prices with equilibriu
+m following form strongly montone preference, imply that the set of equilibrium
+ prices is a closed set in 
+\begin_inset Formula $\mathbb{R}^{L-1}.$
+\end_inset
+
+ Any set that is closed and bounded and discrete (by the regularity part)
+ is necessarily finite.
+ 
+\end_layout
+
+\begin_layout Standard
+d) No, if it satisfied the gross substitutes property then the equilibrium
+ would be unique.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+(40 points) Modeling the 
+\begin_inset Quotes eld
+\end_inset
+
+Endowment Effect
+\begin_inset Quotes erd
+\end_inset
+
+.
+ I am going to present to you a summary of an experiment showing a behavioral
+ bias called the Endowment Effect.
+ The task is to write a decision model algorithm to explain the Endowment
+ Effect.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+The Endowment Effect Experiment.
+ 
+\end_layout
+
+\begin_layout Standard
+Kahneman, Knetch and Thaler [1990], did an experiment with the following
+ features:
+\end_layout
+
+\begin_layout Itemize
+44 subjects 
+\end_layout
+
+\begin_layout Itemize
+22 subjects given mugs 
+\end_layout
+
+\begin_layout Itemize
+The other 22 subjects given nothing 
+\end_layout
+
+\begin_layout Itemize
+Subjects who owned mugs asked to announce the price at which they would
+ be prepared to sell mug 
+\end_layout
+
+\begin_layout Itemize
+Subjects who did not own mug announced price at which they are prepared
+ to buy mug 
+\end_layout
+
+\begin_layout Itemize
+Experimenter figured out prices at which supply of mugs equals demand.
+\end_layout
+
+\begin_layout Standard
+If our subjects are rational consumers then the prediction in this market
+ is:
+\end_layout
+
+\begin_layout Itemize
+Prediction for rationality: As mugs are distributed randomly, we should
+ expect half the mugs (11) to get traded.
+\end_layout
+
+\begin_layout Itemize
+Explanation: Consider the group of mug lovers (i.e.
+ those that have valuation above the median), of which there are 22.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Half of these should have mugs, and half should not.
+ 
+\end_layout
+
+\begin_layout Itemize
+The 11 mug haters that have mugs should trade with the 11 mug lovers that
+ do not.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+The 
+\series bold
+Experiment Outcome 
+\series default
+however differs from the 
+\series bold
+Prediction
+\series default
+, and we call this the 
+\series bold
+Endowment Effect.
+\end_layout
+
+\begin_layout Itemize
+In 4 sessions, the number of trades was 4,1,2 and 2 (respectively per session).
+ 
+\end_layout
+
+\begin_layout Itemize
+Median seller valued mug at $5.25 
+\end_layout
+
+\begin_layout Itemize
+Median buyer valued mug at $2.75 
+\end_layout
+
+\begin_layout Itemize
+Willingness to pay/willingness to accept gap 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Subject's preferences seem to be affected by whether or not their reference
+ point was owning the mug.
+\end_layout
+
+\begin_layout Enumerate
+Explain why the Endowment Effect is not consistent with a traditional model
+ of rationality.
+ Hint: The answer has less to do with the idea of revealed preferences,
+ but more with the idea of stability of preferences.
+ Write down the model of trade formally.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Propose a decision algorithm that explains the endowment effect given the
+ trading scheme of the experiment.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Grading Criterion
+\end_layout
+
+\begin_layout Enumerate
+Work group is not allowed, if I find out that several of you have essentially
+ the same model, you will receive the total grade of this question divided
+ by the number of students that share the same response.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Every question indicates how much points they are worth out of 100.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The last question will be graded on the following 5 items: Logical consistency
+ of the decision algorithm.
+ Clarity of the explanation of the decision algorithm.
+ Degree of success in explaining the endowment effect.
+ Clarity in the explanation of the endowment effect using the decision algorithm.
+ Creativity and degree to which you have included topics that we covered
+ in class (limited attention, reference dependence, among others).
+\end_layout
+
+\begin_layout Standard
+Hint: 
+\end_layout
+
+\begin_layout Standard
+Consider now two time periods 
+\begin_inset Formula $t=0,1$
+\end_inset
+
+, 
+\begin_inset Formula $t=0$
+\end_inset
+
+ means that this is before the experiments happens, and 
+\begin_inset Formula $t=1$
+\end_inset
+
+ is after the treatment is assigned.
+ 
+\end_layout
+
+\begin_layout Standard
+The valuation of a mug for subject 
+\begin_inset Formula $i$
+\end_inset
+
+ at 
+\begin_inset Formula $t$
+\end_inset
+
+ is 
+\begin_inset Formula $v_{i,t}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Assumption: Under Rationality, assume that 
+\begin_inset Formula $v_{i,t}$
+\end_inset
+
+ is i.i.d.
+ from some uniform distribution on 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+, and pretty much 
+\begin_inset Formula $v_{i0}=v_{i1}$
+\end_inset
+
+ (i.e., this means the subject is not changing her preferences).
+ 
+\end_layout
+
+\begin_layout Standard
+Under the assumption of rationality, if we select 
+\begin_inset Formula $N$
+\end_inset
+
+ individuals, at random.
+ 
+\end_layout
+
+\begin_layout Standard
+With probability 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+, I assign an individual to the Mug Treatment group.
+ 
+\end_layout
+
+\begin_layout Standard
+This implies that that the share of individual that like the mugs (e.g., 
+\begin_inset Formula $v_{i}\geq\frac{1}{2}$
+\end_inset
+
+) in the treatment group is 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ of the size of Mug lovers and the other 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ of the Mug lovers is in the control group.
+ 
+\end_layout
+
+\begin_layout Standard
+If preferences are rational, i.e., 
+\begin_inset Quotes eld
+\end_inset
+
+stable
+\begin_inset Quotes erd
+\end_inset
+
+, the number of transaction in expectation has to be 
+\begin_inset Formula $N/2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+(30 points) Computational Robinson Crusoe.
+ 
+\end_layout
+
+\begin_layout Problem
+Robinson Crusoe is trapped in an island and he spends his days eating coconuts
+ (
+\begin_inset Formula $c$
+\end_inset
+
+) or napping on the beach -getting Vitamin D-(
+\begin_inset Formula $d)$
+\end_inset
+
+.
+ His utility funciton is
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{equation}
+U(c,d)=\alpha ln(c)+(1-\alpha)ln(d)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+with 
+\begin_inset Formula $\alpha\in[0,1]$
+\end_inset
+
+ a parameter.
+ Coconuts 
+\begin_inset Formula $c$
+\end_inset
+
+ are measured in 
+\begin_inset Formula $kg$
+\end_inset
+
+ in a week so 
+\begin_inset Formula $c\in\mathbb{R}_{+}^{L}$
+\end_inset
+
+, and 
+\begin_inset Formula $d\in[0,\overline{L}]$
+\end_inset
+
+ is measured as the total of hours in a week Robinson spends in the beach,
+ where 
+\begin_inset Formula $\overline{L}$
+\end_inset
+
+ is the total amount of hours in a week.
+ 
+\end_layout
+
+\begin_layout Problem
+Coconuts need to be harvested from the Island's trees.
+ The time Robinson spends collecting coconuts from trees is measured in
+ ours 
+\begin_inset Formula $l\in[0,\overline{L}]$
+\end_inset
+
+.
+ Since the island is very isolated we assume that 
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{equation}
+l+d=\overline{L}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Hence, Robinson can only work or nap in the beach and the time he spends
+ consuming the coconuts is negligible.
+ 
+\end_layout
+
+\begin_layout Problem
+The productivity of Robinson is given by
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{equation}
+f(l)=Al^{\beta},
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+where 
+\begin_inset Formula $A>0$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta\in(0,1)$
+\end_inset
+
+ are fixed parameters.
+ We assume, that Robinson cannot consume coconuts he has not collected himself
+ so:
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{equation}
+c=f(l).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Since Robinson wants to be happy his consumption and working decision are
+ the solution to the following problem:
+\end_layout
+
+\begin_layout Problem
+Centralized problem:
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+\max_{c,l}\alpha ln(c)+(1-\alpha)ln(\overline{L}-l)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+s.t.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+c=Al^{\beta}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+1) Let 
+\begin_inset Formula $\overline{L}=100$
+\end_inset
+
+.
+ Show this centralized problem has a solution, and also show that this solution
+ is unique.
+ 
+\end_layout
+
+\begin_layout Problem
+2) Compute the close-form solution of the consumption and labor decisions
+ of Robinson Crusoe's centralized problem.
+ 
+\end_layout
+
+\begin_layout Problem
+3) Write down the equivalent descentralized general equilibrium problem
+ associated to the centralized problem above.
+ In other words, break down the problem of Robinson into a consumer problem
+ and a firm problem.
+ Show that both problems produce the same solution.
+ Show that the problem has a solution using a fixed-point argument.
+ 
+\end_layout
+
+\begin_layout Problem
+Check the notes for this.
+ In the descentralized problem you need to find the allocations 
+\begin_inset Formula $c^{*},l^{*}$
+\end_inset
+
+, assume the price of coconuts is set to 
+\begin_inset Formula $1$
+\end_inset
+
+ (
+\begin_inset Formula $p=1$
+\end_inset
+
+) and the wage for labor 
+\begin_inset Formula $l$
+\end_inset
+
+ is 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ Profits of the firm are denoted by 
+\begin_inset Formula $\pi$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Problem
+4) Calibration.
+ Imagine an observer (Friday) has collected the following dataset that correspon
+ds to the behavior of the descentralized economy in 3).
+ 
+\end_layout
+
+\begin_layout Problem
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+variable
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{*}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60.056
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l^{*}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $6.250$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $w$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.961
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pi^{*}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+54.01
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $50$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Use this dataset to compute the implied values 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ using 3).
+\end_layout
+
+\begin_layout Problem
+5) Implement the descentralized general equilibrium problem in Julia, with
+ the calibrated 
+\begin_inset Formula $\alpha,\beta$
+\end_inset
+
+ from 4) and solve it numerically.
+ Verify the solutions of your sytem of equations reproduce the dataset Friday
+ collected.
+ 
+\end_layout
+
+\begin_layout Proof
+1) 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\frac{\alpha}{1-\alpha}(\overline{L}-l)w=c\iff w=\frac{(1-\alpha)c}{\alpha(\overline{L}-l)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Al^{\beta}=c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $A\beta l^{\beta-1}=w$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+From the first equations derive labor supply:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $l^{s}=\overline{L}-\frac{(1-\alpha)c}{\alpha w}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+From the second and third equation replace 
+\begin_inset Formula $w$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ with respec to 
+\begin_inset Formula $l$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $l^{s}=\overline{L}-\frac{(1-\alpha)Al^{\beta}}{\alpha A\beta l^{\beta-1}}=\overline{L}-\frac{(1-\alpha)l}{\alpha\beta}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+This is a map 
+\begin_inset Formula $f:[0,\overline{L}]\to[0,\overline{L}]$
+\end_inset
+
+, defined by 
+\begin_inset Formula $f(l)=\overline{L}-\frac{(1-\alpha)Al^{\beta}}{\alpha A\beta l^{\beta-1}}$
+\end_inset
+
+, this map is continous, and is a self-map from a compact and convex set
+ to itself.
+ It has a fixed point.
+ This means there exists an 
+\begin_inset Formula $f(l^{*})=l^{*}$
+\end_inset
+
+, that is a solution to this general equilibrium problem.
+ 
+\end_layout
+
+\begin_layout Proof
+Once you have done that 
+\begin_inset Formula $c^{*}=A(l)^{*\beta}$
+\end_inset
+
+, and 
+\begin_inset Formula $w^{*}=A\beta(l^{*})^{\beta-1}$
+\end_inset
+
+.
+ So the general equilibrium has a solution.
+ 
+\end_layout
+
+\begin_layout Proof
+Solution 2:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\frac{\alpha}{1-\alpha}\frac{(\overline{L}-l)}{c}=\frac{p}{w}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $A\beta l^{\beta-1}=\frac{w}{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Al^{\beta}=c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Then we obtain:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $l=f_{l}(\frac{p}{w})=(\frac{w}{p}\frac{1}{A\beta})^{\frac{1}{\beta-1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $c=f_{c}(\frac{p}{w})=Af_{l}(\frac{p}{w})^{\beta}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+This means that we can write
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $p=w\frac{\alpha}{1-\alpha}\frac{(\overline{L}-f_{l}(\frac{p}{w}))}{f_{c}(\frac{p}{w})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $w=pA\beta f_{l}(\frac{p}{w})^{\beta-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $p+w=1$
+\end_inset
+
+, so we have 
+\begin_inset Formula $\phi:\Delta\to\Delta$
+\end_inset
+
+, defined as
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\phi\left(\begin{array}{c}
+p\\
+w
+\end{array}\right)=\left(\begin{array}{c}
+w\frac{\alpha}{1-\alpha}\frac{(\overline{L}-f_{l}(\frac{p}{w}))}{f_{c}(\frac{p}{w})}\\
+pA\beta f_{l}(\frac{p}{w})^{\beta-1}
+\end{array}\right),$
+\end_inset
+
+ this function is continuous under reasonable assumptions on the parameters,
+ formally you would have to deal with the boundary cases, but here we know
+ that under these parametric assumptions the fixed point will happen at
+ the interior.
+ 
+\end_layout
+
+\begin_layout Proof
+Use Brouwer's fixed point theorem to conclude that there is a solution.
+ 
+\end_layout
+
+\begin_layout Subsection
+a
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{split}\max_{c,l} & \alpha\ln(c)+(1-\alpha)\ln(I-l)\\
+ & s.t.\;c=Al^{\beta}
+\end{split}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $l\in[0,100]$
+\end_inset
+
+, 
+\begin_inset Formula $A>0$
+\end_inset
+
+, then 
+\begin_inset Formula $C\geq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Plug 
+\begin_inset Formula $c=Al^{\beta}$
+\end_inset
+
+ into the utility function,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\max_{l}\alpha\ln(Al^{\beta})+(1-\alpha)\ln(I-l)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\max_{l}\alpha\ln(A)+\alpha\beta\ln(l)+(1-\alpha)\ln(I-l)
+\end{equation}
+
+\end_inset
+
+FOC yields 
+\begin_inset Formula 
+\begin{equation}
+\alpha\beta\frac{1}{l}-(1-\alpha)\frac{1}{100-l}.
+\end{equation}
+
+\end_inset
+
+SOC yields 
+\begin_inset Formula 
+\begin{equation}
+-\alpha\beta\frac{1}{l^{2}}-(1-\alpha)\frac{1}{(100-l)^{2}}<0.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $u$
+\end_inset
+
+ is continuous, 
+\begin_inset Formula $l\in[0,100]$
+\end_inset
+
+ is compact, by Weierstrass theorem, the problem has a solution.
+ The solution is unique by SOC.
+\end_layout
+
+\begin_layout Subsection
+b
+\end_layout
+
+\begin_layout Standard
+FOC yields 
+\begin_inset Formula 
+\begin{equation}
+\alpha\beta\frac{1}{l}-(1-\alpha)\frac{1}{100-l}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then we have
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+l^{*}=\frac{100\alpha\beta}{1-\alpha+\alpha\beta}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+c^{*}=Al^{*\beta}=A[\frac{100\alpha\beta}{1-\alpha+\alpha\beta}]^{\beta}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+c
+\end_layout
+
+\begin_layout Standard
+Decentralized general equilibrium problem
+\end_layout
+
+\begin_layout Standard
+Firm problem
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{split}\max_{l} & \pi=Al^{\beta}-\omega l\\
+ & s.t.\;l\in[0,100]
+\end{split}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+House hold problem, given 
+\begin_inset Formula $\pi$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+\begin{split}\max_{c,\alpha} & \alpha\ln(c)+(1-\alpha)ln(d)\\
+s.t.\;\; & c=\omega l+\pi\\
+ & l+d=100\\
+ & d\in[0,100]
+\end{split}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+market clearing 
+\begin_inset Formula 
+\begin{equation}
+\begin{split}l & =100-d\\
+c & =Al^{\beta}
+\end{split}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Solve firm problem FOC: 
+\begin_inset Formula 
+\begin{equation}
+\beta Al^{\beta-1}=\omega
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula $\pi=Al^{\beta}-\omega l=Al^{\beta}-\beta Al^{\beta-1}=(1-\beta)Al^{\beta}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For household problem
+\end_layout
+
+\begin_layout Standard
+FOC: 
+\begin_inset Formula 
+\begin{equation}
+\frac{\alpha}{c}=\lambda\;\;and\;\;\frac{1-\alpha}{\alpha}=\lambda\omega
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+c=\omega[100-d]+\pi
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{1-\alpha}{\alpha}=\frac{\alpha}{c}\omega=\frac{\alpha}{c}\beta Al
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+(1-\alpha)c=\alpha\beta Al^{\beta-1}d
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+(1-\alpha)Al^{\beta}=\alpha\beta Al^{\beta-1}[100-l]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+(1-\alpha)l+\alpha\beta l=100\alpha\beta
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+l^{*}=\frac{100\alpha\beta}{1-\alpha+\alpha\beta}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+c^{*}=Al^{*\beta}=A[\frac{100\alpha\beta}{1-\alpha+\alpha\beta}]^{\beta}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
