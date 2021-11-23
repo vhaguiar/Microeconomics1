@@ -28745,7 +28745,7 @@ enberg theorem or quantifier elimination.
 \end_layout
 
 \begin_layout Standard
-- The Tarski-Seidenberg theorem provides and algorithm which in principle
+- The Tarski-Seidenberg theorem provides an algorithm which in principle
  can be used to carry out the elimination of the unobservable in a finite
  number of steps.
  
@@ -29298,7 +29298,7 @@ Cyclical Consistency CC
 \begin_inset Quotes erd
 \end_inset
 
- i.e.
+ (i.e., GARP) i.e.
  for all 
 \begin_inset Formula $\{r,s,t,\cdots,q\}$
 \end_inset
@@ -30528,6 +30528,79 @@ status open
 \backslash
 end{proof}
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Counterfactual Predictions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\{w_{t}^{r},p^{r}\}_{t\in1,\cdots,T,r=1,\cdots,N}$
+\end_inset
+
+ the GE inequalities are satisfied.
+ 
+\end_layout
+
+\begin_layout Standard
+Given an out-of-sample endowment 
+\begin_inset Formula $\omega_{t}^{N+1}$
+\end_inset
+
+ for 
+\begin_inset Formula $t\in1,\cdots,T$
+\end_inset
+
+, there exists 
+\begin_inset Formula $p^{N+1}$
+\end_inset
+
+s.t.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall,t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overline{V}_{t}^{N+1}\geq\overline{V}_{t}^{r}+\lambda_{t}^{r}\mathbf{p^{N+1}}(x_{t}^{N+1}-x_{t}^{r})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overline{V}_{t}^{r}\geq\cdots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+M.C.
+ conditions, positivity conditions have to hold, budget conditions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p^{N+1}x^{N+1}=p^{N+1}w^{N+1}.
+\]
 
 \end_inset
 
