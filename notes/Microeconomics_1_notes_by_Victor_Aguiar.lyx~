@@ -30559,7 +30559,7 @@ Given an out-of-sample endowment
 \begin_inset Formula $p^{N+1}$
 \end_inset
 
-s.t.
+ s.t.
 \end_layout
 
 \begin_layout Standard
@@ -33230,19 +33230,12 @@ Example: Consumption is given by the cells
 \end_layout
 
 \begin_layout Itemize
-Wages are given by cells 
-\begin_inset Formula $S_{5,1}$
+Wages are the payment from S
+\begin_inset Formula $_{1,5}$
 \end_inset
 
- the payment of industry 
-\begin_inset Formula $1$
-\end_inset
-
- Agriculture to labor factor 
-\begin_inset Formula $5$
-\end_inset
-
-.
+ is the flow of money form Agriculture to Labor.
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -33601,7 +33594,7 @@ Households
 
 \begin_layout Plain Layout
 9.
- Row
+ RoW
 \end_layout
 
 \end_inset
@@ -34729,6 +34722,107 @@ Totals
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Calibration of the Parameter of the Utility Function
+\end_layout
+
+\begin_layout Standard
+Calibration entails finding values of the parameters of the model that deliver
+ outcomes of the economy that matches the SAM.
+ 
+\end_layout
+
+\begin_layout Standard
+For example for the shares of CD for the consumer demand function we can
+ do the following:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q_{h,i}^{D}=\beta_{h,i}\left[\frac{Y_{h}}{P_{i}}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We observe 
+\begin_inset Formula $Q_{Workers,Rural}^{D}=2.167$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Y_{workers}=2.889$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+External data from CPI, StatsCan
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{rural}=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\beta_{workers,rural}=\frac{Q_{h,i}^{D}}{Y_{h}}=\frac{2.167}{2.889}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A model of CGE that when solved (finding the prices given the parameters
+ and the allocations) it will match the SAM.
+ 
+\end_layout
+
+\begin_layout Subsection
+Counterfactuals of the CGE
+\end_layout
+
+\begin_layout Standard
+Then you modify one equation in the system for instance say I want to add
+ a tariff
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P_{i}=ER\cdot PW_{i}*T_{i},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+at baseline 
+\begin_inset Formula $T_{i}=0$
+\end_inset
+
+ (the baseline is a free-trade economy) and then you can evaluate the counterfac
+tual effects of changing a tariff.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{i}^{c}=1.10$
+\end_inset
+
+.
+ 
 \end_layout
 
 \end_body
