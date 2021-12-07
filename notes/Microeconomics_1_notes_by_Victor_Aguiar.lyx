@@ -31601,7 +31601,7 @@ A matching
 \end_inset
 
  is Pareto efficient if there is no other matching 
-\begin_inset Formula $\nu$
+\begin_inset Formula $v$
 \end_inset
 
  such that 
@@ -31662,7 +31662,7 @@ w\succ_{m}\mu(m)\quad and\quad m\succ_{w}\mu(w).
 \end_layout
 
 \begin_layout Standard
-A matching is stable if it is not blocked by any individual pair.
+A matching is stable if it is not blocked by any individual or a pair.
  The next result follows inmediately.
  
 \end_layout
@@ -31759,7 +31759,11 @@ begin{proof}
 \end_layout
 
 \begin_layout Standard
+
+\series bold
 Improvement Lemma.
+
+\series default
  If 
 \begin_inset Formula $m$
 \end_inset

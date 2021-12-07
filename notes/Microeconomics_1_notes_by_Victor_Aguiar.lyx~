@@ -30724,7 +30724,7 @@ Preferences are defined over
 \begin_layout Standard
 \begin_inset Formula 
 \[
-x_{i}\succeq_{i}x_{i}'\iff\sum_{s}\pi_{si}u_{si}(x_{1si},\cdots,x_{Lsi})\geq\sum_{s}\pi_{si}u_{si}(x'_{1si},\cdots,x'_{Lsi}).
+x_{i}\succeq_{i}x_{i}'\iff U_{i}(x_{i})=\sum_{s}\pi_{si}u_{si}(x_{1si},\cdots,x_{Lsi})\geq\sum_{s}\pi_{si}u_{si}(x'_{1si},\cdots,x'_{Lsi}).
 \]
 
 \end_inset
@@ -30981,7 +30981,7 @@ for every
 \begin_inset Formula $s$
 \end_inset
 
- and for every consumer
+ and for every consumer 
 \begin_inset Formula $i$
 \end_inset
 
@@ -31092,12 +31092,12 @@ We make two normalizations (i)
 \begin_inset Formula $p\in(p_{1},\cdots,p_{S})\in\mathbb{R}_{++}^{LS}$
 \end_inset
 
- constitue an Arrow-Debreu equilibrium, then there are prices 
+ constitute an Arrow-Debreu equilibrium, then there are prices 
 \begin_inset Formula $q\in\mathbb{R}_{++}^{S}$
 \end_inset
 
-for contingent first good commodities and consumption plans for these commoditie
-s 
+ for contingent first good commodities and consumption plans for these commoditi
+es 
 \begin_inset Formula $z^{*}\in\mathbb{R}^{SI}$
 \end_inset
 
