@@ -644,7 +644,118 @@ z_{ij}=-\alpha_{i}-\alpha_{j}+\rho log(t_{ij}).
 \end_layout
 
 \begin_layout Problem
-(General Equilibrium)  
+(General Equilibrium) Consider a choice set 
+\begin_inset Formula $X$
+\end_inset
+
+, and a consumer with preference defined over 
+\begin_inset Formula $X$
+\end_inset
+
+, 
+\begin_inset Formula $\succeq\subseteq X\times X$
+\end_inset
+
+, such that the preferences are a preorder (but not necessarily complete).
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+1) Consider the following economy:
+\end_layout
+
+\begin_layout Definition
+Consider a triple of consumers, firms and endowments 
+\begin_inset Formula $(\{X_{i},\succeq_{i}\}_{i=1}^{I},\{Y_{j}\}_{j=1}^{J},\omega)$
+\end_inset
+
+, where 
+\begin_inset Formula $X_{i}=X\subseteq\mathbb{R}_{+}^{L}$
+\end_inset
+
+, where 
+\begin_inset Formula $L\geq2$
+\end_inset
+
+ is the number of goods, 
+\begin_inset Formula $\succeq_{i}$
+\end_inset
+
+ is a (possibly incomplete preorder) 
+\series bold
+that is locally non-satiated
+\series default
+ for all consumers 
+\begin_inset Formula $i\in\{1,\cdots,I$
+\end_inset
+
+}, 
+\begin_inset Formula $Y_{j}\subseteq\mathbb{R}^{L}$
+\end_inset
+
+ is the production set, and 
+\begin_inset Formula $\omega\in\mathbb{R}_{+}^{L\times I}$
+\end_inset
+
+ is a vector of endowments.
+ 
+\end_layout
+
+\begin_layout Definition
+Prove that if an allocation 
+\begin_inset Formula $(x^{*},y^{*})$
+\end_inset
+
+ in the above defined economy, an a price vector 
+\begin_inset Formula $p=(p_{1},\cdots,p_{L})$
+\end_inset
+
+ constitute a price equilibrium with transfers, then the allocation 
+\begin_inset Formula $(x^{*},y^{*})$
+\end_inset
+
+ is Pareto optimal.
+ (Hint: Write down the definition of a price equilibrium with transfers
+ using the (possibly incomplete) preorder 
+\begin_inset Formula $\succeq_{i}$
+\end_inset
+
+.
+ Note that when preferences are incomplete you have to modify the notion
+ of preference maximization.)
+\end_layout
+
+\begin_layout Definition
+2) Consider the economy in 1).
+ What conditions on 
+\begin_inset Formula $\succeq_{i}$
+\end_inset
+
+ for all 
+\begin_inset Formula $i\in\{1,\cdots,I\}$
+\end_inset
+
+ and on 
+\begin_inset Formula $Y_{j}$
+\end_inset
+
+ for all 
+\begin_inset Formula $j\in\{1,\cdots,J\}$
+\end_inset
+
+ would suffice to guarantee that every Pareto efficient allocation 
+\begin_inset Formula $(x^{*},y^{*})$
+\end_inset
+
+ can be decentralized as a Price 
+\series bold
+quasi-equilibrium
+\series default
+ with transfers? Be formal about the conditions you impose (define them),
+ and show that they imply that the second welfare theorem holds in your
+ setup with incomplete preferences.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -664,9 +775,14 @@ z_{ij}=-\alpha_{i}-\alpha_{j}+\rho log(t_{ij}).
 \end_inset
 
 .
- I am going summarize our Top Trading Cycles (TTC) activity, that exhibits
- a behavioral bias called the Endowment Effect with dynamic traits.
- The task is to write a decision model algorithm to explain the stylized
+ I am going summarize an in class experiment that took place on December
+ 2020 regarding Top Trading Cycles (TTC) activity, that exhibits a behavioral
+ bias called the Endowment Effect with dynamic traits.
+ 
+\end_layout
+
+\begin_layout Problem
+The task is to write a decision model algorithm to explain the stylized
  facts our our TTC activity: namely, the number of trades realized with
  respect to total trades is smaller in the treatment group than in the control.
  More important, the expected value of trade in the treatment group is smaller
@@ -713,6 +829,46 @@ A set of 15 exam-structures where randomly assigned as initial endowments
  exam.
  The students faced a similar structure in the midterm exam, but otherwise
  did not had access to the final exam.
+ An exam structure is a positive vector 
+\begin_inset Formula $(a_{s},b_{s},c_{s})$
+\end_inset
+
+ where 
+\begin_inset Formula $a_{s}+b_{s}+c_{S}=100$
+\end_inset
+
+, and 
+\begin_inset Formula $a_{s}$
+\end_inset
+
+ gives the percentage points assigned to question 1 for student 
+\begin_inset Formula $s$
+\end_inset
+
+, 
+\begin_inset Formula $b_{s}$
+\end_inset
+
+ the percentage points assigned to question 2 for student 
+\begin_inset Formula $s$
+\end_inset
+
+, and 
+\begin_inset Formula $c_{s}$
+\end_inset
+
+ the percentage points assigned to question 3 for student 
+\begin_inset Formula $s$
+\end_inset
+
+.
+ Each exam structure assigned to student 
+\begin_inset Formula $s$
+\end_inset
+
+ then gives a different weight to each of the three question.
+ Since students may have heterogeneous skills and preferences that affect
+ which exam structure they like.
  
 \end_layout
 

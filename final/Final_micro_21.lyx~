@@ -123,7 +123,7 @@ theorems-ams-extended-bytype
 \begin_body
 
 \begin_layout Title
-Final Microeconomics 2020
+Final Microeconomics 2021
 \end_layout
 
 \begin_layout Author
@@ -132,12 +132,12 @@ Victor H.
 \end_layout
 
 \begin_layout Date
-This version: December 2020
+This version: December 2021
 \end_layout
 
 \begin_layout Abstract
-This exam has three sections Theory, Programming, and Modeling.
- You will be graded on the basis of your exam-structure over 100 points.
+This exam has three problems, the third one is modelling.
+ You will be graded on the basis of your exam-structure over 90 points.
  Work group is not allowed, if I find out that several of you have essentially
  the same responses in any section, e.g., the same model, the same code, the
  same derivations, you will receive the total grade of this question divided
@@ -644,251 +644,7 @@ z_{ij}=-\alpha_{i}-\alpha_{j}+\rho log(t_{ij}).
 \end_layout
 
 \begin_layout Problem
-(Programming Part) The results from Problem 1, can be used here even if
- you did not answered correctly to the previous question.
- No need to proof anything here.
- With the previous results, we obtain the gravity system of equations characteri
-zing the general equilibrium of trade:
-\end_layout
-
-\begin_layout Problem
-\begin_inset Formula 
-\[
-x_{ij}=\frac{y_{i}y_{j}}{y^{w}}\left(\frac{t_{ij}}{P_{i}P_{j}}\right)^{1-\sigma},
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Problem
-\begin_inset Formula 
-\[
-P_{j}^{1-\sigma}=\sum_{i\in I}P_{i}^{\sigma-1}\theta_{i}t_{ij}^{1-\sigma}\forall j.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Problem
-1) Solve this system of equations in Julia, for the parameters provided
- in the file /GitHub/Microeconomics1/finalexam/programming/gravity_model_paramet
-ers.jl or in the /GitHub/Microeconomics1/finalexam/programming/data t.csv,
- y.csv and lxhat.csv files inside this folder.
- Remember for this you have 
-\begin_inset Formula $I=\{1,\cdots,30\}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Problem
-Hint: This is a triangular system of equations.
- The parameters are 
-\begin_inset Formula $y_{i},t_{i,j}\forall i,j\in I$
-\end_inset
-
- and 
-\begin_inset Formula $\sigma=1/2$
-\end_inset
-
-.
- You do not need anything else.
- 
-\end_layout
-
-\begin_layout Problem
-Hint: Say you want to minimize the following function 
-\begin_inset Formula $f(z_{1},z_{1}\cdots,z_{I})=\sum_{j=1}^{I}(\sum_{i=1}^{I}z_{i}\theta_{ij})^{2}$
-\end_inset
-
- in JuMP.
- 
-\end_layout
-
-\begin_layout Problem
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-import JuMP 
-\end_layout
-
-\begin_layout Plain Layout
-
-import Ipopt 
-\end_layout
-
-\begin_layout Plain Layout
-
-##Read CSV files and DataFrames management.
-\end_layout
-
-\begin_layout Plain Layout
-
-I=30
-\end_layout
-
-\begin_layout Plain Layout
-
-theta=ones(I,I)
-\end_layout
-
-\begin_layout Plain Layout
-
-example=JuMP.Model(Ipopt.Optimizer) 
-\end_layout
-
-\begin_layout Plain Layout
-
-JuMP.@variable(example,z[1:I]>=0)
-\end_layout
-
-\begin_layout Plain Layout
-
-JuMP.@NLobjective(,Min,sum((sum( x[i]*theta[i,j] for i in 1:I))^2 for j in
- 1:I)) 
-\end_layout
-
-\begin_layout Plain Layout
-
-JuMP.optimize!(example)
-\end_layout
-
-\begin_layout Plain Layout
-
-#get the solution as a vector
-\end_layout
-
-\begin_layout Plain Layout
-
-xsol=JuMP.value.(x) 
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Problem
-2) I will provide a dataset of: (i) perturbed nominal trade flows 
-\begin_inset Formula $log\hat{x}_{ij}=logx_{ij}+\epsilon_{ij}$
-\end_inset
-
-, where 
-\begin_inset Formula $\epsilon_{ij}$
-\end_inset
-
- is a draw of a random distribution that is mean zero and pure measurement
- error (you can assume it is independent from the observable variables),
- (ii) income by country, (iii) bilateral trade barriers.
- 
-\end_layout
-
-\begin_layout Problem
-Using this dataset, estimate 
-\begin_inset Formula $\sigma$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Problem
-Hint: Write down in Julia a contrained OLS problem.
- 
-\end_layout
-
-\begin_layout Problem
-In Problem 1 we showed that the gravity model implies that there are constants
- 
-\begin_inset Formula $\alpha_{i}\forall i\in I$
-\end_inset
-
-, and 
-\begin_inset Formula $\rho=(1-\sigma)$
-\end_inset
-
- such tat:
-\end_layout
-
-\begin_layout Problem
-\begin_inset Formula 
-\[
-z_{ij}=log\hat{x}_{ij}-log(y_{i})-log(y_{j})
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Problem
-\begin_inset Formula 
-\[
-z_{ij}=-\alpha_{i}-\alpha_{j}+\rho log(t_{ij})+\epsilon_{ij}.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Problem
-Estimate the linear equation above using JuMP and Ipopt.
-\end_layout
-
-\begin_layout Problem
-3) As the file .../parameters.jl indicates 
-\begin_inset Formula $\sigma=1/2$
-\end_inset
-
-, use this parameter, to simulate a counterfactual of total trade liberalization
- where 
-\begin_inset Formula $t_{ij}^{free}=1$
-\end_inset
-
- for all 
-\begin_inset Formula $j,i\in I$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Problem
-Hint: Use part 1).
- Note that you have to solve the model given 
-\begin_inset Formula $\sigma$
-\end_inset
-
-, the new 
-\begin_inset Formula $t_{ij}^{free}$
-\end_inset
-
-, and incomes that have not changes 
-\begin_inset Formula $y_{i}\forall i$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Problem
-4) Compute average change in nominal trade flows.
- Extra points (10%) to the total grade of the final exam, compute the average
- change in welfare (measured in utility terms).
- 
+(General Equilibrium)  
 \end_layout
 
 \begin_layout Standard
