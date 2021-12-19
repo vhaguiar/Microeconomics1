@@ -1,0 +1,867 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{babel}
+\usepackage{babel}
+\usepackage{babel}
+
+
+
+
+
+  \providecommand{\assumptionname}{Assumption}
+  \providecommand{\axiomname}{Axiom}
+  \providecommand{\claimname}{Claim}
+  \providecommand{\definitionname}{Definition}
+  \providecommand{\lemmaname}{Lemma}
+  \providecommand{\propositionname}{Proposition}
+  \providecommand{\remarkname}{Remark}
+\providecommand{\corollaryname}{Corollary}
+\providecommand{\theoremname}{Theorem}
+
+
+
+  \providecommand{\axiomname}{Axiom}
+  \providecommand{\claimname}{Claim}
+  \providecommand{\definitionname}{Definition}
+  \providecommand{\remarkname}{Remark}
+\providecommand{\corollaryname}{Corollary}
+\providecommand{\theoremname}{Theorem}
+\end_preamble
+\use_default_options false
+\begin_modules
+theorems-ams-bytype
+theorems-ams-extended-bytype
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding iso8859-15
+\fontencoding default
+\font_roman "cmr" "default"
+\font_sans "cmss" "default"
+\font_typewriter "cmtt" "default"
+\font_math "auto" "auto"
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 2
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.25in
+\topmargin 1.25in
+\rightmargin 1.25in
+\bottommargin 1.25in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Final Microeconomics 2021
+\end_layout
+
+\begin_layout Author
+Victor H.
+ Aguiar 
+\end_layout
+
+\begin_layout Date
+This version: December 2021
+\end_layout
+
+\begin_layout Abstract
+This exam has three problems, the third one is modelling.
+ You will be graded on the basis of your exam-structure over 90 points.
+ Work group is not allowed, if I find out that several of you have essentially
+ the same responses in any section, e.g., the same model, the same code, the
+ same derivations, you will receive the total grade of this question divided
+ by the number of students that share the same response.
+ You can communicate and talk among you, I cannot prevent this anyway, but
+ you have to write your own answers and you have to do your own derivations
+ and your own code.
+ If you share your code, answers explicitly and ideas for the model you
+ are exposing yourself to have less than half the grade.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+(Theory) Gravity model of trade.
+ 
+\end_layout
+
+\begin_layout Problem
+We have 
+\begin_inset Formula $I$
+\end_inset
+
+ countries, with typical elements 
+\begin_inset Formula $i,j\in I$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Problem
+We assume that each country specializes in the production of only one good.
+ The supply of each good is fixed (equivalently, each region is endowed
+ with only positive quantity of one good, and there is no production).
+ 
+\end_layout
+
+\begin_layout Problem
+If 
+\begin_inset Formula $c_{ij}$
+\end_inset
+
+ is the consumption by country 
+\begin_inset Formula $j$
+\end_inset
+
+ consumers of goods from region 
+\begin_inset Formula $i$
+\end_inset
+
+, consumers in region 
+\begin_inset Formula $j$
+\end_inset
+
+ maximize
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+U(c)=\left(\sum_{i\in I}\beta_{i}^{(1-\sigma)/\sigma}c_{ij}^{(\sigma-1)/\sigma}\right)^{\sigma/(\sigma-1)},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+subject to the budget constraint
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+\sum_{i}p_{ij}c_{ij}=y_{j}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+We have 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ as the elasticity of substitution between all goods, 
+\begin_inset Formula $\beta_{i}$
+\end_inset
+
+ is a positive distribution parameter, 
+\begin_inset Formula $y_{j}$
+\end_inset
+
+ is a regional income of country 
+\begin_inset Formula $j$
+\end_inset
+
+ consumers, and 
+\begin_inset Formula $p_{ij}$
+\end_inset
+
+ is the price of region 
+\begin_inset Formula $i$
+\end_inset
+
+ good for 
+\begin_inset Formula $j$
+\end_inset
+
+ consumers.
+ 
+\end_layout
+
+\begin_layout Problem
+Notice that 
+\begin_inset Formula $p_{ij}$
+\end_inset
+
+ differs per location 
+\begin_inset Formula $j$
+\end_inset
+
+ due to trade-costs.
+ 
+\end_layout
+
+\begin_layout Problem
+Let 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ denote the exporter's supply price, net of trade costs, and 
+\begin_inset Formula $t_{ij}\geq1$
+\end_inset
+
+ is the trade cost factor between 
+\begin_inset Formula $i,j$
+\end_inset
+
+ (when 
+\begin_inset Formula $t_{ij}=1$
+\end_inset
+
+ then there is free-trade).
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+p_{ij}=p_{i}t_{ij}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+We assume that trade costs are absorbed by the exporter.
+ 
+\end_layout
+
+\begin_layout Problem
+Formally, we assume that for each good shipped from 
+\begin_inset Formula $i$
+\end_inset
+
+ to 
+\begin_inset Formula $j$
+\end_inset
+
+ the exporter bears a costs equal to 
+\begin_inset Formula $t_{ij}-1$
+\end_inset
+
+ of country 
+\begin_inset Formula $i$
+\end_inset
+
+ goods.
+ The exporter passes on these trade costs to the importer.
+ 
+\end_layout
+
+\begin_layout Problem
+The nominal value of exports is:
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+x_{ij}=p_{ij}c_{ij}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Market clearing implies here that in nominal terms endowments are equal
+ to aggregate demand:
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+y_{i}=\sum_{j\in I}x_{ij}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+1) Show that the nominal demand for country 
+\begin_inset Formula $i$
+\end_inset
+
+ goods by country 
+\begin_inset Formula $j$
+\end_inset
+
+ consumer is:
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+x_{ij}=\left(\frac{\beta_{i}p_{i}t_{ij}}{P_{j}}\right)^{(1-\sigma)}y_{j},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+where 
+\begin_inset Formula $P_{j}$
+\end_inset
+
+ is the consumer price index of 
+\begin_inset Formula $j$
+\end_inset
+
+, given by 
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+P_{j}=\left[\sum_{i\in I}(\beta_{i}p_{i}t_{ij})^{1-\sigma}\right]^{1/(1-\sigma)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Important: I need step-by-step derivation.
+ 
+\end_layout
+
+\begin_layout Problem
+2) Show, using the nominal market-clearing conditions and the results from
+ 1) that:
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula $\beta_{i}p_{i}=\frac{y_{i}^{1/(1-\sigma)}}{(\sum_{j\in I}(t_{ij}/P_{j})^{1-\sigma}y_{j})^{1/(1-\sigma)}}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Important: I need step-by-step derivation.
+\end_layout
+
+\begin_layout Problem
+3) Let 
+\begin_inset Formula $y^{W}=\sum_{j\in I}y_{j}$
+\end_inset
+
+ be the world income, and income share 
+\begin_inset Formula $\theta_{j}=y_{j}/y^{W}$
+\end_inset
+
+.
+ Show that, replacing 
+\begin_inset Formula $\beta_{i}p_{i}$
+\end_inset
+
+ on the nominal demand, we can obtain:
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+x_{ij}=\frac{y_{i}y_{j}}{y^{W}}\left(\frac{t_{ij}}{\Pi_{i}P_{j}}\right)^{1-\sigma},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+where 
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+\Pi_{i}=\left(\sum_{j\in I}(t_{ij}/P_{j})^{1-\sigma}\theta_{j}\right)^{1/(1-\sigma)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Important: I need step-by-step derivation.
+ 
+\end_layout
+
+\begin_layout Problem
+4) Assume that 
+\begin_inset Formula $t_{ij}=t_{ji}$
+\end_inset
+
+, where trade barriers are symmetric, show that:
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+\Pi_{i}=P_{i}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Under this condition, we have an implicit solution to the price indexes
+ 
+\begin_inset Formula $P_{i}$
+\end_inset
+
+ given by
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+P_{j}^{1-\sigma}=\sum_{i\in I}P_{i}^{\sigma-1}\theta_{i}t_{ij}^{1-\sigma}\forall j,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+show that there is at least one solution to this system of equations.
+\end_layout
+
+\begin_layout Problem
+For this part use the file 
+\backslash
+GitHub
+\backslash
+Microeconomics1
+\backslash
+finalexam
+\backslash
+theory
+\backslash
+fixedpoint_contraction_mapping_jacobian.pdf, Theorem 1 and Theorem 2.
+ In particular, show that the implicit solution to the price index 
+\begin_inset Formula $P_{i}$
+\end_inset
+
+ for all 
+\begin_inset Formula $i\in I$
+\end_inset
+
+ for a contraction mapping.
+ You can assume that 
+\begin_inset Formula $P_{i}$
+\end_inset
+
+ take values in a closed set for simplicity.
+ Also note that, that you have to rewrite the price index equation in the
+ form.
+ 
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+P_{j}=g_{j}(P_{1},\cdots P_{I}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+For the gravity model 
+\begin_inset Formula $g$
+\end_inset
+
+ is continuously differentiable, so you can compute it's Jacobian.
+ For the computing the norm of the Jacobian use whatever norm makes easier
+ your computation.
+ Euclidean or Max matrix norms are good candidates.
+ I used the Euclidean matrix norm.
+ 
+\end_layout
+
+\begin_layout Problem
+Important: Only for this item, assume that 
+\begin_inset Formula $I=\{1,2\}$
+\end_inset
+
+, 
+\begin_inset Formula $P_{i}\geq1\forall i$
+\end_inset
+
+, 
+\begin_inset Formula $\sigma=\frac{1}{2},t_{ij}=1,\theta_{i}=\frac{1}{2}.$
+\end_inset
+
+ Remember you have to show that the the norm of the Jacobian of the mapping
+ 
+\begin_inset Formula $g$
+\end_inset
+
+ is less than 1, for all values of 
+\begin_inset Formula $P_{i}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Problem
+5) Show that, the gravity model implies that there are constants 
+\begin_inset Formula $\alpha_{i}\forall i\in I$
+\end_inset
+
+, and 
+\begin_inset Formula $\rho=(1-\sigma)$
+\end_inset
+
+ such that:
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+z_{ij}=logx_{ij}-log(y_{i})-log(y_{j})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+z_{ij}=-\alpha_{i}-\alpha_{j}+\rho log(t_{ij}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+(General Equilibrium)  
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+(Modeling) Modeling the 
+\begin_inset Quotes eld
+\end_inset
+
+(Dynamic) Endowment Effect
+\begin_inset Quotes erd
+\end_inset
+
+.
+ I am going summarize our Top Trading Cycles (TTC) activity, that exhibits
+ a behavioral bias called the Endowment Effect with dynamic traits.
+ The task is to write a decision model algorithm to explain the stylized
+ facts our our TTC activity: namely, the number of trades realized with
+ respect to total trades is smaller in the treatment group than in the control.
+ More important, the expected value of trade in the treatment group is smaller
+ than in the control group.
+ I remind you that the treatment group was involved in a dynamic implementation
+ of the TTC algorithm, participating in two rounds of trade.
+ The control group instead stated their preferences as a ranking of all
+ exams, and the TTC algorithm was implemented using that information and
+ the randomly drawn endowments to obtain their assignments.
+ 
+\end_layout
+
+\begin_layout Problem
+Due to randomization, under the rationality hypothesis of behavior, both
+ the treatment and control group should have the same expected value of
+ trade, and the same probability of trade.
+\end_layout
+
+\begin_layout Problem
+Since the results of our randomization reject the rationality hypothesis,
+ you have to come up with a model that explains the two stylized facts that
+ we have described.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+The TTC randomization.
+ 
+\end_layout
+
+\begin_layout Itemize
+15 subjects 
+\end_layout
+
+\begin_layout Itemize
+10 subjects were randomly assigned to treatment, and 5 to control.
+ 
+\end_layout
+
+\begin_layout Itemize
+A set of 15 exam-structures where randomly assigned as initial endowments
+ to the 15 students.
+ Exam structures differ in the points assigned to 3 different parts of the
+ exam.
+ The students faced a similar structure in the midterm exam, but otherwise
+ did not had access to the final exam.
+ 
+\end_layout
+
+\begin_layout Itemize
+The treatment subjects, had to do live/dynamic trade using a Qualtrics survey.
+ They submitted their most preferred alternative and they knew their endowment.
+ Trade can only happen inside their group.
+ 
+\end_layout
+
+\begin_layout Itemize
+The control subjects, had to to submit a complete ranking of all exams in
+ their group.
+ 
+\end_layout
+
+\begin_layout Itemize
+Trade happen live for the treatment group, with the first round taking 7
+ hours, and the second round taking 12 hours (with 3 waking hours).
+ There was no need for more rounds.
+ 
+\end_layout
+
+\begin_layout Itemize
+The preferences of the control group students was used in a TTC algorithm
+ given their endowments to produce the new assignments.
+ The algorithm terminated in two rounds.
+ 
+\end_layout
+
+\begin_layout Itemize
+The assignments were announced publicly to all 15 students, and they were
+ asked to fill a post-match survey.
+ The treatment group had to submit all their ranked preferences with the
+ clear understanding that it would be used only for analysis purposes.
+ Both the treatment and control submitted their subjective and expected
+ gains from trades as percentage points.
+ 
+\end_layout
+
+\begin_layout Standard
+If our subjects are rational consumers then the prediction in this market
+ is:
+\end_layout
+
+\begin_layout Itemize
+Prediction for rationality: As exam-structures are distributed randomly,
+ and the treatment and control membership was uniformly chosen, we should
+ expect that the probability of trade in both the treatment and control
+ is the same.
+ 
+\end_layout
+
+\begin_layout Itemize
+As exam-structures are distributed randomly, and the treatment and control
+ membership was uniformly chosen, we expect that the subjective expected
+ gains from trade are the same among treatment and control.
+ 
+\end_layout
+
+\begin_layout Standard
+The 
+\series bold
+Experiment Outcome 
+\series default
+however differs from the 
+\series bold
+Prediction
+\series default
+, and we call this the 
+\series bold
+(Dynamic) Endowment Effect.
+\end_layout
+
+\begin_layout Itemize
+In 2 rounds, the total number of trades was: Treatment had 4 trades (4 and
+ 0 trades per round) over 10 possible.
+ Control had 4 trades (2 and 2 trade per round) over 5 possible.
+ 
+\end_layout
+
+\begin_layout Itemize
+Mean expected gain from trade for the 
+\series bold
+control
+\series default
+ group was 7 percentage points.
+\end_layout
+
+\begin_layout Itemize
+Mean expected gain from trade for the 
+\series bold
+treatment
+\series default
+ group was 3 percentage points.
+\end_layout
+
+\begin_layout Itemize
+Dynamic vs static trade expected gains from trade gap.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Subject's preferences seem to be affected by the trading protocol.
+\end_layout
+
+\begin_layout Enumerate
+Propose a decision algorithm that explains the stylized facts above and
+ explain how it generalizes or innovates with respect to the rational TTC
+ model we cover in class.
+\end_layout
+
+\begin_layout Enumerate
+Is the TTC algorithm Pareto efficient under your new decision algorithm.
+ Is the TTC matching still in the core?
+\end_layout
+
+\begin_layout Subsection*
+Grading Criterion
+\end_layout
+
+\begin_layout Enumerate
+Work group is not allowed, if I find out that several of you have essentially
+ the same model, you will receive the total grade of this question divided
+ by the number of students that share the same response.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The model will be graded on the following 5 items: Logical consistency of
+ the decision algorithm.
+ Clarity of the explanation of the decision algorithm.
+ Degree of success in explaining the endowment effect qualitatively.
+ Calibration to the actual numbers of the experiment.
+ Creativity and degree to which you have included topics that we covered
+ in class (limited attention, reference dependence, among others).
+\end_layout
+
+\begin_layout Standard
+Hint: write down the TTC algorithm using utilities instead of rankings,
+ since you have to explain the gap in gains from trade.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
