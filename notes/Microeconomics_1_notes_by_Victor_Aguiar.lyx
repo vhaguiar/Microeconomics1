@@ -2255,6 +2255,24 @@ Cobb-Douglas Demand Function.
  
 \end_layout
 
+\begin_layout Example
+Nonrational Demand Function: 
+\begin_inset Formula $x(p,w)=(p_{1},(1-p_{1}^{2})/p_{2})$
+\end_inset
+
+, 
+\begin_inset Formula $w=1$
+\end_inset
+
+.
+ 
+\begin_inset Formula $p_{1}^{2}+p_{2}x_{2}=1$
+\end_inset
+
+.
+ 
+\end_layout
+
 \begin_layout Section
 Consistency in Consumption
 \end_layout
@@ -2990,7 +3008,7 @@ dw=x(p,w)'dp=dp'x(p,w).
 \begin_layout Standard
 \begin_inset Formula 
 \[
-dp'dx=dp'[D_{p}x(p,w)+D_{w}x(p,w)x(p,w)]dp,
+dp'dx=dp'[D_{p}x(p,w)+D_{w}x(p,w)x(p,w)']dp,
 \]
 
 \end_inset
@@ -3135,7 +3153,7 @@ u(x_{1},x_{2}):=\alpha_{1}ln(x_{1}-\gamma_{1})-\alpha_{2}ln(\gamma_{2}-x_{2})
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\alpha_{1}ln(x_{1}-\gamma_{1})+\alpha_{2}ln(\frac{1}{\gamma_{2}-x_{2}})
+=\alpha_{1}ln(x_{1}-\gamma_{1})+\alpha_{2}ln(\frac{1}{\gamma_{2}-x_{2}})
 \]
 
 \end_inset

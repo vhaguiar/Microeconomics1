@@ -132,62 +132,7 @@ Victor H.
 \end_layout
 
 \begin_layout Date
-This version: September 2020
-\end_layout
-
-\begin_layout Exercise
-(Integrability) Consider a demand system with 
-\begin_inset Formula $L=2$
-\end_inset
-
-, such that 
-\begin_inset Formula $p_{2}=1$
-\end_inset
-
-, 
-\begin_inset Formula $x_{1}(p_{1},w)=\beta-\alpha p_{1}.$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Exercise
-(i) Obtain the demand of 
-\begin_inset Formula $x_{2}(p_{1},w)$
-\end_inset
-
- under Walras' law.
-\end_layout
-
-\begin_layout Exercise
-Hint.
- Use 
-\begin_inset Formula $p^{*}=0$
-\end_inset
-
-, for obtaining 
-\begin_inset Formula $v(p,w)=\mu(p^{*},p,w)$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Exercise
-(ii) Compute the Slutsky matrix and check that the Hurwicz-Uzawa theorem
- of integrability of demand conditions are satisfied.
- 
-\end_layout
-
-\begin_layout Exercise
-(iii) If (ii) is integrable in the sense that satisfies the conditions of
- the Hurwicz-Uzawa theorem, find the utility that generates the demand system,
- i.e., find the expression for 
-\begin_inset Formula $u(x_{1},x_{2})$
-\end_inset
-
-.
- 
+This version: 2021
 \end_layout
 
 \begin_layout Standard
@@ -564,7 +509,7 @@ Now, we conclude with a very easy question that will show you the benefits
 \end_inset
 
  if there exists a sequence 
-\begin_inset Formula $xRx^{1}Rx^{2}\cdots Rx^{n}Ry$
+\begin_inset Formula $xR^{D}x^{1}R^{D}x^{2}\cdots R^{D}x^{n}R^{D}y$
 \end_inset
 
 .
@@ -651,7 +596,7 @@ Now, we conclude with a very easy question that will show you the benefits
 \end_layout
 
 \begin_layout Standard
-(ii) Prove that if a demand function 
+(ii) (Advanced Question, Optional) Prove that if a demand function 
 \begin_inset Formula $x(p,w)$
 \end_inset
 
